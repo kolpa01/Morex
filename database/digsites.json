@@ -1,0 +1,170 @@
+[
+    {
+        "name": "pit",
+        "usages": 30,
+        "background": "grid0.png",
+        "color": "0x8189bb",
+        "req_item": "n",
+        "layers": {
+            "0": [{"item": "earth", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"}],
+            "1": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"}, 
+                {"item": "coal", "class": "ore", "guaranted_amount": 1, "amount": 3, "chance": 10}],
+            "2": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "coal", "class": "ore", "guaranted_amount": 1, "amount": 3, "chance": 25}],
+            "3": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "coal", "class": "ore", "guaranted_amount": 1, "amount": 3, "chance": 50},
+                {"item": "ironore", "class": "ore", "guaranted_amount": 0, "amount": 3, "chance": 10}],
+            "4": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "ironore", "class": "ore", "guaranted_amount": 1, "amount": 2, "chance": 25},
+                {"item": "spidershard", "class": "ore", "guaranted_amount": 0, "amount": 1, "chance": 7}]
+        },
+        "treasure": {
+            "canreplace": ["stone", "earth", "coal"],
+            "replacablelayers": [2, 4],
+            "contents": [
+                {"item": "coins", "min_value": 50, "max_value": 200, "choice": 10000},
+                {"item": "stone", "min_value": 4, "max_value": 9, "choice": 8500},
+                {"item": "sand", "min_value": 2, "max_value": 5, "choice": 6000},
+                {"item": "goldore", "min_value": 1, "max_value": 3, "choice": 2500},
+                {"item": "diamondore", "min_value": 1, "max_value": 1, "choice": 100}
+            ]
+        }
+    },
+    {
+        "name": "mineshaft",
+        "usages": 45,
+        "background": "grid1.png",
+        "color": "0x362a43",
+        "req_item": "mineshaftcoupon",
+        "layers": {
+            "0": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"}],
+            "1": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"}],
+            "2": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "coal", "class": "ore", "guaranted_amount": 1, "amount": 2, "chance": 40}],
+            "3": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "ironore", "class": "ore", "guaranted_amount": 1, "amount": 2, "chance": 35}],
+            "4": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "ironore", "class": "ore", "guaranted_amount": 1, "amount": 3, "chance": 45},
+                {"item": "goldore", "class": "ore", "guaranted_amount": 1, "amount": 2, "chance": 30}],
+            "5": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "ironore", "class": "ore", "guaranted_amount": 0, "amount": 1, "chance": 10},
+                {"item": "goldore", "class": "ore", "guaranted_amount": 2, "amount": 1, "chance": 50},
+                {"item": "diamondore", "class": "ore", "guaranted_amount": 1, "amount": 2, "chance": 25}]
+        },
+        "treasure": {
+            "canreplace": ["stone", "ironore"],
+            "replacablelayers": [3, 4, 5],
+            "contents": [
+                {"item": "coins", "min_value": 500, "max_value": 700, "choice": 10000},
+                {"item": "wood", "min_value": 1, "max_value": 5, "choice": 7500},
+                {"item": "stone", "min_value": 2, "max_value": 8, "choice": 5000},
+                {"item": "iron", "min_value": 1, "max_value": 3, "choice": 2500},
+                {"item": "mineshaftcoupon", "min_value": 1, "max_value": 1, "choice": 10}
+            ]
+        }
+    },
+    {
+        "name": "scarymineshaft",
+        "usages": 30,
+        "background": "grid2.png",
+        "color": "0x4d14a0",
+        "req_item": "n",
+        "layers": {
+            "0": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"}],
+            "1": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"}],
+            "2": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"}],
+            "3": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "candycorn", "class": "ore", "guaranted_amount": 4, "amount": 5, "chance": 35}],
+            "4": [{"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "candycorn", "class": "ore", "guaranted_amount": 9, "amount": 0, "chance": 45}]
+        },
+        "treasure": {
+            "canreplace": ["stone", "candycorn"],
+            "replacablelayers": [3, 4],
+            "contents": [
+                {"item": "coins", "min_value": 500, "max_value": 700, "choice": 10000},
+                {"item": "candycorn", "min_value": 1, "max_value": 20, "choice": 10000},
+                {"item": "wood", "min_value": 1, "max_value": 5, "choice": 7500},
+                {"item": "skull", "min_value": 1, "max_value": 1, "choice": 1000},
+                {"item": "goldenskull", "min_value": 1, "max_value": 1, "choice": 100}
+            ]
+        }
+    },
+    {
+        "name": "icychasm",
+        "usages": 25,
+        "background": "grid3.png",
+        "color": "0x77bef2",
+        "req_item": "n",
+        "layers": {
+            "0": [{"item": "ice", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"}],
+            "1": [{"item": "ice", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"}],
+            "2": [{"item": "ice", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "candycane", "class": "ore", "guaranted_amount": 4, "amount": 5, "chance": 35}],
+            "3": [{"item": "ice", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "candycane", "class": "ore", "guaranted_amount": 4, "amount": 5, "chance": 35}]
+        },
+        "treasure": {
+            "canreplace": ["ice", "candycane"],
+            "replacablelayers": [2, 3],
+            "contents": [
+                {"item": "coins", "min_value": 250, "max_value": 333, "choice": 10000},
+                {"item": "bluepresent", "min_value": 1, "max_value": 1, "choice": 8000},
+                {"item": "ice", "min_value": 3, "max_value": 11, "choice": 7000},
+                {"item": "christmasshovel", "min_value": 1, "max_value": 1, "choice": 200}
+            ]
+        }
+    },
+    {
+        "name": "overgrownmineshaft",
+        "usages": 50,
+        "background": "grid4.png",
+        "color": "0x66e16f",
+        "req_item": "n",
+        "layers": {
+            "0": [
+                {"item": "vines", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"}
+            ],
+            "1": [
+                {"item": "stone:vines", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "coal:vines", "class": "ore", "guaranted_amount": 1, "amount": 2, "chance": 60}
+            ],
+            "2": [
+                {"item": "stone:vines", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "coal:vines", "class": "ore", "guaranted_amount": 2, "amount": 1, "chance": 30}
+            ],
+            "3": [
+                {"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "coal", "class": "ore", "guaranted_amount": 0, "amount": 1, "chance": 20},
+                {"item": "ironore", "class": "ore", "guaranted_amount": 0, "amount": 2, "chance": 35}
+            ],
+            "4": [
+                {"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "ironore", "class": "ore", "guaranted_amount": 2, "amount": 2, "chance": 10},
+                {"item": "goldore", "class": "ore", "guaranted_amount": 1, "amount": 1, "chance": 25}
+            ],
+            "5": [
+                {"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "goldore", "class": "ore", "guaranted_amount": 2, "amount": 1, "chance": 20},
+                {"item": "goldenegg", "class": "ore", "guaranted_amount": 1, "amount": 0, "chance": 0}
+            ],
+            "6": [
+                {"item": "stone", "class": "primary", "guaranted_amount": "ignore", "amount": "ignore", "chance": "ignore"},
+                {"item": "goldore", "class": "ore", "guaranted_amount": 2, "amount": 2, "chance": 25},
+                {"item": "goldenegg", "class": "ore", "guaranted_amount": 2, "amount": 1, "chance": 25}
+            ]
+        },
+        "treasure": {
+            "canreplace": ["stone"],
+            "replacablelayers": [5, 6],
+            "contents": [
+                {"item": "coins", "min_value": 213, "max_value": 1987, "choice": 10000},
+                {"item": "vines", "min_value": 3, "max_value": 5, "choice": 6900},
+                {"item": "stone", "min_value": 3, "max_value": 8, "choice": 5000},
+                {"item": "egg", "min_value": 1, "max_value": 3, "choice": 3500},
+                {"item": "skull", "min_value": 1, "max_value": 1, "choice": 590},
+                {"item": "vinespellbook", "min_value": 1, "max_value": 1, "choice": 100}
+            ]
+        }
+    }
+]

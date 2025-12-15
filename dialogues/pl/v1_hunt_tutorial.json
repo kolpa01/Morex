@@ -1,0 +1,80 @@
+{
+  "firsttime": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "Naucz\u0119 ciebie podstaw walki."
+  },
+  "beatmeupplease": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "Najpierw atak. Wci\u015bnij <:MX_Sword:1220425813132836904> aby zaatakowa\u0107.\nNie martw si\u0119. Twarda jestem."
+  },
+  "beatmeupplease:followup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "Napotykasz na swojej drodze Kordeli\u0119."
+  },
+  "coverup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "\u015awietnie. Teraz wci\u015bnij <:MX_Shield:1220425815368400926> aby zwi\u0119kszy\u0107 swoj\u0105 os\u0142on\u0119.\nIm wi\u0119cej jej masz tym lepiej jeste\u015b chroniony."
+  },
+  "coverup:followup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "{u} atakuje Kordeli\u0119 za pomoc\u0105 <:MX_IronSword:1139321518573223997> \u017belazny Miecz\nKordelia traci 30 HP"
+  },
+  "comefightme": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "Doskonale. Teraz wci\u015bnij dowolny przycisk, aby przetestowa\u0107 swoje umiej\u0119tno\u015bci w praktyce."
+  },
+  "comefightme:followup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "{u} zdobywa 30 SH"
+  },
+  "waitareyouforreal": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "Czas Walki nadszed\u0142."
+  },
+  "idontbitedoi": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260952483824533594/tutorialgworldisaoidunb.png",
+    "color": "0x97eeff",
+    "text": "Nie uciekaj. Przecie\u017c nie gryz\u0119"
+  },
+  "idontbitedoi:followup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "You shall never see this..."
+  },
+  "idontwannadie": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260955263880396850/tutorialgworldisaaAoidunb.png",
+    "color": "0x97eeff",
+    "text": "Heh... U-Uda\u0142o Ci... Uda\u0142o Ci si\u0119 mnie pokona\u0107...\nWci\u015bnij <:MX_Save:1220425821559455836> aby uko\u0144czy\u0107 samouczek..."
+  },
+  "idontwannadie:followup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "Kordelia ledwo oddycha."
+  },
+  "tutcomplete": {
+    "name": "Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "Samouczek uwa\u017cam za zako\u0144czony! Pokaza\u0142e\u015b co potrafisz i to doceniam. Wpadnij kiedy\u015b z powrotem. Jak wr\u00f3cisz to naucz\u0119 ciebie o u\u017cywaniu kilku broni oraz o sakwach.\nDo zobaczenia!"
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "firsttime": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240504158159041/chillguy.png",
+        "name": "Janus Dunn",
+        "text": "Yo ziomu\u015b. Wprowadze ciebie w tajniki kopania.\nWidzisz te cyfry? Klikasz je i dany blok si\u0119 niszczy.\nPowodzenia!"
+    },
+    "stone": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240503868624946/chillguytherock.png",
+        "name": "Janus Dunn",
+        "text": "Widzisz to jest kamie\u0144, pe\u0142no tu tego badziewia. Mo\u017cesz go sprzeda\u0107 albo co\u015b tam jeszcze. Nie jestem </item:1188085855789776957>. Kim w og\u00f3le jest </item:1188085855789776957>???"
+    },
+    "coal": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240871319011348/chillguyidle.png",
+        "name": "Janus Dunn",
+        "text": "W\u0119giel.\nPoprostu w\u0119giel."
+    },
+    "ironore": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240503868624946/chillguytherock.png",
+        "name": "Janus Dunn",
+        "text": "\u017belazna ruda! Trzeba j\u0105 przetopi\u0107 czy co\u015b. Co tak patrzysz? Ja tutaj czasem kopi\u0119 albo gadam nonsens do \u015bwie\u017cak\u00f3w.\nTak mi si\u0119 wydaje..."
+    },
+    "goldore": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240871319011348/chillguyidle.png",
+        "name": "Janus Dunn",
+        "text": "SKARB!!!\nCzekaj, to tylko z\u0142oto... Nikt nie zrozumie tego \u017cartu, chyba \u017ce powiem, \u017ce podczas tworzenia kolpa zapomnia\u0142 da\u0107 tekstury z\u0142ota, wi\u0119c zamiast tego by\u0142a tekstura skarbu.\nO czym ja w og\u00f3le gadam..?"
+    },
+    "treasure": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240871319011348/chillguyidle.png",
+        "name": "Janus Dunn",
+        "text": "\u0141adnie, \u0142adnie. To skarb! I tyle.\nCo, s\u0105dzisz, \u017ce powinienem co\u015b o nim opowiedzie\u0107? Nie chce mi si\u0119."
+    },
+    "diamondore": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240504158159041/chillguy.png",
+        "name": "Janus Dunn",
+        "text": "Diamenty. Nie\u017ale nowy.\nWcale nie tak, \u017ce ka\u017cdy kto tutaj kopie dostaje minimum jednego diamenta."
+    },
+    "byebye": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240504158159041/chillguy.png",
+        "name": "Janus Dunn",
+        "text": "\u017begnaj!\nWr\u00f3\u0107 tutaj kiedy\u015b, albo nie. Nie obchodzi mnie to. Nie jestem tu zatrudniony.\n\nCzemu tu w og\u00f3le jestem..."
+    }
+}

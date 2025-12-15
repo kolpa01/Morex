@@ -1,0 +1,1216 @@
+{
+    "commands": {
+        "announcement": {
+            "announcement": "Announcement",
+            "none": "There are no announcements currently."
+        },
+        "balance": {
+            "title": "Balance",
+            "field1": "Coins in the wallet:",
+            "field2": "Coins in the bank:",
+            "field3": "All coins:"
+        },
+        "beg": {
+            "person": ["Stefan Kebab", "Gregory the Old", "Notime Tofinish"],
+            "coin": ["Take this money:", "Alright. Take this:"],
+            "item": ["Also have this:", "This will work out perfectly as 5:star: meal:"],
+            "nothing": ["I don't have any coins.", "Go away and stop begging!"]
+        },
+        "beta":{
+            "warning": "Join to the Morex Beta to test new features before others.\n\n**Warning:** Using any of the beta functions may result in data loss. Things are not guaranted to work and can be changed heavily before full release.\n\nTo join the Morex Beta click {main.accept}, to leave click {main.deny}.",
+            "joined": "Successfully joined the beta.",
+            "joined_failed": "You were already a betatester.",
+            "left": "Successfully left the beta.",
+            "left_failed": "You aren't a betatester. "
+        },
+        "buy": {
+            "confirmation": "Are you sure you want to buy {amount} {item} for {cost} {coin}?",
+            "no_coins0": "You need {cost} {coin} more to buy {amount} {item}",
+            "no_coins1": "You have those coins in the bank. Use </withdraw:1188085949335355443> to move them to your wallet.",
+            "bought": "You bought {amount} {item} for {cost} {coin}"
+        },
+        "christmas": {
+            "title": "Advent Calendar",
+            "today": "Today's reward: ",
+            "ct": "Collect today's reward",
+            "all": "Collect all",
+            "unlocked": "You unlocked",
+            "got": "**You got:**",
+            "day": "Day"
+        },
+        "craft": {
+            "no_workbench": "You don't have the Workbench.\nTry to buy it.",
+            "no_items": "You couldn't craft {amount} {item}\n\nYou are missing:\n{text}",
+            "confirmation": "Do you want to craft {amount} {item} for:\n{text}",
+            "crafted": "Crafted"
+        },
+        "credits": {
+            "credits": "Credits",
+            "source": "Source Code",
+            "textures": "Textures",
+            "lore": "Lore",
+            "thanks": "Special Thanks",
+            "for": "for using Morex",
+            "translation": "Translations"
+        },
+        "custommobs_create": {
+            "limit": "You can't create more custom mobs, because you've reached the limit.",
+            "invalid_attack": "Invalid attack value.",
+            "invalid_hp": "Invalid HP value.",
+            "int_invalid_hp": "HP value is either too big or too small.",
+            "sid": "In SID invalid characters were used.",
+            "disname": "In Display name invalid characters were used.",
+            "meetup": "In Encounter Message invalid characters were used.",
+            "sent": "Sent a Custom mob approval request.",
+            "accepted": "Approved",
+            "accepted_info": "Custom mob created by you has been approved.",
+            "accepted_edit": "Custom mob edit created by you has been approved.",
+            "request2": "Sent a Custom mob edit approval request."
+        },
+        "custommobs_view": {
+            "enemies": "Enemies of",
+            "no_enemies": "This user hasn't created any Custom mobs.",
+            "dev": "Development Informations",
+            "name": "Display name",
+            "hp": "HP",
+            "attack": "Attack",
+            "author": "Author"
+        },
+        "deposit": {
+            "bank": "Deposited to the bank"
+        },
+        "dig": {
+            "no_pickaxe": "You don't have the Pickaxe.\nTry to buy it.",
+            "durability": "Pickaxe durability: ",
+            "inventory": "Inventory:",
+            "digup": "**You dug up:**",
+            "chest": "The treasure contained:",
+            "chest_name": "Treasure",
+            "try_again": "Try again when you get it.",
+            "donthave": "You don't have",
+            "have": "You have",
+            "visit": "Do you want to visit",
+            "for": "for"
+        },
+        "eq_view": {
+            "your_weapons": "Your equiped weapons:",
+            "your_bundle": "Your Bundle:"
+        },
+        "eq_b_eq": {
+            "added": "Equiped",
+            "slot": "on slot",
+            "current_slot": "Current slot",
+            "inventory": "Inventory",
+            "changed": "Replaced",
+            "on_slot": "on slot",
+            "to": "to"
+        },
+        "eq_b_ue": {
+            "empty_slot": "This slot is empty.",
+            "current_slot": "Current slot",
+            "inventory": "Inventory",
+            "deleted": "Removed",
+            "from_slot": "from slot"
+        },
+        "eq_w_eq": {
+            "no_weapon": "You don't have this weapon.",
+            "already_there": "You have already equiped this weapon.",
+            "equiped": "Equiped",
+            "on_slot": "on slot",
+            "swapped": "Swapped the weapons"
+        },
+        "eq_w_ue": {
+            "empty": "This slot is empty.",
+            "from_slot": "from slot",
+            "unequiped": "Unequiped"
+        },
+        "event": {
+            "none": "There are no events currently.",
+            "event": "Events"
+        },
+        "fight": {
+            "faileduserattack": "{u} attacks {e} using {uw}.\nThe attack missed.",
+            "hpmobattack": "{u} attacks {e}. {e} loses {ahp} HP.",
+            "bshmobattack": "{u} attacks {e}. {e} loses all SH.",
+            "shmobattack": "{u} attacks {e}. {e} loses {ash} SH.",
+            "bshandhpmobattack": "{u} attacks {e}. {e} loses all SH and {ahp} HP.",
+            "sp_charged": "{uw} has been charged.",
+            "sp_charging": "Raised the charge of {uw} by 1.",
+            "reb": "{u} takes from {e} {ahp} HP.",
+            "atk": "{u} attacks {e} using {pw} \n{e} loses {ahp} HP",
+            "regen": "{u} regenerates {ahp} HP.",
+            "regen_fail": "{u} doesn't regenerate any HP, because it is full.",
+            "sh_raise": "{u} gains 30 SH.",
+            "sh_er": "You can't raise your shield anymore.",
+            "sp_wait": "You need to wait a while.",
+            "ran": "ran away from the fight.",
+            "fight": "Battle",
+            "info": "Informations",
+            "hpdeath": "{u} attacks {e}. {u} loses all HP.\n{u} wins.",
+            "curseddeath": "Weapon of {u} attacks {u}. {u} losses.",
+            "hpandshdeath": "{u} attacks {e}. {e} loses all SH and HP.\n{u} wins.",
+            "challenge": "Challenge",
+            "challenges": "challenges you to the battle.\nDo you accept?",
+            "chall": "{u} challenges {e} for a duel.",
+            "no_weapon": "You don't have the weapon.\nTry to buy it or equip it.",
+            "user_weapon": "Person doesn't have the weapon.\nThey should try to buy it or equip it.",
+            "both_weapon": "You both don't have weapons.\nTry to buy them or equip them."
+        },
+        "give_item": {
+            "is_himself": "You can't give items to yourself.",
+            "confirmation": "Are you sure you want to give {amount} {item} to {user}?",
+            "gave": "You gave"
+        },
+        "give_money": {
+            "is_himself": "You can't give items to yourself.",
+            "no_coins": "You don't have enough coins.",
+            "confirmation": "Are you sure you want to give {amount} {coin} to {user}?",
+            "gave": "You gave"
+        },
+        "help": {
+            "help": "Help"
+        },
+        "hunt": {
+            "fight": "Battle",
+            "info": "Informations",
+            "loaded": "Loaded the Battle Save.",
+            "beaten": "You've beaten",
+            "got": "You got",
+            "sh_raise": "{u} gains 30 SH.",
+            "sh_er": "You can't raise your shield anymore.",
+            "sp_wait": "You need to wait a while.",
+            "time": "time",
+            "times": "times",
+            "bundle": "Bundle",
+            "error": "Error",
+            "empty": "This slot is empty.",
+            "use": "You can use your items",
+            "cancel": "Cancel",
+            "change": "Switch Weapons",
+            "use_wp": "You can switch your weapons",
+            "cur_wp": "Your current weapon is",
+            "reset": "Switching the weapon will reset the spellbooks' Special Power charge.",
+            "equiped": "This weapon is currently equiped.",
+            "warn": "Warning",
+            "run_confirm": "Are you sure you want to run away from the fight?\nThe battle will end and you won't get any rewards.",
+            "ran": "You ran away from the fight.",
+            "tutorial": "This function isn't available in the tutorial.",
+            "save_confirm": "Are you sure you want to save this battle?\nThe battle will end and you won't get any rewards.",
+            "saved": "Saved the battle",
+            "frozen": "Placeholder",
+            "bundlesh": "{u} gains {ash} SH.",
+            "bundlebase": "{u} uses {pw}.",
+            "bundlehp": "{u} loses {ahp} HP.",
+            "regen": "{u} regenerates {ahp} HP.",
+            "weaponreplace": "{uw} has replaced your weapon.",
+            "regen_fail": "{u} doesn't regenerate any HP, because it is full.",
+            "sp_charged": "{uw} has been charged.",
+            "sp_charging": "Raised the charge of {uw} by 1.",
+            "press_any": "Press any button to continue.",
+            "dialogue": "Dialogue",
+            "chest": "Choose one of three chests.",
+            "noweapon": "You don't have any weapon equiped.\nTry to buy it or equip it.",
+            "rewards": "Rewards"
+        },
+        "inventory": {
+            "title": "Inventory of",
+            "self_no_items": "You don't have any items in your inventory",
+            "member_no_items": "User doesn't have any items in their inventory"
+        },
+        "item": {
+            "price": "Price",
+            "sellprice": "Sell price",
+            "tradeable": "Tradeable",
+            "owned": "You own",
+            "weapon": "Weapon",
+            "sword": "Sword",
+            "spellbook": "Spellbook",
+            "trident": "Trident",
+            "ta_title": "Informations about the tool",
+            "cursed": "Cursed",
+            "type": "Type",
+            "attack": "Attack",
+            "power_info": "Informations about the Power",
+            "name": "Name",
+            "description": "Description",
+            "value": "Value",
+            "container": "Container",
+            "bundle": "Bundle",
+            "box": "Box",
+            "contains": "Contains",
+            "smeltable": "Smeltable",
+            "ore": "Ore",
+            "other": "Other",
+            "lvl_req": "Required Level",
+            "after_smelting": "After smelting",
+            "xp": "XP",
+            "fuel": "Fuel per item",
+            "dev": "Development Informations",
+            "in_days": "This item will be available",
+            "satk": "Self Damage",
+            "chance": "Chance",
+            "def": "Bonus SH",
+            "reg": "HP Regeneration",
+            "smw": "Temporary Weapon",
+            "time": "Time Stop",
+            "bp": "Additional Powers",
+            "location": "Location",
+            "command": "Command"
+        },
+        "leaderboards_coins": {
+            "all": "Top 10 users with most coins",
+            "wallet": "Top 10 users with most coins in wallet",
+            "bank": "Top 10 users with most coins in bank",
+            "position": "Your position:"
+        },
+        "leaderboards_xp": {
+            "all": "Top 10 users with most XP",
+            "position": "Your position:"
+        },
+        "quests": {
+            "quests": "Quests",
+            "rewards": "Rewards",
+            "no_quests": "You don't have any quests.",
+            "finished": "Completed quest",
+            "got": "You got",
+            "unlocked": "Unlocked",
+            "daily": "Daily Quests"
+        },
+        "profile": {
+            "profile": "Profile",
+            "general": "General Statistics:",
+            "level": "Level",
+            "creation": "Account creation:",
+            "status": "Account status:",
+            "banned": "Banned:",
+            "your_weapons": "Your equiped weapons:",
+            "your_bundle": "Your bundle:",
+            "fights": "Batlles won:",
+            "search": "Successful searches:",
+            "beg": "Successful begs:",
+            "imtoolazy": "**Statistics**\n*coming soon*\n\nCustom Mobs",
+            "dev": "Development Informations"
+        },
+        "recipe": {
+            "dev": "Development Informations",
+            "recipe": "Recipe for",
+            "amount": "Amount"
+        },
+        "redeem": {
+            "got": "**You got:**",
+            "redeemed": "Redeemed code",
+            "fail": "You have already redeemed this code.",
+            "invalid": "This is invalid code."
+        },
+        "rob": {
+            "shield": "User has a special shield activated.\n\nTutorial on how to break it is [here](https://youtu.be/2mW7-snInTk).",
+            "is_himself": "You can't rob yourself.",
+            "fail0": "You didn't rob anything and you didn't lose anything",
+            "fail1": "For unsuccessful attempt of robbery {user} gets {amount} {coin} from your coins",
+            "succes": "You robbed from"
+        },
+        "sd_dig": {
+            "exists": "This location is already selected as default.",
+            "set": "Selected {place} as default </dig:1188085769647173715> location."
+        },
+        "sd_hunt": {
+            "exists": "This location is already selected as default.",
+            "set": "Selected {place} as default </hunt:1188085772289577042> location."
+        },
+        "sd_search": {
+            "exists": "This location is already selected as default.",
+            "set": "Selected {place} as default </search:1210998667222450276> location."
+        },
+        "search": {
+            "coins": "You wanted to give up and go back, but something shiny caught your attention. You found {coins} {main.coin}.\nYou got {xp} XP.",
+            "searched": "Searched the",
+            "nothing": "You were searching for a long time, but you haven't found anything.",
+            "item": "You were searching every spot and found {amount} {item}.\nYou got {xp} XP.",
+            "chest": "Choose one of three chests.",
+            "empty": "The chest was empty.",
+            "found": "The chest contained:",
+            "shop": "Shop",
+            "notenough": "You don't have enough",
+            "enter_again": "*You can buy {amount} {times} from this merchant. Enter the shop again?*",
+            "time": "time",
+            "times": "times",
+            "bought": "You bought",
+            "fail": "You wanted to give up and go back, but something shiny caught your attention. Turns out those were just animal feces.",
+            "price": "Price"
+        },
+        "sell": {
+            "confirmation": "Are you sure you want to sell {amount} {item} for {cost} {coin}?",
+            "sold": "You sold {amount} {item} for {cost} {coin}"
+        },
+        "settings": {
+            "settings": "Settings",
+            "multiplayer": "**Multiplayer**\nIf the setting is turned on, player can't use any commands where they can interact with others. Player also can't be selected in commands by different users. (Turned on by default)\n\nStatus:",
+            "dev_info": "**Development Informations**\nIf the setting is turned on, player can see aditional informations in some commands. (Turned off by default)\n\nStatus:",
+            "notif": "**DM Notifications**\nIf the setting is turned on, player will get notifications in the DM's about new level etc. (Turned on by default)\n\nStatus:",
+            "language": "**Language**\nThis setting allows player to change the language in which bot is displayed.\nIt is recommended to restart this command after changing this setting.\n\nStatus:"
+        },
+        "skills_change": {
+            "raised": "Raised the skill HP by",
+            "notenough": "You don't have enough skill points.",
+            "already_full": "You can't raise this skill anymore."
+        },
+        "skills_view": {
+            "title": "Skills",
+            "hp": "Bonus HP",
+            "rob": "*soon*",
+            "attack": "*soon*",
+            "magic": "*soon*",
+            "soon": "*soon*"
+        },
+        "slots": {
+            "lost": "You lose",
+            "machine": "Slots machine",
+            "win": "You win"
+        },
+        "shop": {
+            "shop": "Shop"
+        },
+        "smelt": {
+            "tooweak": "This fuel cannot be used to smelt this item.",
+            "notenoughfuel": "You don't have enough fuel.",
+            "level": "Your level is too small to smelt this item.",
+            "nofurnace": "You don't have a Furnace\nTry to buy it.",
+            "smelting": "Smelting",
+            "time": "Time remaining",
+            "smelted": "Smelted",
+            "got": "**You got:**",
+            "baditem": "This item cannot be smelted.",
+            "badfuel": "This fuel doesn't exist.",
+            "notafuel": "This item is not a fuel."
+        },
+        "trade_item": {
+            "trade": "Trade",
+            "you_get": "You get",
+            "you_give": "You give",
+            "confirmation": "Are you sure you want to accept this trade offer?",
+            "no_items": "doesn't have enough of this item.",
+            "you_got": "You got",
+            "you_gave": "You gave",
+            "successful": "Successfully ended the trade.",
+            "is_himself": "You can't trade with yourself.",
+            "and": "and",
+            "same": "You can't trade with the same items.",
+            "both_no_items": "don't have enough items."
+        },
+        "trade_money": {
+            "trade": "Trade",
+            "you_get": "You get",
+            "you_give": "You give",
+            "confirmation": "Are you sure you want to accept this trade offer?",
+            "no_coins": "doesn't have enough coins.",
+            "no_items": "doesn't have enough of this item.",
+            "you_got": "You got",
+            "you_gave": "You gave",
+            "successful": "Successfully ended the trade.",
+            "is_himself": "You can't trade with yourself."
+        },
+        "use": {
+            "map": "Map",
+            "legend": "Map key",
+            "owned": "You already unlocked this location.",
+            "unlocked": "You unlocked",
+            "open": "You opened",
+            "get": "You got"
+        },
+        "withdraw": {
+            "wallet": "Withdrew from bank"
+        }
+    },
+    "dropdown": {
+        "profile": {
+            "label0": "Main Profile",
+            "label1": "Statistics",
+            "label2": "Battle Profile",
+            "label3": "Custom mobs",
+            "desc0": "Informations about balance, level etc.",
+            "desc1": "Informations about successful battles, searches etc.",
+            "desc2": "Informations about weapons, bundle, HP",
+            "desc3": "Informations about Custom mobs profile",
+            "placeholder": "Choose the category"
+        },
+        "quests": {
+            "label0": "Main Quests",
+            "label1": "Daily Quests",
+            "label2": "Event Quests",
+            "label3": "Merchant's Quests",
+            "placeholder": "Choose the type of quests"
+        },
+        "settings": {
+            "label0": "Multiplayer",
+            "label1": "Development Informations",
+            "label2": "DM Notifications",
+            "label3": "Language",
+            "placeholder": "Choose the setting"
+        }
+    },
+    "modals": {
+        "bug": {
+            "write": "Write here.",
+            "sys": "Write the name of the command, system etc.",
+            "other": "Other informations.",
+            "replica": "How to replicate the bug?",
+            "define": "Shortly explain the bug.",
+            "what": "Which element of the bot the bug affects",
+            "report": "Report Bug"
+        },
+        "custommobs_create": {
+            "title": "Create a Custom Mob",
+            "title2": "Edit a Custom Mob",
+            "label0": "SID",
+            "placeholder0": "Mob name written in lowercase (green_slime)",
+            "label1": "Display name",
+            "placeholder1": "Mob name displayed in fights (Green Slime)",
+            "label2": "Attack values",
+            "placeholder2": "Attacks split by commas (1,2,3)",
+            "label3": "HP",
+            "placeholder3": "HP value (100)",
+            "label4": "Encounter message",
+            "placeholder4": "Leave empty for default. To use user's name use {u} to use mob's name use {e}"
+        },
+        "load_fight": {
+            "header": "Load a Battle Save",
+            "code": "Code",
+            "write": "Enter a code here."
+        },
+        "rate": {
+            "opinion": "Rate",
+            "content": "Rate the bot",
+            "write": "Write here."
+        },
+        "search": {
+            "title": "Go to the Page",
+            "label": "Write page number",
+            "placeholder": "Number from 1 to"
+        },
+        "redeem": {
+            "title": "Reedem a code",
+            "label": "Code",
+            "placeholder": "Enter a code here"
+        }
+    },
+    "other": {
+        "no_account": {
+            "title": "Warning",
+            "description": "This user didn't create an account."
+        },
+        "mperr": {
+            "title": "Warning",
+            "description": "This user has multiplayer turned off."
+        },
+        "pmerr": {
+            "title": "Warning",
+            "description": "You have multiplayer turned off."
+        },
+        "invalid_value": {
+            "description": "Provide an amount that is a positive integer or \"all\""
+        },
+        "too_small_value": {
+            "description": "Amount needs to be a positive integer."
+        },
+        "not_enough_coins": {
+            "description": "You don't have enough coins."
+        },
+        "not_enough_items": {
+            "description": "You don't have enough items."
+        },
+        "bad_item": {
+            "description": "This item doesn't exist."
+        },
+        "missing_recipe": {
+            "description": "Recipe for this item doesn't exist."
+        },  
+        "unavailable_recipe": {
+            "description": "This recipe is unavailable."
+        },
+        "untradeable_item": {
+            "description": "This item cannot be traded."
+        },
+        "bot": {
+            "description": "Bot cannot be selected as `member` in this command."
+        },
+        "pages": {
+            "page": "Page"
+        },
+        "levels": {
+            "increase": "Increased the limit of Custom Mobs to",
+            "rewards": "Rewards",
+            "level": "You got {a} level!"
+        }
+    },
+    "items": {
+        "name": {
+            "0000": "Test Item",
+            "0001": "Easter Trophy 2022",
+            "0002": "Clock",
+            "0003": "Hammer",
+            "0004": "Beer",
+            "0005": "Coin",
+            "0006": "Premium Bundle",
+            "0007": "Placeholder",
+            "0008": "Stone",
+            "0009": "Sand",
+            "0010": "Cash",
+            "0011": "Green Essence",
+            "0012": "Blue Essence",
+            "0013": "Pink Essence",
+            "0014": "Golden Essence",
+            "0015": "Morex Essence",
+            "0016": "Test Sword",
+            "0017": "Wooden Sword",
+            "0018": "Easter Trophy 2023",
+            "0019": "Morex Horn",
+            "0020": "Golden Crown",
+            "0021": "Test Bundle",
+            "0022": "Common Box",
+            "0023": "Iron Pickaxe",
+            "0024": "Iron Ore",
+            "0025": "Iron",
+            "0026": "Morkour Prototype",
+            "0027": "Wood",
+            "0028": "Earth",
+            "0029": "Coal",
+            "0030": "Stone Sword",
+            "0031": "Iron Sword",
+            "0032": "Diamond Sword",
+            "0033": "Test Spellbook",
+            "0034": "Death Spellbook",
+            "0035": "Life Spellbook",
+            "0036": "Birthday Cake",
+            "0037": "Birthday Spellbook",
+            "0038": "Birthday Balloon",
+            "0039": "Great Birthday Sword",
+            "0040": "Second Birthday Trophy",
+            "0041": "Birthday Gift",
+            "0042": "Gold Ore",
+            "0043": "Gold",
+            "0044": "Diamond Ore",
+            "0045": "Diamond",
+            "0046": "Rare Box",
+            "0047": "Bread",
+            "0048": "Beans",
+            "0049": "Milk",
+            "0050": "Apple",
+            "0051": "Ruby",
+            "0052": "Health Potion",
+            "0053": "Scorpion Claw",
+            "0054": "Cactus",
+            "0055": "Golden Sword",
+            "0056": "Garbage",
+            "0057": "Hot Dog",
+            "0058": "Stary's Trophy",
+            "0059": "Coconut",
+            "0060": "Lemonade",
+            "0061": "Shell",
+            "0062": "Corn",
+            "0063": "Trident",
+            "0064": "Old Note",
+            "0065": "Map",
+            "0066": "Heksa's Trident",
+            "0067": "Desert Orb",
+            "0068": "Glass",
+            "0069": "Desert Crystal",
+            "0070": "Store Orb",
+            "0071": "Store Keys",
+            "0072": "Abandoned House Orb",
+            "0073": "Crowbar",
+            "0074": "Beach Orb",
+            "0075": "Beach Ball",
+            "0076": "Void Crystal",
+            "0077": "Port Ticket",
+            "0078": "Bone",
+            "0079": "Basement Orb",
+            "0080": "Dagger of Darkness",
+            "0081": "Knife",
+            "0082": "Jar",
+            "0083": "Crystal",
+            "0084": "Destruction Crystal",
+            "0085": "Blackberry",
+            "0086": "Mysterious Note",
+            "0087": "Old Map",
+            "0088": "Golden Ring",
+            "0089": "Metal Shard",
+            "0090": "Easter Trophy 2024",
+            "0091": "Mineshaft Coupon",
+            "0092": "Torch",
+            "0093": "Spider Token",
+            "0094": "Cave Orb",
+            "0095": "Golden Skull",
+            "0096": "Skull",
+            "0097": "Candy Corn",
+            "0098": "Pumpkin",
+            "0099": "Jack o' Lantern",
+            "0100": "Evil Pumpkin Sword",
+            "0101": "Witch Spellbook",
+            "0102": "Icicle",
+            "0103": "Ice",
+            "0104": "Icy Essence",
+            "0105": "Snow",
+            "0106": "Gingerbread",
+            "0107": "Candy Cane",
+            "0108": "Carrot",
+            "0109": "Green Present",
+            "0110": "Blue Present",
+            "0111": "Red Present",
+            "0112": "Christmas Shovel",
+            "0113": "Snowy Dusk",
+            "0114": "Icy Dagger",
+            "0115": "Winter Orb",
+            "0116": "Vines",
+            "0117": "Easter Trophy 2025",
+            "0118": "Egg",
+            "0119": "Green Egg",
+            "0120": "Blue Egg",
+            "0121": "Pink Egg",
+            "0122": "Golden Egg",
+            "0123": "Easter Basket",
+            "0124": "Sausage",
+            "0125": "Cupcake",
+            "0126": "Chocolate Bunny",
+            "0127": "Vine Spellbook",
+            "0128": "Egg Spellbook",
+            "0129": "Cobweb",
+            "0130": "Pink Ribbon",
+            "0131": "Spider Shard",
+            "a000": "Icy Spike",
+            "i001": "Furnace",
+            "i002": "Workbench",
+            "i003": "Cauldron"
+        },
+        "description": {
+            "0000": "Test LOL\nItem used to test the shop.",
+            "0001": "Trophy available during Easter of 2022.",
+            "0002": "Normal useless Clock.",
+            "0003": "Really important item in crafting.",
+            "0004": "Beer",
+            "0005": "Normal Coin which can be found everywhere, but as an item. Who thought that it would be a good idea???",
+            "0006": "Bundle containing a couple of unique items. Reward for buying premium.",
+            "0007": "Placeholder",
+            "0008": "Common item which can be found while mining and it's part of simple items.",
+            "0009": "Material which can be found in a desert. It can be smelted to create Glass.",
+            "0010": "Currency commonly used in southeastern Erim, but in Cetres Bay it's useless.",
+            "0011": "Essence coming from Green Slime. It doesn't have much value, because unlike other essences it cannot be used to create any potions.",
+            "0012": "Essence coming from Blue Slime. It's not very useful for alchemy, since it can only be used to create potion causing itching.",
+            "0013": "Essence coming from Pink Slime. It's really useful since it is an ingredient of the Health Potion and many other potions.",
+            "0014": "Essence coming from Golden Slime. Really hard to get potion ingredient which increases power of potions causing harm.",
+            "0015": "Essence coming from Morex. Item desired by the strongest of wizards, because it hasn't been researched yet and may have an unknown potential.",
+            "0016": "Mythic sword which, according to legends, was wielded by the creator of the swords, long time before Primordial Slime was discovered.",
+            "0017": "Cheap knock off version of durable sword, which can be bought at shops. Manufacturer recommends not using it for fighting and doesn't take any responsibility for any harm caused by using it improperly.",
+            "0018": "Trophy available during Easter of 2023.",
+            "0019": "Horn coming from Morex. No one has researched it yet. Despite this some people believe that if you blew into it the Slime army would come to fight on your side.",
+            "0020": "Golden Crown worn by rulers and Golden Slime. No one knows why only this Slime wears human clothing.",
+            "0021": "All test items in one place",
+            "0022": "Easy to find box containing a few basic items and in rare cases Diamonds. Who left them there???",
+            "0023": "This one and only pickaxe is used by humans across whole Erim. For some reason no one sees any advantages of having a better pickaxe or different mining tool.",
+            "0024": "Ore which can be found in the deeper layers of underground. Smelting it doesn't require much effort.",
+            "0025": "Metal which everybody has in their homes. It is used literally everywhere, because of how easy it is to get.",
+            "0026": "Failed weapon made by symberian scientist Prachd Tagkour. It is made from diamond blade and iron handle. The weapon became cursed after condensed Pink Essence was used as the gem and because blade was reinforced with Morex Horn. Tagkour was killed by unknown to this day killer who used that sword.",
+            "0027": "Easy to find material from the Forest. With stone it is used to build almost every building in Semerian Empire.",
+            "0028": "Item present in almost every country. It doesn't have a use except that plants grow in it.",
+            "0029": "It is used to smelt partially challenging resources. It can be mined pretty easily since it can be found just below the earth layer.",
+            "0030": "Weapon wielded by beginning warriors and inexperienced adventurers. Main source of damage isn't the sharpness of the blade, but its weight. If I'm being honest this weapon is just dull.",
+            "0031": "Despite better quality from stone counterpart it isn't much stronger than it. Most popular pick amongst amateur warriors and adventurers.",
+            "0032": "Weapon used by professional warriors and adventurer. Weapon is forged with addition of Iron and Gold.",
+            "0033": "First successful Spellbook made by a human. Its creator Kerim Morex decided to destroy it, because it was too powerful. Despite that one being still owns it.",
+            "0034": "Cursed Spellbook made by wizard, who wanted to be immortal by taking life from different beings. He didn't expect that it would take all of his life.",
+            "0035": "Magic book created by a healer for mages, so they can easily heal during fight. The knowledge on how to create it disappeared with the healer.",
+            "0036": "\u0022Who doesn't like the cakes?\u0022",
+            "0037": "\u0022I always wanted to hit something with birthday present. Am I the only one?\n\nI didn't expect that I'd get a Spellbook.\u0022",
+            "0038": "\u0022Why not throw them at people\u0022",
+            "0039": "\u0022Sword so big and heavy it's hard to hold it. You should use it as the decoration.\u0022",
+            "0040": "\u0022Thanks for being here\n\n~ Morex",
+            "0041": "\u0022Since it is my birthday shouldn't people give me gifts?\u0022",
+            "0042": "Ore which can be easily found in the Desert. Smelting it doesn't require big effort.",
+            "0043": "Metal considered as valuable. It is used to make jewelry and coins. Only Bankers know how to create Golden Coins from this Ingot.",
+            "0044": "Ore which can be found deep in the underground. Smelting it requires medium effort.",
+            "0045": "Crystal with a vast variety of usages. From weapons to jewelry and magic.",
+            "0046": "Box containing items related to mining. It's given to beggars for them to go away.",
+            "0047": "None",
+            "0048": "None",
+            "0049": "None",
+            "0050": "Fruit which can be found in the forest. It's given by mothers to their children since it's their favourite.",
+            "0051": "Crystal which can be found in the Desert. It's really valuable, because of its magic properties. Most of the Desert Kingdom income comes from Ruby export.",
+            "0052": "Potion Regenerating HP during fight. It's fairly weak for it to be legally sold at shops and to save up on production costs.",
+            "0053": "Drops from Desert Scorpions. Their price really dropped after Scorpion plague in after III Royal War.",
+            "0054": "One of a few plants growing on the Desert. Some people tried to take advantage that cactuses prick to create a weapon. They disappeared in unexplained circumstances.",
+            "0055": "Weapon used in many duels and as a decoration. It's forged with addition of Iron.",
+            "0056": "None",
+            "0057": "None",
+            "0058": "None",
+            "0059": "None",
+            "0060": "None",
+            "0061": "None",
+            "0062": "None",
+            "0063": "i still don't want to put anything here",
+            "0064": "None",
+            "0065": "Map showing current borders of countries in Cetres Bay.",
+            "0066": "weapon of leader of mermaids or something\n\nthat's placeholder.",
+            "0067": "Magic Orb unlocking the access to the Desert. Disappears after it is used.",
+            "0068": "It is created by smelting Sand in the Furnace. It's used to create magic Orbs and glass panes.",
+            "0069": "Contrary to its name it can't be found on the Desert. It can be found somewhere in the Forest. It is used to craft Desert Orb.",
+            "0070": "None",
+            "0071": "None",
+            "0072": "None",
+            "0073": "None",
+            "0074": "None",
+            "0075": "None",
+            "0076": "Crystal which can be found in the Void. No one knows why it's there. No one knows what the Void is. If the Void is empty then why's there a Crystal?",
+            "0077": "None",
+            "0078": "None",
+            "0079": "None",
+            "0080": "None",
+            "0081": "None",
+            "0082": "None",
+            "0083": "None",
+            "0084": "None",
+            "0085": "None",
+            "0086": "None",
+            "0087": "None",
+            "0088": "None",
+            "0089": "Metal Shard coming from Kusel Skarrd's machine. Mom told him that he should give up on his dreams of being machine creator and that he should focus on family shop in the Forest.",
+            "0090": "Trophy available during Easter of 2024.",
+            "0091": "Coupon which allows you to enter the Mineshaft. Sometimes you can find it in the Treasure in the same Mineshaft. Item owned by miners.",
+            "0092": "None",
+            "0093": "None",
+            "0094": "None",
+            "0095": "Skull made out of gold. Elegant and expensive decoration for Halloween.",
+            "0096": "Normal Skull. They don't pay me enough for me to act like a biologist. I have no idea to what this skull belonged.",
+            "0097": "Popular candy given to kids during Halloween. Wait, what do you mean by I'm too old to go trick or treating??",
+            "0098": "Big orange vegetable, which grows only in October. It's somewhat valuable during every other month.",
+            "0099": "Pumpkin with carved eyes and mouth with a candle inside. Popular Halloween decoration. Wait a second... Candles don't emit blue light.\nPumpkin possessed by evil spirit who was sealed in this body.",
+            "0100": "A long time ago some wizard decided that he will use Jack o' Lantern to create a sword. In the result another cursed weapon was created which is pretty popular.",
+            "0101": "Book used by a Witches to use magic. Warriors successfully changed it into the weapon.",
+            "0102": "Sharp icy item in the shape of cone. Some adventurers claim that eating it gives you temporary weapon. No one knows if they are seriousy or if the cold is making them crazy.",
+            "0103": "It is created when water freezes. There are people who call themselves Ice Wizards. In reality they are just Water Wizards who can't control other states of water.",
+            "0104": "Essence coming from Icy Slime. It has the same properties as the Blue Essence since Icy Slime is a variant of Blue Slime",
+            "0105": "Snow you either love it or hate it. When it appears outside people know that Winter Festival is coming soon, which is happening every year.",
+            "0106": "Cookie made specifically for Christmas. Kids love to eat it.",
+            "0107": "Candy in a shape of cane which is made specifically for Christmas. Everybody loves sugar.",
+            "0108": "Long orange vegetable. Supposedly improves eyesight, but after eating a lot of them I still need to wear my glasses.",
+            "0109": "Present given under the christmas tree for adventurers. Always the same one in the same green packaging.",
+            "0110": "Present given under the christmas tree for miners to sweeten their lifes. Every miner spends Christmas with thier family.",
+            "0111": "Present given under the christmas tree for warriors. Many of the warriors spend Christmas away from home protecting villages.",
+            "0112": "Decoration which can be found in the house of every miner. They love to flex with their work.",
+            "0113": "Weapon as cool as its name. Snowy blade perfectly cuts through enemies. How did they force snow to work like that..?",
+            "0114": "Elegant dagger made out of Ice. While holding it you don't feel its cold. Creating a dagger like that required great craftsmanship.",
+            "0115": "Fragile crystal Orb which unlocks access to Winter Glade. It is said that Glade looks most beautiful during winter.",
+            "0116": "Plant which often grows on old walls. It is hard to remove, because of its sharp thorns.",
+            "0117": "Trophy available during Easter of 2025.",
+            "0118": "Common egg laid by chickens. Important ingredient of many doughs.",
+            "0119": "Green egg, which can be found in the Forest during Easter. Many people were wondering how they are appearning there. Wizards were telling it is because of some magic properties of the trees. Some of the smartest people were saying that eggs come from animals and that their green color is coming from the polluted water. People who live there are saying that every year they are put there by the Gregory the Old.\nThey never came to consensus.",
+            "0120": "Blue egg which can be only found in Green Eggs. Why there is another egg in an egg???",
+            "0121": "Pink egg which could be gotten from Pink Bunny Slimes. Currently it is impossible to obtain them this way, because this type of slime is now extinct. They are used as a reward for quests. Different mystery is that how they are getting so many of these eggs.",
+            "0122": "Egg made out of gold which can be found in different ruins. Another piece of evidence that people who were living on these terrains really liked weird decorations made out of gold.",
+            "0123": "Basket containing items which every family is buying for Easter. Its price really increases which the coming of the Easter. Person who saw that convinced people to buy this item earlier to get it cheaper. This resulted in massive increase of price of this item during Winter Festival.",
+            "0124": "Sausage made from natural meat. Its rich flavor can't be replicated with artificial alternatives crafted by Wizards and cheap sausages from Semerian Empire.",
+            "0125": "Cupcake which everyone has eaten at least once while visiting their grandma. It can be found in equipment of warrior who cannot afford the potions.",
+            "0126": "Sculpture made out from chocolate in the shape of bunny. Expensive snack bought only for Easter.",
+            "0127": "Great Witch Arella joined Vines with Life Spellbook. In the result Spellbook was created which had damage from the thorns and healing from Life Spellbook. Unfortunately with her death the knownledge how to use full potential of this Spellbook has vanished.",
+            "0128": "Spellbook created as a joke. Really.\nFights where it is used are really annoying. For both sides. You shouldn't use it if you eggspect to have a real fight.",
+            "0129": "Placeholder",
+            "0130": "Placeholder",
+            "0131": "Purple Shard that got its name from the fact that it is only found near places with a lot of spiders. It is wanted by many because of its durability.",
+            "a000": "No one should see this, but if you managed to see this congratulations. By the way the guy who makes the item descriptions is called Braav. Do whatever you like with this information.",
+            "i001": "This Furnace, right?",
+            "i002": "Workbench on top!!!",
+            "i003": "Cauldron exits."
+        },
+        "rarity": {
+            "common": "<:26aa:1275091644911325340> Common",
+            "uncommon": "<:1f7e2:1275091638678454312> Uncommon",
+            "rare": "<:1f535:1275091643837579405> Rare",
+            "epic": "<:1f7e3:1275091640251318403> Epic",
+            "legendary": "<:1f7e1:1275091637244268656> Legendary",
+            "mythic": "<:1f534:1275091642021576714> Mythic",
+            "premium": "<:1f7e0:1275091635801428062> Premium"
+        },
+        "powersname": {
+            "0033": "Test Blast",
+            "0034": "Life Stealing",
+            "0035": "Health Regeneration",
+            "0037": "Birthday Blessing",
+            "0101": "Witch Boom",
+            "0127": "Thorn Blast",
+            "0128": "Eggcelent Regeneration"
+        },
+        "powersdescription": {
+            "0033": "Powerful blast dealing damage.",
+            "0034": "Powerful attack that takes HP from enemy and gives it to the user.",
+            "0035": "Regenerates health of the user.",
+            "0037": "Regenerates health of the user.",
+            "0101": "Powerful blast dealing damage.",
+            "0127": "Powerful blast dealing damage.",
+            "0128": "Regenerates health of the user."
+        },
+        "map_legend": {
+            "0065": "<:MX_DesertKingdom:1173061809050226770> - Desert Kingdom\n<:MX_Gremtal:1173061811436802118> - Port Princedom of Gremtal \n<:MX_Empire:1173061814146306048> - Semerian Empire \n<:MX_Polana:1173061812883824753> - Polana Empire \n<:MX_SlimeValley:1173061821477957742> - Slime Valley\n<:MX_Symberg:1173061817308815432> - Symberg\n<:MX_Pendmor:1173061818973966466> - Republic of Pendmor\n<:MX_Island:1173061815966634034> - Normal Island\n<:MX_Water:1173061822945955940> - Seas, Oceans etc.\n<:MX_InlandWater:1173061825156366386> - Lakes, Rivers etc.",
+            "0087": "<:MX_DesertKingdom:1173061809050226770> - Desert Kingdom\n<:MX_Gremtal:1173061811436802118> - Port Princedom of Gremtal \n<:MX_Polana:1173061812883824753> - Polana Empire \n<:MX_SlimeValley:1173061821477957742> - Slime Valley\n<:MX_Symberg:1173061817308815432> - Symberg Kingdom\n<:MX_Water:1173061822945955940> - Seas, Oceans etc.\n<:MX_OldInlandWater:1173064818090061985> - Lakes, Rivers etc."
+        },
+        "notetitle": {
+            "0064": "Legenda o powstaniu \u015awiata",
+            "0086": "Lista Zakup\u00f3w"
+        },
+        "notecontent": {
+            "0064": "Na pocz\u0105tku nie by\u0142o nic.\nIstnia\u0142a jedynie istota nazwana przez uczonych Przeznaczeniem. Dzi\u0119ki w\u0142asnej woli stworzy\u0142a wielki i pi\u0119kny \u015bwiat, kt\u00f3ry by\u0142 jej pos\u0142uszny. Po jakim\u015b czasie zobaczy\u0142a, \u017ce zarz\u0105dzanie ca\u0142ym \u015bwiatem jest bardzo wymagaj\u0105cym zaj\u0119ciem, wi\u0119c aby siebie odci\u0105\u017cy\u0107 stworzy\u0142a bog\u00f3w, kt\u00f3rzy mieli strzec r\u00f3\u017cnych element\u00f3w tego \u015bwiata. Jednak nied\u0142ugo po stworzeniu cz\u0119\u015b\u0107 bog\u00f3w obr\u00f3ci\u0142a si\u0119 przeciwko stw\u00f3rcy. Rozpocz\u0119\u0142a si\u0119 wielka wojna. Wielu bog\u00f3w zgin\u0119\u0142o oraz du\u017ca cz\u0119\u015b\u0107 ziemi zosta\u0142a zniszczona. Przeznaczenie i cz\u0119\u015b\u0107 pos\u0142usznych jej bog\u00f3w zwyci\u0119\u017cyli w konflikcie, lecz wojny na ziemi nie usta\u0142y. Ludzie walczyli ze sob\u0105 obwiniaj\u0105c swoich wrog\u00f3w za gniew bog\u00f3w. Przeznaczenie, \u017ceby za\u017cegna\u0107 konfliktom, rozkaza\u0142a bogom by stworzyli Opiekun\u00f3w - ludzi, kt\u00f3rych zadaniem by\u0142o przewodzenie ludzko\u015bci dobr\u0105 drog\u0105. Opiekunowie, po stworzeniu, szybko zako\u0144czyli wszystkie konflikty i pozak\u0142adali pa\u0144stwa na terenach zaj\u0119tych przez nich. Nast\u0105pi\u0142 pok\u00f3j, lecz Przeznaczenie musia\u0142o odej\u015b\u0107. Przed swoim odej\u015bciem przekaza\u0142a bogom w\u0142adz\u0119 nad \u015bwiatem i odesz\u0142a do krain jeszcze nie odkrytych.",
+            "0086": "- Bochenek Chleba\n- 2kg Jab\u0142ek\n- 300g - Szynki\n- 50dag Sera\n- 1t Orzech\u00f3w\n- 1 Kryszta\u0142 Wody\n- 1 Niewinna Istota\n- 1 N\u00f3\u017c Rytualny\n- 5 S\u0142oik\u00f3w\n\nKU CHWALE **JEJ**"
+        }
+    },
+    "bosses": {
+        "name": {
+            "0": "Werra"
+        }
+    },
+    "bossrooms": {
+        "name": {
+            "0": "placeholder"
+        }
+    },
+    "changelogs": {
+        "2.0.0": "Rewritten the bot to support slash commands.\nChanged the name and avatar of the bot\n\nAdded **/hunt** command `prototype`",
+        "2.0.1": "Added new drops for Golden Slime and Morex.\nAdded command **/use** thanks to it you can use some items.\nAdded Common Box as reward from **/beg**",
+        "2.0.2": "Added four new commands: **/rate**, **/trade for_coins**, **/trade for_items**, **/give item**.\nEaster Trophy 2023 is not longer in the shop. Pickaxe was added to the shop.",
+        "2.0.3": "Added two new commands:\n- **/dig** - Requires Pickaxe. You can get iron ore, coal, sand, earth and stone\n- **/smelt** = Requires Furnace(in the shop for 2500 coins). Uses Coal to smelt ores to the materials.",
+        "2.0.4": "Added commands:\n- /bug_report\n\nReworked commands: /hunt:\n- Added shield which you can rise up to 3 times during the fight\n- Added Super Attack (available only for spellbooks)\n- Added Spellbooks\n\nNew attribute for tools `cursed`. Cursed weapons have 40% chance of losing a battle with every use.\n\nNew items:\n- Stone Sword\n- Iron Sword\n- Diamond Sword\n- <:MX_TestSpellbook:1132424214973001728> Test Spellbook\n- <:MX_DeathSpellbook:1133016270158188544> Death Spellbook (cursed)\n- <:MX_LifeSpellbook:1133016233881640981> Life Spellbook\n\nCurrently you can only get <:MX_LifeSpellbook:1133016233881640981> Life Spellbook (special reward on /beg)\n\nUpdated slime textures:\n<:MX_GreenSlime:1128635705304830073><:MX_BlueSlime:1128635752801116191><:MX_PinkSlime:1128635907998765116><:MX_YellowSlime:1130997302404853872><:MX_Morex:1123906643948736532>",
+        "2.0.4.2": "Added commands:\n- /beta\n\nBugfixes:\n- MX_ERR230712.001",
+        "2.0.4.3": "Added commands:\n- /event info\n\nUpdated items textures:\n- <:MX_Placeholder:1083403693556248646> Placeholder -> <:MX_Placeholder:1133387132766003210> Placeholder\n\nBugfixes:\n- MX_ERR230712.002\n- MX_ERR230712.003",
+        "2.0.4.4": "Added commands:\n- /profile\n\nAdded leveling system.\n\nNew items:\n- Birthday Cake\n- Birthday Spellbook\n- Birthday Balloon\n- Great Birthday Sword\n- Second Birthday Trophy\n- Birthday Gift",
+        "2.0.4.5": "Added commands:\n- /craft\n- /recipes\n\nAdded crafting system:\n- To use /craft command you need <:MX_Placeholder:1133387132766003210> Workbench\n- Every recipe requires 1 <:MX_Hammer:1040924140141547611> Hammer\n- /recipes commands gives informations about item's recipe\n\nNew items:\n- <:MX_Placeholder:1133387132766003210> Gold Ore\n- <:MX_Placeholder:1133387132766003210> Gold\n- <:MX_Placeholder:1133387132766003210> Diamond Ore\n- <:MX_Placeholder:1133387132766003210> Diamond\n- <:MX_Placeholder:1133387132766003210> Workbench\n\nChanged ID of <:MX_Placeholder:1133387132766003210> Furnace:\nahh1 -> i001",
+        "2.0.4.6": "Reworked commands:\n- /item\n- /recipes\n\nAdded two new types of Containers:\n- Bundles\n- Boxes",
+        "2.0.4.7": "Reworked command:\n- /inventory",
+        "2.1.0": "**Added commands:**\n- /search\n- /set_default\n- /credits\n- /equipment\n- /redeem\n**Other changes:**\n- Bugfixes\n- Updated commands\n- Updated fighting system\n- Updated smelting system\n- Added searching system\n- Many smaller changes.\n- Bugfixes.\n- Added many items\n\n**Information:**\nThe update is too big, so I couldn't finish it. I decided to delay part of the features to updates from 2.1.1 to 2.1.5. I'll try to do them as fast as possible\nkolpa01",
+        "2.1.1": "**Added commands:**\n- /fight\n\nAdded fights with other users. They work almost identical to the system from /hunt. Both systems will be unified in the next update.\n\n**Bugfixes:**\n- Only the amount of XP was visible after smelting was visible without any clear informations about what is it for.\n- Replaced warning message after choosing wrong fuel in /smelt\n- People on /leaderboards were displayed as Denis\n- Message of death when user didn't have any SH said that they lost all SH and HP.",
+        "2.1.1.2": "**New features:**\n- Added player icons\n\n**Bugfixes:**\n- Incorrect names were displayed in /fight.\n- User mention was still visible after accepting the fight\n- Starting fight displayed incorrect look of SH",
+        "2.1.2": "Updated commands:\n- /profile\n- /recipe\n\nOther changes:\n-Added new UI\n-Added Progress bars\n-Updated a few textures\n\nBugfixes:\n- /leaderboard was not working",
+        "2.1.2.2": "Updated remaining UI\n\nChanged attack of a few weapons\n\nBugfixes:\n- Incorrectly displaying needed items in /craft\n- /leaderboard was not working\n- Map had the wrong description",
+        "2.1.3": "**Added:**\n- First quests chapter\n- New mining system\n\n**Other changes:**\n- Balanced /search\n- Updated /fight\n- Updated arrows in the commands\n- Account no longer will be created if user isn't the author of the command\n- Bugfixes",
+        "2.1.3.2": "Added command:\n- /settings\n\nBugfixes",
+        "2.1.3.3": "**Updated commands:**\n- /shop\n- /search\n- /item\n- /recipes\n**Smaller changes:**\n- Updated many items\n- Added new recipe\n- Added Desert on /search\n- Bugfixes",
+        "2.1.3.4": "**Added commands:**\n- /equipment bundle equip\n- /equipment bundle unequip\n- /set default hunt\n- /custommobs create\n- /custommobs view\n\n**Other changes:**\n- Added Custom Mobs\n- Added Bundle\n- Added fighting tutorial\n- Bugfixes",
+        "2.1.3.5": "**Added command:**\n- /set default dig\n**Updated commands:**\n- /dig\n\n**Other changes:**\n- Added mining tutorial\n- Updated Custom Mobs\n- New Items\n- Bugfixes",
+        "2.1.3.6": "**Updated command:**\n- /leaderboard\n\n**Other changes:**\n- Updates textures and texts from NPCs",
+        "2.1.3.7": "**Updated command:**\n- /custommobs create\n\n**Other changes:**\n- Slightly updates fighting system\n- Added new textures\n- Bugfixes",
+        "2.1.4": "Slightly updated commands\nA few recipes are unavailable\nBugfixes",
+        "2.1.5": "Added everything related to the first part of Halloween event.",
+        "2.1.5.2": "Added new weapons\nUpdated Enlenna's shop\nBugfixes",
+        "2.1.5.3": "Balanced Spooky Forest on /search.",
+        "2.1.5.4": "Spooky Forest and Scary Mineshaft are no longer available.",
+        "2.2.0": "**Added commands:**\n- /skills view\n- /skills change\n- /slots\n**Other changes:**\n- Updated all commands\n- Transtaled the bot to english and added ability to use different languages\n- Added couple of new quests\n- Added new merchant in the forest\n- Added Cave to /search\n- Added ability to edit Custom Mobs\n- New items\n- New recipes\n- Updated a few textures\n- Battle saves are now on version 1\n- Bugfixes",
+        "2.2.1": "**Added command:**\n- /christmas daily\n**Other changes:**\n- New event related locations\n- New christmas and winter themed items\n- Bugfixes",
+        "2.2.1.2": "Balance changes\nBugfixes",
+        "2.2.1.3": "Added new item\nBugfixes",
+        "2.2.1.4": "Removed command\nBugfixes",
+        "2.2.2": "**Updated commands:**\n- /use\n- /item\n\n**Other changes:**\n- Bugfixes",
+        "2.2.3": "**Updated commands:**\n- /quests\n**Other changes:**\n- Added Daily Quests",
+        "2.2.4": "**Updated commands:**\n- /quests\n- /changelog\n**Other changes:**\n- Added Winter Glade on /search\n- Bugfixes",
+        "2.2.5": "**Updated commands:**\n- /dig\n- /search\n**Other changes:**\n- Added Overgrown Mineshaft to /dig\n- Updated daily quests\n- Added items related to Easter event\n- Bugfixes",
+        "2.2.5.2": "**Updated commands:**\n- /inventory\n**Other changes:**\n- Easter event has ended",
+        "2.3.0": "**Added commands:**\n- /leaderboard coins\n- /leaderboard xp\n**Updated commands:**\n- /craft\n- /dig\n- /event\n- /give item\n- /recipe\n- /search\n- /slots\n- /smelt\n- /trade for_coins\n- /trade for_item\n**Removed command:**\n- /leaderboards\n**Other changes:**\n- Added Event system\n- Updated daily quests\n- Updated Pit on /dig\n- Updated textures\n- Added items\n- Bugfixes"
+    },
+    "dig": {
+        "name": {
+            "pit": "Pit",
+            "mineshaft": "Mineshaft",
+            "scarymineshaft": "Scary Mineshaft",
+            "icychasm": "Icy Chasm",
+            "overgrownmineshaft": "Overgrown Mineshaft"
+        }
+    },
+    "hunt": {
+        "name": {
+            "training_arena": "Training Arena",
+            "slime_valley": "Slime Valley",
+            "snowy_peaks": "Snowy Peaks"
+        }
+    },
+    "merchants": {
+        "name": {
+            "0": "Suspicious Merchant",
+            "1": "Roman",
+            "2": "Cashier",
+            "3": "That guy from the beach",
+            "4": "Possessed Old Man",
+            "4.1": "Possessed Old Man",
+            "5": "AMOGUS",
+            "6": "Kusel Skarrd",
+            "7": "Witch Enlenna",
+            "8": "Witch Ilianna"
+        },
+        "bought": {
+            "0": ["Perfect choice..."],
+            "1": ["Great."],
+            "2": ["Finally."],
+            "3": ["Thank you very much!!!"],
+            "4": ["Use this for the glory **god**"],
+            "4.1": ["Use this for the glory **god**"],
+            "5": ["Use this for the glory **god**"],
+            "6": ["Perfect choice. Thank you for buying it!"],
+            "7": ["Thanks cutie~"],
+            "8": ["Thank you very much..."]
+        },
+        "question": {
+            "0": ["Hello adventurer...\nAre you interested in my offer..?"],
+            "1": ["Hello adventurer!\nDo you want to buy anything?"],
+            "2": ["What?"],
+            "3": ["I recommend the corn!", "Icy coffee- Oh do you want to buy anything?"],
+            "4": ["End is near... No one can hide from the wrath of **god**.", "Oh the ruler of this world... Save your servant..."],
+            "4.1": ["End is near... No one can hide from the wrath of **god**.", "Oh the ruler of this world... Save your servant..."],
+            "5": ["Hi"],
+            "6": ["Good morning.\n\nWe meet again... Do you want anything from my shop?"],
+            "7": ["Hi cutie\nI just finished stocking up. Maybe you'll come to buy something?"],
+            "8": ["Hello...\nCould you come to my store..? I tried to make it as good as I could... If you don't want to I understand that..."]
+        },
+        "inshop": {
+            "0": ["Choose what you desire..."],
+            "1": ["Choose something from my offer."],
+            "2": ["Take anything you want and go away."],
+            "3": ["What do you want?"],
+            "4": ["I didn't see you... Take 3 items... **Maybe they will turn out useful for you...**"],
+            "4.1": ["I didn't see you... Take 3 items... **Maybe they will turn out useful for you...**"],
+            "5": ["I didn't see you... Take 3 items... **Maybe they will turn out useful for you...**"],
+            "6": ["This shop is family business. It's not like I wanted to do that.", "Take something.", "I'd rather be the constructor...", "Take something cool..."],
+            "7": ["What do you think of new stuff?\nI saw you fighting those monsters, so I chose weapons just for you~"],
+            "8": ["Look around for a while... Maybe you'll find something you'd like..."]
+        },
+        "left": {
+            "0": ["*sigh*... Alright...\nIf you don't want anything I can't do anything...\n**But remember... Don't involve in the stuff that isn't about you...**"],
+            "1": ["No? Nara."],
+            "2": ["Then why are you bothering me?!"],
+            "3": ["*sad noises*"],
+            "4": ["..."],
+            "4.1": ["..."],
+            "5": ["..."],
+            "6": ["Bye!\nGood luck on your way!"],
+            "7": ["Bye!\nHappy Halloween~"],
+            "8": ["Hah... No problem... Like who would want to visit a shop like that..."]
+        },
+        "exit": {
+            "0": ["That's all you want..? Alright... May the gods lead your path..."],
+            "1": ["Thanks adventurer."],
+            "2": ["That's all you buy? Why did you bother me in the first place?!"],
+            "3": ["Nara."],
+            "4": ["..."],
+            "4.1": ["..."],
+            "5": ["..."],
+            "6": ["Thanks for buying this stuff. Good luck!"],
+            "7": ["Oh honey~ You bought so little... I don't mind that though~"],
+            "8": ["I wish you a good travel..! Look out for Icy Slime's nearby..."]
+        }
+    },
+    "mobs": {
+        "name": {
+            "m000": "Green Slime",
+            "m001": "Blue Slime",
+            "m002": "Pink Slime",
+            "m003": "Golden Slime",
+            "m004": "Morex",
+            "m005": "Scorpion",
+            "m006": "Ghost",
+            "m007": "Troll",
+            "m008": "Crystal Guardian",
+            "m009": "Spider",
+            "m010": "Iron Scorpion",
+            "m011": "Golden Scorpion",
+            "m012": "Kordelia Gorua",
+            "m013": "Jurson",
+            "m014": "Possessed Pumpkin",
+            "m015": "Icy Slime",
+            "m016": "Gingerbread",
+            "m017": "Snowman",
+            "m018": "Cute Spider"
+        },
+        "meetup": {
+            "default": "You encounter {e} on your way.",
+            "m018": "{e} swings gently your way.\nYou are filled with dread."
+        },
+        "uattacks": {
+            "baseuserattack": {
+                "default": {
+                    "default": "{u} attacks {e} using {uw}\n{e} loses {ahp} HP."
+                },
+                "m018": {
+                    "default": "{u} attacks {e} using {uw}\n{e} loses {ahp} HP\n{e} isn't bothered by it." 
+                }
+            },
+            "faileduserattack": {
+                "default": {
+                    "default": "{u} attacks {e} using {uw}.\nThe attack missed."
+                },
+                "m018": {
+                    "default": "{u} attacks {e} using {uw}\nThe attack missed.\n{e} seems disappointed." 
+                },
+                "mob_id": {
+                    "default": "",
+                    "weapon_id": ""
+                }
+            }
+        },
+        "eattacks": {
+            "failedmobattack": {
+                "default": "{e} attacks {u}. The attack missed.",
+                "m018": "{e} stays in one place. The attack hasn't been made."
+            },
+            "hpmobattack": {
+                "default": "{e} attacks {u}. {u} loses {ahp} HP.",
+                "m018": "{e} gently bites {u}. {u} loses {ahp} HP."
+            },
+            "shmobattack": {
+                "default": "{e} attacks {u}. {u} loses {ash} SH.",
+                "m018": "{e} gently bites {u}. {u} loses {ash} SH."
+            },
+            "bshmobattack": {
+                "default": "{e} attacks {u}. {u} loses all SH.",
+                "m018": "{e} gently bites {u}. {u} loses all SH."
+            },
+            "bshandhpmobattack": {
+                "default": "{e} attacks {u}. {u} loses all SH and {ahp} HP.",
+                "m018": "{e} gently bites {u}. {u} loses all SH and {ahp} HP."
+            }
+        },
+        "deaths": {
+            "hpdeath": {
+                "default": "{e} attacks {u}. {u} loses all HP.\n{u} losses.",
+                "m018": "{u} lost all HP.\n{e} gracefully leaves."
+            },
+            "beerdeath": {
+                "default": "{u} uses Beer and loses all HP. {u} losses.",
+                "m018": "{u} uses Beer and loses all HP.\n{e} seems disappointed."
+            },
+            "curseddeath": {
+                "default": "Weapon of {u} attacks {u}. {u} losses.",
+                "m018": "Weapon of {u} defeats {u}.\n{e} seems disappointed."
+            },
+            "hpandshdeath": {
+                "default": "{e} attacks {u}. {u} loses all SH and HP.\n{u} losses.",
+                "m018": "{u} lost all SH and HP.\n{e} gracefully leaves."
+            },
+            "escape": {
+                "default": "{e} avoids the final blow and runs away.\n{e} leaves something behind.",
+                "m018": "{e} looks proud and leaves.\n{e} leaves something behind."
+            }
+        },
+        "spells": {
+            "atk": {
+                "default": "{u} attacks {e} using {pw} \n{e} loses {ahp} HP",
+                "m018": "{u} attacks {e} using {pw}\n{e} loses {ahp} HP. {e} doesn't seem bothered."
+            },
+            "reb": {
+                "default": "{u} takes from {e} {ahp} HP.",
+                "m018": "{u} takes {ahp} from {e} HP.\n{u} can feel the immense power."
+            }
+        }
+    },
+    "search": {
+        "name": {
+            "forest": "Forest",
+            "desert": "Desert",
+            "cave": "Cave",
+            "store": "Store",
+            "spiderdungeon": "Spider Dungeon",
+            "abandonedhouse": "Abandoned House",
+            "beach": "Beach",
+            "basement": "Basement",
+            "hiddenhills": "Hidden Hills",
+            "spookyforest": "Spooky Forest",
+            "winterglade": "Winter Glade",
+            "wintervalley": "Winter Valley",
+            "glade": "Glade"
+        }
+    },
+    "quests": {
+        "title": {
+            "chapter1": "Introduction to Erim",
+            "chapter2": "Cave Mystery"
+        },
+        "name": {
+            "tutorial": "Learn more!",
+            "searcher": "New adventure!",
+            "wellmet": "First meeting",
+            "digger": "Life with pickaxe",
+            "fighter": "Battle time",
+            "shopper": "On a way to the cave",
+            "shopperdis": "On a way to the cave",
+            "shoppbaj": "On a way to the cave",
+            "shopcraft": "On a way to the cave",
+            "searchcave": "New place"
+        },
+        "description": {
+            "tutorial": "Finish the tutorial from /search.",
+            "searcher": "Find coins 5 times on /search.",
+            "wellmet": "Find first adventurer on /search.",
+            "digger": "Fining mining tutorial in the Mineshaft.",
+            "fighter": "Finish the training in Training Arena.",
+            "shopper": "Find first merchant in the world.",
+            "shopperdis": "Find 15 Metal Shards for Kusel Skarrd.",
+            "shoppbaj": "Give back 15 Metal Shards to Kusel Skarrd to get the Torch.",
+            "shopcraft": "Craft the Cave Orb and then use it.",
+            "searchcave": "Search Cave 5 times."
+        }
+    },
+    "tasks": {
+        "name": {
+            "t000": "This is were it began",
+            "t001": "Stronger enemy",
+            "t002": "Coin searcher",
+            "t003": "Daily dose of mining",
+            "t004": "I'm begging you",
+            "t005": "Found it!!!",
+            "t006": "Wait there's more!",
+            "t007": "Iron miner",
+            "t008": "Yummy snack",
+            "t009": "Pink disaster",
+            "t010": "Do they respawn or what?",
+            "t011": "Overthrown",
+            "t012": "Golden mission",
+            "t013": "Another type of treasure",
+            "t014": "But I don't want it",
+            "t015": "Overthrown 5x",
+            "t016": "Diamonds!",
+            "e000": "Pink memories",
+            "e001": "Expensive decoration",
+            "e002": "Egg finder",
+            "e003": "Gardener",
+            "e004": "Golden Easter"
+        },
+        "description": {
+            "t000": "Defeat 3 Green Slimes.",
+            "t001": "Defeat 1 Blue Slime.",
+            "t002": "Find coins 3 times on </search:1210998667222450276>.",
+            "t003": "Finish mining 1 time.",
+            "t004": "Beg 10 times.",
+            "t005": "Open 1 treasure on </dig:1188085769647173715>.",
+            "t006": "Open 5 treasures on </dig:1188085769647173715>.",
+            "t007": "Bring back 10 Iron Ores from </dig:1188085769647173715>.",
+            "t008": "Find 5 Apples on </search:1210998667222450276>.",
+            "t009": "Defeat 3 Pink Slimes.",
+            "t010": "Defeat 10 Blue Slimes.",
+            "t011": "Defeat 1 Golden Slime.",
+            "t012": "Bring back 3 Gold Ores from </dig:1188085769647173715>.",
+            "t013": "Open chest with items from </search:1210998667222450276>.",
+            "t014": "Buy 3 things from merchant on </search:1210998667222450276>.",
+            "t015": "Defeat 5 Golden Slimes.",
+            "t016": "Bring back 3 Diamond Ores from </dig:1188085769647173715>.",
+            "e000": "Defeat 3 Pink Slimes",
+            "e001": "Bring back 2 Golden Eggs from </dig:1188085769647173715>.",
+            "e002": "Find 10 Green Eggs on </search:1210998667222450276>.",
+            "e003": "Bring back 25 Vines from </dig:1188085769647173715>.",
+            "e004": "Bring back 15 Gold Ores from </dig:1188085769647173715>."
+        }
+    },
+    "structures": {
+        "name": {
+            "0": "Pyramid",
+            "1": "Attic",
+            "2": "House Ruins",
+            "3": "Cave",
+            "4": "Cell",
+            "5": "Scary Cave",
+            "6": "Christmas Tree",
+            "7": "Icy Field",
+            "8": "Lava Pool"
+        }
+    }
+}

@@ -1,0 +1,140 @@
+[
+    {
+        "chapter": "chapter1",
+        "quests": [
+            {
+                "name": "tutorial",
+                "stage": "I",
+                "etaps": 1,
+                "rewards": [
+                    {"name": "coins", "amount": 500},
+                    {"name": "event", "amount": "usedsearch"}
+                ],
+                "unlocks": [
+                    {"chapter": "chapter1", "quest": "searcher"}
+                ]
+            },
+            {
+                "name": "searcher",
+                "stage": "I",
+                "etaps": 5,
+                "rewards": [
+                    {"name": "coins", "amount": 500},
+                    {"name": "stone", "amount": 10},
+                    {"name": "event", "amount": "nowayimgonnametkerreus"}
+                ],
+                "unlocks": [
+                    {"chapter": "chapter1", "quest": "wellmet"}
+                ]  
+            },
+            {
+                "name": "wellmet",
+                "stage": "I",
+                "etaps": 1,
+                "rewards": [
+                    {"name": "coins", "amount": 500},
+                    {"name": "cash", "amount": 3},
+                    {"name": "event", "amount": "metguywithweirdname"},
+                    {"name": "hunt", "amount": "training_arena"},
+                    {"name": "dig", "amount": "mineshaft"}
+                ],
+                "unlocks": [
+                    {"chapter": "chapter1", "quest": "digger"},
+                    {"chapter": "chapter1", "quest": "fighter"},
+                    {"chapter": "chapter1", "quest": "shopper"}
+                ]
+            },
+            {
+                "name": "digger",
+                "stage": "I",
+                "etaps": 1,
+                "rewards": [
+                    {"name": "coins", "amount": 100},
+                    {"name": "iron", "amount": 3},
+                    {"name": "event", "amount": "digged"} 
+                ],
+                "unlocks": [
+                    {"chapter": "chapter1", "quest": "none"}
+                ]
+            },
+            {
+                "name": "fighter",
+                "stage": "I",
+                "etaps": 1,
+                "rewards": [
+                    {"name": "coins", "amount": 1000},
+                    {"name": "greenessence", "amount": 1},
+                    {"name": "event", "amount": "beatgirl"} 
+                ],
+                "unlocks": [
+                    {"chapter": "chapter1", "quest": "none"}
+                ]
+            },
+            {
+                "name": "shopper",
+                "stage": "I",
+                "etaps": 1,
+                "rewards": [
+                    {"name": "coins", "amount": 200},
+                    {"name": "wood", "amount": 5}
+                ],
+                "unlocks": [
+                    {"chapter": "chapter1", "quest": "shopperdis"}
+                ]
+            },
+            {
+                "name": "shopperdis",
+                "stage": "II",
+                "etaps": 15,
+                "rewards": [
+                    {"name": "coins", "amount": 1000},
+                    {"name": "iron", "amount": 2},
+                    {"name": "event", "amount": "fixed"}
+                ],
+                "unlocks": [
+                    {"chapter": "chapter1", "quest": "shoppbaj"}
+                ]
+            },
+            {
+                "name": "shoppbaj",
+                "stage": "III",
+                "etaps": 1,
+                "rewards": [
+                    {"name": "coins", "amount": 100},
+                    {"name": "glass", "amount": 5}
+                ],
+                "unlocks": [
+                    {"chapter": "chapter1", "quest": "shopcraft"}
+                ]
+            },
+            {
+                "name": "shopcraft",
+                "stage": "IV",
+                "etaps": 2,
+                "rewards": [
+                    {"name": "coins", "amount": 100},
+                    {"name": "cash", "amount": 1}
+                ],
+                "unlocks": [
+                    {"chapter": "chapter2", "quest": "searchcave"}
+                ]
+            }
+        ]
+    },
+    {
+        "chapter": "chapter2",
+        "quests": [
+            {
+                "name": "searchcave",
+                "stage": "I",
+                "etaps": 2147483647,
+                "rewards": [
+                    {"name": "coins", "amount": 50}
+                ],
+                "unlocks": [
+                    {"chapter": "chapter2", "quest": "placeholder"}
+                ]
+            }
+        ]
+    }
+]

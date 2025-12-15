@@ -1,0 +1,302 @@
+[
+    {
+        "id": "m000",
+        "name": "greenslime",
+        "emoji": "<:MX_GreenSlime:1222204436902842530>",
+        "attack": [7, 10, 13],
+        "weapon": "n",
+        "flags": 0,
+        "type": 1,
+        "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222204285169696879/newgreenslime.png",
+        "xpreaward": [3, 5],
+        "hp": 100,
+        "drops": [
+            {"item": "greenessence", "min_value": 1, "max_value": 3, "chance": 10000}
+        ]
+    },
+    {
+        "id": "m001",
+        "name": "blueslime",
+        "emoji": "<:MX_BlueSlime:1222204443794345994>",
+        "attack": [10, 15, 20],
+        "weapon": "n",
+        "flags": 0,
+        "type": 1,
+        "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222203798441820300/image_3.png",
+        "xpreaward": [5, 7],
+        "hp": 150,
+        "drops": [
+            {"item": "blueessence", "min_value": 1, "max_value": 3, "chance": 10000}
+        ]
+    },
+    {
+        "id": "m002",
+        "name": "pinkslime",
+        "emoji": "<:MX_PinkSlime:1222204438932881449>",
+        "attack": [15, 20, 25],
+        "weapon": "n",
+        "flags": 0,
+        "type": 1,
+        "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222204285463433309/newpinkslime.png",
+        "xpreaward": [10, 15],
+        "hp": 250,
+        "drops": [
+            {"item": "pinkessence", "min_value": 1, "max_value": 3, "chance": 10000}
+        ]
+    },
+    {
+        "id": "m003",
+        "name": "goldslime",
+        "emoji": "<:MX_GoldenSlime:1222204442561089546>",
+        "attack": [25, 30, 35],
+        "weapon": "n",
+        "flags": 0,
+        "type": 1,
+        "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222203798718779484/image_8.png",
+        "xpreaward": [15, 20],
+        "hp": 325,
+        "drops": [
+            {"item": "goldessence", "min_value": 1, "max_value": 3, "chance": 10000},
+            {"item": "goldcrown", "min_value": 1, "max_value": 1, "chance": 3333}
+        ]
+    },
+    {
+        "id": "m004",
+        "name": "morexslime",
+        "emoji": "<:MX_Morex:1222204440266936370>",
+        "attack": [100, 250, 500],
+        "weapon": "n",
+        "flags": 0,
+        "type": 1,
+        "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222203945741713408/Untitled_03-08-2023_10-39-45_10.png",
+        "xpreaward": [100, 125],
+        "hp": 1500,
+        "drops": [
+            {"item": "morexessence", "min_value": 1, "max_value": 3, "chance": 10000},
+            {"item": "morexhorn", "min_value": 1, "max_value": 2, "chance": 3333}
+        ]
+    },
+    {
+        "id": "m005",
+        "name": "scorpion",
+        "emoji": "<:MX_Scorpion:1146804057973993572>",
+        "attack": [20, 25, 30],
+        "weapon": "n",
+        "flags": 0,
+        "type": 2,
+        "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1146845181581201468/Sscorpio.png",
+        "xpreaward": [15, 20],
+        "hp": 200,
+        "drops": [
+            {"item": "scorpclaw", "min_value": 1, "max_value": 3, "chance": 10000}
+        ]
+    },
+    {
+        "id": "m006",
+        "name": "ghost",
+        "emoji": "<:MX_Clock:1138968919781154958>",
+        "attack": [45, 50, 55],
+        "weapon": "n",
+        "flags": 0,
+        "type": 32,
+        "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568949523091568/Untitled_08-07-2023_01-54-58_1.png",
+        "xpreaward": [15, 20],
+        "hp": 150,
+        "drops": [
+            "placeholder"
+        ]
+    },
+    {
+        "id": "m007",
+        "name": "troll",
+        "emoji": "<:MX_Clock:1138968919781154958>",
+        "attack": [65, 70, 85],
+        "weapon": "n",
+        "flags": 0,
+        "type": 4,
+        "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568949523091568/Untitled_08-07-2023_01-54-58_1.png",
+        "xpreaward": [15, 20],
+        "hp": 250,
+        "drops": [
+            "placeholder"
+        ]
+    },
+    {
+        "id": "m008",
+        "name": "crystalguardian",
+        "emoji": "<:MX_Clock:1138968919781154958>",
+        "attack": [80, 85, 90],
+        "weapon": "n",
+        "flags": 0,
+        "type": 16,
+        "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568949523091568/Untitled_08-07-2023_01-54-58_1.png",
+        "xpreaward": [13, 21],
+        "hp": 500,
+        "drops": [
+            "stone", "crystal"
+        ]
+    },
+    {
+        "id": "m009",
+        "name": "spider",
+        "emoji": "<:MX_Spider:1396509253895983277>",
+        "attack": [45, 50, 55],
+        "weapon": "n",
+        "flags": 0,
+        "type": 64,
+        "image": "https://media.discordapp.net/attachments/1315801423539208252/1396509790636736623/spider.png",
+        "xpreaward": [4, 7],
+        "hp": 300,
+        "drops": [
+            {"item": "spidertoken", "min_value": 5, "max_value": 25, "chance": 10000},
+            {"item": "cobweb", "min_value": 1, "max_value": 2, "chance": 7000}
+        ]
+    },
+    {
+        "id": "m010",
+        "name": "ironscorpion",
+        "emoji": "<:MX_IronScorpion:1241758844086915103>",
+        "attack": [20, 25, 30],
+        "weapon": "n",
+        "flags": 0,
+        "type": 130,
+        "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1241757816209801317/ironscorp.png",
+        "xpreaward": [15, 20],
+        "hp": 250,
+        "drops": [
+            {"item": "scorpclaw", "min_value": 1, "max_value": 3, "chance": 10000},
+            {"item": "iron", "min_value": 1, "max_value": 2, "chance": 5000}
+        ]
+    },
+    {
+        "id": "m011",
+        "name": "goldenscorpion",
+        "emoji": "<:MX_GoldenScorpion:1241758845626224741>",
+        "attack": [20, 25, 30],
+        "weapon": "n",
+        "flags": 0,
+        "type": 258,
+        "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1241757816578904084/scorpio_1.png",
+        "xpreaward": [15, 20],
+        "hp": 300,
+        "drops": [
+            {"item": "scorpclaw", "min_value": 1, "max_value": 3, "chance": 10000},
+            {"item": "gold", "min_value": 1, "max_value": 2, "chance": 5000}
+        ]
+    },
+    {
+        "id": "m012",
+        "name": "kordelia",
+        "emoji": "<:MX_Kordelia:1260950932536033363>",
+        "attack": [10, 5, 15],
+        "weapon": "n",
+        "flags": 0,
+        "type": 1536,
+        "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+        "hp": 200
+    },
+    {
+        "id": "m013",
+        "name": "jurson",
+        "emoji": "<:MX_Jurson:1297665251143192676>",
+        "attack": [5, 10, 60],
+        "weapon": "n",
+        "flags": 0,
+        "type": 2048,
+        "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1297665799980318810/pumpkinghostjurson.png",
+        "xpreaward": [15, 20],
+        "hp": 300,
+        "drops": [
+            {"item": "pumpkin", "min_value": 1, "max_value": 2, "chance": 10000},
+            {"item": "jackolantern", "min_value": 1, "max_value": 1, "chance": 5000},
+            {"item": "iron", "min_value": 1, "max_value": 3, "chance": 3000},
+            {"item": "diamond", "min_value": 1, "max_value": 1, "chance": 1000}
+        ]
+    },
+    {
+        "id": "m014",
+        "name": "possessedpumpkin",
+        "emoji": "<:MX_JackOLantern:1297665252510535793>",
+        "attack": [20, 20, 40],
+        "weapon": "n",
+        "flags": 0,
+        "type": 2080,
+        "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1297665800521646190/pumpkinghost.png",
+        "xpreaward": [7, 15],
+        "hp": 250,
+        "drops": [
+            {"item": "pumpkin", "min_value": 1, "max_value": 2, "chance": 10000},
+            {"item": "jackolantern", "min_value": 1, "max_value": 1, "chance": 5000}
+        ]
+    },
+    {
+        "id": "m015",
+        "name": "iceslime",
+        "emoji": "<:MX_IcySlime:1315802191063158855>",
+        "attack": [10, 15, 20],
+        "weapon": "n",
+        "flags": 0,
+        "type": 4097,
+        "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802656807059466/icyslime.png",
+        "xpreaward": [3, 4],
+        "hp": 300,
+        "drops": [
+            {"item": "iceessence", "min_value": 1, "max_value": 3, "chance": 10000},
+            {"item": "ice", "min_value": 1, "max_value": 2, "chance": 7000},
+            {"item": "icicle", "min_value": 1, "max_value": 1, "chance": 1000}
+        ]
+    },
+    {
+        "id": "m016",
+        "name": "gingerbread",
+        "emoji": "<:MX_Gingerbread:1315802188983042099>",
+        "attack": [55, 60, 60],
+        "weapon": "n",
+        "flags": 0,
+        "type": 32,
+        "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802656458936380/gingerbread.png",
+        "xpreaward": [6, 9],
+        "hp": 500,
+        "drops": [
+            {"item": "gingerbread", "min_value": 1, "max_value": 1, "chance": 10000},
+            {"item": "redpresent", "min_value": 1, "max_value": 1, "chance": 8000},
+            {"item": "snowydusk", "min_value": 1, "max_value": 1, "chance": 5000}
+        ]
+    },
+    {
+        "id": "m017",
+        "name": "snowman",
+        "emoji": "<:MX_Snowman:1317944380073705677>",
+        "attack": [35, 35, 35],
+        "weapon": "n",
+        "flags": 0,
+        "type": 4096,
+        "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1317944426156527656/snowman-export.png",
+        "xpreaward": [5, 5],
+        "hp": 425,
+        "drops": [
+            {"item": "snow", "min_value": 3, "max_value": 7, "chance": 10000},
+            {"item": "redpresent", "min_value": 1, "max_value": 1, "chance": 8000},
+            {"item": "carrot", "min_value": 1, "max_value": 1, "chance": 5000},
+            {"item": "coal", "min_value": 1, "max_value": 3, "chance": 3500}
+        ]
+    },
+    {
+        "id": "m018",
+        "name": "cutespider",
+        "emoji": "<:MX_CuteSpider:1396509251047784578>",
+        "attack": [90, 95, 100],
+        "weapon": "n",
+        "flags": 1,
+        "type": 64,
+        "image": "https://media.discordapp.net/attachments/1315801423539208252/1396509790158721064/cutespider.png",
+        "xpreaward": [7, 15],
+        "hp": 500,
+        "drops": [
+            {"item": "spidertoken", "min_value": 40, "max_value": 65, "chance": 10000},
+            {"item": "cobweb", "min_value": 2, "max_value": 4, "chance": 7000},
+            {"item": "pinkribbon", "min_value": 1, "max_value": 1, "chance": 1000},
+            {"item": "voidcrystal", "min_value": 1, "max_value": 1, "chance": 10}
+        ]
+    }
+]

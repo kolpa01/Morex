@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "name": "werra",
+        "sprites": {
+            "normal": "https://cdn.discordapp.com/attachments/1222203424389599232/1268881666898923582/spidergirl.png",
+            "angry": "https://cdn.discordapp.com/attachments/1222203424389599232/1268881961326477312/spidergirl2.png",
+            "suprised": "https://cdn.discordapp.com/attachments/1222203424389599232/1268882194215079979/spidergirl3.png",
+            "sad": "https://cdn.discordapp.com/attachments/1222203424389599232/1268882369964675142/spidergirl4.png",
+            "sob": "https://cdn.discordapp.com/attachments/1222203424389599232/1268882570062598154/spidergirl5.png",
+            "shock": "https://cdn.discordapp.com/attachments/1222203424389599232/1268882754397929522/spidergirl6.png"
+        },
+        "phases": {
+            "1": {
+                "hp": 1000,
+                "attacks": ["normal", "srain", "ssides"],
+                "attack_value": 10
+            },
+            "2": {
+                "hp": 2500,
+                "attacks": ["normal"],
+                "attack_value": 25
+            }
+        }
+    }
+]

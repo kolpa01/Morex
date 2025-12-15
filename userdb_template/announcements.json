@@ -1,0 +1,10 @@
+{
+  "pl": {
+    "announcement": "",
+    "event": "Wydarzenie \u015awi\u0105teczne\n<t:1734303600> - <t:1735599600>\nPodczas wydarzenia b\u0119d\u0105 dost\u0119pne nowe lokalizacje na /hunt, /search i /dig. S\u0105 one dost\u0119pne do odebrania w komendzie /christmas daily.\nKomenda /christmas daily zostanie usuni\u0119ta <t:1735254000>."
+  },
+  "en": {
+    "announcement": "",
+    "event": "Christmas Event\n<t:1734303600> - <t:1735599600>\nDuring the event there will be new locations in /hunt, /search and /dig. They are available to get in /christmas daily command.\n/christmas daily command will be removed on <t:1735254000>."
+  }
+}

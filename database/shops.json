@@ -1,0 +1,34 @@
+[
+    {
+        "name": "main",
+        "title": "Sklep",
+        "description": "Prosty Sklepik ;)",
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+        "items": [
+            {"item":"bread","price":800},
+            {"item":"woodensword","price":1500},
+            {"item":"map","price":750},
+            {"item":"hammer","price":1000},
+            {"item":"furnace","price":2500},
+            {"item":"workbench","price":1250},
+            {"item":"clock","price":1500},
+            {"item":"ironpickaxe","price":2500}
+        ]
+    },
+    {
+        "name": "maina",
+        "title": "Sklep",
+        "description": "Prosty Sklepik ;)",
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+        "items": [
+            {"item":"bread","price":800},
+            {"item":"woodensword","price":1500},
+            {"item":"map","price":750},
+            {"item":"hammer","price":1000},
+            {"item":"furnace","price":2500},
+            {"item":"workbench","price":1250},
+            {"item":"clock","price":1500},
+            {"item":"ironpickaxe","price":2500}
+        ]
+    }
+]

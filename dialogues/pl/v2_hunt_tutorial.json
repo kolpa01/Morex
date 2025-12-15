@@ -1,0 +1,60 @@
+{
+    "firsttime": {
+        "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+        "name": "Kordelia Gorua",
+        "text": "O Cze\u015b\u0107!\nNazywam si\u0119 Kordelia Gorua. Skoro tu jeste\u015b to pewnie pozna\u0142e\u015b mojego brata Kerreusa. Ostatnio ma\u0142o ludzi tu przychodzi...\nNo ale nie b\u0119dziemy si\u0119 rozgadywa\u0107. Jeste\u015b tutaj, \u017ceby trenowa\u0107, nie?",
+        "color": "0x97eeff",
+        "choices": {
+            "Zawalczmy": "return:true",
+            "Nie spieszy mi si\u0119. Mo\u017cemy porozmawia\u0107.": "wannatalkhuh"
+        }
+    },
+    "wannatalkhuh": {
+        "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+        "name": "Kordelia Gorua",
+        "text": "Czekaj, naprawd\u0119 chcesz porozmawia\u0107? Wi\u0119kszo\u015b\u0107 odrazu przechodzi do treningu. No c\u00f3\u017c, cieszy mnie ta odmiana. No to opowiem ci troch\u0119 o sytuacji z jak\u0105 si\u0119 mierzymy.\nIstnieje taka organizacja jak Gildia Podr\u00f3\u017cnik\u00f3w. Ja i m\u00f3j brat nale\u017cymy do niej. Jeste\u015bmy tam na poziomie instruktor\u00f3w, czyli uczymy nowych podr\u00f3\u017cnik\u00f3w, ale mniejsza o budowie gildii. Problem jest taki, \u017ce ostatnio jest ma\u0142o nowych podr\u00f3\u017cnik\u00f3w. Domy\u015blam si\u0119, \u017ce przez to, \u017ce Imperium Semerskie i Cesarstwo Polany mobilizuj\u0105 ludzi do wojny. Atrakcyjniejsza praca. Dostajesz sta\u0142y \u017co\u0142d, masz zapewnione schronienie. Podr\u00f3\u017cnicy musz\u0105 dba\u0107 o wszystko sami. Ci\u0119\u017ckie czasy nadesz\u0142y...\nTo tyle ode mnie... Mo\u017cemy przej\u015b\u0107 do treningu?",
+        "color": "0x97eeff",
+        "choices": {
+            "Tak...": "return:true",
+            "Mo\u017cesz opowiedzie\u0107 troch\u0119 o Gildii?": "guild"
+        }
+    },
+    "guild": {
+        "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260952483824533594/tutorialgworldisaoidunb.png",
+        "name": "Kordelia Gorua",
+        "text": "Chyba naprawd\u0119 nie chce Ci si\u0119 walczy\u0107...\nGildia Podr\u00f3\u017cnik\u00f3w to mi\u0119dzynarodowa organizacja zrzeszaj\u0105ca podr\u00f3\u017cnik\u00f3w z ca\u0142ego Erimu. Ka\u017cdy zarejerstrowany podr\u00f3\u017cnik otrzymuje licencj\u0119, kt\u00f3ra pozwala przekracza\u0107 granice bez wi\u0119kszych problem\u00f3w. Przynajmniej tak by\u0142o... Teraz podr\u00f3\u017ce do Polany s\u0105 ci\u0119\u017ckie... Pi\u0119kny kraj... Wybacz, zamy\u015bli\u0142am si\u0119. Na czym to ja... No tak, podr\u00f3\u017cnicy jeszcze co miesi\u0105c otrzymuj\u0105 monety i zni\u017cki na napraw\u0119 wyposa\u017cenia. S\u0105 te\u017c minusy. Musisz o wszystkich zdobyczach, trofeach, podr\u00f3\u017cach informowa\u0107 zarz\u0105d Gildii.\nWiedzia\u0142am, \u017ce nie nale\u017cysz do Gildii, ale skoro m\u00f3j brat Ci o mnie powiedzia\u0142, no to co\u015b w tobie musi by\u0107. No to bierzemy si\u0119 za trening, czy jednak nie chce Ci si\u0119?",
+        "color": "0x97eeff",
+        "choices": {
+            "Bierzmy si\u0119 do roboty!": "return:true",
+            "Potrzebuj\u0119 jeszcze czasu.": "whywhereyouthereinfirstplace"
+        }
+    },
+    "whywhereyouthereinfirstplace": {
+        "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260952483824533594/tutorialgworldisaoidunb.png",
+        "name": "Kordelia Gorua",
+        "text": "Hah wiedzia\u0142am... Ekhem... Znaczy, szanuje twoj\u0105 decyzj\u0119. Mam nadziej\u0119, \u017ce wkr\u00f3tce wr\u00f3cisz.\nDo zobaczenia!",
+        "color": "0x97eeff",
+        "choices": {
+            "end": "END"
+        },
+        "exec": {
+            "add_event": "lazy"
+        }
+    },
+    "denial": {
+        "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+        "name": "Kordelia Gorua",
+        "text": "Witaj!\nWidz\u0119, \u017ce wr\u00f3ci\u0142e\u015b. Mo\u017cemy wzi\u0105\u0107 si\u0119 za tw\u00f3j trening?",
+        "color": "0x97eeff",
+        "choices": {
+            "Zacznijmy trening!": "return:true",
+            "Potrzebuje czasu.": "whywhereyouthereinfirstplace"
+        }
+    },
+    "return:true": {
+        "name": "hunt_tutorial",
+        "choices": {
+            "end": "END"
+        }
+    }
+}

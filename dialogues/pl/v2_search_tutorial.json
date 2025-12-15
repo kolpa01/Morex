@@ -1,0 +1,178 @@
+{
+    "firsttime": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264718890370470038/otertutorialgowrl.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "Witaj! Jestem Rane!\nMoim zadaniem jest wprowadzi\u0107 ciebie w tajniki przeszukiwania! Jak ju\u017c uda\u0142o Ci si\u0119 zauwa\u017cy\u0107 wystarczy wpisa\u0107 </search:1210998667222450276>, lecz to nie wszystko. Mo\u017cna jeszcze wybra\u0107 miejsce! Wystarczy wpisa\u0107 </search:1210998667222450276> i klikn\u0105\u0107 opcj\u0119 `miejsce` i wybra\u0107 miejsce z listy. Te miejsca mo\u017cna zdobywa\u0107 w r\u00f3\u017cne sposoby. Najcz\u0119stszym jest stworzenie Kuli danego miejsca i u\u017cycie jej w </use:1188085947233996941>. Przeszukiwanie mo\u017ce ci da\u0107 monety, przedmioty, xp, lecz mog\u0105 si\u0119 zdarzy\u0107 sytuacje gdzie nic nie znajedziesz. Przede wszystkim pami\u0119taj... Nigdy si\u0119 nie poddawaj!\nMasz jeszcze jakie\u015b pytania?",
+        "color": "0x808080",
+        "exec": {
+            "update_quest": [["chapter1", "tutorial"], 1]
+        },
+        "choices": {
+            "Kim jeste\u015b?": "choice1",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    },
+    "choice1": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264721881077125210/otertutorialgowrliritated.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "...\nCzemu pytasz?\nPrzecie\u017c m\u00f3wi\u0142am, \u017ce nazywam si\u0119 Rane...\nTyle powinno ci wystarczy\u0107...\nNie musisz si\u0119 o to wi\u0119cej pyta\u0107...\n\nMasz jeszcze jakie\u015b pytania?",
+        "color": "0x808080",
+        "choices": {
+            "Kim jeste\u015b?": "badtime1",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    },
+    "choice2": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264718890370470038/otertutorialgowrl.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "Rajciu... Powinnam o tym powiedzie\u0107 odrazu... Hah...\nDomy\u015blne lokalizacje s\u0105 u\u017cywane by za ka\u017cdym razem nie trzeba by\u0142o wpisywa\u0107 miejsca podczas u\u017cywania </search:1210998667222450276>. Aby ustawi\u0107 jak\u0105\u015b lokalizacj\u0119 na domy\u015bln\u0105 wystarczy u\u017cy\u0107 </set default search:1260960054668951718>. Znajd\u017a lokalizacj\u0119, kt\u00f3r\u0105 chcesz i wybierz j\u0105 z listy.\n\nMasz jeszcze jakie\u015b pytania?",
+        "color": "0x808080",
+        "choices": {
+            "Kim jeste\u015b?": "choice1",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    },
+    "choice3": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264718890370470038/otertutorialgowrl.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "Handlarze! Czasem mo\u017cesz znale\u017a\u0107 ich sklepiki tutaj w r\u00f3\u017cnych miejscach. Mo\u017cesz si\u0119 z nimi wymienia\u0107 przedmiot za przedmiot. Tutaj w Lesie jest jeden handlarz, stary Kusel Skarrd. Ceny ma troch\u0119 nie ciekawe...\nMasz jeszcze jakie\u015b pytania?",
+        "color": "0x808080",
+        "choices": {
+            "Kim jeste\u015b?": "choice1",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    },
+    "choice4": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264722431248044153/otertutorialgowrlwhut.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "Struktury..? O czym ty m\u00f3wisz..? Nic takiego nie ma tutaj w Lesie... Niestety nie mog\u0119 ci nic o nich opowiedzie\u0107...\nS\u0105 kolejne pytania?",
+        "color": "0x808080",
+        "choices": {
+            "Kim jeste\u015b?": "choice1",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    },
+    "itsbad": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264723631682879510/otertutorialgowrlangry.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "...\nPo co pytasz?\nTo nic ci nie da.",
+        "color": "0x666666",
+        "choices": {
+            "Kim jeste\u015b?": "itsevenworse",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        },
+        "exec": {
+            "lock": [1, 2, 3]
+        }
+    },
+    "itsevenworse": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264723610434670662/otertutorialgowrlangry2.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "...",
+        "color": "0x4D4D4D",
+        "choices": {
+            "Kim jeste\u015b?": "reallybro",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    },
+    "reallybro": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264724246848995440/otertutorialgowrlangryalien.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "...\nMo\u017ce lepiej przesta\u0144...\nSko\u0144czy si\u0119 to lepiej dla naszej dw\u00f3jki...",
+        "color": "0x333333",
+        "choices": {
+            "Kim jeste\u015b?": "itsjoever",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    },
+    "itsjoever": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264725273056641065/otertutorialgowrlangryalien3.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "S\u0142uchaj...\nJe\u015bli teraz odejdziesz nikomu si\u0119 nic nie stanie...\nMog\u0119 na ciebie liczy\u0107..?",
+        "color": "0x1A1A1A",
+        "choices": {
+            "Kim jeste\u015b?": "soyoullliveinthevoid",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    },
+    "soyoullliveinthevoid": {
+        "icon": null,
+        "name": "Pustka",
+        "text": "*Bez ostrze\u017cenia znalaz\u0142e\u015b si\u0119 pustce. Poczu\u0142e\u015b dziwny kryszta\u0142 w swoim ekwipunku.\nS\u0142yszysz mnie..?*\n\nZdobyto:\n3 XP",
+        "color": "0x000000",
+        "choices": {
+            "end": "END"
+        },
+        "exec": {
+            "add_item": ["voidcrystal", 1],
+            "add_xp": 3,
+            "add_event": "inTheVoid"
+        }
+    },
+    "badtime1": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264721881077125210/otertutorialgowrliritated.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "...\nCzemu pytasz?\nPrzecie\u017c m\u00f3wi\u0142am, \u017ce nazywam si\u0119 Rane...\nTyle powinno ci wystarczy\u0107...\nNie musisz si\u0119 o to wi\u0119cej pyta\u0107...\n\nMasz jeszcze jakie\u015b pytania?",
+        "color": "0x808080",
+        "choices": {
+            "Kim jeste\u015b?": "badtime2",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    },
+    "badtime2": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264721881077125210/otertutorialgowrliritated.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "...\nCzemu pytasz?\nPrzecie\u017c m\u00f3wi\u0142am, \u017ce nazywam si\u0119 Rane...\nTyle powinno ci wystarczy\u0107...\nNie musisz si\u0119 o to wi\u0119cej pyta\u0107...\n\nMasz jeszcze jakie\u015b pytania?",
+        "color": "0x808080",
+        "choices": {
+            "Kim jeste\u015b?": "badtime3",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    },
+    "badtime3": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264721881077125210/otertutorialgowrliritated.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "...\nCzemu pytasz?\nPrzecie\u017c m\u00f3wi\u0142am, \u017ce nazywam si\u0119 Rane...\nTyle powinno ci wystarczy\u0107...\nNie musisz si\u0119 o to wi\u0119cej pyta\u0107...\n\nMasz jeszcze jakie\u015b pytania?",
+        "color": "0x808080",
+        "choices": {
+            "Kim jeste\u015b?": "badtime4",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    },
+    "badtime4": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264721881077125210/otertutorialgowrliritated.png",
+        "name": "Podr\u00f3\u017cniczka Rane",
+        "text": "...\nCzemu pytasz?\nPrzecie\u017c m\u00f3wi\u0142am, \u017ce nazywam si\u0119 Rane...\nTyle powinno ci wystarczy\u0107...\nNie musisz si\u0119 o to wi\u0119cej pyta\u0107...\n\nMasz jeszcze jakie\u015b pytania?",
+        "color": "0x808080",
+        "choices": {
+            "Kim jeste\u015b?": "itsbad",
+            "Jak dzia\u0142aj\u0105 domy\u015blne lokalizacje?": "choice2",
+            "Opowiedz o handlarzach": "choice3",
+            "Opowiedz o strukturach": "choice4"
+        }
+    }
+}

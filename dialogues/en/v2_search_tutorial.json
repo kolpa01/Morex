@@ -1,0 +1,178 @@
+{
+    "firsttime": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264718890370470038/otertutorialgowrl.png",
+        "name": "Adventurer Rane",
+        "text": "Hello! I'm Rane!\nMy job is to introduce you to the world of searching! As you already know, you just need to type </search:1210998667222450276>, but this isn't all. You can also choose the place! You need to just type </search:1210998667222450276> and click the `place` option and choose a location from the list. You can those locations in many different ways. Most common way is simply crafting the Orb of certain place and using it in </use:1188085947233996941>. From searching you can get coins, items, XP, but you can also find nothing. But most importantly remember... Never give up!\nDo you have any other questions?",
+        "color": "0x808080",
+        "exec": {
+            "update_quest": [["chapter1", "tutorial"], 1]
+        },
+        "choices": {
+            "Who are you?": "choice1",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    },
+    "choice1": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264721881077125210/otertutorialgowrliritated.png",
+        "name": "Adventurer Rane",
+        "text": "...\nWhy do you ask?\nI already told you that my name is Rane...\nThat's all that you need to know...\nYou don't need to ask for more...\n\nDo you have any other questions?",
+        "color": "0x808080",
+        "choices": {
+            "Who are you?": "badtime1",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    },
+    "choice2": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264718890370470038/otertutorialgowrl.png",
+        "name": "Adventurer Rane",
+        "text": "Oh my... I should've told about it from the beginning... Hah...\nDefault locations are used to make using </search:1210998667222450276> easier, by making you not type the location. To set any location as default you just need to use </set default search:1260960054668951718>. Find the location you want and choose it from the list.\n\nDo you have any other questions?",
+        "color": "0x808080",
+        "choices": {
+            "Who are you?": "choice1",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    },
+    "choice3": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264718890370470038/otertutorialgowrl.png",
+        "name": "Adventurer Rane",
+        "text": "Merchants! You can sometimes find their shops in different places. You can trade with them item for item. In the Forest there is one merchant, old Kusel Skarrd. His prices are too high...\nDo you have any other questions?",
+        "color": "0x808080",
+        "choices": {
+            "Who are you?": "choice1",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    },
+    "choice4": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264722431248044153/otertutorialgowrlwhut.png",
+        "name": "Adventurer Rane",
+        "text": "Structures..? What are you talking about..? There is nothing like that in the Forest... Sorry I can't tell you about them...\nAny other questions?",
+        "color": "0x808080",
+        "choices": {
+            "Who are you?": "choice1",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    },
+    "itsbad": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264723631682879510/otertutorialgowrlangry.png",
+        "name": "Adventurer Rane",
+        "text": "...\nWhy do you keep asking?\nThis won't give you anything.",
+        "color": "0x666666",
+        "choices": {
+            "Who are you?": "itsevenworse",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        },
+        "exec": {
+            "lock": [1, 2, 3]
+        }
+    },
+    "itsevenworse": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264723610434670662/otertutorialgowrlangry2.png",
+        "name": "Adventurer Rane",
+        "text": "...",
+        "color": "0x4D4D4D",
+        "choices": {
+            "Who are you?": "reallybro",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    },
+    "reallybro": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264724246848995440/otertutorialgowrlangryalien.png",
+        "name": "Adventurer Rane",
+        "text": "...\nYou should stop...\nIt'll end better for both of us...",
+        "color": "0x333333",
+        "choices": {
+            "Who are you?": "itsjoever",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    },
+    "itsjoever": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264725273056641065/otertutorialgowrlangryalien3.png",
+        "name": "Adventurer Rane",
+        "text": "Listen...\nIf you go away now nothing will happen to nobody...\nCan I trust you..?",
+        "color": "0x1A1A1A",
+        "choices": {
+            "Who are you?": "soyoullliveinthevoid",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    },
+    "soyoullliveinthevoid": {
+        "icon": null,
+        "name": "Void",
+        "text": "*Without any warning you found yourself in the endless void. You felt weird crystal in your inventory.\nCan you hear me..?*\n\nYou got:\n3 XP",
+        "color": "0x000000",
+        "choices": {
+            "end": "END"
+        },
+        "exec": {
+            "add_item": ["voidcrystal", 1],
+            "add_xp": 3,
+            "add_event": "inTheVoid"
+        }
+    },
+    "badtime1": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264721881077125210/otertutorialgowrliritated.png",
+        "name": "Adventurer Rane",
+        "text": "...\nWhy do you ask?\nI already told you that my name is Rane...\nThat's all that you need to know...\nYou don't need to ask for more...\n\nDo you have any other questions?",
+        "color": "0x808080",
+        "choices": {
+            "Who are you?": "badtime2",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    },
+    "badtime2": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264721881077125210/otertutorialgowrliritated.png",
+        "name": "Adventurer Rane",
+        "text": "...\nWhy do you ask?\nI already told you that my name is Rane...\nThat's all that you need to know...\nYou don't need to ask for more...\n\nDo you have any other questions?",
+        "color": "0x808080",
+        "choices": {
+            "Who are you?": "badtime3",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    },
+    "badtime3": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264721881077125210/otertutorialgowrliritated.png",
+        "name": "Adventurer Rane",
+        "text": "...\nWhy do you ask?\nI already told you that my name is Rane...\nThat's all that you need to know...\nYou don't need to ask for more...\n\nDo you have any other questions?",
+        "color": "0x808080",
+        "choices": {
+            "Who are you?": "badtime4",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    },
+    "badtime4": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264721881077125210/otertutorialgowrliritated.png",
+        "name": "Adventurer Rane",
+        "text": "...\nWhy do you ask?\nI already told you that my name is Rane...\nThat's all that you need to know...\nYou don't need to ask for more...\n\nDo you have any other questions?",
+        "color": "0x808080",
+        "choices": {
+            "Who are you?": "itsbad",
+            "How default locations work?": "choice2",
+            "Talk about merchants": "choice3",
+            "Talk about structures": "choice4"
+        }
+    }
+}

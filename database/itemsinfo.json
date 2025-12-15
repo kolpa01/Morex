@@ -1,0 +1,2143 @@
+[
+  {
+    "name": "testitem",
+    "emoji": "<:MX_TestItem:1138968829372928112>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568950433263687/Untitled_08-07-2023_01-31-18.png",
+    "id": "0000",
+    "rarity": "mythic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "easter2022",
+    "emoji": "<:MX_EasterTrophy2022:1138968878534365194>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568950043197451/Untitled_08-07-2023_01-38-38.png",
+    "id": "0001",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 2022,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "clock",
+    "emoji": "<:MX_Clock:1266366220933005403>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1266366180566896732/clok.png",
+    "id": "0002",
+    "rarity": "uncommon",
+    "price": 10000,
+    "sellprice": 500,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "time",
+        "value": 2
+      }
+   }
+  },
+  {
+    "name": "hammer",
+    "emoji": "<:MX_Hammer:1138970271894745200>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568948818448465/1040924140141547611_1_2.png",
+    "id": "0003",
+    "rarity": "uncommon",
+    "price": 7500,
+    "sellprice": 350,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "beer",
+    "emoji": "<:MX_Beer:1198436126789214208>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1198436348080697354/Beer.png",
+    "id": "0004",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 330,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "satk",
+        "value": 45
+      }
+   }
+  },
+  {
+    "name": "coin",
+    "emoji": "<:MX_Coin:1146519037669548172>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1146845224321171486/coin.png",
+    "id": "0005",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": 1,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "premiumbundle",
+    "emoji": "<:MX_PremiumBundle:1139321250183905301>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568948382249000/Untitled_07-31-2022_02-23-06_6.png",
+    "id": "0006",
+    "rarity": "premium",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "bundle",
+      "cursed": 0,
+      "contains": [
+        {"item": "coins", "value": 150000},
+        {"item": "coin", "value": 3},
+        {"item": "goldessence", "value": 5},
+        {"item": "goldcrown", "value": 1}
+      ]
+    }
+  },
+  {
+    "name": "placeholder",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0007",
+    "rarity": "mythic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "stone",
+    "emoji": "<:MX_Rock:1222212131357855754>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222212953390977064/rock-export.png",
+    "id": "0008",
+    "rarity": "common",
+    "price": "n",
+    "sellprice": 20,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "sand",
+    "emoji": "<:MX_Sand:1401328144501178368>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1401328324009001000/sand.png",
+    "id": "0009",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": 25,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "smeltable",
+      "itemtype": "other",
+      "cursed": 0,
+      "xp_reaward": [1,2],
+      "fuel": [
+        {"fuel": "coal", "amount": 1, "smelt_time": 3},
+        {"fuel": "wood", "amount": 4, "smelt_time": 10}
+      ],
+      "lvl_required": 3,
+      "item_smelted": "glass",
+      "amount": 1
+    }
+  },
+  {
+    "name": "cash",
+    "emoji": "<:MX_Cash:1198436125279256576>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1198436347761938482/Money.png",
+    "id": "0010",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 550,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "greenessence",
+    "emoji": "<:MX_GreenEssence:1222205495268474880>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222205428977500250/greenessence.png",
+    "id": "0011",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": 15,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "blueessence",
+    "emoji": "<:MX_BlueEssence:1222205493465059379>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222205428709195786/blueessence.png",
+    "id": "0012",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": 50,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "pinkessence",
+    "emoji": "<:MX_PinkEssence:1222205497365762142>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222205429237682366/pinkessence.png",
+    "id": "0013",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 200,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "goldessence",
+    "emoji": "<:MX_GolenEssence:1222205491728351344>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222205428310741022/goldenessence.png",
+    "id": "0014",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": 350,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "morexessence",
+    "emoji": "<:MX_MorexEssence:1222205490172395620>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222205428050559066/morexessence.png",
+    "id": "0015",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 1000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "testsword",
+    "emoji": "<:MX_TestSword:1139321394988060763>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568950810742904/sford_10.png",
+    "id": "0016",
+    "rarity": "mythic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "cursed": 0,
+      "attack": [1000, 1500, 750]
+    }
+  },
+  {
+    "name": "woodensword",
+    "emoji": "<:MX_WoodenSword:1139321331771519126>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568951297294377/sford_1.png",
+    "id": "0017",
+    "rarity": "uncommon",
+    "price": 15000,
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "cursed": 0,
+      "attack": [20, 25, 15]
+   }
+  },
+  {
+    "name": "easter2023",
+    "emoji": "<:MX_Easter2023:1217136270506070036>",
+    "image": "https://cdn.discordapp.com/attachments/1198440482087379054/1217137265864867900/jajo2023-export.png",
+    "id": "0018",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 2023,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "morexhorn",
+    "emoji": "<:MX_MorexHorn:1396509252620914881>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1396509790397665311/morexhorn.png",
+    "id": "0019",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 7500,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "goldcrown",
+    "emoji": "<:MX_GoldenCrown:1402598223809613824>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1402598326804676690/crown.png",
+    "id": "0020",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": 5000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "testbundle",
+    "emoji": "<:MX_TestBundle:1139321219548729394>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568948084445214/Untitled_07-31-2022_02-23-06_7.png",
+    "id": "0021",
+    "rarity": "mythic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "bundle",
+      "cursed": 0,
+      "contains": [
+        {"item": "testitem", "value": 1},
+        {"item": "testsword", "value": 1},
+        {"item": "testbundle", "value": 1},
+        {"item": "testspellbook", "value": 1}
+      ]
+    }
+  },
+  {
+    "name": "commonbox",
+    "emoji": "<:MX_CommonBox:1139321178620706917>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568947748909066/Untitled_07-31-2022_02-23-06_8.png",
+    "id": "0022",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "box",
+      "cursed": 0,
+      "contains": [
+        {"item": "coins", "min_value": 750,"max_value": 1000, "chance": 10000},
+        {"item": "sand", "min_value": 1,"max_value": 5, "chance": 5000},
+        {"item": "coal", "min_value": 1,"max_value": 3, "chance": 1000},
+        {"item": "diamond", "min_value": 1,"max_value": 2, "chance": 1}
+      ]
+    }
+  },
+  {
+    "name": "ironpickaxe",
+    "emoji": "<:MX_IronPickaxe:1304151504189657108>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1304151469691371540/ironpickaxe.png",
+    "id": "0023",
+    "rarity": "uncommon",
+    "price": 20000,
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "ironore",
+    "emoji": "<:MX_IronOre:1222212132678930462>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222212953651019928/iron_ore-export.png",
+    "id": "0024",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "smeltable",
+      "itemtype": "ore",
+      "cursed": 0,
+      "xp_reaward": [1,4],
+      "fuel": [
+        {"fuel": "coal", "amount": 1, "smelt_time": 5},
+        {"fuel": "wood", "amount": 3, "smelt_time": 8}
+      ],
+      "lvl_required": 0,
+      "item_smelted": "iron",
+      "amount": 1
+    }
+  },
+  {
+    "name": "iron",
+    "emoji": "<:MX_Iron:1222212140082139267>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222212954750062675/iron-ingot-export.png",
+    "id": "0025",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 250,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "morkourprototype",
+    "emoji": "<:MX_MorkourPrototype:1139321871993688187>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144569417242525736/morkour.png",
+    "id": "0026",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "cursed": 3,
+      "attack": [65, 75, 60]
+   }
+  },
+  {
+    "name": "wood",
+    "emoji": "<:MX_Wood:1401328147202310294>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1401328324533424258/wood.png",
+    "id": "0027",
+    "rarity": "common",
+    "price": "n",
+    "sellprice": 10,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "earth",
+    "emoji": "<:MX_Earth:1401328143247212677>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1401328323753414696/dirt.png",
+    "id": "0028",
+    "rarity": "common",
+    "price": "n",
+    "sellprice": 15,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "coal",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0029",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": 25,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "stonesword",
+    "emoji": "<:MX_StoneSword:1198444852199825458>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1198445103673524324/sford_7-export.png",
+    "id": "0030",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "cursed": 0,
+      "attack": [30, 35, 25]
+   }
+  },
+  {
+    "name": "ironsword",
+    "emoji": "<:MX_IronSword:1139321518573223997>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568987796123658/sford_8.png",
+    "id": "0031",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "cursed": 0,
+      "attack": [35, 40, 30]
+   }
+  },
+  {
+    "name": "diamondsword",
+    "emoji": "<:MX_DiamondSword:1139321474101022861>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568988072943676/sford_7.png",
+    "id": "0032",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "cursed": 0,
+      "attack": [50, 55, 45]
+   }
+  },
+  {
+    "name": "testspellbook",
+    "emoji": "<:MX_TestSpellbook:1132424214973001728>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144572841975623730/TestSpellbook-1.png",
+    "id": "0033",
+    "rarity": "mythic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "spellbook",
+      "attack": [1000, 1500, 750],
+      "cursed": 0,
+      "power": {
+        "emoji": "<:MX_TestBlast:1408213379142910063>",
+        "type": "atk",
+        "value": 3000
+      }
+   }
+  },
+  {
+    "name": "deathspellbook",
+    "emoji": "<:MX_DeathSpellbook:1241432822518911096>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1241433023962943610/why.png",
+    "id": "0034",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "spellbook",
+      "attack": [85, 90, 80],
+      "cursed": 3,
+      "power": {
+        "emoji": "<:MX_LifeStealing:1408213382166741013>",
+        "type": "reb",
+        "value": 0.3
+      }
+   }
+  },
+  {
+    "name": "lifespellbook",
+    "emoji": "<:MX_LifeSpellbook:1133016233881640981>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144572841598144602/testspellbook.png",
+    "id": "0035",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "spellbook",
+      "attack": [60, 65, 55],
+      "cursed": 0,
+      "power": {
+        "emoji": "<:MX_HealthRegeneration:1408213384079343766>",
+        "type": "reg",
+        "value": 70
+      }
+   }
+  },
+  {
+    "name": "birthdaycake",
+    "emoji": "<:MX_BirthdayCake:1409565247672553492>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1409566648263905380/0036.png",
+    "id": "0036",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 200,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "reg",
+        "value": 100
+      }
+    }
+  },
+  {
+    "name": "birthdayspellbook",
+    "emoji": "<:MX_BirthdaySpellbook:1409565249807319180>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1409566648515428455/0037.png",
+    "id": "0037",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 2000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "spellbook",
+      "attack": [40, 45, 35],
+      "cursed": 0,
+      "power": {
+        "emoji": "<:MX_BirthdayBlessing:1408213385862185002>",
+        "name": "atk",
+        "type": "reg",
+        "value": 70
+      }
+   }
+  },
+  {
+    "name": "birthdayballoon",
+    "emoji": "<:MX_BirthdayBalloon:1409565251841560637>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1409566648804839527/0038.png",
+    "id": "0038",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 20,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "greatbirthdaysword",
+    "emoji": "<:MX_GreatBirthdaySword:1409565253376938085>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1409566649157156955/0039.png",
+    "id": "0039",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 2000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "cursed": 0,
+      "attack": [0, 1, 0]
+   }
+  },
+  {
+    "name": "secondbirthdaytrophy",
+    "emoji": "<:MX_BirthdayTrophy:1409565255834669096>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1409566649551552572/0040.png",
+    "id": "0040",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 20000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":"n"
+  },
+  {
+    "name": "birthdaybundle",
+    "emoji": "<:MX_BirthdayBundle:1409565259110547536>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1409566649857609890/0041.png",
+    "id": "0041",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 200,
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "bundle",
+      "cursed": 0,
+      "contains": [
+        {"item": "coins", "value": 10000},
+        {"item": "birthdaycake", "value": 2},
+        {"item": "birthdayspellbook", "value": 1},
+        {"item": "birthdayballoon", "value": 5},
+        {"item": "greatbirthdaysword", "value": 1},
+        {"item": "secondbirthdaytrophy", "value": 1}
+      ]
+    }
+  },
+  {
+    "name": "goldore",
+    "emoji": "<:MX_GoldOre:1222212136399409212>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222212954208993472/gold_ore-export.png",
+    "id": "0042",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "smeltable",
+      "itemtype": "ore",
+      "cursed": 0,
+      "xp_reaward": [2,6],
+      "fuel": [
+        {"fuel": "coal", "amount": 1, "smelt_time": 10},
+        {"fuel": "wood", "amount": 5, "smelt_time": 15}
+      ],
+      "lvl_required": 5,
+      "item_smelted": "gold",
+      "amount": 1
+    }
+  },
+  {
+    "name": "gold",
+    "emoji": "<:MX_Gold:1222212134444859484>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222212953949081651/golden-ingot-export.png",
+    "id": "0043",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": 300,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "diamondore",
+    "emoji": "<:MX_DiamondOre:1222212137993244683>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222212954494079006/diamond_ore-export.png",
+    "id": "0044",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "smeltable",
+      "itemtype": "ore",
+      "cursed": 0,
+      "xp_reaward": [5,8],
+      "fuel": [
+        {"fuel": "coal", "amount": 3, "smelt_time": 15}
+      ],
+      "lvl_required": 8,
+      "item_smelted": "diamond",
+      "amount": 1
+    }
+  },
+  {
+    "name": "diamond",
+    "emoji": "<:MX_Diamond:1241071516410581002>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1241071466100031620/diamond-export.png",
+    "id": "0045",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": 350,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "rarebox",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0046",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "box",
+      "cursed": 0,
+      "contains": [
+        {"item": "coins", "min_value": 1250,"max_value": 2000, "chance": 10000},
+        {"item": "wood", "min_value": 2,"max_value": 4, "chance": 7500},
+        {"item": "coal", "min_value": 1,"max_value": 2, "chance": 5000},
+        {"item": "ironore", "min_value": 1,"max_value": 1, "chance": 1250},
+        {"item": "goldore", "min_value": 1, "max_value":2, "chance": 100}
+      ]
+    }
+  },
+  {
+    "name": "bread",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0047",
+    "rarity": "common",
+    "price": 5000,
+    "sellprice": 125,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "reg",
+        "value": 30
+      }
+   }
+  },
+  {
+    "name": "beans",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0048",
+    "rarity": "common",
+    "price": "n",
+    "sellprice": 200,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "reg",
+        "value": 35
+      }
+   }
+  },
+  {
+    "name": "milk",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0049",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 1024,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "apple",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png", 
+    "id": "0050",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 50,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "reg",
+        "value": 20
+      }
+   }
+  },
+  {
+    "name": "ruby",
+    "emoji": "<:MX_Ruby:1222212129894039623>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1222212953131057233/ruby-export.png",
+    "id": "0051",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": 350,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "regenerationpotion",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0052",
+    "rarity": "uncommon",
+    "price": 6250,
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "reg",
+        "value": 45
+      }
+   }
+  },
+  {
+    "name": "scorpclaw",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0053",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": 120,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "cactus",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0054",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": 25,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "goldensword",
+    "emoji": "<:MX_GoldenSword:1139321608486523032>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1144568988345565274/sford_6.png",
+    "id": "0055",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "cursed": 0,
+      "attack": [40, 45, 35]
+   }
+  },
+  {
+    "name": "garbage",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0056",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 1,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "hotdog",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0057",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "starystrophy",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0058",
+    "rarity": "common",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "coconut",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0059",
+    "rarity": "common",
+    "price": "n",
+    "sellprice": 35,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "lemonade",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0060",
+    "rarity": "common",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "shell",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0061",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 50,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "corn",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0062",
+    "rarity": "common",
+    "price": "n",
+    "sellprice": 15,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "trident",
+    "emoji": "<:MX_Trident:1409565433257791538>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1409566650109530132/0063.png",
+    "id": "0063",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "trident",
+      "cursed": 0,
+      "attack": [30, 35, 25]
+   }
+  },
+  {
+    "name": "oldnote",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0064",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "useable",
+      "itemtype": "note",
+      "cursed": 0
+    }
+  },
+  {
+    "name": "map",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0065",
+    "rarity": "uncommon",
+    "price": 2500,
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "useable",
+      "itemtype": "map",
+      "cursed": 0,
+      "map": "https://cdn.discordapp.com/attachments/1134067893840126012/1161386218978803722/mapborders.png"
+    }
+  },
+  {
+    "name": "heksatrident",
+    "emoji": "<:MX_HeksaTrident:1409565261148852265>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1409566650335760456/0066.png",
+    "id": "0066",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "trident",
+      "cursed": 0,
+      "attack": [75, 120, 50],
+      "critrate": 45
+   }
+  },
+  {
+    "name": "desertorb",
+    "emoji": "<:MX_DesertOrb:1198438821864411269>",
+    "image": "https://cdn.discordapp.com/attachments/1198440482087379054/1198440785348153424/orb1.png",
+    "id": "0067",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "y",
+    "toolatributes": {
+      "type": "unlockorb",
+      "itemtype": "search",
+      "cursed": 0,
+      "value": "desert"
+    }
+  },
+  {
+    "name": "glass",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0068",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 35,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "desertcrystal",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0069",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "storeorb",
+    "emoji": "<:MX_StoreOrb:1198438826419437708>",
+    "image": "https://cdn.discordapp.com/attachments/1198440482087379054/1198440785826296008/orb3.png",
+    "id": "0070",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "y",
+    "toolatributes": {
+      "type": "unlockorb",
+      "itemtype": "search",
+      "cursed": 0,
+      "value": "store"
+    }
+  },
+  {
+    "name": "storekeys",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0071",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "houseorb",
+    "emoji": "<:MX_HouseOrb:1198440293364682813>",
+    "image": "https://cdn.discordapp.com/attachments/1198440482087379054/1198440784920330271/or24.png",
+    "id": "0072",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "y",
+    "toolatributes": {
+      "type": "unlockorb",
+      "itemtype": "search",
+      "cursed": 0,
+      "value": "abandonedhouse"
+    }
+  },
+  {
+    "name": "crowbar",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0073",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "beachorb",
+    "emoji": "<:MX_BeachOrb:1198438828898275398>",
+    "image": "https://cdn.discordapp.com/attachments/1198440482087379054/1198440786019242075/orb4.png",
+    "id": "0074",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "y",
+    "toolatributes": {
+      "type": "unlockorb",
+      "itemtype": "search",
+      "cursed": 0,
+      "value": "beach"
+    }
+  },
+  {
+    "name": "beachball",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0075",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "voidcrystal",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0076",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "shipbillet",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0077",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "bone",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0078",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "basementorb",
+    "emoji": "<:MX_BasementOrb:1198438823793786900>",
+    "image": "https://cdn.discordapp.com/attachments/1198440482087379054/1198440785574641765/orb2.png",
+    "id": "0079",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "y",
+    "toolatributes": {
+      "type": "unlockorb",
+      "itemtype": "search",
+      "cursed": 0,
+      "value": "basement"
+    }
+  },
+  {
+    "name": "daggerofdarkness",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0080",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "knife",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0081",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "jar",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0082",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "crystal",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0083",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "def",
+        "value": 45
+      }
+   }
+  },
+  {
+    "name": "destructioncrystal",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0084",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "blackberry",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0085",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "mysteriousnote",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0086",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "useable",
+      "itemtype": "note",
+      "cursed": 0
+    }
+  },
+  {
+    "name": "oldmap",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0087",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "y",
+    "toolatributes": {
+      "type": "useable",
+      "itemtype": "map",
+      "cursed": 0,
+      "map": "https://cdn.discordapp.com/attachments/1134067893840126012/1173058191353979020/mapold.png"
+    }
+  },
+  {
+    "name": "goldenring",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0088",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "metalshard",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0089",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "easter2024",
+    "emoji": "<:MX_Easter2024:1217136257746993213>",
+    "image": "https://cdn.discordapp.com/attachments/1198440482087379054/1217137264317169854/alejajaxd-export.png",
+    "id": "0090",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 2024,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "mineshaftcoupon",
+    "emoji": "<:MX_MineshaftCoupon:1264569629368516688>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1264569922613153926/mineshaftcoupon.png",
+    "id": "0091",
+    "rarity": "legendary",
+    "price": 100000,
+    "sellprice": 1,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "torch",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0092",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "spidertoken",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0093",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "caveorb",
+    "emoji": "<:MX_CaveOrb:1409663126663598093>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1409662930290610298/0094.png",
+    "id": "0094",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "y",
+    "toolatributes": {
+      "type": "unlockorb",
+      "itemtype": "search",
+      "cursed": 0,
+      "value": "cave"
+    }
+  },
+  {
+    "name": "goldenskull",
+    "emoji": "<:MX_GoldenSkull:1297665246516875306>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1297665798508384398/GoldenSkull.png",
+    "id": "0095",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 800,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "skull",
+    "emoji": "<:MX_Skull:1297665247800197180>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1297665798868832337/SilverSkull.png",
+    "id": "0096",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 25,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "candycorn",
+    "emoji": "<:MX_CandyCorn:1297665249645953165>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1297665799661813870/candycorn.png",
+    "id": "0097",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": 5,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "pumpkin",
+    "emoji": "<:MX_Pumpkin:1297665253936467998>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1297665800970178700/pumpkin.png",
+    "id": "0098",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 35,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": "n",
+      "power": {
+        "type": "reg",
+        "value": 30
+      }
+    }
+  },
+  {
+    "name": "jackolantern",
+    "emoji": "<:MX_JackOLantern:1297665252510535793>",
+    "image": "https://cdn.discordapp.com/attachments/1222203424389599232/1297665800521646190/pumpkinghost.png",
+    "id": "0099",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": 1000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "evilpumpkinsword",
+    "emoji": "<:MX_EvilPumpkinSword:1300127036282765404>",
+    "image": "https://media.discordapp.net/attachments/1222203424389599232/1300126920284831878/someidkfrickinsword_2.png",
+    "id": "0100",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 7000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "attack": [45, 50, 40],
+      "cursed": "y"
+   }
+  },
+  {
+    "name": "witchspellbook",
+    "emoji": "<:MX_WitchSpellbook:1300127009585889443>",
+    "image": "https://media.discordapp.net/attachments/1222203424389599232/1300126920540950598/JakasKsiazkanwmXD_2.png",
+    "id": "0101",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 15000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "spellbook",
+      "attack": [35, 40, 30],
+      "cursed": "n",
+      "power": {
+        "emoji": "<:MX_WitchBoom:1408213388042961068>",
+        "type": "atk",
+        "value": 75
+      }
+   }
+  },
+  {
+    "name": "icicle",
+    "emoji": "<:MX_Icicle:1315802181353340928>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802655150575636/icicle.png",
+    "id": "0102",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "satk",
+        "value": 10
+      },
+      "bonus": [
+        {
+          "chance": 5000,
+          "type": "smw",
+          "value": "a000"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ice",
+    "emoji": "<:MX_Ice:1315802177771540551>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802654634676364/ice.png",
+    "id": "0103",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": 30,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "iceessence",
+    "emoji": "<:MX_IcyEssence:1315802179319238708>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802654877683722/iceessence.png",
+    "id": "0104",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 50,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "snow",
+    "emoji": "<:MX_Snow:1317939988020596767>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1317939885851672667/Snow-export.png",
+    "id": "0105",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": 5,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "gingerbread",
+    "emoji": "<:MX_Gingerbread:1315802188983042099>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802656458936380/gingerbread.png",
+    "id": "0106",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 250,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "reg",
+        "value": 50
+      }
+    }
+  },
+  {
+    "name": "candycane",
+    "emoji": "<:MX_CandyCane:1315802199414014012>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802551915909210/xandycane.png",
+    "id": "0107",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": 35,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "reg",
+        "value": 25
+      }
+    }
+  },
+  {
+    "name": "carrot",
+    "emoji": "<:MX_Carrot:1315802174625681538>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802654122704896/carrot.png",
+    "id": "0108",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": 60,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "reg",
+        "value": 15
+      }
+    }
+  },
+  {
+    "name": "greenpresent",
+    "emoji": "<:MX_GreenPresent:1315802176345346140>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802654365978685/gb.png",
+    "id": "0109",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "box",
+      "cursed": 0,
+      "contains": [
+        {"item": "coins", "min_value": 750,"max_value": 1000, "chance": 10000},
+        {"item": "snow", "min_value": 1,"max_value": 5, "chance": 7000},
+        {"item": "ice", "min_value": 1,"max_value": 3, "chance": 5000},
+        {"item": "gingerbread", "min_value": 1,"max_value": 2, "chance": 500},
+        {"item": "icedagger", "min_value": 1,"max_value": 1, "chance": 300}
+      ]
+    }
+  },
+  {
+    "name": "bluepresent",
+    "emoji": "<:MX_BluePresent:1315802186663591936>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802656106877131/bb.png",
+    "id": "0110",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "box",
+      "cursed": 0,
+      "contains": [
+        {"item": "coins", "min_value": 750,"max_value": 1000, "chance": 10000},
+        {"item": "ice", "min_value": 3,"max_value": 5, "chance": 7000},
+        {"item": "candycane", "min_value": 1,"max_value": 2, "chance": 4500},
+        {"item": "mineshaftcoupon", "min_value": 1, "max_value": 1, "chance": 200}
+      ]
+    }
+  },
+  {
+    "name": "redpresent",
+    "emoji": "<:MX_RedPresent:1315802185069494433>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802655746162741/rb.png",
+    "id": "0111",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "box",
+      "cursed": 0,
+      "contains": [
+        {"item": "coins", "min_value": 750,"max_value": 1000, "chance": 10000},
+        {"item": "snow", "min_value": 1,"max_value": 5, "chance": 7000},
+        {"item": "ice", "min_value": 1,"max_value": 3, "chance": 5000},
+        {"item": "gingerbread", "min_value": 1,"max_value": 2, "chance": 500},
+        {"item": "ruby", "min_value": 1,"max_value": 1, "chance": 426}
+      ]
+    }
+  },
+  {
+    "name": "christmasshovel",
+    "emoji": "<:MX_ChristmasShovel:1317939989496987759>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1317939886224838768/XmasShovel-export.png",
+    "id": "0112",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 2000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "snowydusk",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0113",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 2000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "cursed": 0,
+      "attack": [50, 55, 35]
+    }
+  },
+  {
+    "name": "icedagger",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0114",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 2000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "winterorb",
+    "emoji": "<:MX_WinterOrb:1315802197870645390>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802551639343236/winterorb.png",
+    "id": "0115",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "y",
+    "toolatributes": {
+      "type": "unlockorb",
+      "itemtype": "search",
+      "cursed": 0,
+      "value": "winterglade"
+    }
+  },
+  {
+    "name": "vines",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0116",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": 15,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "easter2025",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0117",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 2025,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "egg",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0118",
+    "rarity": "common",
+    "price": "n",
+    "sellprice": 25,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "greenegg",
+    "emoji": "<:MX_GreenEgg:1217136266727129170>",
+    "image": "https://cdn.discordapp.com/attachments/1198440482087379054/1217137265113956473/jajo3-export.png",
+    "id": "0119",
+    "rarity": "uncommon",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "box",
+      "cursed": 0,
+      "contains": [
+        {"item": "coins", "min_value": 25, "max_value": 100, "chance": 10000},
+        {"item": "greenessence", "min_value": 2, "max_value": 3, "chance": 8500},
+        {"item": "egg", "min_value": 1, "max_value": 3, "chance": 6000},
+        {"item": "blueegg", "min_value": 1, "max_value": 1, "chance": 1000},
+        {"item": "eggspellbook", "min_value": 1, "max_value": 1, "chance": 100}
+      ]
+    }
+  },
+  {
+    "name": "blueegg",
+    "emoji": "<:MX_BlueEgg:1217136268941459577>",
+    "image": "https://cdn.discordapp.com/attachments/1198440482087379054/1217137265545842708/jajo11-export.png",
+    "id": "0120",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "box",
+      "cursed": 0,
+      "contains": [
+        {"item": "coins", "min_value": 321, "max_value": 600, "chance": 10000},
+        {"item": "blueessence", "min_value": 2, "max_value": 3, "chance": 8500},
+        {"item": "cupcake", "min_value": 1, "max_value": 1, "chance": 4000},
+        {"item": "clock", "min_value": 1, "max_value": 2, "chance": 2000},
+        {"item": "diamond", "min_value": 1, "max_value": 1, "chance": 100}
+      ]
+    }
+  },
+  {
+    "name": "pinkegg",
+    "emoji": "<:MX_PinkEgg:1217136264315404330>",
+    "image": "https://cdn.discordapp.com/attachments/1198440482087379054/1217137264828874852/jajo2-export.png",
+    "id": "0121",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "box",
+      "cursed": 0,
+      "contains": [
+        {"item": "coins", "min_value": 400, "max_value": 700, "chance": 10000},
+        {"item": "pinkessence", "min_value": 1, "max_value": 3, "chance": 8500},
+        {"item": "sausage", "min_value": 1, "max_value": 2, "chance": 7000},
+        {"item": "ruby", "min_value": 1, "max_value": 1, "chance": 100}
+      ]
+    }
+  },
+  {
+    "name": "goldenegg",
+    "emoji": "<:MX_YellowEgg:1220427115665559712>",
+    "image": "https://cdn.discordapp.com/attachments/1198440482087379054/1217508791000633456/alejaja-export.png",
+    "id": "0122",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "box",
+      "cursed": 0,
+      "contains": [
+        {"item": "coins", "min_value": 800, "max_value": 1000, "chance": 10000},
+        {"item": "easterbasket", "min_value": 1, "max_value": 1, "chance": 5000},
+        {"item": "easter2025", "min_value": 1, "max_value": 1, "chance": 1000},
+        {"item": "goldenring", "min_value": 1, "max_value": 1, "chance": 100}
+      ]
+    }
+  },
+  {
+    "name": "easterbasket",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0123",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 500,
+    "tradeable": "y",
+    "useable": "y",
+    "toolatributes": {
+      "type": "container",
+      "itemtype": "bundle",
+      "cursed": 0,
+      "contains": [
+        {"item": "egg", "value": 10},
+        {"item": "sausage", "value": 2},
+        {"item": "cupcake", "value": 1},
+        {"item": "chocolatebunny", "value": 1}
+      ]
+    }
+  },
+  {
+    "name": "sausage",
+    "emoji": "<:MX_Sausage:1362420658960863476>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1362420984723935303/duda.png",
+    "id": "0124",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 30,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "reg",
+        "value": 20
+      }
+   }
+  },
+  {
+    "name": "cupcake",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0125",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": 70,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "reg",
+        "value": 40
+      }
+   }
+  },
+  {
+    "name": "chocolatebunny",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0126",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 45,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": {
+      "type": "bundle",
+      "itemtype": "useable",
+      "cursed": 0,
+      "power": {
+        "type": "reg",
+        "value": 15
+      }
+   }
+  },
+  {
+    "name": "vinespellbook",
+    "emoji": "<:MX_VineSpellbook:1396509255510528051>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1396509790946988042/vinespellbook.png",
+    "id": "0127",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "spellbook",
+      "attack": [50, 55, 45],
+      "cursed": 0,
+      "power": {
+        "emoji": "<:MX_ThornBlast:1408213391603925043>",
+        "type": "atk",
+        "value": 100
+      }
+   }
+  },
+  {
+    "name": "eggspellbook",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0128",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "spellbook",
+      "attack": [10, 15, 5],
+      "cursed": 0,
+      "power": {
+        "emoji": "<:MX_Placeholder:1133387132766003210>",
+        "type": "reg",
+        "value": 200
+      }
+   }
+  },
+  {
+    "name": "cobweb",
+    "emoji": "<:MX_Cobweb:1396505142689267802>",
+    "image": "https://media.discordapp.net/attachments/1315801423539208252/1396505314609860699/cobweb.png",
+    "id": "0129",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 30,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "pinkribbon",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0130",
+    "rarity": "epic",
+    "price": "n",
+    "sellprice": 200,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "spidershard",
+    "emoji": "<:MX_SpiderShard:1409659630698762330>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1409659741407412456/0131.png",
+    "id": "0131",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 3000,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "icespike",
+    "emoji": "<:MX_IcySpike:1315802183673057370>",
+    "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802655477469276/icyspiky.png",
+    "id": "a000",
+    "rarity": "mythic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "cursed": 0,
+      "attack": [60, 65, 55]
+    }
+  },
+  {
+    "name": "furnace",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "i001",
+    "rarity": "common",
+    "price": 2500,
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "workbench",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "i002",
+    "rarity": "common",
+    "price": 1250,
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "cauldron",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "i003",
+    "rarity": "common",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  }
+]

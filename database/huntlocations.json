@@ -1,0 +1,29 @@
+[
+    {
+        "name": "training_arena",
+        "color": "0xffffff",
+        "enemies": [
+            {"enemy": "tutorial", "min_value": 1,"max_value": 10000}
+        ]
+    },
+    {
+        "name": "slime_valley",
+        "color": "0xCE4DD5",
+        "enemies": [
+            {"enemy": "greenslime", "min_value": 1,"max_value": 5000},
+            {"enemy": "blueslime", "min_value": 5001,"max_value": 7500},
+            {"enemy": "pinkslime", "min_value": 7501,"max_value": 9000},
+            {"enemy": "goldslime", "min_value": 9001,"max_value": 9990},
+            {"enemy": "morexslime", "min_value": 9991,"max_value": 10000}
+        ]
+    },
+    {
+        "name": "snowy_peaks",
+        "color": "0xFFFFFF",
+        "enemies": [
+            {"enemy": "iceslime", "min_value": 1,"max_value": 3333},
+            {"enemy": "gingerbread", "min_value": 3334,"max_value": 6666},
+            {"enemy": "snowman", "min_value": 6667,"max_value": 10000}
+        ]
+    }
+]

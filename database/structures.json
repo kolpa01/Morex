@@ -1,0 +1,132 @@
+[
+    {
+        "id": 0,
+        "oponents": ["scorpion", "ironscorpion", "goldenscorpion"],
+        "danger_status": 2,
+        "treasure": [
+            {"item": "coins", "amount": [69, 420]},
+            {"item": "ruby", "amount": [1,2]},
+            {"item": "gold", "amount": [2,5]}
+        ],
+        "normal": [
+            {"item": "coins", "amount": [69, 213]},
+            {"item": "sand", "amount": [3,7]},
+            {"item": "gold", "amount": [0,2]}
+        ]
+    },
+    {
+        "id": 1,
+        "oponents": ["ghost"],
+        "danger_status": 4,
+        "treasure": [
+            {"item": "coins", "amount": [0, 23]},
+            {"item": "cash", "amount": [1,2]},
+            {"item": "stonesword", "amount": [0,1]}
+        ],
+        "normal": [
+            {"item": "coins", "amount": [3, 8]},
+            {"item": "garbage", "amount": [1,2]},
+            {"item": "wood", "amount": [0,1]}
+        ]
+    },
+    {
+        "id": 2,
+        "oponents": ["troll"],
+        "danger_status": 4,
+        "treasure": [
+            {"item": "coins", "amount": [1, 333]},
+            {"item": "oldmap", "amount": [1,2]},
+            {"item": "goldenring", "amount": [0,1]}
+        ],
+        "normal": [
+            {"item": "stone", "amount": [1,2]},
+            {"item": "wood", "amount": [0,2]},
+            {"item": "mysteriousnote", "amount": [0,1]}
+        ]
+    },
+    {
+        "id": 3,
+        "oponents": ["crystalguardian"],
+        "danger_status": 4,
+        "treasure": [
+            {"item": "coins", "amount": [1, 23]},
+            {"item": "placeholder", "amount": [1,2]},
+            {"item": "stonesword", "amount": [1,1]}
+        ],
+        "normal": [
+            {"item": "coins", "amount": [3, 8]},
+            {"item": "garbage", "amount": [1,2]},
+            {"item": "wood", "amount": [1,2]}
+        ]
+    },
+    {
+        "id": 4,
+        "oponents": ["spider"],
+        "danger_status": 0,
+        "treasure": [
+            {"item": "coins", "amount": [200, 631]},
+            {"item": "gold", "amount": [1,1]},
+            {"item": "spidertoken", "amount": [25,50]}
+        ],
+        "normal": [
+            {"item": "coins", "amount": [64, 255]},
+            {"item": "skull", "amount": [1,1]},
+            {"item": "spidertoken", "amount": [15,30]}
+        ]
+    },
+    {
+        "id": 5,
+        "oponents": ["possessedpumpkin", "jurson"],
+        "danger_status": 1,
+        "treasure": [
+            {"item": "coins", "amount": [256, 1024]},
+            {"item": "candycorn", "amount": [56, 91]},
+            {"item": "iron", "amount": [2, 3]}
+        ],
+        "normal": [
+            {"item": "coins", "amount": [64, 255]},
+            {"item": "sand", "amount": [1, 4]},
+            {"item": "candycorn", "amount": [23, 56]}
+        ]
+    },
+    {
+        "id": 6,
+        "oponents": ["iceslime"],
+        "danger_status": 3,
+        "treasure": [
+            {"item": "ice", "amount": [5, 6]},
+            {"item": "greenpresent", "amount": [1, 1]},
+            {"item": "iron", "amount": [2, 3]}
+        ],
+        "normal": [
+            {"item": "coins", "amount": [66, 2024]},
+            {"item": "snow", "amount": [1, 4]},
+            {"item": "ice", "amount": [2, 5]}
+        ]
+    },
+    {
+        "id": 7,
+        "oponents": ["iceslime"],
+        "danger_status": 5,
+        "treasure": [
+            {"item": "coins", "amount": [66, 200]},
+            {"item": "iron", "amount": [2, 3]},
+            {"item": "gold", "amount": [1, 2]}
+        ],
+        "normal": [
+            {"item": "ice", "amount": [5, 6]},
+            {"item": "snow", "amount": [1, 4]}
+        ]
+    },
+    {
+        "id": 8,
+        "oponents": ["kordelia"],
+        "danger_status": 5,
+        "treasure": [
+            {"item": "placeholder", "amount": [1, 2]}
+        ],
+        "normal": [
+            {"item": "placeholder", "amount": [1, 2]}
+        ]
+    }
+]

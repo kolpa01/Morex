@@ -1,0 +1,42 @@
+{
+    "firsttime": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240504158159041/chillguy.png",
+        "name": "Janus Dunn",
+        "text": "Yo bro. I'm gonna teach you ins and outs of mining.\nSee these numbers? You click them and the corresponding block gets destroyed.\nGood Luck!"
+    },
+    "stone": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240503868624946/chillguytherock.png",
+        "name": "Janus Dunn",
+        "text": "You see this is stone. There is a lot of this crap. You can sell it or something. I'm not the </item:1188085855789776957>. Who even is </item:1188085855789776957>???"
+    },
+    "coal": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240871319011348/chillguyidle.png",
+        "name": "Janus Dunn",
+        "text": "Coal.\nJust coal."
+    },
+    "ironore": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240503868624946/chillguytherock.png",
+        "name": "Janus Dunn",
+        "text": "Ore of iron! It needs to be smelted or something. Why are you looking at me like that? I'm just mining here sometimes or I'm talking nonsense to the newbies.\nI think so..."
+    },
+    "goldore": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240871319011348/chillguyidle.png",
+        "name": "Janus Dunn",
+        "text": "TREASURE!!!\nOh wait that's just a gold... No one will understand the reference unless I tell you that during mining system creation kolpa forgot to put gold ore texture, so there was the treasure chest texture instead.\nWhat am I even talking about..?"
+    },
+    "treasure": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240871319011348/chillguyidle.png",
+        "name": "Janus Dunn",
+        "text": "Not bad. Not bad. It's a treasure chest! Just that.\nWhat? You think that I should say something about it? I don't feel like it."
+    },
+    "diamondore": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240504158159041/chillguy.png",
+        "name": "Janus Dunn",
+        "text": "Diamonds. Not bad rookie.\nIt's not like everybody who digs here gets at least one diamond."
+    },
+    "byebye": {
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264240504158159041/chillguy.png",
+        "name": "Janus Dunn",
+        "text": "Bye!\nCome back again here someday or don't. I don't care. I don't work here.\n\nWhy am I here in the first place..."
+    }
+}

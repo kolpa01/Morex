@@ -1,0 +1,25 @@
+{
+    "id": null,
+    "disname": {
+        "pl": null,
+        "en": null
+    },
+    "description": {
+        "pl": null,
+        "en": null
+    },
+    "start": null,
+    "end": null,
+    "features": {
+        "hunt_xp": false,
+        "dig_chest_coins": false,
+        "beg_coins": false
+    },
+    "quests": false,
+    "location_overrides": {},
+    "notifications": {
+        "start": false,
+        "end": false,
+        "before_end": false
+    }
+}

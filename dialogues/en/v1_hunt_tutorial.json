@@ -1,0 +1,80 @@
+{
+  "firsttime": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "I'll teach you the basics of fighting."
+  },
+  "beatmeupplease": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "First: attacking. Click <:MX_Sword:1220425813132836904> to attack me.\nDon't worry. I'm tough."
+  },
+  "beatmeupplease:followup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "You encounter Kordelia on your way."
+  },
+  "coverup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "Nice. Now click <:MX_Shield:1220425815368400926> to increase your shield.\nThe higher it is the more you are proteced."
+  },
+  "coverup:followup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "{u} attacks Kordelia using <:MX_IronSword:1139321518573223997> Iron Sword\nKordelia loses 30 HP"
+  },
+  "comefightme": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "Perfect. Now click any button you want to test your skills in practice."
+  },
+  "comefightme:followup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "{u} gains 30 SH"
+  },
+  "waitareyouforreal": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "Battle Time has come."
+  },
+  "idontbitedoi": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260952483824533594/tutorialgworldisaoidunb.png",
+    "color": "0x97eeff",
+    "text": "Don't try to run away. I don't bite."
+  },
+  "idontbitedoi:followup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "You shall never see this..."
+  },
+  "idontwannadie": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260955263880396850/tutorialgworldisaaAoidunb.png",
+    "color": "0x97eeff",
+    "text": "Heh... You-u did it-t... You managed to beat me...\nClick <:MX_Save:1220425821559455836> to finish the tutorial..."
+  },
+  "idontwannadie:followup": {
+    "name": "<:MX_Kordelia:1260950932536033363> Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "Kordelia barely breathes."
+  },
+  "tutcomplete": {
+    "name": "Kordelia Gorua",
+    "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+    "color": "0x97eeff",
+    "text": "I consider this tutorial as finished! You've shown to me what you can do and I really appreciate it. Come back here some day. When you come back I'll teach you about using multiple weapons and bundles.\nSee you later!"
+  }
+}

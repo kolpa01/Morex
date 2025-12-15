@@ -1,0 +1,132 @@
+[
+    {
+        "id": 0,
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+        "times": 3,
+        "items": [
+            {"item":"commonbox","amount": 1,"price":10,"priceitem":"iron"},
+            {"item":"woodensword","amount": 1,"price":20,"priceitem":"iron"},
+            {"item":"regenerationpotion","amount": 1,"price":5,"priceitem":"gold"},
+            {"item":"coal","amount": 1,"price":1,"priceitem":"gold"},
+            {"item":"ironsword","amount": 1,"price":5,"priceitem":"diamond"},
+            {"item":"lifespellbook","amount": 1,"price":15,"priceitem":"diamond"}
+        ]
+    },
+    {
+        "id": 1,
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264706822514937979/roman.png",
+        "times": 3,
+        "items": [
+            {"item":"ice","amount": 3,"price":10,"priceitem":"cactus"},
+            {"item":"gold","amount": 1,"price":3,"priceitem":"scorpclaw"},
+            {"item":"cash","amount": 1,"price":2,"priceitem":"gold"},
+            {"item":"ruby","amount": 1,"price":1,"priceitem":"desertcrystal"},
+            {"item":"goldensword","amount": 1,"price":15,"priceitem":"ruby"},
+            {"item":"deathspellbook","amount": 1,"price":30,"priceitem":"ruby"}
+        ]
+    },
+    {
+        "id": 2,
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+        "times": 3,
+        "items": [
+            {"item":"hotdog","amount": 1,"price":5,"priceitem":"garbage"},
+            {"item":"cash","amount": 1,"price":2,"priceitem":"cash"},
+            {"item":"clock","amount": 1,"price":5,"priceitem":"hammer"},
+            {"item":"woodensword","amount": 1,"price":80,"priceitem":"cash"},
+            {"item":"ironpickaxe","amount": 1,"price":150,"priceitem":"cash"},
+            {"item":"starystrophy","amount": 1,"price":3,"priceitem":"milk"}
+        ]
+    },
+    {
+        "id": 3,
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+        "times": 3,
+        "items": [
+            {"item":"cash","amount": 1,"price":2,"priceitem":"shell"},
+            {"item":"coconut","amount": 1,"price":10,"priceitem":"sand"},
+            {"item":"trident","amount": 1,"price":50,"priceitem":"shell"},
+            {"item":"corn","amount": 1,"price":5,"priceitem":"coconut"},
+            {"item":"lemonade","amount": 1,"price":3,"priceitem":"coconut"},
+            {"item":"oldnotebook","amount": 1,"price":55,"priceitem":"coconut"}
+        ]
+    },
+    {
+        "id": 4,
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+        "times": 3,
+        "items": [
+            {"item":"jar","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"glass","amount": 5,"price":0,"priceitem":"coin"},
+            {"item":"shipbillet","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"beer","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"commonbox","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"daggerofdarkness","amount": 1,"price":0,"priceitem":"coin"}
+        ]
+    },
+    {
+        "id": 4.1,
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+        "times": 3,
+        "items": [
+            {"item":"jar","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"glass","amount": 5,"price":0,"priceitem":"coin"},
+            {"item":"shipbillet","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"beer","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"commonbox","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"knife","amount": 1,"price":0,"priceitem":"coin"}
+        ]
+    },
+    {
+        "id": 5,
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1170431366123491398/pepesus.png",
+        "times": 3,
+        "items": [
+            {"item":"jar","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"glass","amount": 5,"price":0,"priceitem":"coin"},
+            {"item":"shipbillet","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"beer","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"commonbox","amount": 1,"price":0,"priceitem":"coin"},
+            {"item":"knife","amount": 1,"price":0,"priceitem":"coin"}
+        ]
+    },
+    {
+        "id": 6,
+        "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264705662609391678/kuselskardd.png",
+        "times": 3,
+        "items": [
+            {"item":"torch","amount": 1,"price":15,"priceitem":"metalshard"},
+            {"item":"wood","amount": 5,"price":10,"priceitem":"iron"},
+            {"item":"glass","amount": 10,"price":1,"priceitem":"ironsword"},
+            {"item":"bread","amount": 1,"price":1,"priceitem":"ironpickaxe"},
+            {"item":"cash","amount": 1,"price":20,"priceitem":"ironore"},
+            {"item":"apple","amount": 1,"price":3,"priceitem":"hammer"}
+        ]
+    },
+    {
+        "id": 7,
+        "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1297665799368085554/whimsalot.png",
+        "times": 3,
+        "items": [
+            {"item":"pumpkin","amount": 1,"price":20,"priceitem":"candycorn"},
+            {"item":"jackolantern","amount": 1,"price":50,"priceitem":"candycorn"},
+            {"item":"goldenskull","amount": 1,"price":10,"priceitem":"skull"},
+            {"item":"skull","amount": 1,"price":500,"priceitem":"candycorn"},
+            {"item":"evilpumpkinsword","amount": 1,"price":2000,"priceitem":"candycorn"},
+            {"item":"witchspellbook","amount": 1,"price":5000,"priceitem":"candycorn"}
+        ]
+    },
+    {
+        "id": 8,
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "times": 3,
+        "items": [
+            {"item":"ruby","amount": 10,"price":3,"priceitem":"morexessence"},
+            {"item":"regenerationpotion","amount": 1,"price":10,"priceitem":"cactus"},
+            {"item":"rarebox","amount": 1,"price":500,"priceitem":"snow"},
+            {"item":"diamond","amount": 1,"price":100,"priceitem":"iceessence"},
+            {"item":"crystal","amount": 1,"price":15,"priceitem":"icicle"},
+            {"item":"icedagger","amount": 1,"price":2500,"priceitem":"ice"}
+        ]
+    }
+]

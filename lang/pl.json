@@ -1,0 +1,1201 @@
+{
+    "commands": {
+        "announcement": {
+            "announcement": "Og\u0142oszenie",
+            "none": "Obecnie nie ma \u017cadnych og\u0142osze\u0144."
+        },
+        "balance": {
+            "title": "Stan konta",
+            "field1": "Monety w portfelu:",
+            "field2": "Monety w banku:",
+            "field3": "Wszystkie monety:"
+        },
+        "beg": {
+            "person": ["Stefan Kebab", "Gregory Starszy", "Notime Tofinish"],
+            "coin": ["Trzymaj pieni\u0105dze:", "Dobra masz t\u0105 kase:"],
+            "item": ["Trzymaj jeszcze to:", "To sprawdzi si\u0119 idealnie jako 5:star: posi\u0142ek:"],
+            "nothing": ["Bida w kraju. Nie mam kasy.", "Id\u017a w las, a nie mi to \u017cebrzesz"]
+        },
+        "beta":{
+            "warning": "Do\u0142\u0105cz do betatest\u00f3w, aby mie\u0107 szans\u0119 do testowania nowych funkcji jako pierwszy.\n\n**Uwaga:** Korzystanie z tych funkcji mo\u017ce si\u0119 wi\u0105za\u0107 z utrat\u0105 danych. Ka\u017cda funkcja nie musi dzia\u0142a\u0107 i mo\u017ce zosta\u0107 drastycznie zmieniona przed pe\u0142nym wydaniem.\n\nAby do\u0142\u0105czy\u0107 do betatest\u00f3w wystarczy klikn\u0105\u0107 {main.accept}, aby z nich odej\u015b\u0107 wystarczy klikn\u0105\u0107 {main.deny}.",
+            "joined": "Pomy\u015blnie do\u0142\u0105czono do betatest\u00f3w.",
+            "joined_failed": "Ju\u017c nale\u017ca\u0142e\u015b do betatest\u00f3w.",
+            "left": "Pomy\u015blnie opuszczono betatesty.",
+            "left_failed": "Nie nale\u017ca\u0142e\u015b do betatest\u00f3w."
+        },
+        "buy": {
+            "confirmation": "Czy masz pewno\u015b\u0107, \u017ce chcesz kupi\u0107 {amount} {item} za {cost} {coin}?",
+            "no_coins0": "Brakuje Ci {cost} {coin} aby kupi\u0107 {amount} {item}",
+            "no_coins1": "Masz te pieni\u0105dze w banku u\u017cyj </withdraw:1188085949335355443> aby wyci\u0105gn\u0105\u0107 pieni\u0105dze z banku",
+            "bought": "Kupi\u0142e\u015b {amount} {item} za {cost} {coin}"
+        },
+        "christmas": {
+            "title": "Kalendarz Adwentowy",
+            "today": "Dzisiejsza nagroda: ",
+            "ct": "Odbierz dzisiejsz\u0105 nagrod\u0119",
+            "all": "Odbierz wszystkie",
+            "unlocked": "Odblokowa\u0142e\u015b",
+            "got": "**Zdoby\u0142e\u015b:**",
+            "day": "Dzie\u0144"
+        },
+        "craft": {
+            "no_workbench": "Nie posiadasz workbencha.\nSpr\u00f3buj go kupi\u0107.",
+            "no_items": "Nie uda\u0142o ci si\u0119 stworzy\u0107 {amount} {item}\n\nBrakuje ci:\n{text}",
+            "confirmation": "Czy chcesz stworzy\u0107 {amount} {item} za:\n{text}",
+            "crafted": "Stworzono"
+        },
+        "credits": {
+            "credits": "Zas\u0142gi",
+            "source": "Kod \u017ar\u00f3d\u0142owy",
+            "textures": "Tekstury",
+            "lore": "Fabu\u0142a",
+            "thanks": "Specjalne podzi\u0119kowania",
+            "for": "za u\u017cywanie Morex",
+            "translation": "T\u0142umaczenie"
+        },
+        "custommobs_create": {
+            "limit": "Nie mo\u017cesz utworzy\u0107 wi\u0119cej W\u0142asnych Wrog\u00f3w, bo osi\u0105gn\u0105\u0142e\u015b limit.",
+            "invalid_attack": "Nie prawid\u0142owa warto\u015b\u0107 ataku",
+            "invalid_hp": "Nie prawid\u0142owa warto\u015b\u0107 HP",
+            "int_invalid_hp": "Podana ilo\u015b\u0107 HP jest za du\u017ca lub za ma\u0142a.",
+            "sid": "W SID u\u017cyto nie wspieranych znak\u00f3w.",
+            "disname": "W nazwie wroga u\u017cyto nie wspieranych znak\u00f3w.",
+            "meetup": "W wiadomo\u015bci spotkania u\u017cyto nie wspieranych znak\u00f3w.",
+            "sent": "Wys\u0142ano \u017c\u0105danie do zaakceptowania W\u0142asnego wroga.",
+            "accepted": "Zaakceptowano wroga",
+            "accepted_info": "Stworzony przez ciebie wr\u00f3g zosta\u0142 zaakceptowany.",
+            "accepted_edit": "Stworzona przez ciebie edycja wr\u00f3ga zosta\u0142 zaakceptowana.",
+            "request2": "Wys\u0142ano \u017c\u0105danie do edycji W\u0142asnego wroga."
+        },
+        "custommobs_view": {
+            "enemies": "Wrogowie",
+            "no_enemies": "Ten u\u017cytkownik nie posiada \u017cadnych wrog\u00f3w.",
+            "dev": "Informacje Deweloperskie",
+            "name": "Nazwa",
+            "hp": "HP",
+            "attack": "Atak",
+            "author": "Autor"
+        },
+        "deposit": {
+            "bank": "Wp\u0142acono do banku"
+        },
+        "dig": {
+            "no_pickaxe": "Nie posiadasz kilofa.\nSpr\u00f3buj go kupi\u0107.",
+            "durability": "Wytrzyma\u0142o\u015b\u0107 kilofa: ",
+            "inventory": "Ekwipunek:",
+            "digup": "**Wykopa\u0142e\u015b:**",
+            "chest": "W skarbie by\u0142y:",
+            "chest_name": "Skarb",
+            "try_again": "Spr\u00f3buj ponownie jak go zdob\u0119dziesz.",
+            "donthave": "Nie posiadasz",
+            "have": "Posiadasz",
+            "visit": "Czy chcesz odwiedzi\u0107",
+            "for": "za"
+        },
+        "eq_view": {
+            "your_weapons": "Twoje wyposa\u017cone bronie:",
+            "your_bundle": "Twoja Sakwa:"
+        },
+        "eq_b_eq": {
+            "added": "Dodano",
+            "slot": "do slotu",
+            "current_slot": "Obecny slot",
+            "inventory": "Ekwipunek",
+            "changed": "Zast\u0105piono",
+            "on_slot": "na slocie",
+            "to": "na"
+        },
+        "eq_b_ue": {
+            "empty_slot": "Ten slot jest pusty.",
+            "current_slot": "Obecny slot",
+            "inventory": "Ekwipunek",
+            "deleted": "Usuni\u0119to",
+            "from_slot": "ze slotu"
+        },
+        "eq_w_eq": {
+            "no_weapon": "Nie posiadasz tej broni.",
+            "already_there": "Masz ju\u017c t\u0119 bro\u0144 wyposa\u017con\u0105.",
+            "equiped": "Wyposa\u017cono w",
+            "on_slot": "na slocie",
+            "swapped": "Zamieniono bronie miejscami"
+        },
+        "eq_w_ue": {
+            "empty": "Ten slot jest pusty.",
+            "from_slot": "ze slotu",
+            "unequiped": "Zdj\u0119to"
+        },
+        "event": {
+            "none": "Obecnie nie ma \u017cadnych wydarze\u0144.",
+            "event": "Wydarzenia"
+        },
+        "fight": {
+            "faileduserattack": "{u} atakuje {e} za pomoc\u0105 {uw}. Nie przynios\u0142o to \u017cadnych skutk\u00f3w.",
+            "hpmobattack": "{u} atakuje {e}. {e} traci {ahp} HP.",
+            "bshmobattack": "{u} atakuje {e}. {e} traci wszystkie SH.",
+            "shmobattack": "{u} atakuje {e}. {e} traci {ash} SH.",
+            "bshandhpmobattack": "{u} atakuje {e}. {e} traci wszystkie SH oraz {ahp} HP.",
+            "sp_charged": "{uw} zosta\u0142a na\u0142adowana.",
+            "sp_charging": "Zwi\u0119kszono poziom na\u0142adowania {uw} o 1.",
+            "reb": "{u} zabiera {e} {ahp} HP.",
+            "atk": "{u} atakuje {e} za pomoc\u0105 {pw} \n{e} traci {ahp} HP",
+            "regen": "{u} regeneruje {ahp} HP.",
+            "regen_fail": "{u} nie odzyskuje HP, poniewa\u017c by\u0142o pe\u0142ne.",
+            "sh_raise": "{u} zdobywa 30 SH.",
+            "sh_er": "Nie mo\u017cesz podnie\u015b\u0107 swojej os\u0142ony wi\u0119cej razy.",
+            "sp_wait": "Musisz jeszcze poczeka\u0107.",
+            "ran": "uciek\u0142 od walki.",
+            "fight": "Walka",
+            "info": "Informacje",
+            "hpdeath": "{u} atakuje {e}. {e} traci ca\u0142e HP.\n{u} wygrywa.",
+            "curseddeath": "Bro\u0144 {u} atakuje {u}. {u} przegrywa.",
+            "hpandshdeath": "{u} atakuje {e}. {e} traci ca\u0142e SH i HP.\n{u} wygrywa.",
+            "challenge": "Wyzwanie",
+            "challenges": "wyzwa\u0142 Ciebie na pojedynek.\nCzy przyjmiesz wyzwanie?",
+            "chall": "{u} wyzwa\u0142 na pojedynek {e}.",
+            "no_weapon": "Nie posiadasz broni.\nSpr\u00f3buj j\u0105 kupi\u0107 lub wyposa\u017cy\u0107.",
+            "user_weapon": "Wybrana osoba nie posiada broni.\nNiech spr\u00f3buje j\u0105 kupi\u0107 lub wyposa\u017cy\u0107.",
+            "both_weapon": "Oboje nie posiadacie broni\nSpr\u00f3bujcie je kupi\u0107 lub wyposa\u017cy\u0107."
+        },
+        "give_item": {
+            "is_himself": "Nie mo\u017cesz dawa\u0107 sobie przedmiot\u00f3w.",
+            "confirmation": "Czy masz pewno\u015b\u0107, \u017ce chcesz da\u0107 {user} {amount} {item}?",
+            "gave": "Da\u0142e\u015b"
+        },
+        "give_money": {
+            "is_himself": "Nie mo\u017cesz dawa\u0107 sobie monet.",
+            "no_coins": "Nie posiadasz wystarczaj\u0105co monet.",
+            "confirmation": "Czy masz pewno\u015b\u0107, \u017ce chcesz da\u0107 {user} {amount} {coin}?",
+            "gave": "Da\u0142e\u015b"
+        },
+        "help": {
+            "help": "Pomoc"
+        },
+        "hunt": {
+            "fight": "Walka",
+            "info": "Informacje",
+            "loaded": "Za\u0142adowano stan walki.",
+            "beaten": "Pokona\u0142e\u015b",
+            "got": "Zdoby\u0142e\u015b",
+            "sh_raise": "{u} zdobywa 30 SH.",
+            "sh_er": "Nie mo\u017cesz podnie\u015b\u0107 swojej os\u0142ony wi\u0119cej razy.",
+            "sp_wait": "Musisz jeszcze poczeka\u0107.",
+            "time": "raz",
+            "times": "razy",
+            "bundle": "Sakwa",
+            "error": "B\u0142\u0105d",
+            "empty": "Ten slot jest pusty.",
+            "use": "Mo\u017cesz u\u017cy\u0107 przedmiot\u00f3w jeszcze",
+            "cancel": "Zrezygnuj",
+            "change": "Zmiana broni",
+            "use_wp": "Mo\u017cesz zmieni\u0107 swoj\u0105 bro\u0144 jeszcze",
+            "cur_wp": "Twoja obecna bro\u0144 to",
+            "reset": "Zmiana broni zresetuje poziom na\u0142adowania umiej\u0119tno\u015bci specjalnej dla ksi\u0105g zakl\u0119\u0107.",
+            "equiped": "Ta bro\u0144 jest obecnie wybrana.",
+            "warn": "Uwaga",
+            "run_confirm": "Czy jeste\u015b pewien, \u017ce chcesz uciec od walki?\nWalka zostanie zako\u0144czona i nie otrzymasz nagr\u00f3d.",
+            "ran": "Uciek\u0142e\u015b od walki.",
+            "tutorial": "Ta funkcja jest nie dost\u0119pna w samouczku",
+            "save_confirm": "Czy jeste\u015b pewien, \u017ce chcesz zapisa\u0107 stan walki?\nWalka zostanie zako\u0144czona i nie otrzymasz nagr\u00f3d.",
+            "saved": "Zapisano stan walki",
+            "frozen": "Placeholder",
+            "bundlesh": "{u} zdoby\u0142 {ash} SH.",
+            "bundlebase": "{u} u\u017cywa {pw}.",
+            "bundlehp": "{u} straci\u0142 {ahp} HP.",
+            "regen": "{u} regeneruje {ahp} HP.",
+            "regen_fail": "{u} nie odzyskuje HP, poniewa\u017c by\u0142o pe\u0142ne.",
+            "weaponreplace": "{uw} zast\u0105pi\u0142a twoj\u0105 bro\u0144.",
+            "sp_charged": "{uw} zosta\u0142a na\u0142adowana.",
+            "sp_charging": "Zwi\u0119kszono poziom na\u0142adowania {uw} o 1.",
+            "press_any": "Wci\u015bnij dowolny przycisk, aby kontynuowa\u0107.",
+            "dialogue": "Dialog",
+            "chest": "Wybierz jedn\u0105 z trzech skrzy\u0144.",
+            "noweapon": "Nie posiadasz broni.\nSpr\u00f3buj j\u0105 kupi\u0107 lub wyposa\u017cy\u0107.",
+            "rewards": "Nagrody"
+        },
+        "inventory": {
+            "title": "Ekwipunek",
+            "self_no_items": "Nie posiadasz \u017cadnych przedmiot\u00f3w w ekwipunku",
+            "member_no_items": "Osoba nie posiada \u017cadnych przedmiot\u00f3w w ekwipunku"
+        },
+        "item": {
+            "price": "Cena",
+            "sellprice": "Cena Sprzeda\u017cy",
+            "tradeable": "Wymienialny",
+            "owned": "Posiadasz",
+            "weapon": "Bro\u0144",
+            "sword": "Miecz",
+            "spellbook": "Ksi\u0119ga Zakl\u0119\u0107",
+            "trident": "Tr\u00f3jz\u0105b",
+            "ta_title": "Informacje o Narz\u0119dziu",
+            "cursed": "Przekl\u0119ty",
+            "type": "Typ",
+            "attack": "Atak",
+            "power_info": "Informacje o Mocy",
+            "name": "Nazwa",
+            "description": "Opis",
+            "value": "Warto\u015b\u0107",
+            "container": "Pojemnik",
+            "bundle": "Pakiet",
+            "box": "Skrzynia",
+            "contains": "Zawiera",
+            "smeltable": "Przetapialne",
+            "ore": "Ruda",
+            "other": "Inne",
+            "lvl_req": "Wymagany Poziom",
+            "after_smelting": "Po Przetopieniu",
+            "xp": "XP",
+            "fuel": "Paliwo na sztuk\u0119",
+            "dev": "Informacje Deweloperskie",
+            "in_days": "Ten przedmiot b\u0119dzie dost\u0119pny",
+            "satk": "W\u0142asne obra\u017cenia",
+            "chance": "Szansa",
+            "def": "Dodatkowe SH",
+            "reg": "Regeneracja HP",
+            "smw": "Tymczasowa bro\u0144",
+            "time": "Zatrzymanie czasu",
+            "bp": "Dodatkowe Moce",
+            "location": "Lokalizacja",
+            "command": "Komenda"
+        },
+        "leaderboards_coins": {
+            "all": "Top 10 os\u00f3b z najwi\u0119ksz\u0105 ilo\u015bci\u0105 monet",
+            "wallet": "Top 10 os\u00f3b z najwi\u0119ksz\u0105 ilo\u015bci\u0105 monet w portfelu",
+            "bank": "Top 10 os\u00f3b z najwi\u0119ksz\u0105 ilo\u015bci\u0105 monet w banku",
+            "position": "Twoje miejsce:"
+        },
+        "leaderboards_xp": {
+            "all": "Top 10 os\u00f3b z najwy\u017cszym poziomem",
+            "position": "Twoje miejsce:"
+        },
+        "quests": {
+            "quests": "Zadania",
+            "rewards": "Nagrody",
+            "no_quests": "Nie posiadasz \u017cadnych zada\u0144.",
+            "finished": "Uko\u0144czono zadanie",
+            "got": "Zdoby\u0142e\u015b",
+            "unlocked": "Odblokowano",
+            "daily": "Zadania Dzienne"
+        },
+        "profile": {
+            "profile": "Profil",
+            "general": "Og\u00f3lne Statystyki:",
+            "level": "Poziom",
+            "creation": "Konto utworzone:",
+            "status": "Status Konta:",
+            "banned": "Zbanowany:",
+            "your_weapons": "Twoje wyposa\u017cone bronie:",
+            "your_bundle": "Twoja Sakwa:",
+            "fights": "Wygrane walki:",
+            "search": "Udane przeszukania:",
+            "beg": "Udane \u017cebrania:",
+            "imtoolazy": "**Statystyki**\n*Wkr\u00f3tce*\n\nStworzeni wrogowie",
+            "dev": "Informacje Deweloperskie"
+        },
+        "recipe": {
+            "dev": "Informacje Deweloperskie",
+            "recipe": "Receptura na",
+            "amount": "Ilo\u015b\u0107"
+        },
+        "redeem": {
+            "got": "**Zdoby\u0142e\u015b:**",
+            "redeemed": "Zrealizowano kod",
+            "fail": "Ju\u017c zrealizowa\u0142e\u015b ten kod.",
+            "invalid": "Ten kod jest niepoprawny."
+        },
+        "rob": {
+            "shield": "U\u017cytkownik ma uruchomion\u0105 specjaln\u0105 tarcz\u0119.\n\nPoradnik jak si\u0119 jej pozby\u0107 jest [tutaj](https://youtu.be/2mW7-snInTk).",
+            "is_himself": "Nie mo\u017cesz okra\u015b\u0107 siebie.",
+            "fail0": "Nic nie ukrad\u0142e\u015b i nic nie straci\u0142e\u015b",
+            "fail1": "Za pr\u00f3b\u0119 okradzenia {user} otrzymuje on {amount} {coin} z twoich pieni\u0119dzy",
+            "succes": "Ukrad\u0142e\u015b od"
+        },
+        "sd_dig": {
+            "exists": "Ta lokalizacja jest ju\u017c ustawiona jako domy\u015blna.",
+            "set": "Ustawiono {place} jako domy\u015bln\u0105 lokalizacj\u0119 </dig:1188085769647173715>."
+        },
+        "sd_hunt": {
+            "exists": "Ta lokalizacja jest ju\u017c ustawiona jako domy\u015blna.",
+            "set": "Ustawiono {place} jako domy\u015bln\u0105 lokalizacj\u0119 </hunt:1188085772289577042>."
+        },
+        "sd_search": {
+            "exists": "Ta lokalizacja jest ju\u017c ustawiona jako domy\u015blna.",
+            "set": "Ustawiono {place} jako domy\u015bln\u0105 lokalizacj\u0119 </search:1210998667222450276>."
+        },
+        "search": {
+            "coins": "Chcia\u0142e\u015b ju\u017c podda\u0107 si\u0119 i wr\u00f3ci\u0107, lecz co\u015b \u015bwiec\u0105cego przyku\u0142o twoj\u0105 uwag\u0119. Znalaz\u0142e\u015b {coins} {main.coin}. \nZdoby\u0142e\u015b {xp} xp.",
+            "searched": "Przeszukano",
+            "nothing": "Szuka\u0142e\u015b przez d\u0142ugi czas, lecz nic nie znalaz\u0142e\u015b",
+            "item": "Wytrwale szuka\u0142e\u015b i znalaz\u0142e\u015b {amount} {item}. \nZdoby\u0142e\u015b {xp} xp.",
+            "chest": "Wybierz jedn\u0105 z trzech skrzy\u0144.",
+            "empty": "W skrzyni nic nie by\u0142o.",
+            "found": "W skrzyni znalaz\u0142e\u015b:",
+            "shop": "Sklep",
+            "notenough": "Masz za ma\u0142o",
+            "enter_again": "*Mo\u017cesz kupi\u0107 u tego handlarza jeszcze {amount} {times}. Wej\u015b\u0107 do sklepu?*",
+            "time": "raz",
+            "times": "razy",
+            "bought": "Kupi\u0142e\u015b",
+            "fail": "Chcia\u0142e\u015b ju\u017c podda\u0107 si\u0119 i wr\u00f3ci\u0107, lecz co\u015b \u015bwiec\u0105cego przyku\u0142o twoj\u0105 uwag\u0119. Okaza\u0142o si\u0119, \u017ce to zwierz\u0119ce odchody.",
+            "price": "Cena"
+        },
+        "sell": {
+            "confirmation": "Czy masz pewno\u015b\u0107, \u017ce chcesz sprzeda\u0107 {amount} {item} za {cost} {coin}?",
+            "sold": "Sprzeda\u0142e\u015b {amount} {item} za {cost} {coin}"
+        },
+        "settings": {
+            "settings": "Ustawienia",
+            "multiplayer": "**Multiplayer**\nJe\u017celi opcja jest wy\u0142\u0105czona, gracz nie mo\u017ce korzysta\u0107 z \u017cadnych komend, w kt\u00f3rych wyst\u0119puje kontakt z innymi u\u017cytkownikami. Gracz te\u017c nie mo\u017ce by\u0107 argumentem w komendach innych u\u017cytkownik\u00f3w. (Domy\u015blnie w\u0142\u0105czone)\n\nStatus:",
+            "dev_info": "**Informacje deweloperskie**\nJe\u017celi opcja jest w\u0142\u0105czona, przy niekt\u00f3rych komendach b\u0119d\u0105 wy\u015bwietlane dodatkowe informacje deweloperskie (Domy\u015blnie wy\u0142\u0105czone)\n\nStatus:",
+            "notif": "**Powiadomienia PV**\nJe\u017celi opcja jest w\u0142\u0105czona, u\u017cytkownik b\u0119dzie otrzymywa\u0107 powiadomienia w wiadomo\u015bci prywatnej odno\u015bnie, nowego poziomu itp. (Domy\u015blnie w\u0142\u0105czone)\n\nStatus:",
+            "language": "**J\u0119zyk**\nOpcja pozwala zmieni\u0107 j\u0119zyk w jakim bot jest wy\u015bwietlany.\nRekomendowane jest uruchomienie tej komendy ponownie po zmianie tego ustawienia.\n\nStatus:"
+        },
+        "skills_change": {
+            "raised": "Zwi\u0119kszono umiej\u0119tno\u015b\u0107 HP o",
+            "notenough": "Nie posiadasz wystarczaj\u0105co Punkt\u00f3w Umiej\u0119tno\u015bci.",
+            "already_full": "Nie mo\u017cesz bardziej ulepszy\u0107 tej umiej\u0119tno\u015bci."
+        },
+        "skills_view": {
+            "title": "Umiej\u0119tno\u015bci",
+            "hp": "Dodatkowe HP",
+            "rob": "*Wkr\u00f3tce*",
+            "attack": "*Wkr\u00f3tce*",
+            "magic": "*Wkr\u00f3tce*",
+            "soon": "*Wkr\u00f3tce*"
+        },
+        "slots": {
+            "lost": "Przegrywasz",
+            "machine": "Automat",
+            "win": "Wygrywasz"
+        },
+        "shop": {
+            "shop": "Sklep"
+        },
+        "smelt": {
+            "tooweak": "Tym paliwem nie przetopisz tego przedmiotu.",
+            "notenoughfuel": "Nie posiadasz tyle paliwa.",
+            "level": "Tw\u00f3j poziom jest zbyt niski, \u017ceby przetopi\u0107 ten przedmiot.",
+            "nofurnace": "Nie posiadasz pieca.\nSpr\u00f3buj go kupi\u0107.",
+            "smelting": "Przetapianie",
+            "time": "Pozosta\u0142y czas",
+            "smelted": "Przetopiono",
+            "got": "Zdoby\u0142e\u015b",
+            "baditem": "Ten przedmiot nie mo\u017ce zosta\u0107 przetopiony.",
+            "badfuel": "To paliwo nie istnieje.",
+            "notafuel": "Ten przedmiot nie jest paliwem."
+        },
+        "trade_item": {
+            "trade": "Wymiana",
+            "you_get": "Otrzymujesz",
+            "you_give": "Dajesz",
+            "confirmation": "Czy jeste\u015b pewien, \u017ce chcesz dokona\u0107 tej wymiany?",
+            "no_items": "nie posiada tyle tego przedmiotu.",
+            "you_got": "Otrzyma\u0142e\u015b",
+            "you_gave": "Da\u0142e\u015b",
+            "successful": "Pomy\u015blnie zako\u0144czono wymian\u0119.",
+            "is_himself": "Nie mo\u017cesz wymienia\u0107 si\u0119 ze sob\u0105.",
+            "and": "i",
+            "same": "Nie mo\u017cesz wymieni\u0107 si\u0119 tymi samymi przedmiotami.",
+            "both_no_items": "nie posiadaj\u0105 tyle tych przedmiot\u00f3w."
+        },
+        "trade_money": {
+            "trade": "Wymiana",
+            "you_get": "Otrzymujesz",
+            "you_give": "Dajesz",
+            "confirmation": "Czy jeste\u015b pewien, \u017ce chcesz dokona\u0107 tej wymiany?",
+            "no_coins": "nie posiada tylu monet.",
+            "no_items": "nie posiada tyle tego przedmiotu.",
+            "you_got": "Otrzyma\u0142e\u015b",
+            "you_gave": "Da\u0142e\u015b",
+            "successful": "Pomy\u015blnie zako\u0144czono wymian\u0119.",
+            "is_himself": "Nie mo\u017cesz wymienia\u0107 si\u0119 ze sob\u0105."
+        },
+        "use": {
+            "map": "Mapa",
+            "legend": "Legenda",
+            "owned": "Ta lokalizacja by\u0142a ju\u017c przez ciebie odblokowana wcze\u015bniej.",
+            "unlocked": "Odblokowa\u0142e\u015b",
+            "open": "Otworzy\u0142e\u015b",
+            "get": "Zdoby\u0142e\u015b"
+        },
+        "withdraw": {
+            "wallet": "Wyp\u0142acono z banku"
+        }
+    },
+    "dropdown": {
+        "profile": {
+            "label0": "G\u0142\u00f3wny Profil",
+            "label1": "Statystyki",
+            "label2": "Profil Walki",
+            "label3": "Stworzeni Wrogowie",
+            "desc0": "Informacje o stanie konta, poziomie itp.",
+            "desc1": "Informacje o udanych polowaniach, przeszukaniach itp.",
+            "desc2": "Informacje o broniach, sakwie, HP itp.",
+            "desc3": "Informacje o profilu W\u0142asnych wrog\u00f3w itp.",
+            "placeholder": "Wybierz kategori\u0119"
+        },
+        "quests": {
+            "label0": "Zadania G\u0142\u00f3wne",
+            "label1": "Zadania Dzienne",
+            "label2": "Zadania Eventowe",
+            "label3": "Zadania Handlarzy",
+            "placeholder": "Wybierz typ zada\u0144"
+        },
+        "settings": {
+            "label0": "Multiplayer",
+            "label1": "Informacje Deweloperskie",
+            "label2": "Powiadomienia PV",
+            "label3": "J\u0119zyk",
+            "placeholder": "Wybierz opcje"
+        }
+    },
+    "modals": {
+        "bug": {
+            "write": "Pisz tutaj.",
+            "sys": "Wpisz nazw\u0119 komendy, systemu itp.",
+            "other": "Inne Uwagi",
+            "replica": "W jaki spos\u00f3b uzyska\u0107 b\u0142\u0105d?",
+            "define": "Kr\u00f3tko opisz b\u0142\u0105d.",
+            "what": "Jakiego elementu bota dotyczy b\u0142\u0105d?",
+            "report": "Zg\u0142o\u015b b\u0142\u0105d"
+        },
+        "custommobs_create": {
+            "title": "Stw\u00f3rz W\u0142asnego Wroga",
+            "title2": "Edytuj W\u0142asnego Wroga",
+            "label0": "SID",
+            "placeholder0": "Nazwa wroga z ma\u0142ych liter (green_slime)",
+            "label1": "Nazwa Wy\u015bwietlana",
+            "placeholder1": "Nazwa wroga wy\u015bwietlana w walce (Zielony Slime)",
+            "label2": "Warto\u015bci atak\u00f3w",
+            "placeholder2": "Ataki po przecinku (1,2,3)",
+            "label3": "HP",
+            "placeholder3": "Warto\u015b\u0107 \u017cycia (100)",
+            "label4": "Wiadomo\u015b\u0107 po spotkaniu",
+            "placeholder4": "Zostaw puste dla domy\u015blnej. Aby u\u017cy\u0107 nazwy u\u017cytkownika wpisz {u}, aby u\u017cy\u0107 nazwy wroga wpisz {e}"
+        },
+        "load_fight": {
+            "header": "Za\u0142aduj stan walki",
+            "code": "Kod",
+            "write": "Wpisz kod tutaj"
+        },
+        "rate": {
+            "opinion": "Opinia",
+            "content": "Tre\u015b\u0107 opinii.",
+            "write": "Pisz tutaj."
+        },
+        "search": {
+            "title": "Przejd\u017a na stron\u0119",
+            "label": "Wpisz numer strony",
+            "placeholder": "Numer od 1 do"
+        },
+        "redeem": {
+            "title": "Zrealizuj kod",
+            "label": "Kod",
+            "placeholder": "Wpisz kod tutaj"
+        }
+    },
+    "other": {
+        "no_account": {
+            "title": "Uwaga",
+            "description": "Ten u\u017cytkownik nie utworzy\u0142 konta."
+        },
+        "mperr": {
+            "title": "Uwaga",
+            "description": "Ten u\u017cytkownik ma wy\u0142\u0105czone multiplayer"
+        },
+        "pmerr": {
+            "title": "Uwaga",
+            "description": "Masz wy\u0142\u0105czone multiplayer"
+        },
+        "invalid_value": {
+            "description": "Podaj warto\u015b\u0107, kt\u00f3ra jest liczb\u0105 dodatni\u0105 lub \"all\"."
+        },
+        "too_small_value": {
+            "description": "Warto\u015b\u0107 musi by\u0107 liczb\u0105 dodatni\u0105."
+        },
+        "not_enough_coins": {
+            "description": "Nie posiadasz wystarczaj\u0105co monet."
+        },
+        "not_enough_items": {
+            "description": "Nie posiadasz wystarczaj\u0105co przedmiot\u00f3w."
+        },
+        "bad_item": {
+            "description": "Ten przedmiot nie istnieje."
+        },
+        "missing_recipe": {
+            "description": "Receptura dla tego przedmiotu nie istnieje."
+        },
+        "unavailable_recipe": {
+            "description": "Ta receptura jest niedost\u0119pna."
+        },
+        "unavailable_recipe": {
+            "description": "Ta receptura jest niedost\u0119pna."
+        },
+        "untradeable_item": {
+            "description": "Tym przedmiotem nie mo\u017cna si\u0119 wymienia\u0107"
+        },
+        "bot": {
+            "description": "Bot nie mo\u017ce zosta\u0107 wybrany jako osoba w tej komendzie."
+        },
+        "pages": {
+            "page": "Strona"
+        },
+        "levels": {
+            "increase": "Zwi\u0119kszono limit W\u0142asnych wrog\u00f3w do",
+            "rewards": "Nagrody",
+            "level": "Zdoby\u0142e\u015b {a} poziom!"
+        }
+    },
+    "items": {
+        "name": {
+            "0000": "Test Item",
+            "0001": "Trofeum Wielkanocne 2022",
+            "0002": "Zegarek",
+            "0003": "M\u0142otek",
+            "0004": "Piwo",
+            "0005": "Z\u0142ota Moneta",
+            "0006": "Pakiet Premium",
+            "0007": "Placeholder",
+            "0008": "Kamie\u0144",
+            "0009": "Piach",
+            "0010": "Banknot",
+            "0011": "Zielona Esencja",
+            "0012": "Niebieska Esencja",
+            "0013": "R\u00f3\u017cowa Esencja",
+            "0014": "Z\u0142ota Esencja",
+            "0015": "Esencja z Morex",
+            "0016": "Test Sword",
+            "0017": "Drewniany Miecz",
+            "0018": "Trofeum Wielkanocne 2023",
+            "0019": "R\u00f3g Morex",
+            "0020": "Z\u0142ota Korona",
+            "0021": "Test Bundle",
+            "0022": "Zwyk\u0142a Skrzynia",
+            "0023": "\u017belazny Kilof",
+            "0024": "Ruda \u017belaza",
+            "0025": "\u017belazo",
+            "0026": "Prototyp Morkour",
+            "0027": "Drewno",
+            "0028": "Ziemia",
+            "0029": "W\u0119giel",
+            "0030": "Kamienny Miecz",
+            "0031": "\u017belazny Miecz",
+            "0032": "Diamentowy Miecz",
+            "0033": "Test Spellbook",
+            "0034": "Ksi\u0119ga \u015amierci",
+            "0035": "Ksi\u0119ga \u017bycia",
+            "0036": "Tort Urodzinowy",
+            "0037": "Birthday Spellbook",
+            "0038": "Urodzinowy Balon",
+            "0039": "Wielki Urodzinowy Miecz",
+            "0040": "Trofeum Drugich Urodzin",
+            "0041": "Prezent Urodzinowy",
+            "0042": "Ruda Z\u0142ota",
+            "0043": "Z\u0142oto",
+            "0044": "Ruda Diamentu",
+            "0045": "Diament",
+            "0046": "Rzadka Skrzynia",
+            "0047": "Chleb",
+            "0048": "Fasola",
+            "0049": "Mleko",
+            "0050": "Jab\u0142ko",
+            "0051": "Rubin",
+            "0052": "Mikstura Regeneracji",
+            "0053": "Szczypce Skorpiona",
+            "0054": "Kaktus",
+            "0055": "Z\u0142oty Miecz",
+            "0056": "\u015amieci",
+            "0057": "Hot Dog",
+            "0058": "Trofeum Starego",
+            "0059": "Kokos",
+            "0060": "Lemoniada",
+            "0061": "Muszla",
+            "0062": "Kukurydza",
+            "0063": "Tr\u00f3jz\u0105b",
+            "0064": "Stara Notatka",
+            "0065": "Mapa",
+            "0066": "Tr\u00f3jz\u0105b Heksy",
+            "0067": "Kula Pustyni",
+            "0068": "Szk\u0142o",
+            "0069": "Pustynny Kryszta\u0142",
+            "0070": "Kula Sklepu",
+            "0071": "Klucze Sklepowe",
+            "0072": "Kula Opuszczonego Domu",
+            "0073": "\u0141om",
+            "0074": "Kula Pla\u017cowa",
+            "0075": "Pi\u0142ka Pla\u017cowa",
+            "0076": "Kryszta\u0142 Pustki",
+            "0077": "Bilet do Portu",
+            "0078": "Ko\u015b\u0107",
+            "0079": "Kula Piwnicy",
+            "0080": "Sztylet Ciemno\u015b\u0107",
+            "0081": "N\u00f3\u017c",
+            "0082": "S\u0142oik",
+            "0083": "Kryszta\u0142",
+            "0084": "Kryszta\u0142 Zniszczenia",
+            "0085": "Je\u017cyna",
+            "0086": "Tajemnicza Notatka",
+            "0087": "Stara Mapa",
+            "0088": "Z\u0142oty Pier\u015bcie\u0144",
+            "0089": "Fragment Metalu",
+            "0090": "Trofeum Wielkanocne 2024",
+            "0091": "Kupon do Kopalnii",
+            "0092": "Pochodnia",
+            "0093": "Paj\u0119czy Token",
+            "0094": "Kula Jaskini",
+            "0095": "Z\u0142ota Czaszka",
+            "0096": "Czaszka",
+            "0097": "Cukrowa Kukurydza",
+            "0098": "Dynia",
+            "0099": "Dyniowa Latarnia",
+            "0100": "Z\u0142y Dyniowy Miecz",
+            "0101": "Ksi\u0119ga Wied\u017amy",
+            "0102": "Sopel Lodu",
+            "0103": "L\u00f3d",
+            "0104": "Lodowa Esencja",
+            "0105": "\u015anieg",
+            "0106": "Piernik",
+            "0107": "Laska Cukrowa",
+            "0108": "Marchew",
+            "0109": "Zielony Prezent",
+            "0110": "Niebieski Prezent",
+            "0111": "Czerwony Prezent",
+            "0112": "\u015awi\u0105teczna \u0141opata",
+            "0113": "\u015anie\u017cny Zmierzch",
+            "0114": "Lodowy Sztylet",
+            "0115": "Kula Zimy",
+            "0116": "Pn\u0105cza",
+            "0117": "Trofeum Wielkanocne 2025",
+            "0118": "Jajko",
+            "0119": "Zielone Jajko",
+            "0120": "Niebieskie Jajko",
+            "0121": "R\u00f3\u017cowe Jajko",
+            "0122": "Z\u0142ote Jajko",
+            "0123": "Koszyk Wielkanocny",
+            "0124": "Kie\u0142basa",
+            "0125": "Babeczka",
+            "0126": "Czekoladowy Zaj\u0105c",
+            "0127": "Ksi\u0119ga Pn\u0105czy",
+            "0128": "Ksi\u0119ga Jajek",
+            "0129": "Paj\u0119czyna",
+            "0130": "R\u00f3\u017cowa Kokarda",
+            "0131": "Paj\u0119czy Fragment",
+            "a000": "Lodowy Kolec",
+            "i001": "Piec",
+            "i002": "Workbench",
+            "i003": "Kocio\u0142"
+        },
+        "description": {
+            "0000": "Test LOL\nItem u\u017cyty do testowania sklepu.",
+            "0001": "Trofeum mo\u017cliwe do zdobycia w czasie Wielkanocy w 2022 roku",
+            "0002": "Zwyk\u0142y bezu\u017cyteczny zegarek",
+            "0003": "Niezb\u0119dny element przy wytwarzaniu przedmiot\u00f3w.",
+            "0004": "Piwo",
+            "0005": "Zwyczajna Moneta, kt\u00f3r\u0105 mo\u017cna znale\u017a\u0107 wsz\u0119dzie, ale w formie przedmiotu. Kto to wymy\u015bli\u0142???",
+            "0006": "Pakiet zawieraj\u0105cy kilka wyj\u0105tkowych przedmiot\u00f3w. Otrzymywany poprzez zakup premium.",
+            "0007": "Placeholder",
+            "0008": "Pospolity przedmiot mo\u017cliwy do znalezienia podczas kopania oraz sk\u0142adnik podstawowych przedmiot\u00f3w.",
+            "0009": "Materia\u0142 mo\u017cliwy do znalezienia na Pustyni oraz mo\u017ce zosta\u0107 przetopiony, aby utworzy\u0107 Szk\u0142o.",
+            "0010": "Waluta powszechnie u\u017cywana w po\u0142udniowo-wschodnim Erimie, ale w Zatoce Cetreskiej jest bezu\u017cyteczna.",
+            "0011": "Esencja \u017cyciowa pochodz\u0105ca z Zielonego Slime'a. Nie ma zbyt du\u017cej warto\u015bci, bo w odr\u00f3\u017cnieniu od innych esencji nie mo\u017cna jej u\u017cy\u0107 do utworzenia jakiejkolwiek mikstury.",
+            "0012": "Esencja \u017cyciowa pochodz\u0105ca z Niebieskiego Slime'a. Niezbyt przydatny komponent alchemiczny, bo mo\u017cna dzi\u0119ki niemu utworzy\u0107 mikstur\u0119 powoduj\u0105c\u0105 \u015bwi\u0105d.",
+            "0013": "Esencja \u017cyciowa pochodz\u0105ca z R\u00f3\u017cowego Slime'a. Bardzo po\u017c\u0105dany, gdy\u017c jest wa\u017cnym sk\u0142adnikiem Mikstury Regeneracji oraz wielu innych mikstur.",
+            "0014": "Esencja \u017cyciowa pochodz\u0105ca ze Z\u0142otego Slime'a. Ci\u0119\u017cki do zdobycia komponent alchemiczny wzmacniaj\u0105cy mikstury powoduj\u0105ce szkod\u0119.",
+            "0015": "Esencja \u017cyciowa pochodz\u0105ca z Morex. Po\u017c\u0105dany przez najsilniejszych czarodzieji, gdy\u017c przedmiot nie zosta\u0142 zbadany i nie znany jest jego potencja\u0142.",
+            "0016": "Mityczny Miecz, kt\u00f3ry zgodnie z legend\u0105 dzier\u017cy\u0142 tw\u00f3rca mieczy dawno temu zanim odkryto Pierwotnego Slime'a.",
+            "0017": "Podr\u00f3bka po\u017c\u0105dnego miecza, kt\u00f3r\u0105 mo\u017cna kupi\u0107 tanio w sklepie. Producent nie zaleca u\u017cywania jej do walki oraz nie ponosi odpowiedzialno\u015bci za jakiekolwiek urazy.",
+            "0018": "Trofeum mo\u017cliwe do zdobycia w czasie Wielkanocy w 2023 roku",
+            "0019": "R\u00f3g pochodz\u0105cy z Morex. Nikomu nie uda\u0142o si\u0119 go zbada\u0107. Mimo tego niekt\u00f3rzy wierz\u0105 w to, \u017ce je\u015bli zadmie si\u0119 w niego to przyb\u0119dzie armia slime'\u00f3w walcz\u0105cych po twojej stronie.",
+            "0020": "Korona noszona przez w\u0142adc\u00f3w, jak i Z\u0142otego Slime'a. Nikt nie wie, dlaczego tylko ten rodzaj slime'a nosi co\u015b ludzkiego.",
+            "0021": "Wszystkie testowe itemy w jednym miejscu",
+            "0022": "\u0141atwa do znalezia skrzynia zawieraj\u0105ca kilka podstawowych przedmiot\u00f3w oraz w rzadkich przypadkach Diamenty. Kto je tam zostawi\u0142???",
+            "0023": "Ten sam model kilofa u\u017cywany przez ludzi w ca\u0142ym Erimie. Jako\u015b nikt nie widzi mo\u017cliwych zalet z posiadania lepszego kilofa, b\u0105d\u017a innego narz\u0119dzia zdolnego kopa\u0107.",
+            "0024": "Ruda mo\u017cliwa do znalezienia na nieco g\u0142\u0119bszych warstwach podziemi. Przetopienie jej nie wymaga zbyt wiele wysi\u0142ku.",
+            "0025": "Metal, kt\u00f3ry ka\u017cdemu wala si\u0119 po domu. Z powodu \u0142atwo\u015bci zdobycia jego jest u\u017cywany w ka\u017cdej dziedzinie \u017cycia.",
+            "0026": "Nieudana bro\u0144 utworzona przez Prachda Tagkoura, symberskiego naukowca. Miecz utworzony z diamentowej klingi oraz \u017celaznej r\u0119koje\u015bci oraz jelca. Bro\u0144 sta\u0142a si\u0119 przekl\u0119ta poprzez dodanie skondensowanej R\u00f3\u017cowej Esencji jako klejnotu oraz przez wzmocnienie ostrza przez wykorzystanie Rogu Morex. Sam Tagkour zosta\u0142 zabity tym prototypem. Zamachowiec nie jest znany do dzi\u015b.",
+            "0027": "\u0141atwy do znalezienia surowiec w lesie. Wraz z Kamieniem jest wykorzystywany do budowy prawie ka\u017cdego budynku w Imperium Semerskim.",
+            "0028": "Przedmiot istniej\u0105cy w prawie ka\u017cdym kraju. Nie ma \u017cadnego zastosowania, opr\u00f3cz tego, \u017ce rosn\u0105 w niej ro\u015bliny.",
+            "0029": "U\u017cywany jest do przetapiania \u015brednio wymagaj\u0105cych materia\u0142\u00f3w. Mo\u017cna go wykopa\u0107 dosy\u0107 \u0142atwo, gdy\u017c wyst\u0119puje tu\u017c pod warstw\u0105 Ziemi.",
+            "0030": "Bro\u0144 dzier\u017cona przez pocz\u0105tkuj\u0105cych wojownik\u00f3w oraz niewprawionych poszukiwaczy. Miecz nie tyle co jest ostry, co ci\u0119\u017cki. Prawd\u0119 m\u00f3wi\u0105c ta bro\u0144 jest t\u0119pa.",
+            "0031": "Bro\u0144 mimo lepszego wykoniania od Kamiennego odpowiednika, nie jest du\u017co silniejsza od niego. Najpopularniejszy wyb\u00f3r w\u015br\u00f3d amatorskich wojownik\u00f3w i poszukiwaczy.",
+            "0032": "Bro\u0144 u\u017cywana przez zawodowych wojownik\u00f3w oraz poszukiwaczy. Miecz jest wytapiany z domieszk\u0105 \u017belaza i Z\u0142ota.",
+            "0033": "Pierwsza udana ksi\u0119ga zakl\u0119\u0107 wytworzona przez cz\u0142owieka. Jej tw\u00f3rca Kerim Morex zdecydowa\u0142 si\u0119 j\u0105 zniszczy\u0107, bo by\u0142a zbyt pot\u0119\u017cna. Mimo tego jedna istota wci\u0105\u017c j\u0105 posiada.",
+            "0034": "Przekl\u0119ta ksi\u0119ga zakl\u0119\u0107 stworzona przez czarodzieja, kt\u00f3ry chcia\u0142 osi\u0105gn\u0105\u0107 nie\u015bmiertelno\u015b\u0107 poprzez branie \u017cycia z innych istot. Nie spodziewa\u0142 si\u0119, \u017ce ksi\u0119ga kiedy\u015b zabierze ca\u0142e jego \u017cycie.",
+            "0035": "Magiczna ksi\u0119ga stworzona przez uzdrowiciela, aby magowie \u0142atwo mogli si\u0119 leczy\u0107 podczas walki. Wiedza jak j\u0105 utworzy\u0107 przepad\u0142a razem z uzdrowicielem.",
+            "0036": "\u0022Kto nie lubi ciast?\u0022",
+            "0037": "\u0022Zawsze chcia\u0142am komu\u015b przywali\u0107 z prezentu urodzinowego. Tylko ja?\n\nNie spodziewa\u0142am si\u0119, \u017ce dostan\u0119 ksi\u0119g\u0119 zakl\u0119\u0107.\u0022",
+            "0038": "\u0022Dlaczego by nie miota\u0107 nimi w inne osoby?\u0022",
+            "0039": "\u0022Miecz tak wielki i ci\u0119\u017cki, \u017ce trudno nad nim zapanowa\u0107. Lepiej u\u017cywaj go jako dekoracj\u0119.\u0022",
+            "0040": "\u0022Dzi\u0119ki za to, \u017ce jeste\u015b.\u0022\n\n~ Morex",
+            "0041": "\u0022Czy z okazji urodzin gracze nie powinni oddawa\u0107 mi przedmiot\u00f3w?\u0022",
+            "0042": "Ruda, kt\u00f3r\u0105 mo\u017cna naj\u0142atwiej znale\u017a\u0107 na Pustyni. Przetopienie jej nie wymaga wielkiego wysi\u0142ku.",
+            "0043": "Metal uwa\u017cany za warto\u015bciowy. U\u017cywany jest do produkcji bi\u017cuterii oraz monet. Tylko bankierzy wiedz\u0105 jak wytworzy\u0107 z tej sztabki Z\u0142ote Monety.",
+            "0044": "Ruda, kt\u00f3r\u0105 mo\u017cna znale\u017a\u0107 g\u0142\u0119boko w podziemiach. Przetopienie jej wymaga \u015bredniego wysi\u0142ku.",
+            "0045": "Kryszta\u0142 z szerok\u0105 gam\u0105 zastosowa\u0144. Wykorzystywany do tworzenia broni, bi\u017cuterii oraz magii.",
+            "0046": "Skrzynia zawieraj\u0105ca przedmioty zwi\u0105zane z g\u00f3rnictwem. Dawana jest \u017cebrakom, aby odeszli.",
+            "0047": "None",
+            "0048": "None",
+            "0049": "None",
+            "0050": "Owoc mo\u017cliwy do znalezienia w lesie. Po\u017c\u0105dany przez matki, gdy\u017c ten owoc jest ulubie\u0144cem w\u015br\u00f3d dzieci.",
+            "0051": "Kryszta\u0142 mo\u017cliwy do znalezienia na Pustyni. Jest bardzo warto\u015bciowy ze wzgl\u0119du jego w\u0142a\u015bciwo\u015bci magiczne. Wi\u0119kszo\u015b\u0107 dochodu Kr\u00f3lestwa Pustynnego pochodzi z eksportu Rubin\u00f3w.",
+            "0052": "Mikstura odnawiaj\u0105ca \u017cycie podczas walki. Jest dosy\u0107 s\u0142aba, aby mo\u017cna by\u0142o j\u0105 legalnie sprzedawa\u0107 w sklepie oraz oszcz\u0119dzi\u0107 na kosztach produkcji.",
+            "0053": "Pochodz\u0105 z Pustynnych Skorpion\u00f3w. Ich cena mocno spad\u0142a z powodu ich plagi po III Wojnie Kr\u00f3lewskiej.",
+            "0054": "Jedna z niewielu ro\u015blin rosn\u0105cych na Pustyni. Niekt\u00f3rzy pr\u00f3bowali wykorzysta\u0107 fakt, \u017ce Kaktusy k\u0142uj\u0105, aby utworzy\u0107 bro\u0144. Oni zagin\u0119li w niewiadomych okoliczno\u015bciach.",
+            "0055": "Bro\u0144 wykorzystywana w wielu pojedynkach oraz jako dekoracja. Wytwarzana jest z dodatkiem \u017belaza.",
+            "0056": "None",
+            "0057": "None",
+            "0058": "None",
+            "0059": "None",
+            "0060": "None",
+            "0061": "None",
+            "0062": "None",
+            "0063": "cos tu wpisze jak bedzie mi sie chcialo",
+            "0064": "None",
+            "0065": "Mapa pokazuj\u0105ca obecne granice pa\u0144stw w Zatoce Cetreskiej.",
+            "0066": "bron wladczyni syren czy cus\n\nplaceholder uwu",
+            "0067": "Magiczna kula odblokowywuj\u0105ca dost\u0119p do Pustyni. Znika po u\u017cyciu.",
+            "0068": "Otrzymywane jest w przetapiania Piachu w Piecu. U\u017cywane do tworzenia magicznych kul oraz okien.",
+            "0069": "Wbrew nazwie, nie wyst\u0119puje na Pustyni. Mo\u017cna go znale\u017a\u0107 le\u017c\u0105cego gdzie\u015b w Lesie. Wykorzystywany do utworzenia Kuli Pustyni.",
+            "0070": "None",
+            "0071": "None",
+            "0072": "None",
+            "0073": "None",
+            "0074": "None",
+            "0075": "None",
+            "0076": "Kryszta\u0142 mo\u017cliwy do znalezienia w Pustce. Nikt nie wie czemu on tam jest. Nikt nie wie czym jest Pustka. Je\u015bli Pustka jest Pustk\u0105 to czemu tam jest ten Kryszta\u0142?",
+            "0077": "None",
+            "0078": "None",
+            "0079": "None",
+            "0080": "None",
+            "0081": "None",
+            "0082": "None",
+            "0083": "None",
+            "0084": "None",
+            "0085": "None",
+            "0086": "None",
+            "0087": "None",
+            "0088": "None",
+            "0089": "Fragment pochodz\u0105cy z maszyny Kusela Skarrda. Mama m\u00f3wi\u0142a mu, aby porzuci\u0142 marzenia o byciu tw\u00f3rc\u0105 maszyn oraz by skupi\u0142 si\u0119 na rodzinnym sklepiku w Lesie.",
+            "0090": "Trofeum mo\u017cliwe do zdobycia w czasie Wielkanocy w 2024 roku",
+            "0091": "Kupon umo\u017cliwiaj\u0105cy dostnie si\u0119 do Kopalni. Czasami mo\u017cna go znale\u017a\u0107 w Skarbach tej samej Kopalni. Po\u017c\u0105dany przedmiot przez g\u00f3rnik\u00f3w.",
+            "0092": "None",
+            "0093": "None",
+            "0094": "None",
+            "0095": "Czaszka, ale wykonana ze z\u0142ota. Elegancka i nie tania ozdoba na halloween.",
+            "0096": "Zwyk\u0142a Czaszka. P\u0142ac\u0105 mi za ma\u0142o, \u017ceby bawi\u0107 si\u0119 w biologa. Nie mam poj\u0119cia czego Czaszka to mo\u017ce by\u0107.",
+            "0097": "Popularny cukierek dawany dzieciakom na Halloween. Czekaj, jak to jestem za stary, \u017ceby zbiera\u0107 cukierki??",
+            "0098": "Du\u017ce pomara\u0144czowe warzywo, kt\u00f3re ro\u015bnie tylko w pa\u017adziernku. Warto\u015bciowe jest w ka\u017cdym innym miesi\u0105cu.",
+            "0099": "Dynia z wykrawanymi oczami i buzi\u0105 z \u015bwieczk\u0105 w \u015brodku. Popularna ozdoba Halloweenowa. Zaraz... \u015awieczki si\u0119 nie pal\u0105 na niebiesko.\nDynia op\u0119tana przez z\u0142ego ducha, kt\u00f3ry zosta\u0142 zapiecz\u0119towany w tym ciele.",
+            "0100": "Pewnego razu, pewien czarodziej uzna\u0142, \u017ce u\u017cyje Dyniowej Latarni do stworzenia miecza. Powsta\u0142a kolejna przekl\u0119ta bro\u0144, kt\u00f3ra jest dosy\u0107 popularna.",
+            "0101": "Ksi\u0119ga u\u017cywana przez wied\u017amy do wykonywania czar\u00f3w. Wojownikom uda\u0142o si\u0119 j\u0105 przekszta\u0142ci\u0107 na bro\u0144.",
+            "0102": "Ostry lodowy przedmiot w kszta\u0142cie sto\u017cka. Niekt\u00f3rzy podr\u00f3\u017cnicy m\u00f3wi\u0105, \u017ce zjedzenie go daje tymczasow\u0105 bro\u0144. Nikt nie wie czy oni s\u0105 powa\u017cni czy mr\u00f3z im miesza w g\u0142owach.",
+            "0103": "Powstaje gdy woda zamarznie. Istniej\u0105 osoby, kt\u00f3re nazwywaj\u0105 si\u0119 Magami Lodu. W rzeczywisto\u015bci s\u0105 to tylko Magowie Wody, kt\u00f3rzy nie umiej\u0105 w\u0142ada\u0107 innymi stanami wody.",
+            "0104": "Esencja \u017cyciowa pochodz\u0105ca z Lodowego Slime'a. Posiada te same w\u0142a\u015bciwo\u015bci co Niebieska Esencja, poniewa\u017c Lodowy Slime jest odmian\u0105 Niebieskiego Slime'a.",
+            "0105": "\u015anieg albo go kochasz albo nie nawidzisz. Pojawienie si\u0119 go na dworzu zwiastuje Zimowy Festiwal, kt\u00f3ry odbywa si\u0119 ka\u017cdego roku.",
+            "0106": "Ciastko pieczone specjalnie na \u015bwi\u0119ta. Dzieci uwielbiaj\u0105 je je\u015b\u0107.",
+            "0107": "Cukierek w ksza\u0142cie laski robiony specjalnie na \u015bwi\u0119ta. Ka\u017cdy uwielbia cukier.",
+            "0108": "D\u0142ugie pomara\u0144czowe warzywo. Rzekomo poprawia wzrok, lecz mimo tego, \u017ce zjad\u0142em ich du\u017co wci\u0105\u017c musz\u0119 nosi\u0107 okulary.",
+            "0109": "Prezent dawany pod choink\u0119 dla podr\u00f3\u017cnik\u00f3w. Zawsze ten sam w tym samym zielonym opakowaniu.",
+            "0110": "Prezent dawany pod choink\u0119 dla g\u00f3rnik\u00f3w, aby os\u0142odzi\u0107 ich \u017cycie. Ka\u017cdy g\u00f3rnik sp\u0119dza \u015bwi\u0119ta z rodzin\u0105.",
+            "0111": "Prezent dawany pod choink\u0119 dla wojownik\u00f3w. Wielu wojownik\u00f3w sp\u0119dza \u015bwi\u0119ta zdala od domu chroni\u0105c wioski.",
+            "0112": "Dekoracja, kt\u00f3r\u0105 znajdziesz w domu ka\u017cdego g\u00f3rnika. Oni bardzo lubi\u0105 si\u0119 chwali\u0107 swoj\u0105 profesj\u0105.",
+            "0113": "Bro\u0144 tak fajna jak jej nazwa. \u015anie\u017cne ostrze doskonale tnie wrog\u00f3w. Jak im si\u0119 uda\u0142o zmusi\u0107 \u015anieg, \u017ceby tak dzia\u0142a\u0142..?",
+            "0114": "Elegancki sztylet wykonany z lodu. Podczas trzymania nie czu\u0107 jego zimna. Wytworzenie takiego sztyletu wymaga\u0142o wielkiego kunsztu.",
+            "0115": "Delikatna kryszta\u0142owa Kula odblokowywuj\u0105ca dost\u0119p do Zimowej Polany. Mawia si\u0119, \u017ce Polana najpi\u0119kniej wygl\u0105da zim\u0105.",
+            "0116": "Ro\u015blina, kt\u00f3ra bardzo cz\u0119sto porasta stare mury. Ci\u0119\u017cko je usun\u0105\u0107 ze wzgl\u0119du na ich ostre ciernie.",
+            "0117": "Trofeum mo\u017cliwe do zdobycia w czasie Wielkanocy w 2025 roku",
+            "0118": "Zwyczajne jajko znoszone przez kury. Wa\u017cny sk\u0142adnik wielu ciast.",
+            "0119": "Jajko w kolorze zielonym, kt\u00f3re mo\u017cna znale\u017a\u0107 w lesie w trakcie Wielkanocy. Wielu ludzi g\u0142owi\u0142o si\u0119 nad tym sk\u0105d one si\u0119 tam bior\u0105. Czarodzieje twierdzili, \u017ce to musi by\u0107 zwi\u0105zane z jakimi\u015b magicznymi w\u0142a\u015bciwo\u015bciami drzew. Niekt\u00f3rzy uczeni twierdzili, \u017ce jajka pochodz\u0105 od zwierz\u0105t, a ich zielone zabarwienie jest spowodowane zanieczyszon\u0105 wod\u0105. Osoby, kt\u00f3re tam mieszkaj\u0105 twierdz\u0105, \u017ce rozk\u0142ada je tam co rok Gregory zwany starszym.\nNigdy nie uda\u0142o si\u0119 im doj\u015b\u0107 do porozumienia.",
+            "0120": "Jajko w kolorze niebieskim, kt\u00f3re mo\u017cna znale\u017a\u0107 tylko w Zielonych Jajkach. Sk\u0105d w jednym jajku wzi\u0119\u0142o si\u0119 kolejne???",
+            "0121": "Jajko w kolorze r\u00f3\u017cowym, kt\u00f3re mo\u017cna by\u0142o zdoby\u0107 z Kr\u00f3liczych R\u00f3\u017cowych Slime'\u00f3w. Obecnie jest to niemo\u017cliwe, gdy\u017c ten gatunek slime'a wygin\u0105\u0142. Obecnie s\u0105 u\u017cywane jako nagroda za zadania. Inn\u0105 zagadk\u0105 jest sk\u0105d oni maj\u0105 ich a\u017c tyle.",
+            "0122": "Jajko wykonane ze z\u0142ota, kt\u00f3re mo\u017cna znale\u017a\u0107 w r\u00f3\u017cnych ruinach. Kolejny dow\u00f3d na to, \u017ce lud, kt\u00f3ry zamieszkiwa\u0142 te tereny strasznie lubi\u0142 dziwne ozdoby ze z\u0142ota.",
+            "0123": "Koszyk zawiej\u0105cy przedmioty, kt\u00f3re ka\u017cda rodzina kupuje na Wielkanoc. Jego cena na rynku strasznie ro\u015bnie wraz z nadej\u015bciem Wielkanocy. Osoba, kt\u00f3ra zaobserwowa\u0142a to przekona\u0142a ludzi, \u017ceby kupowali ten przedmiot wcze\u015bniej, aby kupi\u0107 go taniej. Poskutkowa\u0142o to w drastycznym wzro\u015bcie ceny tego przedmiotu podczas Zimowego Festiwalu.",
+            "0124": "Kie\u0142basa zrobiona z naturalnie pozyskanego mi\u0119sa. Jej bogatego smaku nie s\u0105 w stanie zast\u0105pi\u0107 sztuczne alternatywy tworzone przez Czarodzieji oraz tanie kie\u0142basy z Imperium Semerskiego.",
+            "0125": "Babeczka, kt\u00f3r\u0105 ka\u017cdy chocia\u017c raz zjad\u0142 u swojej babci. Cz\u0119sto mo\u017cna je znale\u017a\u0107 w wyposa\u017ceniu wojownik\u00f3w, kt\u00f3rych nie sta\u0107 na mikstury.",
+            "0126": "Rze\u017aba z czekolady w kszta\u0142cie zaj\u0105ca. Droga przek\u0105ska kupowana tylko na Wielkanoc.",
+            "0127": "Wielka Czarodziejka Arella po\u0142\u0105czy\u0142a Ksi\u0119g\u0119 \u017bycia wraz z Pn\u0105czami. W rezulacie powsta\u0142a ksi\u0119ga, kt\u00f3ra \u0142\u0105czy\u0142a obra\u017cenia z ciernii oraz leczenie z Ksi\u0119gi \u017bycia. Niestety wraz z jej \u015bmierci\u0105 zagni\u0119\u0142a wiedza jak wykorzysta\u0107 ca\u0142y potencja\u0142 tej ksi\u0119gi.",
+            "0128": "Ksi\u0119ga stworzona dla jaj. Naprawd\u0119.\nWalki z jej wykorzystaniem s\u0105 strasznie m\u0119cz\u0105ce. Dla obu stron. Nikt nie powinien z niej korzysta\u0107 na powa\u017cnie.",
+            "0129": "Placeholder",
+            "0130": "Placeholder",
+            "0131": "Fioletowy Fragment, kt\u00f3ry zyska\u0142 swoj\u0105 nazw\u0119, dlatego \u017ce uda\u0142o si\u0119 go odnale\u017a\u0107 tylko w pobli\u017cu siedlisk paj\u0105k\u00f3w. Po\u017c\u0105dzany przez wielu ze wzgl\u0119du na jego ogromn\u0105 wytrzyma\u0142o\u015b\u0107.",
+            "a000": "Nikt tego nigdy nie powinien zobaczy\u0107, ale je\u015bli to widzisz to gratuluj\u0119. Tak przy okazji go\u015bciu, kt\u00f3ry robi opisy nazywa si\u0119 Braav. Zr\u00f3b z tym co chcesz.",
+            "i001": "To Piec, co nie?",
+            "i002": "Workbench gurom!!!",
+            "i003": "Cauldron istnieje."
+        },
+        "rarity": {
+            "common": "<:26aa:1275091644911325340> Pospolity",
+            "uncommon": "<:1f7e2:1275091638678454312> Niepospolity",
+            "rare": "<:1f535:1275091643837579405> Rzadki",
+            "epic": "<:1f7e3:1275091640251318403> Epicki",
+            "legendary": "<:1f7e1:1275091637244268656> Legendarny",
+            "mythic": "<:1f534:1275091642021576714> Mityczny",
+            "premium": "<:1f7e0:1275091635801428062> Premium"
+        },
+        "powersname": {
+            "0033": "Test Blast",
+            "0034": "Kradzie\u017c \u017bycia",
+            "0035": "Regeneracja \u017bycia",
+            "0037": "Urodzinowe B\u0142ogos\u0142awie\u0144stwo",
+            "0101": "Wied\u017ami Wybuch",
+            "0127": "Cierniowy Atak",
+            "0128": "Jajeczna Regeneracja"
+        },
+        "powersdescription": {
+            "0033": "Silny atak zadaj\u0105cy obra\u017cenia.",
+            "0034": "Pot\u0119\u017cny atak, kt\u00f3ry zabiera HP od wroga i daje je u\u017cytkownikowi.",
+            "0035": "Regeneruje HP u\u017cytkownika.",
+            "0037": "Regeneruje HP u\u017cytkownika.",
+            "0101": "Silny atak zadaj\u0105cy obra\u017cenia.",
+            "0127": "Silny atak zadaj\u0105cy obra\u017cenia.",
+            "0128": "Regeneruje HP u\u017cytkownika."
+        },
+        "map_legend": {
+            "0065": "<:MX_DesertKingdom:1173061809050226770> - Pustynne Kr\u00f3lestwo\n<:MX_Gremtal:1173061811436802118> - Ksi\u0119stwo Portowe Gremtal \n<:MX_Empire:1173061814146306048> - Imperium Semerskie \n<:MX_Polana:1173061812883824753> - Cesarstwo Polany \n<:MX_SlimeValley:1173061821477957742> - Dolina Slime'\u00f3w\n<:MX_Symberg:1173061817308815432> - Symberg\n<:MX_Pendmor:1173061818973966466> - Republika Pendmorska\n<:MX_Island:1173061815966634034> - Zwyk\u0142a Wyspa\n<:MX_Water:1173061822945955940> - Morza, Oceany etc.\n<:MX_InlandWater:1173061825156366386> - Jeziora, Rzeki etc.",
+            "0087": "<:MX_DesertKingdom:1173061809050226770> - Pustynne Kr\u00f3lestwo\n<:MX_Gremtal:1173061811436802118> - Ksi\u0119stwo Portowe Gremtal \n<:MX_Polana:1173061812883824753> - Cesarstwo Polany \n<:MX_SlimeValley:1173061821477957742> - Dolina Slime'\u00f3w\n<:MX_Symberg:1173061817308815432> - Kr\u00f3lestwo Symberskie\n<:MX_Water:1173061822945955940> - Morza, Oceany etc.\n<:MX_OldInlandWater:1173064818090061985> - Jeziora, Rzeki etc."
+        },
+        "notetitle": {
+            "0064": "Legenda o powstaniu \u015awiata",
+            "0086": "Lista Zakup\u00f3w"
+        },
+        "notecontent": {
+            "0064": "Na pocz\u0105tku nie by\u0142o nic.\nIstnia\u0142a jedynie istota nazwana przez uczonych Przeznaczeniem. Dzi\u0119ki w\u0142asnej woli stworzy\u0142a wielki i pi\u0119kny \u015bwiat, kt\u00f3ry by\u0142 jej pos\u0142uszny. Po jakim\u015b czasie zobaczy\u0142a, \u017ce zarz\u0105dzanie ca\u0142ym \u015bwiatem jest bardzo wymagaj\u0105cym zaj\u0119ciem, wi\u0119c aby siebie odci\u0105\u017cy\u0107 stworzy\u0142a bog\u00f3w, kt\u00f3rzy mieli strzec r\u00f3\u017cnych element\u00f3w tego \u015bwiata. Jednak nied\u0142ugo po stworzeniu cz\u0119\u015b\u0107 bog\u00f3w obr\u00f3ci\u0142a si\u0119 przeciwko stw\u00f3rcy. Rozpocz\u0119\u0142a si\u0119 wielka wojna. Wielu bog\u00f3w zgin\u0119\u0142o oraz du\u017ca cz\u0119\u015b\u0107 ziemi zosta\u0142a zniszczona. Przeznaczenie i cz\u0119\u015b\u0107 pos\u0142usznych jej bog\u00f3w zwyci\u0119\u017cyli w konflikcie, lecz wojny na ziemi nie usta\u0142y. Ludzie walczyli ze sob\u0105 obwiniaj\u0105c swoich wrog\u00f3w za gniew bog\u00f3w. Przeznaczenie, \u017ceby za\u017cegna\u0107 konfliktom, rozkaza\u0142a bogom by stworzyli Opiekun\u00f3w - ludzi, kt\u00f3rych zadaniem by\u0142o przewodzenie ludzko\u015bci dobr\u0105 drog\u0105. Opiekunowie, po stworzeniu, szybko zako\u0144czyli wszystkie konflikty i pozak\u0142adali pa\u0144stwa na terenach zaj\u0119tych przez nich. Nast\u0105pi\u0142 pok\u00f3j, lecz Przeznaczenie musia\u0142o odej\u015b\u0107. Przed swoim odej\u015bciem przekaza\u0142a bogom w\u0142adz\u0119 nad \u015bwiatem i odesz\u0142a do krain jeszcze nie odkrytych.",
+            "0086": "- Bochenek Chleba\n- 2kg Jab\u0142ek\n- 300g - Szynki\n- 50dag Sera\n- 1t Orzech\u00f3w\n- 1 Kryszta\u0142 Wody\n- 1 Niewinna Istota\n- 1 N\u00f3\u017c Rytualny\n- 5 S\u0142oik\u00f3w\n\nKU CHWALE **JEJ**"
+        }
+    },
+    "bosses": {
+        "name": {
+            "0": "Werra"
+        }
+    },
+    "bossrooms": {
+        "name": {
+            "0": "placeholder"
+        }
+    },
+    "changelogs": {
+        "2.0.0": "Przepisano bota na slash komendy.\nzmieniono nazwę i avatar bota\n\nDodano komendę **/hunt** `prototyp`",
+        "2.0.1": "Dodano nowe dropy dla z\u0142otego slime'a i morexa.\nDodano komend\u0119 **/use** Dzi\u0119ki niej mo\u017cna u\u017cywa\u0107 niekt\u00f3re przedmioty.\nDodano Zwyk\u0142\u0105 Skrzyni\u0119 jako nagrod\u0119 z **/beg**",
+        "2.0.2": "Dodano cztery nowe komendy: **/rate**, **/trade for_coins**, **/trade for_items**, **/give item**.\nTrofeum Wielkanocne 2023 nie jest d\u0142u\u017cej mo\u017cliwe do zdobycia. Do sklepu zosta\u0142 dodany kilof.",
+        "2.0.3": "Dodano dwie nowe komendy:\n- **/dig** - Wymaga kilofa. Mo\u017cna zdoby\u0107 rud\u0119 \u017celaza, w\u0119giel, piach, ziemi\u0119 i kamie\u0144\n- **/smelt** = Wymaga pieca(w sklepie za 2500 monet). Zu\u017cywa w\u0119giel aby przetopi\u0107 rudy na gotowe materia\u0142y",
+        "2.0.4": "Dodano komendy:\n- /bug_report\n\nPrzebudowano komend\u0119 /hunt:\n- Dodano os\u0142on\u0119, kt\u00f3r\u0105 mo\u017cna zwi\u0119kszy\u0107 3 razy w ci\u0105gu walki,\n- Dodano Super Atak (dost\u0119pne tylko dla ksi\u0105g zakl\u0119\u0107),\n- Dodano ksi\u0119gi zakl\u0119\u0107\n\nNowy atrybut dla narz\u0119dzi `przekl\u0119ty`. Przekl\u0119te bronie maj\u0105 40% szans na przegranie walki za ka\u017cdym u\u017cyciem\n\nNowe przedmioty:\n- Kamienny Miecz\n- \u017belazny Miecz\n- Diamentowy Miecz\n- <:MX_TestSpellbook:1132424214973001728> Test Spellbook\n- <:MX_DeathSpellbook:1133016270158188544> Death Spellbook (przekl\u0119ta)\n- <:MX_LifeSpellbook:1133016233881640981> Life Spellbook\n\nObecnie mo\u017cna zdoby\u0107 jedynie <:MX_LifeSpellbook:1133016233881640981> Life Spellbook (nagroda specjalna na /beg)\n\nZaktualizowano tekstury slime'\u00f3w\n<:MX_GreenSlime:1128635705304830073><:MX_BlueSlime:1128635752801116191><:MX_PinkSlime:1128635907998765116><:MX_YellowSlime:1130997302404853872><:MX_Morex:1123906643948736532>",
+        "2.0.4.2": "Dodano komendy:\n- /beta\n\nNaprawiono b\u0142\u0119dy:\n- MX_ERR230712.001",
+        "2.0.4.3": "Dodano komendy:\n- /event info\n\nZmieniono tekstury przedmiot\u00f3w:\n- <:MX_Placeholder:1083403693556248646> Placeholder -> <:MX_Placeholder:1133387132766003210> Placeholder\n\nNaprawiono b\u0142\u0119dy:\n- MX_ERR230712.002\n- MX_ERR230712.003",
+        "2.0.4.4": "Dodano komendy:\n- /profile\n\nDodano System poziom\u00f3w.\n\nNowe przedmioty:\n- Tort Urodzinowy\n- Birthday Spellbook\n- Urodzinowy Balon\n- Wielki Urodzinowy Miecz\n- Trofeum Drugich Urodzin\n- Prezent Urodzinowy",
+        "2.0.4.5": "Dodano komendy:\n- /craft\n- /recipes\n\nDodano system tworzenia:\n- Aby u\u017cy\u0107 komendy /craft wymagany jest <:MX_Placeholder:1133387132766003210> Workbench\n- Ka\u017cda receptura wymaga 1 <:MX_Hammer:1040924140141547611> M\u0142otek\n- Komenda /recipes da informacje na temat receptury przedmiotu\n\nNowe przedmioty:\n- <:MX_Placeholder:1133387132766003210> Ruda Z\u0142ota\n- <:MX_Placeholder:1133387132766003210> Z\u0142oto\n- <:MX_Placeholder:1133387132766003210> Ruda Diamentu\n- <:MX_Placeholder:1133387132766003210> Diament\n- <:MX_Placeholder:1133387132766003210> Workbench\n\nZmieniono ID <:MX_Placeholder:1133387132766003210> Piec:\nahh1 -> i001",
+        "2.0.4.6": "Przebudowano komendy:\n- /item\n- /recipes\n\nDodano dwa nowe typy Pojemnik\u00f3w:\n- Pakiety\n- Skrzynie",
+        "2.0.4.7": "Przebudowano komendy:\n- /inventory",
+        "2.1.0": "**Dodano komendy:**\n- /search\n- /set_default\n- /credits\n- /equipment\n- /redeem\n**Inne zmiany:**\n- Naprawiono b\u0142\u0119dy\n- Zaktualizowano komendy\n- Ulepszono system walki\n- Ulepszono system przetapiania\n- Dodano system przeszukiwania\n- Wiele mniejszych zmian.\n- Naprawiono b\u0142\u0119dy.\n- Dodano wiele przedmiot\u00f3w\n\n**Informacja:**\nAktualizacja by\u0142a zbyt du\u017ca, \u017ceby si\u0119 z ni\u0105 wyrobi\u0107. Postanowi\u0142em prze\u0142o\u017cy\u0107 cz\u0119\u015b\u0107 funkcji na aktualizacje od 2.1.1 do 2.1.5. Postaram si\u0119 z nimi wyrobi\u0107 jak najszybciej.\nkolpa01",
+        "2.1.1": "**Dodano komendy:**\n- /fight\n\nDodano system walk z innymi graczami. System dzia\u0142a prawie identycznie do tego z /hunt. Oba systemy zostan\u0105 ujednolicone w nast\u0119pnej aktualizacji.\n\n**Naprawione b\u0142\u0119dy:**\n- Naprawiono b\u0142\u0105d zwi\u0105zany z wy\u015bwietlaniem samej warto\u015bci xp, bez konkretnego opisu po przetopieniu przedmiotu.\n- Uzupe\u0142niono wiadomo\u015b\u0107 b\u0142\u0119du po wybraniu z\u0142ego paliwa w /smelt\n- Naprawiono b\u0142\u0105d gdzie osoby na /leaderboard by\u0142y wy\u015bwietlane jako Denis\n- Naprawiono b\u0142\u0119dn\u0105 wiadomo\u015b\u0107 po \u015bmierci gracza nie posiadaj\u0105cego SH, kt\u00f3ra sugerowa\u0142a, \u017ce gracz straci\u0142 SH i HP.",
+        "2.1.1.2": "**Nowo\u015bci:**\n- Dodano ikony graczy\n\n**Naprawiono b\u0142\u0119dy:**\n- Niepoprawne nazwy by\u0142y wy\u015bwietlane w /fight.\n- Ping zostawa\u0142 po zaakceptowaniu walki\n- Rozpocz\u0119cie walki wy\u015bwietla\u0142o nieodpowiedni wygl\u0105d SH",
+        "2.1.2": "Zaktualizowano komendy:\n- /profile\n- /recipe\n\nInne:\n- Dodano nowe UI\n-Dodano Paski Postępu\n-Zaktualiowano Kilka Tekstur\n\nNaprawiono błędy:\n- Nie działające /leaderboard",
+        "2.1.2.2": "Zaktualiowano pozosta\u0142e UI\n\nZmieniono atak niekt\u00f3rych broni\n\nNaprawiono b\u0142\u0119dy:\n- Niepoprawne wy\u015bwietlanie brakuj\u0105cych item\u00f3w w /craft\n- Niedzia\u0142ajace leaderboards\n- Mapa posiada\u0142a z\u0142y opis",
+        "2.1.3": "**Dodano:**\n- Pierwszy rozdzia\u0142 quest\u00f3w\n- Nowy system kopania\n\n**Inne zmiany:**\n- Zbalanowano /search\n- Zaktualizowano /fight\n- Ulepszono strza\u0142ki przy komendach\n- Konto nie mo\u017ce zosta\u0107 utworzone je\u015bli u\u017cytkownik nie wykona\u0142 komendy\n- Naprawiono b\u0142\u0119dy",
+        "2.1.3.2": "Dodano komend\u0119:\n- /settings\n\nNaprawiono b\u0142\u0119dy",
+        "2.1.3.3": "**Zaktualizowano komendy:**\n- /shop\n- /search\n- /item\n- /recipes\n**Mniejsze Zmiany:**\n- Zaktualizowano wiele przedmiot\u00f3w\n- Dodano now\u0105 receptur\u0119\n- Dodano Pustyni\u0119 na /search\n- Naprawiono b\u0142\u0119dy",
+        "2.1.3.4": "**Dodano komendy:**\n- /equipment bundle equip\n- /equipment bundle unequip\n- /set default hunt\n- /custommobs create\n- /custommobs view\n\n**Inne zmiany:**\n- Dodano W\u0142asnych wrog\u00f3w\n- Dodano Sakw\u0119\n- Dodano samouczek walki\n- Naprawiono b\u0142\u0119dy",
+        "2.1.3.5": "**Dodano komend\u0119:**\n- /set default dig\n**Zaktualizowano komend\u0119:**\n- /dig\n\n**Inne zmiany:**\n- Dodano samouczek kopania\n- Zaktualizowano W\u0142asnych Wrog\u00f3w\n- Nowy przedmiot\n- Naprawiono b\u0142\u0119dy",
+        "2.1.3.6": "**Zaktualizowano komend\u0119:**\n- /leaderboard\n\n**Inne zmiany:**\n- Zaktualizowano tekstury i kwestie NPC",
+        "2.1.3.7": "**Zaktualizowano komend\u0119:**\n- /custommobs create\n\n**Inne zmiany:**\n- Lekko usprawniono system walki\n- Dodano nowe tekstury\n- Naprawiono b\u0142\u0119dy",
+        "2.1.4": "Lekko zaktualizowano komendy\nKilka receptur jest nie dost\u0119pnych\nNaprawiono b\u0142\u0119dy",
+        "2.1.5": "Wprowadzono wszystko zwi\u0105zane z pierwsz\u0105 cz\u0119\u015bci\u0105 wydarzenia Halloweenowego.",
+        "2.1.5.2": "Dodano nowe bronie\nZmieniono sklep Enlenny\nNaprawiono b\u0142\u0119dy",
+        "2.1.5.3": "Zbalansowano Straszny Las na /search",
+        "2.1.5.4": "Straszny Las i Straszna Kopalnia nie s\u0105 d\u0142u\u017cej dost\u0119pne.",
+        "2.2.0": "**Dodano komendy:**\n- /skills view\n- /skills change\n- /slots\n**Inne zmiany:**\n- Zaktualizowano wszystkie komendy\n- Przet\u0142umaczono bota na j\u0119zyk angielski i dodano obs\u0142ug\u0119 kilku j\u0119zyk\u00f3w\n- Dodano kilka nowych zada\u0144\n- Dodano nowego handlarza w Lesie\n- Dodano jaskini\u0119 na /search\n- Dodano mo\u017cliwo\u015b\u0107 edycji W\u0142asnych Wrog\u00f3w\n- Nowe przedmioty\n- Nowe receptury\n- Zaktualizowano kilka tekstur\n- Zapisy walki s\u0105 na wersji 1\n- Naprawiono b\u0142\u0119dy",
+        "2.2.1": "**Dodano komend\u0119:**\n- /christmas daily\n**Inne zmiany:**\n- Nowe lokalizacje zwi\u0105zane z wydarzeniem\n- Nowe \u015bwi\u0105teczne i zimowe przedmioty\n- Naprawiono b\u0142\u0119dy",
+        "2.2.1.2": "Zmiany w balansie\nNaprawiono b\u0142\u0119dy",
+        "2.2.1.3": "Dodano nowy przedmiot\nNaprawiono b\u0142\u0119dy",
+        "2.2.1.4": "Usuni\u0119to komend\u0119\nNaprawiono b\u0142\u0119dy",
+        "2.2.2": "**Zaktualizowano komendy:**\n- /use\n- /item\n\n**Inne zmiany:**\n- Naprawiono b\u0142\u0119dy",
+        "2.2.3": "**Zaktualizowano komendy:**\n- /quests\n**Inne zmiany:**\n- Dodano Dzienne Zadania",
+        "2.2.4": "**Zaktualizowano komendy:**\n- /quests\n- /changelog\n**Inne zmiany:**\n- Dodano Zimow\u0105 Polan\u0119 na /search\n- Naprawiono b\u0142\u0119dy",
+        "2.2.5": "**Zaktualizowano komendy:**\n- /dig\n- /search\n**Inne zmiany:**\n- Dodano Zaro\u015bni\u0119t\u0105 kopalni\u0119 na /dig\n- Zaktualizowano dzienne zadania\n- Dodano przedmioty zwi\u0105zane z wydarzeniem Wielkanocnym\n- Naprawiono b\u0142\u0119dy",
+        "2.2.5.2": "**Zaktualizowano komendy:**\n- /inventory\n**Inne zmiany:**\n- Wydarzenie Wielkanocne zosta\u0142o zako\u0144czone",
+        "2.3.0": "**Dodano komendy:**\n- /leaderboard coins\n- /leaderboard xp\n**Zaktualizowano komendy:**\n- /craft\n- /dig\n- /event\n- /give item\n- /recipe\n- /search\n- /slots\n- /smelt\n- /trade for_coins\n- /trade for_item\n**Usuni\u0119to komendy:**\n- /leaderboards\n**Inne zmiany:**\n- Dodano system wydarze\u0144\n- Zaktualizowano dzienne zadania\n- Zaktualizowano Dziur\u0119 na /dig\n- Zaktualizowano tekstury\n- Dodano Przedmioty\n- Naprawiono b\u0142\u0119dy"
+    },
+    "dig": {
+        "name": {
+            "pit": "Dziura",
+            "mineshaft": "Kopalnia",
+            "scarymineshaft": "Straszna Kopalnia",
+            "icychasm": "Lodowe Rozpadlisko",
+            "overgrownmineshaft": "Zaro\u015bni\u0119ta Kopalnia"
+        }
+    },
+    "hunt": {
+        "name": {
+            "training_arena": "Arena Treningowa",
+            "slime_valley": "Dolina Slime'\u00f3w",
+            "snowy_peaks": "\u015anie\u017cne Szczyty"
+        }
+    },
+    "merchants": {
+        "name": {
+            "0": "Podejrzany Handlarz",
+            "1": "Roman",
+            "2": "Ekspedientka",
+            "3": "Ten typ z pla\u017cy",
+            "4": "Nawiedzony Starzec",
+            "4.1": "Nawiedzony Starzec",
+            "5": "AMOGUS",
+            "6": "Kusel Skarrd",
+            "7": "Czarodziejka Enlenna",
+            "8": "Czarodziejka Ilianna"
+        },
+        "bought": {
+            "0": ["Doskona\u0142y wyb\u00f3r..."],
+            "1": ["\u015awietny zakup."],
+            "2": ["No wko\u0144cu."],
+            "3": ["Dzi\u0119kuje bardzo!!!"],
+            "4": ["Korzystaj z tego na chwa\u0142\u0119 **boga**"],
+            "4.1": ["Korzystaj z tego na chwa\u0142\u0119 **boga**"],
+            "5": ["Korzystaj z tego na chwa\u0142\u0119 **boga**"],
+            "6": ["Doskona\u0142y wyb\u00f3r. Dzi\u0119kuje za zakup!"],
+            "7": ["Dzi\u0119kuje s\u0142odziaku~"],
+            "8": ["Bardzo ci dzi\u0119kuje..."]
+        },
+        "question": {
+            "0": ["Witaj podr\u00f3\u017cniku...\nJeste\u015b mo\u017ce zainteresowany moim towarem..?"],
+            "1": ["Witaj Podr\u00f3\u017cniku!\nChcia\u0142by\u015b co\u015b kupi\u0107?"],
+            "2": ["Czego?"],
+            "3": ["Proponuje kukurydz\u0119!", "Kawa mro- O chcesz co\u015b kupi\u0107?"],
+            "4": ["Koniec jest bliski... Nikt nie ukryje si\u0119 przed gniewem **boga**.", "O Pani tego \u015bwiata... Oszcz\u0119d\u017a mnie, twego s\u0142ug\u0119..."],
+            "4.1": ["Koniec jest bliski... Nikt nie ukryje si\u0119 przed gniewem **boga**.", "O Pani tego \u015bwiata... Oszcz\u0119d\u017a mnie, twego s\u0142ug\u0119..."],
+            "5": ["Witaj"],
+            "6": ["Dzie\u0144 dobry.\n\nZnowu si\u0119 spotykamy... Chcia\u0142by\u015b mo\u017ce co\u015b z mojego sklepu?"],
+            "7": ["Witaj s\u0142odziaku~\nW\u0142a\u015bnie sko\u0144czy\u0142am uzupe\u0142nia\u0107 sw\u00f3j asortyment. Mo\u017ce wpadniesz co\u015b kupi\u0107?"],
+            "8": ["Hej...\nMo\u017ce wpadniesz do mojego sklepiku..? Stara\u0142am si\u0119 go urz\u0105dzi\u0107 jak najlepiej... Je\u015bli nie chcesz to zrozumiem..."]
+        },
+        "inshop": {
+            "0": ["Wybierz co\u015b co pragniesz..."],
+            "1": ["Wybierz co\u015b sobie z mojej oferty."],
+            "2": ["Bierz co\u015b i id\u017a."],
+            "3": ["Co by\u015b chcia\u0142?"],
+            "4": ["Nie zauwa\u017cy\u0142em Ciebie... We\u017a sobie 3 przedmioty... **Mo\u017ce Ci si\u0119 do czego\u015b przydadz\u0105...**"],
+            "4.1": ["Nie zauwa\u017cy\u0142em Ciebie... We\u017a sobie 3 przedmioty... **Mo\u017ce Ci si\u0119 do czego\u015b przydadz\u0105...**"],
+            "5": ["Nie zauwa\u017cy\u0142em Ciebie... We\u017a sobie 3 przedmioty... **Mo\u017ce Ci si\u0119 do czego\u015b przydadz\u0105...**"],
+            "6": ["Ten sklepik to rodzinny biznes. To nie tak, \u017ce chcia\u0142em tu by\u0107.", "Wybierz co\u015b sobie.", "Wola\u0142bym by\u0107 konstruktorem...", "Wybierz sobie co\u015b fajnego..."],
+            "7": ["Jak ci si\u0119 podoba nowy towar?\nWidzia\u0142am, jak walczysz z tymi potworami, wi\u0119c przygotowa\u0142am bronie specjalnie dla ciebie~"],
+            "8": ["Rozejrzyj si\u0119 troch\u0119... Mo\u017ce znajdziesz tu co\u015b co Ci si\u0119 spodoba..."]
+        },
+        "left": {
+            "0": ["Ahh... Dobrze...\nSkoro nie chcesz nic to nic nie poradz\u0119...\n**Ale pami\u0119taj... Nie mieszaj si\u0119 w nie swoje sprawy...**"],
+            "1": ["Nie? Nara go\u015bciu."],
+            "2": ["Po co zawracasz mi g\u0142ow\u0119?!"],
+            "3": ["*smutne odg\u0142osy*"],
+            "4": ["..."],
+            "4.1": ["..."],
+            "5": ["..."],
+            "6": ["\u017begnaj!\nMi\u0142ej drogi!"],
+            "7": ["\u017begnaj!\nWeso\u0142ego Halloween~"],
+            "8": ["Heh... Nic nie szkodzi... Przecie\u017c kto by chcia\u0142 odwiedzi\u0107 taki sklepik..."]
+        },
+        "exit": {
+            "0": ["To wszystko czego chcesz? Dobrze... Niech Bogowie ciebie prowadz\u0105..."],
+            "1": ["Dzi\u0119kuje podr\u00f3\u017cniku."],
+            "2": ["To wszystko co kupi\u0142e\u015b? Po co w og\u00f3le zawraca\u0142e\u015b mi g\u0142ow\u0119?!"],
+            "3": ["Nara."],
+            "4": ["..."],
+            "4.1": ["..."],
+            "5": ["..."],
+            "6": ["Dzi\u0119ki, \u017ce to kupi\u0142e\u015b. Powodzenia!"],
+            "7": ["O kochany~ Tak ma\u0142o kupi\u0142e\u015b... Nie przeszkadza mi to~"],
+            "8": ["Mi\u0142ej drogi..! Uwa\u017caj na Lodowe Slime'y w okolicy..."]
+        }
+    },
+    "mobs": {
+        "name": {
+            "m000": "Zielony Slime",
+            "m001": "Niebieski Slime",
+            "m002": "R\u00f3\u017cowy Slime",
+            "m003": "Z\u0142oty Slime",
+            "m004": "Morex",
+            "m005": "Skorpion",
+            "m006": "Duch",
+            "m007": "Troll",
+            "m008": "Kryszta\u0142owy Stra\u017cnik",
+            "m009": "Paj\u0105k",
+            "m010": "\u017belazny Skorpion",
+            "m011": "Z\u0142oty Skorpion",
+            "m012": "Kordelia Gorua",
+            "m013": "Jurson",
+            "m014": "Nawiedzona Dynia",
+            "m015": "Lodowy Slime",
+            "m016": "Piernik",
+            "m017": "Ba\u0142wan",
+            "m018": "Uroczy Paj\u0105k"
+        },
+        "meetup": {
+            "default": "Napotka\u0142e\u015b na swojej drodze {e}.",
+            "m018": "{e} delikatnie ko\u0142ysze si\u0119 w twoj\u0105 stron\u0119.\nWype\u0142nia ci\u0119 strach."
+        },
+        "uattacks": {
+            "baseuserattack": {
+                "default": {
+                    "default": "{u} atakuje {e} za pomoc\u0105 {uw} \n{e} traci {ahp} HP."
+                }
+            },
+            "faileduserattack": {
+                "default": {
+                    "default": "{u} atakuje {e} za pomoc\u0105 {uw}. Nie przynios\u0142o to \u017cadnych skutk\u00f3w."
+                },
+                "mob_id": {
+                    "default": "",
+                    "weapon_id": ""
+                }
+            }
+        },
+        "eattacks": {
+            "failedmobattack": {
+                "default": "{e} atakuje {u}. Nie przynios\u0142o to \u017cadnych skutk\u00f3w."
+            },
+            "hpmobattack": {
+                "default": "{e} atakuje {u}. {u} traci {ahp} HP."
+            },
+            "shmobattack": {
+                "default": "{e} atakuje {u}. {u} traci {ash} SH."
+            },
+            "bshmobattack": {
+                "default": "{e} atakuje {u}. {u} traci wszystkie SH."
+            },
+            "bshandhpmobattack": {
+                "default": "{e} atakuje {u}. {u} traci wszystkie SH oraz {ahp} HP."
+            }
+        },
+        "deaths": {
+            "hpdeath": {
+                "default": "{e} atakuje {u}. {u} traci ca\u0142e HP.\n{u} przegrywa."
+            },
+            "beerdeath": {
+                "default": "{u} u\u017cywa Piwa i traci ca\u0142e HP. {u} przegrywa."
+            },
+            "curseddeath": {
+                "default": "Bro\u0144 {u} atakuje {u}. {u} przegrywa."
+            },
+            "hpandshdeath": {
+                "default": "{e} atakuje {u}. {u} traci ca\u0142e SH i HP.\n{u} przegrywa."
+            },
+            "escape": {
+                "default": "{e} unika ostatniego ataku i ucieka.\n{e} pozostawia co\u015b za sob\u0105."
+            }
+        },
+        "spells": {
+            "atk": {
+                "default": "{u} atakuje {e} za pomoc\u0105 {pw} \n{e} traci {ahp} HP"
+            },
+            "reb": {
+                "default": "{u} zabiera {e} {ahp} HP."
+            }
+        }
+    },
+    "search": {
+        "name": {
+            "forest": "Las",
+            "desert": "Pustynia",
+            "cave": "Jaskinia",
+            "store": "Sklep",
+            "spiderdungeon": "Paj\u0119cze Lochy",
+            "abandonedhouse": "Opuszczony Dom",
+            "beach": "Plaża",
+            "basement": "Piwnica",
+            "hiddenhills": "Ukryte Wzg\u00f3rza",
+            "spookyforest": "Straszny Las",
+            "winterglade": "Zimowa Polana",
+            "wintervalley": "Zimowa Dolina",
+            "glade": "Polana"
+        }
+    },
+    "quests": {
+        "title": {
+            "chapter1": "Wprowadzenie do Erimu",
+            "chapter2": "Jaskinna Zagadka"
+        },
+        "name": {
+            "tutorial": "Dowiedz si\u0119 wi\u0119cej!",
+            "searcher": "Nowa przygoda!",
+            "wellmet": "Pierwsze spotkanie",
+            "digger": "\u017bycie z Kilofem",
+            "fighter": "Czas Walki",
+            "shopper": "W drodze ku jaskini",
+            "shopperdis": "W drodze ku jaskini",
+            "shoppbaj": "W drodze ku jaskini",
+            "shopcraft": "W drodze ku jaskini",
+            "searchcave": "Nowe miejsce"
+        },
+        "description": {
+            "tutorial": "Uko\u0144cz samouczek z /search.",
+            "searcher": "Znajd\u017a monety na /search 5 razy.",
+            "wellmet": "Odszukaj pierwszego poszukiwacza w lesie na /search.",
+            "digger": "Uko\u0144cz szkolenie kopania w Kopalni.",
+            "fighter": "Uko\u0144cz szkolenie walki na arenie treningowej.",
+            "shopper": "Odszukaj pierwszego handlarza w lesie.",
+            "shopperdis": "Odszukaj 15 fragment\u00f3w metalu dla Kusela Skarrda.",
+            "shoppbaj": "Oddaj Kuselowi w jego sklepie w Lesie 15 Fragment\u00f3w Metalu, aby zdoby\u0107 Pochodni\u0119.",
+            "shopcraft": "Stw\u00f3rz Kul\u0119 Jaskini, a nast\u0119pnie odblokuj j\u0105.",
+            "searchcave": "Przeszukaj Jaskini\u0119 5 razy."
+        }
+    },
+    "tasks": {
+        "name": {
+            "t000": "Tutaj si\u0119 to zacz\u0119\u0142o",
+            "t001": "Silniejszy wr\u00f3g",
+            "t002": "Poszukiwacz fortuny",
+            "t003": "Dzienna porcja kopania",
+            "t004": "Prezesie daj kilka monet",
+            "t005": "Mam to!!!",
+            "t006": "Jest ich wi\u0119cej!",
+            "t007": "Co z tym zrobi\u0107",
+            "t008": "S\u0142odka przek\u0105ska",
+            "t009": "R\u00f3\u017cowa Katastrofa",
+            "t010": "One si\u0119 odradzaj\u0105 czy co?",
+            "t011": "Obalony",
+            "t012": "Misja z\u0142oto",
+            "t013": "Kolejny skarb",
+            "t014": "Ale ja tego nie chc\u0119",
+            "t015": "Obalony 5x",
+            "t016": "Diamenty!",
+            "e000": "R\u00f3\u017cowe wspomnienia",
+            "e001": "Droga dekoracja",
+            "e002": "Poszukiwacz jajek",
+            "e003": "Ogrodnik",
+            "e004": "Z\u0142ota Wielkanoc"
+        },
+        "description": {
+            "t000": "Pokonaj 3 Zielone Slime'y.",
+            "t001": "Pokonaj 1 Niebieskiego Slime'a.",
+            "t002": "Znajd\u017a monety 3 razy na </search:1210998667222450276>.",
+            "t003": "Uko\u0144cz kopanie 1 raz.",
+            "t004": "\u017bebraj 10 razy.",
+            "t005": "Otw\u00f3rz 1 skarb na </dig:1188085769647173715>.",
+            "t006": "Otw\u00f3rz 5 skarb\u00f3w na </dig:1188085769647173715>.",
+            "t007": "Przynie\u015b 10 Rud \u017belaza z </dig:1188085769647173715>.",
+            "t008": "Znajd\u017a 5 Jab\u0142ek na </search:1210998667222450276>.",
+            "t009": "Pokonaj 3 R\u00f3\u017cowe Slime'y.",
+            "t010": "Pokonaj 10 Niebieskich Slime'\u00f3w.",
+            "t011": "Pokonaj 1 Z\u0142otego Slime'a",
+            "t012": "Przynie\u015b 3 Rudy Z\u0142ota z </dig:1188085769647173715>.",
+            "t013": "Otw\u00f3rz skrzyni\u0119 z przedmiotami z </search:1210998667222450276>.",
+            "t014": "Kup 3 rzeczy od handlarzy na </search:1210998667222450276>.",
+            "t015": "Pokonaj 5 Z\u0142otych Slime'\u00f3w.",
+            "t016": "Przynie\u015b 3 Rudy Diamentu z </dig:1188085769647173715>.",
+            "e000": "Pokonaj 3 R\u00f3\u017cowe Slime'y.",
+            "e001": "Przynie\u015b 2 Z\u0142ote Jajka z </dig:1188085769647173715>.",
+            "e002": "Znajd\u017a 10 Zielonych Jajek na </search:1210998667222450276>.",
+            "e003": "Przynie\u015b 25 Pn\u0105czy z </dig:1188085769647173715>.",
+            "e004": "Przynie\u015b 15 Rudy Z\u0142ota z </dig:1188085769647173715>."
+        }
+    },
+    "structures": {
+        "name": {
+            "0": "Piramida",
+            "1": "Strych",
+            "2": "Ruiny Domu",
+            "3": "Grota",
+            "4": "Cela",
+            "5": "Straszna Jaskinia",
+            "6": "Choinka",
+            "7": "Lodowe Pole",
+            "8": "Jezioro Lawy"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "firsttime": {
+        "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+        "name": "Kordelia Gorua",
+        "text": "Oh hello!\nMy name is Kordelia Gorua. Since you're here you should know my brother Kerreus. Not much people have been coming here lately...\nBut we shouldn't talk about it. You are here to train, right?",
+        "color": "0x97eeff",
+        "choices": {
+            "Let's fight!": "return:true",
+            "There is no rush. We can talk for a while.": "wannatalkhuh"
+        }
+    },
+    "wannatalkhuh": {
+        "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+        "name": "Kordelia Gorua",
+        "text": "Wait, do you really want to talk? Most of the people would have started training already. I'm glad you're different. So I'll tell you about the current situation we are facing.\nThere is an organization called Guild of Adventures. Me and my brother are in it. We work as trainers there, so we teach new adventureres, but the way the guild is built isn't important. The issue is there aren't many new adventurers lately. I suppose it's because Semerian Empire and Polana Empire are preparing for the war. You get paid more as a solider. You get stable income and you have a shelter. Adventurers must care for those things themselves. We have a hard time right now...\nThat's all from me. Can we start your training?",
+        "color": "0x97eeff",
+        "choices": {
+            "Yeah...": "return:true",
+            "Can you tell me something about the guild?": "guild"
+        }
+    },
+    "guild": {
+        "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260952483824533594/tutorialgworldisaoidunb.png",
+        "name": "Kordelia Gorua",
+        "text": "Seems like you really don't want to fight...\nGuild of Adventurers is an international organization associating adventurers from entire Erim. Every registered adventurer gets a license which allows them to cross borders without much trouble. At least that's how it used to be... Right now it's hard to get to Polana... It is a beautiful country... Sorry, I got lost in the thought. What was I talking about... Right, adventurers get monthly coins and discounts to fix their equipment. There are also some cons. You have to tell about every treasure, every trophy and every trip to the guild administration.\nI know that you aren't the member of the guild, but since my brother told you about me that means there is something special about you. Shall we start your training or do you want to do it later?",
+        "color": "0x97eeff",
+        "choices": {
+            "Let's get to work!": "return:true",
+            "I need more time.": "whywhereyouthereinfirstplace"
+        }
+    },
+    "whywhereyouthereinfirstplace": {
+        "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260952483824533594/tutorialgworldisaoidunb.png",
+        "name": "Kordelia Gorua",
+        "text": "Hah knew it... Akhem... I mean I respect your decision. I hope you'll come back soon.\nSee you later!",
+        "color": "0x97eeff",
+        "choices": {
+            "end": "END"
+        },
+        "exec": {
+            "add_event": "lazy"
+        }
+    },
+    "denial": {
+        "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1260951036613492840/tutorialgworl.png",
+        "name": "Kordelia Gorua",
+        "text": "Hey!\nI knew you'd come back. Can we start your training now?",
+        "color": "0x97eeff",
+        "choices": {
+            "Let's start!": "return:true",
+            "I need more time.": "whywhereyouthereinfirstplace"
+        }
+    },
+    "return:true": {
+        "name": "hunt_tutorial",
+        "choices": {
+            "end": "END"
+        }
+    }
+}

@@ -1,0 +1,156 @@
+[
+    {
+        "id": "r000",
+        "item": "testitem",
+        "amount": 1,
+        "available": "n",
+        "recipe": [
+            {"name":"pinkessence", "amount": 1},
+            {"name":"blueessence", "amount": 2},
+            {"name":"greenessence", "amount": 3},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r001",
+        "item": "stonesword",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"stone", "amount": 15},
+            {"name":"wood", "amount": 10},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r002",
+        "item": "ironsword",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"iron", "amount": 15},
+            {"name":"wood", "amount": 10},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r003",
+        "item": "diamondsword",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"diamond", "amount": 15},
+            {"name":"iron", "amount": 10},
+            {"name":"gold", "amount": 3},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r004",
+        "item": "desertorb",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"glass", "amount": 15},
+            {"name":"sand", "amount": 5},
+            {"name":"desertcrystal", "amount": 1},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r005",
+        "item": "storeorb",
+        "amount": 1,
+        "available": "n",
+        "recipe": [
+            {"name":"glass", "amount": 15},
+            {"name":"cash", "amount": 5},
+            {"name":"storekeys", "amount": 1},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r006",
+        "item": "houseorb",
+        "amount": 1,
+        "available": "n",
+        "recipe": [
+            {"name":"glass", "amount": 15},
+            {"name":"stone", "amount": 5},
+            {"name":"crowbar", "amount": 1},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r007",
+        "item": "beachorb",
+        "amount": 1,
+        "available": "n",
+        "recipe": [
+            {"name":"glass", "amount": 15},
+            {"name":"sand", "amount": 5},
+            {"name":"beachball", "amount": 1},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r008",
+        "item": "basementorb",
+        "amount": 1,
+        "available": "n",
+        "recipe": [
+            {"name":"glass", "amount": 15},
+            {"name":"bone", "amount": 5},
+            {"name":"placeholder", "amount": 1},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r009",
+        "item": "goldensword",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"gold", "amount": 15},
+            {"name":"iron", "amount": 3},
+            {"name":"wood", "amount": 10},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r010",
+        "item": "caveorb",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"glass", "amount": 15},
+            {"name":"stone", "amount": 30},
+            {"name":"torch", "amount": 1},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r011",
+        "item": "winterorb",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"glass", "amount": 15},
+            {"name":"ice", "amount": 9},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r012",
+        "item": "placeholder",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"glass", "amount": 15},
+            {"name":"iron", "amount": 9},
+            {"name":"spidershard", "amount": 3},
+            {"name":"placeholder", "amount": 1},
+            {"name":"hammer", "amount": 1}
+        ]
+    }
+]

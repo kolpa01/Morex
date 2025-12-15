@@ -1,0 +1,254 @@
+{
+  "t000": {
+    "type": "classic",
+    "rarity": "common",
+    "quest": {
+      "k:greenslime": 3
+    },
+    "rewards": [
+      {"item": "coins", "amount": 500},
+      {"item": "greenessence", "amount": 3}
+    ]
+  },
+  "t001": {
+    "type": "classic",
+    "rarity": "common",
+    "quest": {
+      "k:blueslime": 1
+    },
+    "rewards": [
+      {"item": "coins", "amount": 1000},
+      {"item": "blueessence", "amount": 1}
+    ]
+  },
+  "t002": {
+    "type": "classic",
+    "rarity": "common",
+    "quest": {
+      "s:coins": 3
+    },
+    "rewards": [
+      {"item": "cash", "amount": 3}
+    ]
+  },
+  "t003": {
+    "type": "classic",
+    "rarity": "common",
+    "quest": {
+      "d:final": 1
+    },
+    "rewards": [
+      {"item": "iron", "amount": 3}
+    ]
+  },
+  "t004": {
+    "type": "classic",
+    "rarity": "common",
+    "quest": {
+      "c:beg": 10
+    },
+    "rewards": [
+      {"item": "coins", "amount": 300}
+    ]
+  },
+  "t005": {
+    "type": "classic",
+    "rarity": "common",
+    "quest": {
+      "d:treasure": 1
+    },
+    "rewards": [
+      {"item": "coins", "amount": 500},
+      {"item": "stone", "amount": 10},
+      {"item": "coal", "amount": 2}
+    ]
+  },
+  "t006": {
+    "type": "classic",
+    "rarity": "rare",
+    "quest": {
+      "d:treasure": 5
+    },
+    "rewards": [
+      {"item": "coins", "amount": 2500},
+      {"item": "gold", "amount": 3}
+    ]
+  },
+  "t007": {
+    "type": "classic",
+    "rarity": "rare",
+    "quest": {
+      "d:ironore": 10
+    },
+    "rewards": [
+      {"item": "coins", "amount": 1000},
+      {"item": "coal", "amount": 3}
+    ]
+  },
+  "t008": {
+    "type": "classic",
+    "rarity": "rare",
+    "quest": {
+      "s:apple": 5
+    },
+    "rewards": [
+      {"item": "coins", "amount": 1000},
+      {"item": "wood", "amount": 3},
+      {"item": "beer", "amount": 1}
+    ]
+  },
+  "t009": {
+    "type": "classic",
+    "rarity": "rare",
+    "quest": {
+      "k:pinkslime": 3
+    },
+    "rewards": [
+      {"item": "coins", "amount": 5000},
+      {"item": "pinkessence", "amount": 3}
+    ]
+  },
+  "t010": {
+    "type": "classic",
+    "rarity": "rare",
+    "quest": {
+      "k:blueslime": 10
+    },
+    "rewards": [
+      {"item": "coins", "amount": 4000},
+      {"item": "blueessence", "amount": 3},
+      {"item": "clock", "amount": 1}
+    ]
+  },
+  "t011": {
+    "type": "classic",
+    "rarity": "epic",
+    "quest": {
+      "k:goldslime": 1
+    },
+    "rewards": [
+      {"item": "coins", "amount": 7000},
+      {"item": "rarebox", "amount": 3}
+    ]
+  },
+  "t012": {
+    "type": "classic",
+    "rarity": "epic",
+    "quest": {
+      "d:goldore": 3
+    },
+    "rewards": [
+      {"item": "coins", "amount": 5000},
+      {"item": "coal", "amount": 5}
+    ]
+  },
+  "t013": {
+    "type": "classic",
+    "rarity": "epic",
+    "quest": {
+      "s:chest": 1
+    },
+    "rewards": [
+      {"item": "coins", "amount": 3000},
+      {"item": "diamond", "amount": 1}
+    ]
+  },
+  "t014": {
+    "type": "classic",
+    "rarity": "epic",
+    "quest": {
+      "s:mer": 3
+    },
+    "rewards": [
+      {"item": "coins", "amount": 10000},
+      {"item": "ruby", "amount": 1}
+    ]
+  },
+  "t015": {
+    "type": "classic",
+    "rarity": "legendary",
+    "quest": {
+      "k:goldslime": 5
+    },
+    "rewards": [
+      {"item": "coins", "amount": 20000},
+      {"item": "regenerationpotion", "amount": 5},
+      {"item": "diamond", "amount": 1}
+    ]
+  },
+  "t016": {
+    "type": "classic",
+    "rarity": "legendary",
+    "quest": {
+      "d:diamondore": 3
+    },
+    "rewards": [
+      {"item": "coins", "amount": 15000},
+      {"item": "mineshaftcoupon", "amount": 1}
+    ]
+  },
+  "e000": {
+    "type": "event",
+    "rarity": "common",
+    "event": "easter2025",
+    "quest": {
+      "k:pinkslime": 3
+    },
+    "rewards": [
+      {"item": "coins", "amount": 250},
+      {"item": "pinkegg", "amount": 1}
+    ]
+  },
+  "e001": {
+    "type": "event",
+    "rarity": "common",
+    "event": "easter2025",
+    "quest": {
+      "d:goldenegg": 2
+    },
+    "rewards": [
+      {"item": "coins", "amount": 2000},
+      {"item": "easterbasket", "amount": 2},
+      {"item": "pinkegg", "amount": 1}
+    ]
+  },
+  "e002": {
+    "type": "event",
+    "rarity": "common",
+    "event": "easter2025",
+    "quest": {
+      "s:greenegg": 10
+    },
+    "rewards": [
+      {"item": "coins", "amount": 1000},
+      {"item": "iron", "amount": 5},
+      {"item": "easterbasket", "amount": 1},
+      {"item": "pinkegg", "amount": 1}
+    ]
+  },
+  "e003": {
+    "type": "event",
+    "rarity": "common",
+    "event": "easter2025",
+    "quest": {
+      "d:vines": 25
+    },
+    "rewards": [
+      {"item": "coins", "amount": 500},
+      {"item": "egg", "amount": 10},
+      {"item": "easterbasket", "amount": 1}
+    ]
+  },
+  "e004": {
+    "type": "event",
+    "rarity": "common",
+    "event": "easter2025",
+    "quest": {
+      "d:goldore": 15
+    },
+    "rewards": [
+      {"item": "coins", "amount": 750},
+      {"item": "pinkegg", "amount": 5}
+    ]
+  }
+}

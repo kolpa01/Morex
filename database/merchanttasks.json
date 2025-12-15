@@ -1,0 +1,25 @@
+{
+  "0": {
+    "permanent": {
+      "t000": {
+        "quest": {
+          "f:wood": 300
+        },
+        "rewards": [
+          {"item": "coins", "amount": 0},
+          {"item": "greenessence", "amount": 0}
+        ]
+      }
+    },
+    "random": {
+      "t000": {
+        "quest": {
+          "f:iron": 100
+        },
+        "rewards": [
+          {"item": "coins", "amount": 0}
+        ]
+      }
+    }
+  }
+}
