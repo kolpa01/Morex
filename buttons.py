@@ -1170,6 +1170,7 @@ class HuntButtons(nextcord.ui.View):
 
         embed3 = nextcord.Embed(title="Debug Info", description=f"<:MX_Heart:1259099939963666503> {self.mob_hp}/{self.mob_max}\n<:MX_QuestionMark:1266370987474288764> {self.opponent}", color=self.color)
         embed3.add_field(name=f"{self.enemy.disname}", value=f"```{self.enemy.meetup}```\n<:MX_Info:1217191323015184536> {self.enemy.displayname}\n<:MX_Heart:1259099939963666503> {self.enemy.hp}\n<:MX_Sword:1220425813132836904> {self.enemy.attack[0]}/{self.enemy.attack[1]}/{self.enemy.attack[2]}", inline=False)
+        embed3.add_field(name="Mob types", value=morex.enums.utils.format_enum(self.enemy.type), inline=False)
         if self.enemy.drops is not None and self.enemy.xp is not None:
             # <:MX_XP:1266372378473005320>
             embed3.set_field_at(0, name=embed3.fields[0].name, value=str(embed3.fields[0].value) + f"\n<:MX_XP:1266372378473005320> {self.enemy.xp[0]}-{self.enemy.xp[1]}")
