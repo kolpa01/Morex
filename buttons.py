@@ -496,6 +496,15 @@ class HuntButtons(nextcord.ui.View):
 
         return text
 
+    async def get_structure(self, interaction, timeout_seconds: int):
+        if self.mode[0] == "search":
+            await asyncio.sleep(timeout_seconds)
+            structure = fns.get_strucure(self.mode[1], self.cur_lan)
+            embed = nextcord.Embed(title=structure.displayname, description=self.language['chest'], color=self.color)
+            embed.set_footer(text=main.version[self.cur_lan])
+            view = SearchChests(30, self.mode[2], self.user, structure, self.color)
+            await interaction.edit(embed=embed, view=view)
+
     async def enemy_death(self, interaction):
         if self.mode[1] == 2 and self.mode[0] == "custom":
             self.mob_hp = 1
@@ -512,6 +521,7 @@ class HuntButtons(nextcord.ui.View):
             embed.add_field(name=self.language['rewards'], value=rewards_text, inline=False)
             await self.manage_buttons("disable")
             await interaction.edit(embed=embed, view=self)
+            await self.get_structure(interaction, 5)
             self.stop()
             return
         self.mob_hp = 0
@@ -544,13 +554,7 @@ class HuntButtons(nextcord.ui.View):
             await fns.update_stat(interaction.user, "hunt", 1)
             await fns.update_daily_task(interaction.user, "k", self.enemy.sid, 1)
 
-            if self.mode[0] == "search":
-                await asyncio.sleep(2)
-                structure = fns.get_strucure(self.mode[1], self.cur_lan)
-                embed = nextcord.Embed(title=structure.displayname, description=self.language['chest'], color=self.color)
-                embed.set_footer(text=main.version[self.cur_lan])
-                view = SearchChests(30, self.mode[2], self.user, structure, self.color)
-                await interaction.edit(embed=embed, view=view)
+            await self.get_structure(interaction, 2)
         else:
             embed = nextcord.Embed(title=f"{self.language['beaten']} {disname}", color=self.color)
             embed.set_thumbnail(url=self.image)
