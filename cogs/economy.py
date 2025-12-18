@@ -424,11 +424,13 @@ class Economy(commands.Cog):
             embed.set_author(name=user.name, icon_url=str(user.display_avatar))
             embed.set_footer(text=main.version[cur_lan])
             await interaction.response.send_message(embed=embed, ephemeral=True)
+            return
         elif bet is None:
             embed = nextcord.Embed(description=leng['other']['invalid_value']['description'], color=main.color_normal)
             embed.set_author(name=user.name, icon_url=str(user.display_avatar))
             embed.set_footer(text=main.version[cur_lan])
             await interaction.response.send_message(embed=embed, ephemeral=True)
+            return
 
         await fns.update_bank(user, -1 * bet)
         #  - 150%,  - 300%,  - 200%
