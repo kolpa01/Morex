@@ -846,15 +846,19 @@ async def make_daily_tasks(user):
             daily_tasks[str(user.id)]["quests"][task_id]["type"] = task_to_add.type
             daily_tasks[str(user.id)]["quests"][task_id]["completed"] = False
         if event_obj:
-            task_id = random.choice(rarities_table['tasks']['event'][event_obj.sid])
-            rarities_table['tasks']['event'][event_obj.sid].remove(task_id)
+            if event_obj.has_quests:
+                if event_obj.sid not in rarities_table['tasks']['event']:
+                    logging.critical(f"Attempted to add {event_obj.sid} event quest, but none were found.")
+                else:
+                    task_id = random.choice(rarities_table['tasks']['event'][event_obj.sid])
+                    rarities_table['tasks']['event'][event_obj.sid].remove(task_id)
 
-            task_to_add = get_task(task_id, cur_lan)
-            daily_tasks[str(user.id)]["quests"][task_id] = {}
-            daily_tasks[str(user.id)]["quests"][task_id]["progress"] = {quest: 0 for quest in task_to_add.quest}  # something complitacted e.g. somehting that actually requires some logic
-            daily_tasks[str(user.id)]["quests"][task_id]["type"] = task_to_add.type
-            daily_tasks[str(user.id)]["quests"][task_id]["event"] = event_obj.sid
-            daily_tasks[str(user.id)]["quests"][task_id]["completed"] = False
+                    task_to_add = get_task(task_id, cur_lan)
+                    daily_tasks[str(user.id)]["quests"][task_id] = {}
+                    daily_tasks[str(user.id)]["quests"][task_id]["progress"] = {quest: 0 for quest in task_to_add.quest}  # something complitacted e.g. somehting that actually requires some logic
+                    daily_tasks[str(user.id)]["quests"][task_id]["type"] = task_to_add.type
+                    daily_tasks[str(user.id)]["quests"][task_id]["event"] = event_obj.sid
+                    daily_tasks[str(user.id)]["quests"][task_id]["completed"] = False
 
     with open("userdb/dailytasks.json", "w") as f:
         json.dump(daily_tasks, f)
