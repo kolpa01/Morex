@@ -69,7 +69,7 @@ class Informations(commands.Cog):
 
         await interaction.response.send_message(embed=embed)
 
-    @nextcord.slash_command(name="event", description="Display informations about current event.", description_localizations={"pl": "Wy\u015bwietl informacje o bie\u017c\u0105cych wydarzeniach."})
+    @nextcord.slash_command(name="event", description="Display information about current and upcoming events.", description_localizations={"pl": "Wyświetl informacje o obecnych i nadchodzących wydarzeniach."})
     async def event(self, interaction: Interaction):
         interaction.user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
