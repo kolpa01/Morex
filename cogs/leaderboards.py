@@ -15,6 +15,8 @@ class Leaderboards(commands.Cog):
         for user_id, user_details in users.items():
             if user_id == 1:
                 continue
+            if users[str(user_id)]["banned"] == "yes":
+                continue
             if stat == "all":
                 total_amount = user_details["wallet"] + user_details["bank"]
             else:
