@@ -350,6 +350,14 @@ class MorexMerchant:
         self.in_shop = in_shop
         self.left = left
         self.exit_shop = exit_shop
+        self._data = data
+
+    @property
+    def dialogues(self):
+        if "dialogues" in self._data:
+            return self._data['dialogues']
+        else:
+            return None
 
 
 class MorexTask:

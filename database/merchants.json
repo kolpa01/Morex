@@ -3,6 +3,7 @@
         "id": 0,
         "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
         "times": 3,
+        "dialogues": null,
         "items": [
             {"item":"commonbox","amount": 1,"price":10,"priceitem":"iron"},
             {"item":"woodensword","amount": 1,"price":20,"priceitem":"iron"},
@@ -16,6 +17,7 @@
         "id": 1,
         "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264706822514937979/roman.png",
         "times": 3,
+        "dialogues": null,
         "items": [
             {"item":"ice","amount": 3,"price":10,"priceitem":"cactus"},
             {"item":"gold","amount": 1,"price":3,"priceitem":"scorpclaw"},
@@ -29,6 +31,7 @@
         "id": 2,
         "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
         "times": 3,
+        "dialogues": null,
         "items": [
             {"item":"hotdog","amount": 1,"price":5,"priceitem":"garbage"},
             {"item":"cash","amount": 1,"price":2,"priceitem":"cash"},
@@ -42,6 +45,7 @@
         "id": 3,
         "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
         "times": 3,
+        "dialogues": null,
         "items": [
             {"item":"cash","amount": 1,"price":2,"priceitem":"shell"},
             {"item":"coconut","amount": 1,"price":10,"priceitem":"sand"},
@@ -55,6 +59,7 @@
         "id": 4,
         "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
         "times": 3,
+        "dialogues": null,
         "items": [
             {"item":"jar","amount": 1,"price":0,"priceitem":"coin"},
             {"item":"glass","amount": 5,"price":0,"priceitem":"coin"},
@@ -68,6 +73,7 @@
         "id": 4.1,
         "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
         "times": 3,
+        "dialogues": null,
         "items": [
             {"item":"jar","amount": 1,"price":0,"priceitem":"coin"},
             {"item":"glass","amount": 5,"price":0,"priceitem":"coin"},
@@ -81,6 +87,7 @@
         "id": 5,
         "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1170431366123491398/pepesus.png",
         "times": 3,
+        "dialogues": null,
         "items": [
             {"item":"jar","amount": 1,"price":0,"priceitem":"coin"},
             {"item":"glass","amount": 5,"price":0,"priceitem":"coin"},
@@ -94,6 +101,7 @@
         "id": 6,
         "icon": "https://cdn.discordapp.com/attachments/1134067893840126012/1264705662609391678/kuselskardd.png",
         "times": 3,
+        "dialogues": null,
         "items": [
             {"item":"torch","amount": 1,"price":15,"priceitem":"metalshard"},
             {"item":"wood","amount": 5,"price":10,"priceitem":"iron"},
@@ -107,6 +115,7 @@
         "id": 7,
         "icon": "https://cdn.discordapp.com/attachments/1222203424389599232/1297665799368085554/whimsalot.png",
         "times": 3,
+        "dialogues": null,
         "items": [
             {"item":"pumpkin","amount": 1,"price":20,"priceitem":"candycorn"},
             {"item":"jackolantern","amount": 1,"price":50,"priceitem":"candycorn"},
@@ -120,6 +129,7 @@
         "id": 8,
         "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
         "times": 3,
+        "dialogues": null,
         "items": [
             {"item":"ruby","amount": 10,"price":3,"priceitem":"morexessence"},
             {"item":"regenerationpotion","amount": 1,"price":10,"priceitem":"cactus"},
