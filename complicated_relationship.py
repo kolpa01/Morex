@@ -125,7 +125,7 @@ async def hunter(mode, interaction: Interaction, place, color):
         await interaction.response.send_message(embed=embed, view=view)
 
 
-async def init_dialogues(interaction: Interaction, current_language, dialogue, default=None):
+async def init_dialogues(interaction: Interaction, current_language, dialogue, default=None, new_message=True):
     with open(f'dialogues/{current_language}/{dialogue}.json') as f:
         dialogues = json.load(f)
     mapper = {}
@@ -173,7 +173,10 @@ async def init_dialogues(interaction: Interaction, current_language, dialogue, d
     embed.set_thumbnail(dialogues[starting_point]['icon'])
     embed.set_footer(text=main.version[current_language])
 
-    await interaction.response.send_message(embed=embed, view=view)
+    if new_message:
+        await interaction.response.send_message(embed=embed, view=view)
+    else:
+        await interaction.response.edit_message(embed=embed, view=view)
 
 
 async def pages_helper(embeds: list[nextcord.Embed], user: nextcord.Member):
