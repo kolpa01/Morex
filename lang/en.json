@@ -1117,7 +1117,8 @@
             "spookyforest": "Spooky Forest",
             "winterglade": "Winter Glade",
             "wintervalley": "Winter Valley",
-            "glade": "Glade"
+            "glade": "Glade",
+            "debug_mer": "DEBUG_MER"
         }
     },
     "quests": {

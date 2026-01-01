@@ -1102,7 +1102,8 @@
             "spookyforest": "Straszny Las",
             "winterglade": "Zimowa Polana",
             "wintervalley": "Zimowa Dolina",
-            "glade": "Polana"
+            "glade": "Polana",
+            "debug_mer": "DEBUG_MER"
         }
     },
     "quests": {

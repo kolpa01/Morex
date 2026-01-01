@@ -177,5 +177,13 @@
             {"item": "nothing", "min_value": 1,"max_value": 9000, "amount": 0, "xp": 0},
             {"item": "mer", "min_value": 9001, "max_value": 10000, "amount": 4, "xp": 0}
         ]
+    },
+    {
+        "name": "debug_mer",
+        "level": 0,
+        "color": "0x47bf06",
+        "items": [
+            {"item": "mer", "min_value": 1, "max_value": 10000, "amount": 6, "xp": 0}
+        ]
     }
 ]
