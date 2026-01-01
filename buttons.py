@@ -12,6 +12,7 @@ import morex
 from morex import MorexItem, MorexEnemy
 from morex.enums.enemies import MorexEnemyFlags, MorexEnemyTypes
 import re
+import complicated_relationship
 
 
 class Searching(nextcord.ui.Modal):
@@ -1512,6 +1513,56 @@ class DebugCli(Pages):
     @nextcord.ui.button(emoji='<:MX_CommandLine:1322222539619176459>', style=nextcord.ButtonStyle.gray, row=2)
     async def command_line(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
         await interaction.response.send_modal(CliResolve(self.user, self.parent))
+
+    async def interaction_check(self, interaction: Interaction) -> bool:
+        if self.user:
+            if interaction.user != self.user:
+                await interaction.response.send_message("Bruh", ephemeral=True)
+                return False
+        return True
+
+
+class MerchantQuestion(nextcord.ui.View):
+    def __init__(self, timeout: float, user: nextcord.Member, place, merchant, color, lang, lang_full) -> None:
+        super().__init__(timeout=timeout)
+        self.user = user
+        self.merchant: morex.MorexMerchant = merchant
+        self.place = place
+        self.times = merchant.times
+        self.color = color
+        self.cur_lan = lang
+        self.text = lang_full
+
+        if not self.merchant.dialogues:
+            self.talk.disabled = True
+        self.shop.label = self.text['shop']
+        self.talk.label = self.text['talk']
+        self.task.label = self.text['task']
+        self.leave.label = self.text['leave']
+
+        # I disabled this button since merchant tasks haven't been implemented yet
+        self.task.disabled = True
+
+    @nextcord.ui.button(label="trade", emoji="<:MX_Bundle:1220425818321191004>", style=nextcord.ButtonStyle.gray)
+    async def shop(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
+        view = MerchantShop(60, self.user, self.place, self.merchant, self.place.color, self.cur_lan, self.text)
+        shop_items = await view.get_merchant_offers()
+        await interaction.edit(embed=shop_items, view=view)
+
+    @nextcord.ui.button(label="talk", emoji="<:MX_QuestionMark:1266370987474288764>", style=nextcord.ButtonStyle.gray)
+    async def talk(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
+        await complicated_relationship.init_dialogues(interaction, self.cur_lan, self.merchant.dialogues, new_message=False)
+
+    @nextcord.ui.button(label="tasks", emoji="<:MX_Heart:1259099939963666503>", style=nextcord.ButtonStyle.gray, row=2)
+    async def task(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
+        pass
+
+    @nextcord.ui.button(label="leave", emoji=main.deny, style=nextcord.ButtonStyle.gray, row=2)
+    async def leave(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
+        embed = nextcord.Embed(title=f"{self.text['searched']} {self.place.displayname}", description=f"**{self.merchant.displayname}:**\n{random.choice(self.merchant.left)}", color=self.place.color)
+        embed.set_thumbnail(url=self.merchant.icon)
+        embed.set_footer(text=main.version[self.cur_lan])
+        await interaction.edit(embed=embed, view=None)
 
     async def interaction_check(self, interaction: Interaction) -> bool:
         if self.user:

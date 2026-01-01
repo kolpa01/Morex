@@ -123,21 +123,9 @@ class Searching(commands.Cog):
             embed = nextcord.Embed(title=f"{text['searched']} {place.displayname}", description=f"**{merchant.displayname}:**\n{random.choice(merchant.question)}", color=place.color)
             embed.set_thumbnail(url=merchant.icon)
             embed.set_footer(text=main.version[cur_lan])
-            confirmationui = buttons.ConfirmationButtons(60, user)
-            await interaction.response.send_message(embed=embed, view=confirmationui)
-            await confirmationui.wait()
 
-            if confirmationui.value is None or confirmationui.value is False:
-                embed = nextcord.Embed(title=f"{text['searched']} {place.displayname}", description=f"**{merchant.displayname}:**\n{random.choice(merchant.left)}", color=place.color)
-                embed.set_thumbnail(url=merchant.icon)
-                embed.set_footer(text=main.version[cur_lan])
-                await interaction.edit_original_message(embed=embed, view=None)
-                return
-            else:
-                view = buttons.MerchantShop(60, user, place, merchant, place.color, cur_lan, text)
-                shop_items = await view.get_merchant_offers()
-                await interaction.edit_original_message(embed=shop_items, view=view)
-
+            view = buttons.MerchantQuestion(60, user, place, merchant, place.color, cur_lan, text)
+            await interaction.response.send_message(embed=embed, view=view)
         elif somethin["item"] == "str":
             structure = fns.get_strucure(somethin['amount'], cur_lan)
 

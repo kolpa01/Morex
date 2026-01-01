@@ -336,7 +336,11 @@
             "times": "razy",
             "bought": "Kupi\u0142e\u015b",
             "fail": "Chcia\u0142e\u015b ju\u017c podda\u0107 si\u0119 i wr\u00f3ci\u0107, lecz co\u015b \u015bwiec\u0105cego przyku\u0142o twoj\u0105 uwag\u0119. Okaza\u0142o si\u0119, \u017ce to zwierz\u0119ce odchody.",
-            "price": "Cena"
+            "price": "Cena",
+            "shop": "Chc\u0119 si\u0119 wymieni\u0107",
+            "talk": "Chc\u0119 porozmawia\u0107",
+            "task": "Czy mog\u0119 co\u015b dla ciebie zrobi\u0107?",
+            "leave": "\u017begnaj"
         },
         "sell": {
             "confirmation": "Czy masz pewno\u015b\u0107, \u017ce chcesz sprzeda\u0107 {amount} {item} za {cost} {coin}?",

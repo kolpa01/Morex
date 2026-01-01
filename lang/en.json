@@ -336,7 +336,11 @@
             "times": "times",
             "bought": "You bought",
             "fail": "You wanted to give up and go back, but something shiny caught your attention. Turns out those were just animal feces.",
-            "price": "Price"
+            "price": "Price",
+            "shop": "I want to trade",
+            "talk": "I want to talk",
+            "task": "Can I do something for you?",
+            "leave": "Bye"
         },
         "sell": {
             "confirmation": "Are you sure you want to sell {amount} {item} for {cost} {coin}?",
