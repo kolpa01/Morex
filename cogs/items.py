@@ -12,7 +12,7 @@ class ItemsCog(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="inventory", description="View user's inventory.", description_localizations={"pl": "Wyświetl ekwipunek użytkownika."})
+    @nextcord.slash_command(name="inventory", description="View user's inventory.", description_localizations={"pl": "Wyświetl ekwipunek użytkownika."}, integration_types=main.integrations, contexts=main.contexts)
     async def inventory(
             self,
             interaction: Interaction,
@@ -94,7 +94,7 @@ class ItemsCog(commands.Cog):
         embed.set_footer(text=f"{leng['other']['pages']['page']} 1/{aaa} | {main.version[cur_lan]}")
         await interaction.response.send_message(embed=embed, view=buttons.Pages(60, aaa, bomb, interaction.user, main.version[cur_lan], leng['other']['pages']['page'], leng))
 
-    @nextcord.slash_command(name="item", description="View informations about an item.", description_localizations={"pl": "Wyświetl informacje o przedmiocie."})
+    @nextcord.slash_command(name="item", description="View informations about an item.", description_localizations={"pl": "Wyświetl informacje o przedmiocie."}, integration_types=main.integrations, contexts=main.contexts)
     async def item(
             self,
             interaction=Interaction,
@@ -253,7 +253,7 @@ class ItemsCog(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.response.send_message(embed=embed)
 
-    @nextcord.slash_command(name="use", description="Use items.", description_localizations={"pl": "Użyj przedmiotów."})
+    @nextcord.slash_command(name="use", description="Use items.", description_localizations={"pl": "Użyj przedmiotów."}, integration_types=main.integrations, contexts=main.contexts)
     async def use(
             self,
             interaction: Interaction,

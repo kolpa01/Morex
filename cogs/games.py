@@ -10,7 +10,7 @@ class Games(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="fight", description="Fight with different users using your weapons.", description_localizations={"pl": "Zawalcz z innymi osobami swoimi własnymi broniami."})
+    @nextcord.slash_command(name="fight", description="Fight with different users using your weapons.", description_localizations={"pl": "Zawalcz z innymi osobami swoimi własnymi broniami."}, integration_types=main.integrations, contexts=main.contexts)
     async def fight(
             self,
             interaction: Interaction,

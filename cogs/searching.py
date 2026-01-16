@@ -13,7 +13,7 @@ class Searching(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="search", description="Search various places to get coins and items.", description_localizations={"pl": "Przeszukaj różne miejsca, aby zdobyć monety i przedmioty."})
+    @nextcord.slash_command(name="search", description="Search various places to get coins and items.", description_localizations={"pl": "Przeszukaj różne miejsca, aby zdobyć monety i przedmioty."}, integration_types=main.integrations, contexts=main.contexts)
     async def search(
             self,
             interaction: Interaction,

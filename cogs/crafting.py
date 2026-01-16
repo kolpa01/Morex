@@ -63,7 +63,7 @@ class Crafting(commands.Cog):
             return False
         return True
 
-    @nextcord.slash_command(name="craft", description="Craft the items.", description_localizations={"pl": "Stwórz przedmioty."})
+    @nextcord.slash_command(name="craft", description="Craft the items.", description_localizations={"pl": "Stwórz przedmioty."}, integration_types=main.integrations, contexts=main.contexts)
     async def craft(
             self,
             interaction: Interaction,
@@ -132,7 +132,7 @@ class Crafting(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.edit_original_message(embed=embed, view=None)
 
-    @nextcord.slash_command(name="recipe", description="View recipes for certain items.", description_localizations={"pl": "Wyświetl receptury dla konkretnych przedmiotów."})
+    @nextcord.slash_command(name="recipe", description="View recipes for certain items.", description_localizations={"pl": "Wyświetl receptury dla konkretnych przedmiotów."}, integration_types=main.integrations, contexts=main.contexts)
     async def recipe(
             self,
             interaction: Interaction,

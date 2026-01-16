@@ -27,7 +27,7 @@ class Leaderboards(commands.Cog):
 
         return leader_board
 
-    @nextcord.slash_command(name="leaderboard")
+    @nextcord.slash_command(name="leaderboard", integration_types=main.integrations, contexts=main.contexts)
     async def leaderboards(self, interaction: Interaction):
         pass
 

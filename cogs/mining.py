@@ -140,7 +140,7 @@ class Mining(commands.Cog):
             alpha = 255
         return Image.new("RGBA", (160, 160), (0, 0, 0, alpha))
 
-    @nextcord.slash_command(name="dig", description="Go dig up ores and treasures.", description_localizations={"pl": "Pójdź wykopać rudy i skarby."})
+    @nextcord.slash_command(name="dig", description="Go dig up ores and treasures.", description_localizations={"pl": "Pójdź wykopać rudy i skarby."}, integration_types=main.integrations, contexts=main.contexts)
     async def dig(
             self,
             interaction: Interaction,

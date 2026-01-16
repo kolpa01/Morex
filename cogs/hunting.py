@@ -3,13 +3,14 @@ from nextcord import Interaction, SlashOption
 from nextcord.ext import commands
 import functions as fns
 import complicated_relationship
+import main
 
 
 class Hunting(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="hunt", description="Grab your weapon and go hunt some enemies.", description_localizations={"pl": "Weź swoją broń i pójdź polować na wrogów."})
+    @nextcord.slash_command(name="hunt", description="Grab your weapon and go hunt some enemies.", description_localizations={"pl": "Weź swoją broń i pójdź polować na wrogów."}, integration_types=main.integrations, contexts=main.contexts)
     async def hunt(
             self,
             interaction: Interaction,

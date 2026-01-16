@@ -109,7 +109,7 @@ class Quests(commands.Cog):
         text: dict = leng['commands']['quests']
         return [nextcord.Embed(title=text['quests'], description=text['no_quests'], color=main.color_normal)]
 
-    @nextcord.slash_command(name="quests", description="Show your current quests.", description_localizations={"pl": "Wyświetl swoje obecne zadania."})
+    @nextcord.slash_command(name="quests", description="Show your current quests.", description_localizations={"pl": "Wyświetl swoje obecne zadania."}, integration_types=main.integrations, contexts=main.contexts)
     async def quests(self, interaction: Interaction):
         user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)

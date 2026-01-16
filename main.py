@@ -6,6 +6,9 @@ import morex.logging as logging
 import checks
 import asyncio
 
+contexts = [nextcord.InteractionContextType.guild, nextcord.InteractionContextType.bot_dm]
+integrations = [nextcord.IntegrationType.guild_install]
+
 event = {}
 mode = "dev"  # dev or mx
 version_number = "2.3.0"

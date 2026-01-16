@@ -11,7 +11,7 @@ class Help(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="help", description="Show all available commands.", description_localizations={"pl": "Wyświetl wszystkie dostępne komendy"})
+    @nextcord.slash_command(name="help", description="Show all available commands.", description_localizations={"pl": "Wyświetl wszystkie dostępne komendy"}, integration_types=main.integrations, contexts=main.contexts)
     async def help(self, interaction: Interaction):
         user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)

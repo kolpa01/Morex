@@ -10,7 +10,7 @@ class EquipmentCog(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="equipment")
+    @nextcord.slash_command(name="equipment", integration_types=main.integrations, contexts=main.contexts)
     async def equipment(self, interaction: Interaction):
         pass
 

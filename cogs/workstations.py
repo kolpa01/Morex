@@ -11,7 +11,7 @@ class Workstations(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="smelt", description="Smelt items to get smelted items.", description_localizations={"pl": "Przetop przedmioty, aby zdobyć przetopione przedmioty."})
+    @nextcord.slash_command(name="smelt", description="Smelt items to get smelted items.", description_localizations={"pl": "Przetop przedmioty, aby zdobyć przetopione przedmioty."}, integration_types=main.integrations, contexts=main.contexts)
     async def smelt(
             self,
             interaction: Interaction,

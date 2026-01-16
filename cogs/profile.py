@@ -10,7 +10,7 @@ class Profile(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="profile", description="Shows user's profile", description_localizations={"pl": "Wyświetla profil użytkownika."})
+    @nextcord.slash_command(name="profile", description="Shows user's profile", description_localizations={"pl": "Wyświetla profil użytkownika."}, integration_types=main.integrations, contexts=main.contexts)
     async def profile(
             self,
             interaction: Interaction,

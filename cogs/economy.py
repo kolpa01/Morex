@@ -11,7 +11,7 @@ class Economy(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="balance", description="View balance.", description_localizations={"pl": "Wyświetl stan konta."})
+    @nextcord.slash_command(name="balance", description="View balance.", description_localizations={"pl": "Wyświetl stan konta."}, integration_types=main.integrations, contexts=main.contexts)
     async def balance(
             self,
             interaction: Interaction,
@@ -56,7 +56,7 @@ class Economy(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.response.send_message(embed=embed)
 
-    @nextcord.slash_command(name="beg", description="Beg to get a few coins.", description_localizations={"pl": "Żebraj, aby zdobyć kilka monet."})
+    @nextcord.slash_command(name="beg", description="Beg to get a few coins.", description_localizations={"pl": "Żebraj, aby zdobyć kilka monet."}, integration_types=main.integrations, contexts=main.contexts)
     async def beg(self, interaction: Interaction):
         user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
@@ -99,7 +99,7 @@ class Economy(commands.Cog):
             await interaction.response.send_message(embed=embed)
         await fns.update_daily_task(user, "c", "beg", 1)
 
-    @nextcord.slash_command(name="buy", description="Buy items from the shop using coins.", description_localizations={"pl": "Kup przedmioty ze sklepu za pomocą monet."})
+    @nextcord.slash_command(name="buy", description="Buy items from the shop using coins.", description_localizations={"pl": "Kup przedmioty ze sklepu za pomocą monet."}, integration_types=main.integrations, contexts=main.contexts)
     async def buy(
             self,
             interaction: Interaction,
@@ -207,7 +207,7 @@ class Economy(commands.Cog):
             embed.set_footer(text=main.version[cur_lan])
             await interaction.edit_original_message(embed=embed, view=None)
 
-    @nextcord.slash_command(name="deposit", description="Deposit coins into the bank.", description_localizations={"pl": "Wpłać monety do banku."})
+    @nextcord.slash_command(name="deposit", description="Deposit coins into the bank.", description_localizations={"pl": "Wpłać monety do banku."}, integration_types=main.integrations, contexts=main.contexts)
     async def deposit(self, interaction=Interaction, amount: str = SlashOption(
             name="amount",
             name_localizations={"pl": "ilość"},
@@ -239,7 +239,7 @@ class Economy(commands.Cog):
             embed.set_footer(text=main.version[cur_lan])
             await interaction.response.send_message(embed=embed)
 
-    @nextcord.slash_command(name="rob", description="Try to rob someone to earn some coins.", description_localizations={"pl": "Spróbuj kogoś okraść, aby zdobyć monety."})
+    @nextcord.slash_command(name="rob", description="Try to rob someone to earn some coins.", description_localizations={"pl": "Spróbuj kogoś okraść, aby zdobyć monety."}, integration_types=main.integrations, contexts=main.contexts)
     async def rob(self, interaction: Interaction, member: nextcord.Member = SlashOption(
         name="member",
         name_localizations={"pl": "osoba"},
@@ -320,7 +320,7 @@ class Economy(commands.Cog):
             await fns.update_bank(interaction.user, -1 * amount, "wallet")
             await fns.update_bank(member, amount, "wallet")
 
-    @nextcord.slash_command(name="sell", description="Sell your items to earn coins.", description_localizations={"pl": "Sprzedaj swoje przedmioty, aby zdobyć monety."})
+    @nextcord.slash_command(name="sell", description="Sell your items to earn coins.", description_localizations={"pl": "Sprzedaj swoje przedmioty, aby zdobyć monety."}, integration_types=main.integrations, contexts=main.contexts)
     async def sell(
         self,
         interaction: Interaction,
@@ -402,7 +402,7 @@ class Economy(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.edit_original_message(embed=embed, view=None)
 
-    @nextcord.slash_command(name="slots", description="Play at slots machine to win coins.", description_localizations={"pl": "Zagraj w automacie, aby wygrać monety."})
+    @nextcord.slash_command(name="slots", description="Play at slots machine to win coins.", description_localizations={"pl": "Zagraj w automacie, aby wygrać monety."}, integration_types=main.integrations, contexts=main.contexts)
     async def slots(
             self,
             interaction: Interaction,
@@ -472,7 +472,7 @@ class Economy(commands.Cog):
             embed.set_footer(text=main.version[cur_lan])
             await interaction.response.send_message(embed=embed)
 
-    @nextcord.slash_command(name="shop", description="Displays a shop with every item you can buy.", description_localizations={"pl": "Wyświetla sklep z każdym przedmiotem, który można kupić."})
+    @nextcord.slash_command(name="shop", description="Displays a shop with every item you can buy.", description_localizations={"pl": "Wyświetla sklep z każdym przedmiotem, który można kupić."}, integration_types=main.integrations, contexts=main.contexts)
     async def shop(self, interaction: Interaction):
         interaction.user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
@@ -490,7 +490,7 @@ class Economy(commands.Cog):
 
         await interaction.response.send_message(embed=embed)
 
-    @nextcord.slash_command(name="withdraw", description="Withdraw coins from the bank.", description_localizations={"pl": "Wypłać monety z banku."})
+    @nextcord.slash_command(name="withdraw", description="Withdraw coins from the bank.", description_localizations={"pl": "Wypłać monety z banku."}, integration_types=main.integrations, contexts=main.contexts)
     async def withdraw(self, interaction=Interaction, amount: str = SlashOption(
             name="amount",
             name_localizations={"pl": "ilość"},

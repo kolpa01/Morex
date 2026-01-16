@@ -12,7 +12,7 @@ class Informations(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="announcement", description="Show the latest announcement from the creator.", description_localizations={"pl": "Wyświetl najnowsze ogłoszenie od twórcy."})
+    @nextcord.slash_command(name="announcement", description="Show the latest announcement from the creator.", description_localizations={"pl": "Wyświetl najnowsze ogłoszenie od twórcy."}, integration_types=main.integrations, contexts=main.contexts)
     async def announcement(self, interaction: Interaction):
         interaction.user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
@@ -31,7 +31,7 @@ class Informations(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.response.send_message(embed=embed)
 
-    @nextcord.slash_command(name="changelog", description="Display most important changes in different versions.", description_localizations={"pl": "Wyświetl najważniejsze zmiany w różnych wersjach."})
+    @nextcord.slash_command(name="changelog", description="Display most important changes in different versions.", description_localizations={"pl": "Wyświetl najważniejsze zmiany w różnych wersjach."}, integration_types=main.integrations, contexts=main.contexts)
     async def changelog(
             self,
             interaction: nextcord.Interaction,
@@ -57,7 +57,7 @@ class Informations(commands.Cog):
         view.add_item(button)
         await interaction.response.send_message(embed=embed, view=view)
 
-    @nextcord.slash_command(name="credits", description="Special thanks to all people that are listed in this command.", description_localizations={"pl": "Specjalne podziękowania dla wszystkich osób, które są wypisane na tej komendzie."})
+    @nextcord.slash_command(name="credits", description="Special thanks to all people that are listed in this command.", description_localizations={"pl": "Specjalne podziękowania dla wszystkich osób, które są wypisane na tej komendzie."}, integration_types=main.integrations, contexts=main.contexts)
     async def credits(self, interaction: Interaction):
         interaction.user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
@@ -69,7 +69,7 @@ class Informations(commands.Cog):
 
         await interaction.response.send_message(embed=embed)
 
-    @nextcord.slash_command(name="event", description="Display information about current and upcoming events.", description_localizations={"pl": "Wyświetl informacje o obecnych i nadchodzących wydarzeniach."})
+    @nextcord.slash_command(name="event", description="Display information about current and upcoming events.", description_localizations={"pl": "Wyświetl informacje o obecnych i nadchodzących wydarzeniach."}, integration_types=main.integrations, contexts=main.contexts)
     async def event(self, interaction: Interaction):
         interaction.user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
@@ -108,7 +108,7 @@ class Informations(commands.Cog):
 
         await interaction.response.send_message(embed=embed, view=view)
 
-    @nextcord.slash_command(name="ping", description="Pong!", description_localizations={"pl": "Pong!"})
+    @nextcord.slash_command(name="ping", description="Pong!", description_localizations={"pl": "Pong!"}, integration_types=main.integrations, contexts=main.contexts)
     async def ping(self, interaction: Interaction):
         member = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)

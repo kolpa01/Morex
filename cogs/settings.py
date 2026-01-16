@@ -12,7 +12,7 @@ class Settings(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="beta", description="Join Morex Beta to test new features early.", description_localizations={"pl": "Dołącz do Morex Beta, aby móc testować nowe funkcje wcześniej."})
+    @nextcord.slash_command(name="beta", description="Join Morex Beta to test new features early.", description_localizations={"pl": "Dołącz do Morex Beta, aby móc testować nowe funkcje wcześniej."}, integration_types=main.integrations, contexts=main.contexts)
     async def beta(self, interaction: Interaction):
         interaction.user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
@@ -49,7 +49,7 @@ class Settings(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.edit_original_message(embed=embed, view=None)
 
-    @nextcord.slash_command(name="settings", description="Manage your settings.", description_localizations={"pl": "Zarządzaj swoimi ustawieniami/"})
+    @nextcord.slash_command(name="settings", description="Manage your settings.", description_localizations={"pl": "Zarządzaj swoimi ustawieniami/"}, integration_types=main.integrations, contexts=main.contexts)
     async def settings(self, interaction: Interaction):
         user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
@@ -63,7 +63,7 @@ class Settings(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.response.send_message(embed=embed, view=dropdown.SettingsDropdownInitializer(360, user, user, cur_lan, leng['dropdown']['settings']))
 
-    @nextcord.slash_command(name="set")
+    @nextcord.slash_command(name="set", integration_types=main.integrations, contexts=main.contexts)
     async def set_parent(self, interaction: Interaction):
         pass
 

@@ -117,7 +117,7 @@ class Custommobs(commands.Cog):
     def __init__(self, client):
         self.client = client     
 
-    @nextcord.slash_command(name="custommobs")
+    @nextcord.slash_command(name="custommobs", integration_types=main.integrations, contexts=main.contexts)
     async def custommobs(self, interaction: Interaction):
         pass
     

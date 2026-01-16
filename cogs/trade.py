@@ -10,7 +10,7 @@ class TradingCog(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="give")
+    @nextcord.slash_command(name="give", integration_types=main.integrations, contexts=main.contexts)
     async def give(self, interaction: Interaction):
         pass
 
@@ -215,7 +215,7 @@ class TradingCog(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.edit_original_message(embed=embed, view=None)
 
-    @nextcord.slash_command(name="trade")
+    @nextcord.slash_command(name="trade", integration_types=main.integrations, contexts=main.contexts)
     async def trade(self, interaction: Interaction):
         pass
 

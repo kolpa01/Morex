@@ -98,7 +98,7 @@ class Forms(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="bug")
+    @nextcord.slash_command(name="bug", integration_types=main.integrations, contexts=main.contexts)
     async def bug(self, interaction: Interaction):
         pass
 
@@ -112,7 +112,7 @@ class Forms(commands.Cog):
         channel = self.client.get_channel(1128664371342618674)
         await interaction.response.send_modal(BugReport(user=user, channel=channel, texts=[text['what'], text['define'], text['replica'], text['other'], text['sys'], text['write']], rep=text['report']))
 
-    @nextcord.slash_command(name="rate", description="Rate the bot.", description_localizations={"pl": "Oceń bota."})
+    @nextcord.slash_command(name="rate", description="Rate the bot.", description_localizations={"pl": "Oceń bota."}, integration_types=main.integrations, contexts=main.contexts)
     async def rate(self, interaction: Interaction):
         user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
@@ -122,7 +122,7 @@ class Forms(commands.Cog):
         channel = self.client.get_channel(1098283249446440981)
         await interaction.response.send_modal(RateModal(user=user, channel=channel, texts=[text['content'], text['write']], rep=text['opinion']))
 
-    @nextcord.slash_command(name="redeem", description="Type codes to get free items.", description_localizations={"pl": "Wpisz kody, aby zdobyć darmowe przedmioty."})
+    @nextcord.slash_command(name="redeem", description="Type codes to get free items.", description_localizations={"pl": "Wpisz kody, aby zdobyć darmowe przedmioty."}, integration_types=main.integrations, contexts=main.contexts)
     async def reedem(self, interaction: Interaction):
         user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
