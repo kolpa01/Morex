@@ -382,7 +382,7 @@ class TimeEndModal(nextcord.ui.Modal):
 
 class Up(nextcord.ui.Button):
     def __init__(self):
-        super().__init__(style=nextcord.ButtonStyle.gray, label="\u200b", emoji="<:MX_Up:1410564408123457667>", row=1)
+        super().__init__(style=nextcord.ButtonStyle.gray, emoji="<:MX_Up:1410564408123457667>", row=1)
 
     async def callback(self, interaction: nextcord.Interaction):
         if self.view.current_page_pos[str(self.view.current)]['current'] > 1:
@@ -396,7 +396,7 @@ class Up(nextcord.ui.Button):
 
 class Down(nextcord.ui.Button):
     def __init__(self):
-        super().__init__(style=nextcord.ButtonStyle.gray, label="\u200b", emoji="<:MX_Down:1410564401630679111>", row=1)
+        super().__init__(style=nextcord.ButtonStyle.gray, emoji="<:MX_Down:1410564401630679111>", row=1)
 
     async def callback(self, interaction: nextcord.Interaction):
         if self.view.current_page_pos[str(self.view.current)]['current'] < self.view.current_page_pos[str(self.view.current)]['max']:
