@@ -11,11 +11,11 @@ integrations = [nextcord.IntegrationType.guild_install]
 
 event = {}
 mode = "dev"  # dev or mx
-version_number = "2.3.0"
+version_number = "2.3.1"
 beta_version = "none"
 version = {
-    "pl": "Wersja 2.3.0 | Wydarzenia",
-    "en": "Version 2.3.0 | Events"
+    "pl": "Wersja 2.3.1 | Handlarze",
+    "en": "Version 2.3.1 | Merchants"
 }
 
 color_normal = 0xCE4DD5
