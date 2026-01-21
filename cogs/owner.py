@@ -126,38 +126,6 @@ class OwnerCommands(commands.Cog):
         embed = nextcord.Embed(title="Usunięto item", description=f"Usunięto {amount} {itemp} od {aa}", color=main.color_normal)
         await interaction.response.send_message(embed=embed)
         
-    # @owner.subcommand(name="add_item", description="Dodaj przedmioty :3")
-    # async def owner_add_item(self,interaction: Interaction, user_id,itemp, amount: int):
-    #     if interaction.user.id != 826792866776219709:
-    #         return
-    #     if user_id == "self":
-    #         user_id = "826792866776219709"
-    #     aa = await self.client.fetch_user(int(user_id))
-    #     user = await fnc.firsttime(aa)
-
-    #     player = await fnc.playerinfo()
-        
-    #     await fnc.add_item(user, itemp, amount)
-        
-    #     embed=nextcord.Embed(title="Dodano item", description=f"Dodano {itemp} dla {aa}", color=main.color_normal)
-    #     await interaction.response.send_message(embed=embed)
-        
-    # @owner.subcommand(name="add_item", description="Dodaj przedmioty :3")
-    # async def owner_add_item(self,interaction: Interaction, user_id,itemp, amount: int):
-    #     if interaction.user.id != 826792866776219709:
-    #         return
-    #     if user_id == "self":
-    #         user_id = "826792866776219709"
-    #     aa = await self.client.fetch_user(int(user_id))
-    #     user = await fnc.firsttime(aa)
-
-    #     player = await fnc.playerinfo()
-        
-    #     await fnc.add_item(user, itemp, amount)
-        
-    #     embed=nextcord.Embed(title="Dodano item", description=f"Dodano {itemp} dla {aa}", color=main.color_normal)
-    #     await interaction.response.send_message(embed=embed)
-  
     @owner.subcommand(name="database", description="Information about amount of users in each file")
     async def owner_db(self, interaction: Interaction):
         if interaction.user.id != 826792866776219709:
