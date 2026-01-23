@@ -351,6 +351,54 @@ class OwnerCommands(commands.Cog):
         view = await complicated_relationship.pages_helper(embeds, interaction.user)
         await interaction.followup.send(embed=embed, view=view)
 
+    @owner.subcommand("add_search_location")
+    async def add_location_search(self, interaction, user_id: str, itemp):
+        if interaction.user.id != 826792866776219709:
+            return
+        if user_id == "self":
+            user_id = "826792866776219709"
+        aa = await self.client.fetch_user(int(user_id))
+        user = await fns.firsttime(aa)
+
+        pp = fns.get_search_locations(itemp)
+        if not pp:
+            return
+        asd = await fns.add_location(user, itemp, "search")
+        embed = nextcord.Embed(title="Dodano lokacje", description=f"Dodano {itemp} dla {aa}\n\n{asd}", color=main.color_normal)
+        await interaction.response.send_message(embed=embed)
+
+    @owner.subcommand("add_dig_location")
+    async def add_location_dig(self, interaction, user_id: str, itemp):
+        if interaction.user.id != 826792866776219709:
+            return
+        if user_id == "self":
+            user_id = "826792866776219709"
+        aa = await self.client.fetch_user(int(user_id))
+        user = await fns.firsttime(aa)
+
+        pp = fns.get_dig_locations(itemp)
+        if not pp:
+            return
+        asd = await fns.add_location(user, itemp, "dig")
+        embed = nextcord.Embed(title="Dodano lokacje", description=f"Dodano {itemp} dla {aa}\n\n{asd}", color=main.color_normal)
+        await interaction.response.send_message(embed=embed)
+
+    @owner.subcommand("add_hunt_location")
+    async def add_location_hunt(self, interaction, user_id: str, itemp):
+        if interaction.user.id != 826792866776219709:
+            return
+        if user_id == "self":
+            user_id = "826792866776219709"
+        aa = await self.client.fetch_user(int(user_id))
+        user = await fns.firsttime(aa)
+
+        pp = fns.get_hunt_locations(itemp)
+        if not pp:
+            return
+        asd = await fns.add_location(user, itemp, "hunt")
+        embed = nextcord.Embed(title="Dodano lokacje", description=f"Dodano {itemp} dla {aa}\n\n{asd}", color=main.color_normal)
+        await interaction.response.send_message(embed=embed)
+
     @item_lb.on_autocomplete("item")
     async def item_lb_autocomplete(self, interaction, current: str):
         data = await true_all(current)
