@@ -215,6 +215,7 @@ class Mining(commands.Cog):
             usages = place.usages
             action = None
             digalog = None
+        max_usages = usages
 
         cur_layer = []
         for i in range(9):
@@ -270,7 +271,8 @@ class Mining(commands.Cog):
                         text_inv.append(f"{amt} {item_temp.displayname}")
 
                 inv = '\n'.join(text_inv)
-                disc = f"{text['durability']} {usages}\n\n{text['inventory']}\n{inv}"
+                pg_bar = await fns.progress_bar(usages, max_usages)
+                disc = f"{text['durability']}\n{pg_bar} {(usages / max_usages) * 100:.0f}% ({usages}/{max_usages})\n\n{text['inventory']}\n{inv}"
 
                 if tutorial_mode:
                     disc = ''.join((f"**{digalog[action]['name']}**\n{digalog[action]['text']}\n\n", disc))
