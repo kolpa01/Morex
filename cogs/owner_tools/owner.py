@@ -318,6 +318,10 @@ class OwnerCommands(commands.Cog):
         embeds = []
         index = 1
         please_not_10 = 0
+        if len(leader_board) == 0:
+            embed = nextcord.Embed(title="Nya", description="No one has this item >:3", color=main.color_normal)
+            embed.set_thumbnail(url=item.image)
+            embeds.append(embed)
         for user_id, amount in leader_board.items():
             please_not_10 += 1
             if please_not_10 == 11:
