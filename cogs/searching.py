@@ -148,7 +148,11 @@ class Searching(commands.Cog):
                     embed.set_footer(text=main.version[cur_lan])
                     await interaction.response.send_message(embed=embed)
         elif somethin["item"] == "enm":
-            await complicated_relationship.hunter(["enemy", 1, somethin["amount"]], interaction, place, place.color)
+            res = await complicated_relationship.hunter(["enemy", 1, somethin["amount"]], interaction, place, place.color)
+            if res is False:
+                embed = nextcord.Embed(title=f"{text['searched']} {place.displayname}", description=text['nothing'], color=place.color)
+                embed.set_footer(text=main.version[cur_lan])
+                await interaction.response.send_message(embed=embed)
         elif somethin["item"] == "boss":  # This one isn't done.
             # bsr = await fns.bossroom()
             # for sadsd in bsr:
