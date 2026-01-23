@@ -86,7 +86,11 @@ class Mining(commands.Cog):
         }
 
     @staticmethod
-    async def create_world(place: MorexDigsite, lucky_mode: bool = False):
+    async def create_world(place: MorexDigsite, lucky_mode: bool = False, seed=None):
+        if seed:
+            world_generator = random.Random(seed)
+        else:
+            world_generator = random
         layers = []
         for i in place.layers:
             tempdict = []
@@ -98,32 +102,32 @@ class Mining(commands.Cog):
                     for ran in range(a["guaranted_amount"]):
                         goodplacement = True
                         while goodplacement:
-                            b = random.randint(0, 8)
+                            b = world_generator.randint(0, 8)
                             if a["item"] == tempdict[b]:
                                 continue
                             else:
                                 tempdict[b] = a["item"]
                                 goodplacement = False
                     for smt in range(a["amount"]):
-                        aaaaaaa = random.randint(1, 100)
+                        aaaaaaa = world_generator.randint(1, 100)
                         if lucky_mode:
                             aaaaaaa = 0
                         if a["chance"] >= aaaaaaa:
                             goodplacement = True
                             while goodplacement:
-                                b = random.randint(0, 8)
+                                b = world_generator.randint(0, 8)
                                 if a["item"] == tempdict[b]:
                                     continue
                                 else:
                                     tempdict[b] = a["item"]
                                     goodplacement = False
             layers.append(tempdict)
-        lay = random.choice(place.treasure.layers)
+        lay = world_generator.choice(place.treasure.layers)
         curlay = layers[int(lay)]
 
         true = True
         while true:
-            ppp = random.randint(0, 8)
+            ppp = world_generator.randint(0, 8)
             if curlay[ppp] in place.treasure.can_replace:
                 curlay[ppp] = "treasure"
                 true = False
@@ -205,8 +209,10 @@ class Mining(commands.Cog):
             await req_item.remove_item(user, 1)
             g = 1
 
+        seed = None
         if tutorial_mode:
-            world = await self.create_world(place, True)
+            seed = 20210721
+            world = await self.create_world(place, True, seed)
             usages = 54
             digalog = await fns.dialogues("v1_dig_tutorial", cur_lan)
             action = "firsttime"
@@ -330,17 +336,22 @@ class Mining(commands.Cog):
             await fns.update_daily_task(user, "d", item_sid, amt)
             if item_sid == "treasure":
                 chk = True
+                if seed:
+                    reward_generator = random.Random(seed)
+                else:
+                    reward_generator = random
+
                 for items in place.treasure.rewards:
-                    choice = random.randint(1, 10000)
+                    choice = reward_generator.randint(1, 10000)
                     if choice <= items["choice"]:
                         if items["item"] == "coins":
-                            dd = random.randint(items["min_value"], items["max_value"])
+                            dd = reward_generator.randint(items["min_value"], items["max_value"])
                             boost = await fns.has_event_boost("dig_chest_coins")
                             dd = boost * dd
                             await fns.update_bank(user, dd)
                             chest.append(f"{dd} {main.coin}")
                         else:
-                            dd = random.randint(items["min_value"], items["max_value"])
+                            dd = reward_generator.randint(items["min_value"], items["max_value"])
                             itm = fns.get_item(items['item'], 'name', cur_lan)
                             await itm.add_item(user, dd)
                             chest.append(f"{dd} {itm}")
