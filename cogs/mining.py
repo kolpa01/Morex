@@ -309,6 +309,14 @@ class Mining(commands.Cog):
                 if usages == 0:
                     break
 
+                is_there_anything_left = False
+                for block in cur_layer:
+                    if block is not None:
+                        is_there_anything_left = True
+                        break
+                if not is_there_anything_left:
+                    break
+
         if tutorial_mode and await fns.has_event(user, "digged"): 
             logging.warn(f"{interaction.user.name} ({interaction.user.id}) Tried to scam you for M-Bucks!!")
             return
