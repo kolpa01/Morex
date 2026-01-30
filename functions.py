@@ -92,6 +92,13 @@ async def itemsinfo():
     return itemz
 
 
+async def get_farms_data():
+    with open("userdb/farmlands.json", "r") as f:
+        farm_land = json.load(f)
+
+    return farm_land
+
+
 async def get_inv_data():
     with open("userdb/inventories.json", "r") as f:
         users = json.load(f)
@@ -666,6 +673,15 @@ async def create_account(user, checker=None, request_language=None):
         otherdata[str(user.id)]["shop"] = ["main"]
         with open("userdb/otherdatabase.json", "w") as f:
             json.dump(otherdata, f)
+
+    farmlands = await get_farms_data()
+    if str(user.id) not in farmlands:
+        farmlands[str(user.id)] = {}
+        farmlands[str(user.id)]["farms"] = {"0": [{"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}]}
+        farmlands[str(user.id)]["skins"] = {"0": "normal_farm"}
+        farmlands[str(user.id)]["farms_unlocked"] = 1
+        with open("userdb/farmlands.json", "w") as f:
+            json.dump(farmlands, f)
 
     skills = await skillz()
     if str(user.id) not in skills:
