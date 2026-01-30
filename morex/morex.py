@@ -59,6 +59,8 @@ class MorexItem:
             return Container(self.raw['toolatributes'])
         elif self.raw["toolatributes"]['type'] == "smeltable":
             return Fuel(self.raw['toolatributes'])
+        elif self.raw["toolatributes"]['type'] == "seed":
+            return Seed(self.raw['toolatributes'])
         elif self.raw["toolatributes"]['type'] == "useable":
             if self.raw["toolatributes"]['itemtype'] == "note":
                 return Note(self.raw['toolatributes'], [self.language['items']['notetitle'][self.id], self.language['items']['notecontent'][self.id]])
@@ -70,6 +72,8 @@ class MorexItem:
             if self.raw["toolatributes"]['itemtype'] == "awaiting":
                 return Awaiting(self.raw['toolatributes'])
         elif self.raw["toolatributes"]['type'] == "weapon":
+            if self.raw["toolatributes"]['itemtype'] == "spellbook":
+                return Spellbook(self.raw['toolatributes'], [self.language['items']['powersname'][self.id], self.language['items']['powersdescription'][self.id]])
             if self.raw["toolatributes"]['itemtype'] == "spellbook":
                 return Spellbook(self.raw['toolatributes'], [self.language['items']['powersname'][self.id], self.language['items']['powersdescription'][self.id]])
             else:
@@ -210,6 +214,17 @@ class Fuel(ToolAtributes):
         self.lvl_required = toolatributes['lvl_required']
         self.item_smelted = toolatributes['item_smelted']
         self.amount = toolatributes['amount']
+
+
+class Seed(ToolAtributes):
+    def __init__(self, toolatributes: dict) -> None:
+        super().__init__(toolatributes)
+        self.crop = toolatributes['crop']
+        self.growth_time = toolatributes['growth_time']
+        self.amount: list = toolatributes['amount']
+        self.seed_amount = toolatributes['return_seed']
+        self.seed_chance = toolatributes["seed_chance"]
+        self.wilt_time = False if not toolatributes['death'] else toolatributes["death"]
 
 
 class Note(ToolAtributes):

@@ -2088,6 +2088,40 @@
     "toolatributes": "n"
   },
   {
+    "name": "testseed",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0132",
+    "rarity": "mythic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": {
+      "type": "seed",
+      "itemtype": "earth",
+      "cursed": 0,
+      "growth_time": 300,
+      "crop": "testcrop",
+      "amount": [1, 3],
+      "return_seed": [1, 1],
+      "seed_chance": 50,
+      "death": 0
+    }
+  },
+  {
+    "name": "testcrop",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0133",
+    "rarity": "mythic",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "n",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
     "name": "icespike",
     "emoji": "<:MX_IcySpike:1315802183673057370>",
     "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802655477469276/icyspiky.png",
