@@ -677,7 +677,7 @@ async def create_account(user, checker=None, request_language=None):
     farmlands = await get_farms_data()
     if str(user.id) not in farmlands:
         farmlands[str(user.id)] = {}
-        farmlands[str(user.id)]["farms"] = {"0": [{"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}]}
+        farmlands[str(user.id)]["farms"] = {"0": [{"crop": "none", "start_timestamp": 0, "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "start_timestamp": 0, "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "start_timestamp": 0, "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "start_timestamp": 0, "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "start_timestamp": 0, "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "start_timestamp": 0, "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "start_timestamp": 0, "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "start_timestamp": 0, "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}, {"crop": "none", "start_timestamp": 0, "finish_timestamp": 0, "death_timestamp": 0, "blocktype": "0028", "state": "normal", "watered": False, "fertilized": False}]}
         farmlands[str(user.id)]["skins"] = {"0": "normal_farm"}
         farmlands[str(user.id)]["farms_unlocked"] = 1
         with open("userdb/farmlands.json", "w") as f:
@@ -1230,6 +1230,18 @@ async def player_icon(user):
         return "<:MX_BetaIcon:1212133175250395247>"
     else:
         return "<:MX_DefaultIcon:1212133172188291082>"
+
+
+@cache
+def get_seeds():
+    with open("database/itemsinfo.json", "r") as f:
+        itemz = json.load(f)
+    ids = []
+    for i in itemz:
+        if i["toolatributes"] != "n":
+            if i["toolatributes"]["type"] == "seed":
+                ids.append(i["id"])
+    return ids
 
 
 async def get_weapon(user):

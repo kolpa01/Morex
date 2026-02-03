@@ -2122,6 +2122,42 @@
     "toolatributes": "n"
   },
   {
+    "name": "hoe",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0134",
+    "rarity": "uncommon",
+    "price": 20000,
+    "sellprice": 250,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "wateringcan",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0135",
+    "rarity": "uncommon",
+    "price": 30000,
+    "sellprice": 350,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "fertilizer",
+    "emoji": "<:MX_Placeholder:1133387132766003210>",
+    "image": "https://cdn.discordapp.com/attachments/1134067893840126012/1134067977839456276/Untitled_03-08-2023_10-39-45_11.png",
+    "id": "0136",
+    "rarity": "rare",
+    "price": "n",
+    "sellprice": 30,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
     "name": "icespike",
     "emoji": "<:MX_IcySpike:1315802183673057370>",
     "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802655477469276/icyspiky.png",

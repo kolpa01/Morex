@@ -128,6 +128,33 @@
             "none": "Obecnie nie ma \u017cadnych wydarze\u0144.",
             "event": "Wydarzenia"
         },
+        "farm": {
+            "farm_title": "Farma {user}",
+            "plow": "Gracowanie",
+            "water": "Podlewanie",
+            "fertilize": "Nawo\u017cenie",
+            "plant": "Sadzenie",
+            "harvest": "Zbieranie",
+            "back": "Powr\u00f3t",
+            "plant_growing": "{number}. {item} b\u0119dzie gotowe <t:{timestamp}:R>",
+            "plant_ready": "{number}. {item} jest gotowe do zbioru!",
+            "plant_dead": "{number}. {item} usch\u0142o <t:{timestamp}:R>",
+            "no_hoe": "Nie masz {item}.\nSpr\u00f3buj j\u0105 kupi\u0107 lub stworzy\u0107.",
+            "broken_hoe": "Twoja {item} si\u0119 zepsu\u0142a.",
+            "no_watering_can": "Nie masz {item}.\nSpr\u00f3buj j\u0105 kupi\u0107.",
+            "broken_watering_can": "Twoja {item} si\u0119 zepsu\u0142a.",
+            "unwaterable_tile": "Nie mo\u017cesz podla\u0107 tego pola.",
+            "no_fertilizer": "Nie masz {item}.\nSpr\u00f3buj go stworzy\u0107.",
+            "unfertilizable_tile": "To pole nie mo\u017ce zosta\u0107 ob\u0142o\u017cone nawozem.",
+            "no_harvest": "Nie mo\u017cesz niczego zebra\u0107 z tego pola.",
+            "harvested": "Zebrano:",
+            "no_no_harvest": "Nie uda\u0142o ci si\u0119 niczego zebra\u0107.",
+            "you_own": "Posiadasz {amount}",
+            "choice": "Wybierz nasiono",
+            "something_there": "Nie mo\u017cesz tego zasadzi\u0107, poniewa\u017c to pole jest zaj\u0119te.",
+            "plow_needed": "Musisz przegracowa\u0107 to pole zanim b\u0119dzie mo\u017cna tu co\u015b zasadzi\u0107.",
+            "no_seed": "Nie masz tego nasiona."
+        },
         "fight": {
             "faileduserattack": "{u} atakuje {e} za pomoc\u0105 {uw}. Nie przynios\u0142o to \u017cadnych skutk\u00f3w.",
             "hpmobattack": "{u} atakuje {e}. {e} traci {ahp} HP.",
@@ -531,9 +558,6 @@
         "unavailable_recipe": {
             "description": "Ta receptura jest niedost\u0119pna."
         },
-        "unavailable_recipe": {
-            "description": "Ta receptura jest niedost\u0119pna."
-        },
         "untradeable_item": {
             "description": "Tym przedmiotem nie mo\u017cna si\u0119 wymienia\u0107"
         },
@@ -685,6 +709,9 @@
             "0131": "Paj\u0119czy Fragment",
             "0132": "Test Seed",
             "0133": "Test Crop",
+            "0134": "Motyka",
+            "0135": "Konewka",
+            "0136": "Naw\u00f3z",
             "a000": "Lodowy Kolec",
             "i001": "Piec",
             "i002": "Workbench",
@@ -825,6 +852,9 @@
             "0131": "Fioletowy Fragment, kt\u00f3ry zyska\u0142 swoj\u0105 nazw\u0119, dlatego \u017ce uda\u0142o si\u0119 go odnale\u017a\u0107 tylko w pobli\u017cu siedlisk paj\u0105k\u00f3w. Po\u017c\u0105dzany przez wielu ze wzgl\u0119du na jego ogromn\u0105 wytrzyma\u0142o\u015b\u0107.",
             "0132": "Placeholder",
             "0133": "Placeholder",
+            "0134": "Placeholder",
+            "0135": "Placeholder",
+            "0136": "Placeholder",
             "a000": "Nikt tego nigdy nie powinien zobaczy\u0107, ale je\u015bli to widzisz to gratuluj\u0119. Tak przy okazji go\u015bciu, kt\u00f3ry robi opisy nazywa si\u0119 Braav. Zr\u00f3b z tym co chcesz.",
             "i001": "To Piec, co nie?",
             "i002": "Workbench gurom!!!",
