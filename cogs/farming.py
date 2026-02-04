@@ -97,6 +97,7 @@ class PlantUI(nextcord.ui.View):
             descriptions.update({seed.id: desc})
         for option in self.children[10].options:
             option.description = descriptions[option.value]
+            option.default = False
             if option.value == self.children[10].values[0]:
                 option.default = True
         
@@ -164,7 +165,35 @@ class TextureData:
                 "2": Image.open("images/farming/testseed_2.png"),
                 "3": Image.open("images/farming/testseed_3.png"),
                 "4": Image.open("images/farming/testseed_4.png")
-            }
+            },
+            "wheatseed": {
+                "0": Image.open("images/farming/wheatseed_0.png"),
+                "1": Image.open("images/farming/wheatseed_1.png"),
+                "2": Image.open("images/farming/wheatseed_2.png"),
+                "3": Image.open("images/farming/wheatseed_3.png"),
+                "4": Image.open("images/farming/wheatseed_4.png")
+            },
+            "potatoseed": {
+                "0": Image.open("images/farming/potatoseed_0.png"),
+                "1": Image.open("images/farming/potatoseed_1.png"),
+                "2": Image.open("images/farming/potatoseed_2.png"),
+                "3": Image.open("images/farming/potatoseed_3.png"),
+                "4": Image.open("images/farming/potatoseed_4.png")
+            },
+            "carrotseed": {
+                "0": Image.open("images/farming/carrotseed_0.png"),
+                "1": Image.open("images/farming/carrotseed_1.png"),
+                "2": Image.open("images/farming/carrotseed_2.png"),
+                "3": Image.open("images/farming/carrotseed_3.png"),
+                "4": Image.open("images/farming/carrotseed_4.png")
+            },
+            "cornseed": {
+                "0": Image.open("images/farming/cornseed_0.png"),
+                "1": Image.open("images/farming/cornseed_1.png"),
+                "2": Image.open("images/farming/cornseed_2.png"),
+                "3": Image.open("images/farming/cornseed_3.png"),
+                "4": Image.open("images/farming/cornseed_4.png")
+            },
         }
         self.blocks = {
             "earth": {
