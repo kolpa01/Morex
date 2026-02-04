@@ -7,6 +7,7 @@ from morex import logging
 from morex.objects import MorexEvent
 import json
 import datetime
+import random
 
 
 class Events(commands.Cog):
@@ -18,6 +19,13 @@ class Events(commands.Cog):
         self._notif_channel_id = 1371570817283915836
         self.role = "<@&1371570940600782960>"
         self.loop_is_running = False
+        self.time = 0
+        self.is_raining = False
+        self.rain_remaining = 0
+        self.chance_to_rain = random.randint(300, 14400)
+        self.rain_graze_period = 0
+
+        self.debug_log = False
 
     @commands.Cog.listener()
     async def on_application_command_error(
@@ -47,6 +55,46 @@ class Events(commands.Cog):
         await log_channel.send(embed=embed)
         await interaction.response.send_message(content="Something went wrong...", ephemeral=True)
         return
+
+    @tasks.loop(seconds=1)
+    async def background_system(self):
+        if self.debug_log:
+            logging.info(f"The time: {self.time}.")
+        if not self.is_raining:
+            if self.debug_log:
+                logging.info("Isn't raining")
+            if not self.rain_graze_period:
+                chance_to_rain = random.randint(0, self.chance_to_rain)
+            else:
+                chance_to_rain = 1
+                if self.debug_log:
+                    logging.info(f"graze = {self.rain_graze_period}")
+                self.rain_graze_period -= 1
+
+            if chance_to_rain != 0:
+                if not self.rain_graze_period:
+                    if self.debug_log:
+                        logging.info(f"chance_to_rain = {self.chance_to_rain}")
+                    self.chance_to_rain -= 1
+            else:
+                self.is_raining = True
+                self.chance_to_rain = 14400
+                self.rain_remaining = random.randint(1200, 1800)
+        if self.is_raining:
+            if self.debug_log:
+                logging.success("Is Raining")
+            if not self.rain_graze_period:
+                self.rain_graze_period = random.randint(300, 900)
+            else:
+                if self.debug_log:
+                    logging.info(f"rain_remaining = {self.rain_remaining}")
+                self.rain_remaining -= 1
+                if self.rain_remaining == 0:
+                    self.is_raining = False
+        if self.time + 1 == 7200:
+            self.time = 0
+        else:
+            self.time += 1
 
     @tasks.loop(minutes=1)
     async def event_handler(self):
@@ -160,6 +208,8 @@ class Events(commands.Cog):
         await self.client.change_presence(activity=activity)
         if not self.loop_is_running:
             self.event_handler.start()
+            self.time = random.randint(0, 7199)
+            self.background_system.start()
             self.loop_is_running = True
 
 

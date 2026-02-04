@@ -46,7 +46,8 @@ m!wwg - changes ur name (nick)\n\
 m!mpg_cd - adds code to redeem\n\
 m!itm_chgg - prints item info for changelog (first, last)\n\
 m!omega_sus - forces bot to reload event cache\n\
-m!enemiez - sends all oponents\
+m!enemiez - sends all oponents\n\
+m!whattimeisit - gives you time and weather\
 ")
 
     @commands.command()
@@ -212,6 +213,17 @@ m!enemiez - sends all oponents\
     async def barsss(self, ctx):
         for i in range(0, 100):
             await ctx.send(f"{await fns.progress_bar(i, 100)}")
+
+    @commands.command()
+    @commands.is_owner()
+    async def whattimeisit(self, ctx):
+        events_cog = self.client.get_cog("Events")
+        if events_cog.time >= 1800 and events_cog.time < 5400:
+            day_or_night = "day"
+        else:
+            day_or_night = "night"
+        await ctx.send(f"It's {events_cog.time} and {day_or_night}")
+        await ctx.send(f"Is it raining: {events_cog.is_raining}")
 
    
 def setup(client):
