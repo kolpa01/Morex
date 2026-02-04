@@ -152,5 +152,29 @@
             {"name":"placeholder", "amount": 1},
             {"name":"hammer", "amount": 1}
         ]
+    },
+    {
+        "id": "r013",
+        "item": "hoe",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"iron", "amount": 10},
+            {"name":"wood", "amount": 5},
+            {"name":"gold", "amount": 3},
+            {"name":"hammer", "amount": 1}
+        ]
+    },
+    {
+        "id": "r014",
+        "item": "fertilizer",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"wheat", "amount": 15},
+            {"name":"potato", "amount": 10},
+            {"name":"earth", "amount": 2},
+            {"name":"pinkessence", "amount": 1}
+        ]
     }
 ]
