@@ -1658,9 +1658,9 @@
     "emoji": "<:MX_Carrot:1315802174625681538>",
     "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802654122704896/carrot.png",
     "id": "0108",
-    "rarity": "uncommon",
+    "rarity": "rare",
     "price": "n",
-    "sellprice": 60,
+    "sellprice": 40,
     "tradeable": "y",
     "useable": "n",
     "toolatributes": {
