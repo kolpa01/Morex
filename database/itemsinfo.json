@@ -338,6 +338,7 @@
       "contains": [
         {"item": "coins", "min_value": 750,"max_value": 1000, "chance": 10000},
         {"item": "sand", "min_value": 1,"max_value": 5, "chance": 5000},
+        {"item": "wheatseed", "min_value": 1,"max_value": 2, "chance": 2500},
         {"item": "coal", "min_value": 1,"max_value": 3, "chance": 1000},
         {"item": "diamond", "min_value": 1,"max_value": 2, "chance": 1}
       ]
@@ -2176,7 +2177,7 @@
       "amount": [2, 5],
       "return_seed": [1, 2],
       "seed_chance": 70,
-      "death": 3600
+      "death": 0
     }
   },
   {
