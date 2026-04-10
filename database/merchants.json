@@ -104,11 +104,11 @@
         "dialogues": null,
         "items": [
             {"item":"torch","amount": 1,"price":15,"priceitem":"metalshard"},
-            {"item":"wood","amount": 5,"price":10,"priceitem":"iron"},
+            {"item":"wheatseed","amount": 1,"price":5,"priceitem":"cash"},
             {"item":"glass","amount": 10,"price":1,"priceitem":"ironsword"},
             {"item":"bread","amount": 1,"price":1,"priceitem":"ironpickaxe"},
             {"item":"cash","amount": 1,"price":20,"priceitem":"ironore"},
-            {"item":"apple","amount": 1,"price":3,"priceitem":"hammer"}
+            {"item":"wood","amount": 5,"price":10,"priceitem":"iron"}
         ]
     },
     {
