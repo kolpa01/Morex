@@ -187,6 +187,28 @@
       {"item": "mineshaftcoupon", "amount": 1}
     ]
   },
+  "t017": {
+    "type": "classic",
+    "rarity": "common",
+    "quest": {
+      "h:wheatseed": 9
+    },
+    "rewards": [
+      {"item": "coins", "amount": 150},
+      {"item": "fertilizer", "amount": 3}
+    ]
+  },
+  "t018": {
+    "type": "classic",
+    "rarity": "common",
+    "quest": {
+      "p:wheatseed": 3
+    },
+    "rewards": [
+      {"item": "coins", "amount": 300},
+      {"item": "cash", "amount": 1}
+    ]
+  },
   "e000": {
     "type": "event",
     "rarity": "common",

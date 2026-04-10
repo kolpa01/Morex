@@ -91,10 +91,10 @@ class PlantUI(nextcord.ui.View):
         descriptions = {}
         seeds = fns.get_seeds()
         seed_amounts = await m_utils.items_amount.get_bulk_amount(self.user, items=copy.copy(seeds))
-        for seed in seeds:
-            seed = fns.get_item(seed, "id", self.cur_lan)
-            desc = await fns.text_replacer(self.text["you_own"], ["{amount}", seed_amounts[seed.id]])
-            descriptions.update({seed.id: desc})
+        for display_seed in seeds:
+            display_seed = fns.get_item(display_seed, "id", self.cur_lan)
+            desc = await fns.text_replacer(self.text["you_own"], ["{amount}", seed_amounts[display_seed.id]])
+            descriptions.update({display_seed.id: desc})
         for option in self.children[10].options:
             option.description = descriptions[option.value]
             option.default = False
@@ -102,6 +102,7 @@ class PlantUI(nextcord.ui.View):
                 option.default = True
         
         await get_farm_image(interaction, self.user, self, self.texture_data, True, self.cur_lan, self.text)
+        await fns.update_daily_task(self.user, "p", seed.sid, 1)
 
     @nextcord.ui.button(emoji=main.one, style=nextcord.ButtonStyle.gray, row=1)
     async def one(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
@@ -315,6 +316,8 @@ class FarmButtons(nextcord.ui.View):
         crop = fns.get_item(seed.toolatributes.crop, "name", self.cur_lan)
         await crop.add_item(self.user, amount)
         text.append(f"{amount} {crop.displayname}")
+
+        await fns.update_daily_task(self.user, "h", seed.sid, 1)
 
         chance = random.randint(1, 100)
         if chance <= seed.toolatributes.seed_chance:
