@@ -961,7 +961,8 @@
         "2.2.4": "**Updated commands:**\n- /quests\n- /changelog\n**Other changes:**\n- Added Winter Glade on /search\n- Bugfixes",
         "2.2.5": "**Updated commands:**\n- /dig\n- /search\n**Other changes:**\n- Added Overgrown Mineshaft to /dig\n- Updated daily quests\n- Added items related to Easter event\n- Bugfixes",
         "2.2.5.2": "**Updated commands:**\n- /inventory\n**Other changes:**\n- Easter event has ended",
-        "2.3.0": "**Added commands:**\n- /leaderboard coins\n- /leaderboard xp\n**Updated commands:**\n- /craft\n- /dig\n- /event\n- /give item\n- /recipe\n- /search\n- /slots\n- /smelt\n- /trade for_coins\n- /trade for_item\n**Removed command:**\n- /leaderboards\n**Other changes:**\n- Added Event system\n- Updated daily quests\n- Updated Pit on /dig\n- Updated textures\n- Added items\n- Bugfixes"
+        "2.3.0": "**Added commands:**\n- /leaderboard coins\n- /leaderboard xp\n**Updated commands:**\n- /craft\n- /dig\n- /event\n- /give item\n- /recipe\n- /search\n- /slots\n- /smelt\n- /trade for_coins\n- /trade for_item\n**Removed command:**\n- /leaderboards\n**Other changes:**\n- Added Event system\n- Updated daily quests\n- Updated Pit on /dig\n- Updated textures\n- Added items\n- Bugfixes",
+        "2.4.0": "**Added commands:**\n- /farm\n\n**Updated commands:**\n- /dig\n- /event\n- /leaderboard\n\n**Other changes:**\n- Added day-night system\n- Updated merchants\n- Added items\n- Added recipes\n- Bugfixes"
     },
     "dig": {
         "name": {
