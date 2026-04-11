@@ -25,6 +25,7 @@
                 {"item": "coins", "min_value": 50, "max_value": 200, "choice": 10000},
                 {"item": "stone", "min_value": 4, "max_value": 9, "choice": 8500},
                 {"item": "sand", "min_value": 2, "max_value": 5, "choice": 6000},
+                {"item": "wheat", "min_value": 1, "max_value": 2, "choice": 3000},
                 {"item": "goldore", "min_value": 1, "max_value": 3, "choice": 2500},
                 {"item": "diamondore", "min_value": 1, "max_value": 1, "choice": 100}
             ]
