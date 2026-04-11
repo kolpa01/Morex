@@ -317,7 +317,9 @@
         {"item": "testitem", "value": 1},
         {"item": "testsword", "value": 1},
         {"item": "testbundle", "value": 1},
-        {"item": "testspellbook", "value": 1}
+        {"item": "testspellbook", "value": 1},
+        {"item": "testseed", "value": 1},
+        {"item": "testcrop", "value": 1}
       ]
     }
   },
