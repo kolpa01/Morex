@@ -282,7 +282,12 @@
             "time": "Time Stop",
             "bp": "Additional Powers",
             "location": "Location",
-            "command": "Command"
+            "command": "Command",
+            "tile_type": "Grows on",
+            "growth_time": "Time to grow",
+            "crop": "Crop",
+            "seed_return": "Seeds",
+            "death": "Time to wilt"
         },
         "leaderboards_coins": {
             "all": "Top 10 users with most coins",

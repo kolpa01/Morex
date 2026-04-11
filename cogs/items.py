@@ -243,6 +243,10 @@ class ItemsCog(commands.Cog):
             elif item.toolartibutes.type == "none":
                 if item.toolartibutes.itemtype == "awaiting":
                     embed.add_field(name=text_cmd['ta_title'], value=f"**{text_cmd['in_days']}** <t:{item.toolartibutes.timestamp}:R>", inline=False)
+            elif item.toolartibutes.type == "seed":
+                text = text_cmd
+                embed.add_field(name=text_cmd['ta_title'], value=f"**{text_cmd['tile_type']}:** {fns.get_item(item.toolatributes.itemtype, "name", cur_lan)}\n**{text['growth_time']}:** {item.toolatributes.growth_time}s\n**{text['crop']}:** {"-".join(list(map(str, item.toolatributes.amount)))} {fns.get_item(item.toolatributes.crop, "name", cur_lan)}\n**{text['seed_return']}:**: {item.toolatributes.seed_chance}% {"-".join(map(str, item.toolatributes.seed_amount))}\n**{text['death']}:** {main.deny if not item.toolatributes.wilt_time else f"{item.toolatributes.wilt_time}s"}", inline=False)
+
             else:
                 embed.add_field(name="Error",
                                 value=f'Not Implemented {item.toolartibutes.type}/{item.toolartibutes.itemtype}',
