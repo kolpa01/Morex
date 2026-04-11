@@ -2034,3 +2034,63 @@ async def has_event_boost(boost):
     if main.event['current_event'].default_features[boost]:
         return main.event['current_event'].default_features[boost]
     return 1
+
+
+async def create_global_counter(id: str, tiers: dict, user_rewards: dict):
+    """
+    id: str - id of the counter which will be used to indentify the counter
+    tiers: dict - rewards for counter reaching certain tiers
+    {
+        "1": {
+            "rewards": [
+                {"name": "coins", "value": 21},
+            ],
+            "icon": "images/items/0005.png"
+        }
+    }
+    user_rewards: dict - rewards for top something users
+    {
+        "1-1": [
+            {"name": "coins", "value": 21}
+        ]
+    }
+    """
+    with open("ownerdb/global_counter.json", "r") as f:
+        counters = json.load(f)
+    
+    if id in counters:
+        raise ValueError(f"This counter '{id}' already exists. You might want to create a new one, or update this one.")
+
+    counters[id] = {}
+    counters[id]["config"] = {}
+    counters[id]["config"]["tiers"] = tiers
+    counters[id]["config"]["top_rewards"] = user_rewards
+    counters[id]["users"] = {}
+
+    with open("ownerdb/global_counter.json", "w") as f:
+        json.dump(counters, f)
+
+    return True
+
+
+async def update_global_counter(id: str, user: nextcord.Member, amount: int):
+    if not main.event["current_event"]:
+        return False
+    if main.event["current_event"].counter != id:
+        return False
+
+    with open("ownerdb/global_counter.json", "r") as f:
+        counters = json.load(f)
+
+    if id not in counters:
+        return False
+
+    if str(user.id) in counters[id]["users"]:
+        counters[id]["users"][str(user.id)] += amount
+    else:
+        counters[id]["users"].update({str(user.id): amount})
+
+    with open("ownerdb/global_counter.json", "w") as f:
+        json.dump(counters, f)
+
+    return True

@@ -21,5 +21,6 @@
         "start": false,
         "end": false,
         "before_end": false
-    }
+    },
+    "counter": null
 }

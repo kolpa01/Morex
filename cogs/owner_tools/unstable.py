@@ -225,6 +225,34 @@ m!whattimeisit - gives you time and weather\
         await ctx.send(f"It's {events_cog.time} and {day_or_night}")
         await ctx.send(f"Is it raining: {events_cog.is_raining}")
 
+    @commands.command()
+    @commands.is_owner()
+    async def ilikenums(self, ctx, id, amount: int = 2):
+        res = await fns.update_global_counter(id, ctx.author, amount)
+        await ctx.send(res)
+
+    @commands.command()
+    @commands.is_owner()
+    async def create_counter(self, ctx, id):
+        # im too lazy to add this shit to the event creation screen
+        # temporary values too
+        await fns.create_global_counter(
+            id,
+            {
+                "1000": {
+                    "rewards": [
+                        {"name": "coins", "value": 21}
+                    ],
+                    "icon": "images/items/0005.png"
+                }
+            },
+            {
+                "1-1": [
+                    {"name": "coins", "value": 21}
+                ],
+            }
+        )
    
+
 def setup(client):
     client.add_cog(Dev(client))

@@ -462,6 +462,11 @@ class EventPages(buttons.Pages):
             value=f"<:MX_DotWhite:1410564398963097701> | Quests: {main.deny if not self.event['quests'] else main.accept}",
             inline=False
         )
+        embed3.add_field(
+            name="Counter",
+            value=f"<:MX_DotWhite:1410564398963097701> | Counter: {self.event["counter"]}",
+            inline=False
+        )
         embed4 = nextcord.Embed(title="Event Creator", color=main.color_normal)
         embed4.add_field(
             name="Search Overrides",
@@ -471,9 +476,9 @@ class EventPages(buttons.Pages):
         embeds = [
             embed1, embed2, embed3, embed4
         ] 
-        self.current_page_pos = {"0": {"current": 0, "max": 5}, "1": {"current": 0, "max": 5}, "2": {"current": 0, "max": 4}, "3": {"current": 0, "max": 1}}
-        self.field_types = {"0": ["str", "str", "str", "str", "str"], "1": ["time", "etime", "bool", "bool", "btime"], "2": ["int", "int", "int", "bool"], "3": ["search"]}
-        self.fields_ids = {"0": ["id", "disname:pl", "disname:en", "description:pl", "description:en"], "1": ["start", "end", "notifications:start", "notifications:end", "notifications:before_end"], "2": ["features:hunt_xp", "features:dig_chest_coins", "features:beg_coins", "quests"], "3": ["location_overrides"]}
+        self.current_page_pos = {"0": {"current": 0, "max": 5}, "1": {"current": 0, "max": 5}, "2": {"current": 0, "max": 5}, "3": {"current": 0, "max": 1}}
+        self.field_types = {"0": ["str", "str", "str", "str", "str"], "1": ["time", "etime", "bool", "bool", "btime"], "2": ["int", "int", "int", "bool", "str"], "3": ["search"]}
+        self.fields_ids = {"0": ["id", "disname:pl", "disname:en", "description:pl", "description:en"], "1": ["start", "end", "notifications:start", "notifications:end", "notifications:before_end"], "2": ["features:hunt_xp", "features:dig_chest_coins", "features:beg_coins", "quests", "counter"], "3": ["location_overrides"]}
         self.client = client
         super().__init__(360, 4, embeds, user, leng=lang_file, custom_footer=main.version['en'])
         self.remove_item(self.farleft)
@@ -506,9 +511,11 @@ class EventPages(buttons.Pages):
 
         name3_1 = f"<1> | Hunt XP: {self.event['features']['hunt_xp'] if self.event['features']['hunt_xp'] else main.deny}\n<2> | Dig Coins: {self.event['features']['dig_chest_coins'] if self.event['features']['dig_chest_coins'] else main.deny}\n<3> | Beg coins: {self.event['features']['beg_coins'] if self.event['features']['beg_coins'] else main.deny}".replace(f'<{self.current_page_pos["2"]["current"]}>', '<:MX_DotBlue:1410564396622807081>').replace('<1>', '<:MX_DotWhite:1410564398963097701>').replace('<2>', '<:MX_DotWhite:1410564398963097701>').replace('<3>', '<:MX_DotWhite:1410564398963097701>')
         name3_2 = f"<4> | Quests: {main.deny if not self.event['quests'] else main.accept}".replace(f'<{self.current_page_pos["2"]["current"]}>', '<:MX_DotBlue:1410564396622807081>').replace('<4>', '<:MX_DotWhite:1410564398963097701>')
+        name3_3 = f"<5> | Counter: {self.event["counter"]}".replace(f'<{self.current_page_pos["2"]["current"]}>', '<:MX_DotBlue:1410564396622807081>').replace('<5>', '<:MX_DotWhite:1410564398963097701>')
         embed3 = nextcord.Embed(title="Event Creator", color=main.color_normal)
         embed3.add_field(name="Features", value=name3_1, inline=False)
         embed3.add_field(name="Quests", value=name3_2, inline=False)
+        embed3.add_field(name="Counter", value=name3_3, inline=False)
         
         name4_1 = f"<1> {self.event['location_overrides']}".replace(f'<{self.current_page_pos["3"]["current"]}>', '<:MX_DotBlue:1410564396622807081>')
         embed4 = nextcord.Embed(title="Event Creator", color=main.color_normal)

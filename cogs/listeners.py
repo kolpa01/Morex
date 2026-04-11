@@ -8,6 +8,7 @@ from morex.objects import MorexEvent
 import json
 import datetime
 import random
+import functions as fns
 
 
 class Events(commands.Cog):

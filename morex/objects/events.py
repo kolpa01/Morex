@@ -17,6 +17,7 @@ class MorexEvent:
         self.notify_start: bool = obj['notifications']['start']  
         self.notify_before_end: int | bool = obj['notifications']['before_end']
         self.notify_end: bool = obj['notifications']['end']
+        self.counter: str = obj["counter"]
 
     def __bool__(self):
         return True
@@ -44,8 +45,3 @@ class MorexEvent:
             if i['item'] == 'event':
                 i.update(i['fallback'])
         return items
-
-            
-            
-
-
