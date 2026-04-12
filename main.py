@@ -11,11 +11,11 @@ integrations = [nextcord.IntegrationType.guild_install]
 
 event = {}
 mode = "mx"  # dev or mx
-version_number = "2.4.0"
+version_number = "2.4.1"
 beta_version = "none"
 version = {
-    "pl": "Wersja 2.4.0 | Rolnictwo",
-    "en": "Version 2.4.0 | Farming"
+    "pl": "Wersja 2.4.1 | Rolnictwo",
+    "en": "Version 2.4.1 | Farming"
 }
 
 color_normal = 0xCE4DD5

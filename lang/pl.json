@@ -967,7 +967,8 @@
         "2.2.5": "**Zaktualizowano komendy:**\n- /dig\n- /search\n**Inne zmiany:**\n- Dodano Zaro\u015bni\u0119t\u0105 kopalni\u0119 na /dig\n- Zaktualizowano dzienne zadania\n- Dodano przedmioty zwi\u0105zane z wydarzeniem Wielkanocnym\n- Naprawiono b\u0142\u0119dy",
         "2.2.5.2": "**Zaktualizowano komendy:**\n- /inventory\n**Inne zmiany:**\n- Wydarzenie Wielkanocne zosta\u0142o zako\u0144czone",
         "2.3.0": "**Dodano komendy:**\n- /leaderboard coins\n- /leaderboard xp\n**Zaktualizowano komendy:**\n- /craft\n- /dig\n- /event\n- /give item\n- /recipe\n- /search\n- /slots\n- /smelt\n- /trade for_coins\n- /trade for_item\n**Usuni\u0119to komendy:**\n- /leaderboards\n**Inne zmiany:**\n- Dodano system wydarze\u0144\n- Zaktualizowano dzienne zadania\n- Zaktualizowano Dziur\u0119 na /dig\n- Zaktualizowano tekstury\n- Dodano Przedmioty\n- Naprawiono b\u0142\u0119dy",
-        "2.4.0": "**Dodano komendy:**\n- /farm\n\n**Zaktualizowano komendy:**\n- /dig\n- /event\n- /leaderboard\n\n**Inne zmiany:**\n- Dodano system dnia i nocy\n- Zaktualizowano handlarzy\n- Dodano przedmioty\n- Dodano receptury\n- Naprawiono b\u0142\u0119dy"
+        "2.4.0": "**Dodano komendy:**\n- /farm\n\n**Zaktualizowano komendy:**\n- /dig\n- /event\n- /leaderboard\n\n**Inne zmiany:**\n- Dodano system dnia i nocy\n- Zaktualizowano handlarzy\n- Dodano przedmioty\n- Dodano receptury\n- Naprawiono b\u0142\u0119dy",
+        "2.4.1": "**Zaktualizowano komendy:**\n- beg\n- /dig\n- /item\n- /search\n\n**Inne zmiany:**\n- Dodano liczniki globalne\n- Zaktualizowano handlarzy\n- Zaktualizowano przedmioty\n- Dodano nowe zadania dzienne"
     },
     "dig": {
         "name": {
