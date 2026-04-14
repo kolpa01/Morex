@@ -618,6 +618,15 @@ class HuntButtons(nextcord.ui.View):
         await self.enemy_turn(interaction)
         return
 
+    async def temp_weapon_handler(self):
+        if self.weapon_is_back != 0:
+            self.weapon_is_back -= 1
+        else:
+            if self.temporary_weapon is not None:
+                self.weapon = self.temporary_weapon
+                self.temporary_weapon = None
+                self.charging = 0
+
     async def attack_mob_classic(self, interaction, atk, weapon_type, power=None):
         text = []
         if power is None:
@@ -664,13 +673,7 @@ class HuntButtons(nextcord.ui.View):
                 await interaction.response.send_message(embed=embed, ephemeral=True)
                 return
         elif mode == "atk":
-            if self.weapon_is_back != 0:
-                self.weapon_is_back -= 1
-            else:
-                if self.temporary_weapon is not None:
-                    self.weapon = self.temporary_weapon
-                    self.temporary_weapon = None
-
+            await self.temp_weapon_handler()
             if self.weapon.toolatributes.cursed == "y" or self.weapon.toolatributes.cursed in [1, 2, 3, 4, 5, 6]:
                 x = random.randint(1, 10)
                 if x in [1, 2, 3, 4]:
@@ -681,6 +684,7 @@ class HuntButtons(nextcord.ui.View):
 
             await self.attack_mob_classic(interaction, attack_value, type_weapon)
         elif mode == "atk2":
+            await self.temp_weapon_handler()
             self.charging -= 3
             power_alias = f"{self.weapon.toolatributes.power.emoji} {self.weapon.toolatributes.power.name}"
             power_type = self.weapon.toolatributes.power.type
@@ -775,6 +779,8 @@ class HuntButtons(nextcord.ui.View):
                 self.temporary_weapon = self.weapon
             self.weapon_is_back = 5
             self.weapon = fns.get_item(power.value, 'id', self.cur_lan)
+            # reset the spellbook charge
+            self.charging = 0
             return ['smw', 1]
         else:
             return
