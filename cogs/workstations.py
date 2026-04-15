@@ -107,7 +107,7 @@ class Workstations(commands.Cog):
 
         has_enough_item = await item.get_amount(user, amount)
         if has_enough_item is None:
-            embed = nextcord.Embed(description=leng['other']["not_enough_coins"], color=main.color_normal)
+            embed = nextcord.Embed(description=leng['other']["not_enough_items"]["description"], color=main.color_normal)
             embed.set_author(name=f"{user.name}", icon_url=user.display_avatar.url)
             embed.set_footer(text=main.version[cur_lan])
             await interaction.response.send_message(embed=embed, ephemeral=True)
