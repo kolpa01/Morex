@@ -2178,7 +2178,7 @@
       "crop": "wheat",
       "amount": [2, 5],
       "return_seed": [1, 2],
-      "seed_chance": 100,
+      "seed_chance": 70,
       "death": 0
     }
   },
