@@ -124,7 +124,11 @@
             "from_slot": "ze slotu",
             "unequiped": "Zdj\u0119to"
         },
-        "event": {
+        "event_counter": {
+            "counter": "Licznik Globalny",
+            "none": "Obecnie nie ma \u017cadnego licznika globalnego."
+        },
+        "event_list": {
             "none": "Obecnie nie ma \u017cadnych wydarze\u0144.",
             "event": "Wydarzenia"
         },

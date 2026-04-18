@@ -124,7 +124,11 @@
             "from_slot": "from slot",
             "unequiped": "Unequiped"
         },
-        "event": {
+        "event_counter": {
+            "counter": "Global Counter",
+            "none": "There is no global counter currently"
+        },
+        "event_list": {
             "none": "There are no events currently.",
             "event": "Events"
         },

@@ -2094,3 +2094,18 @@ async def update_global_counter(id: str, user: nextcord.Member, amount: int):
         json.dump(counters, f)
 
     return True
+
+
+async def remove_global_counter(id: str):
+    with open("ownerdb/global_counter.json", "r") as f:
+        counters: dict = json.load(f)
+    
+    if id not in counters:
+        raise KeyError(f"This counter '{id}' doesn't exists. You might want to create it before removing it :3")
+
+    counters.pop(id)
+
+    with open("ownerdb/global_counter.json", "w") as f:
+        json.dump(counters, f)
+
+    return True
