@@ -16,7 +16,7 @@ class EventCommands(commands.Cog):
     async def event(self, interaction: Interaction):
         pass
 
-    @event.subcommand(name="counter", description="Display global counter with milestones for users to complete.", description_localizations={"pl": "Display global counter with milestones for users to complete."})
+    @event.subcommand(name="counter", description="Display global counter with milestones for users to complete.", description_localizations={"pl": "Wyświetl licznik globalny z kamieniami milowymi do zdobycia dla użytkowników."})
     async def event_counter(self, interaction: Interaction):
         interaction.user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
