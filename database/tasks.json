@@ -272,5 +272,31 @@
       {"item": "coins", "amount": 750},
       {"item": "pinkegg", "amount": 5}
     ]
+  },
+  "e005": {
+    "type": "event",
+    "rarity": "common",
+    "event": "farming2026",
+    "quest": {
+      "h:wheatseed": 15
+    },
+    "rewards": [
+      {"item": "coins", "amount": 500},
+      {"item": "fertilizer", "amount": 5},
+      {"item": "commonbox", "amount": 1}
+    ]
+  },
+  "e006": {
+    "type": "event",
+    "rarity": "common",
+    "event": "farming2026",
+    "quest": {
+      "p:wheatseed": 15
+    },
+    "rewards": [
+      {"item": "coins", "amount": 500},
+      {"item": "fertilizer", "amount": 5},
+      {"item": "commonbox", "amount": 1}
+    ]
   }
 }

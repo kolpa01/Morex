@@ -1246,7 +1246,9 @@
             "e001": "Expensive decoration",
             "e002": "Egg finder",
             "e003": "Gardener",
-            "e004": "Golden Easter"
+            "e004": "Golden Easter",
+            "e005": "The harvest",
+            "e006": "Broken hoes"
         },
         "description": {
             "t000": "Defeat 3 Green Slimes.",
@@ -1272,7 +1274,9 @@
             "e001": "Bring back 2 Golden Eggs from </dig:1188085769647173715>.",
             "e002": "Find 10 Green Eggs on </search:1210998667222450276>.",
             "e003": "Bring back 25 Vines from </dig:1188085769647173715>.",
-            "e004": "Bring back 15 Gold Ores from </dig:1188085769647173715>."
+            "e004": "Bring back 15 Gold Ores from </dig:1188085769647173715>.",
+            "e005": "Harvest 15 tiles with Wheat on </farm:1471121836237520906>.",
+            "e006": "Plant 15 Wheat Seeds on </farm:1471121836237520906>."
         }
     },
     "structures": {

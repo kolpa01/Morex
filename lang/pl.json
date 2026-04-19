@@ -1228,7 +1228,9 @@
             "e001": "Droga dekoracja",
             "e002": "Poszukiwacz jajek",
             "e003": "Ogrodnik",
-            "e004": "Z\u0142ota Wielkanoc"
+            "e004": "Z\u0142ota Wielkanoc",
+            "e005": "\u017bniwa",
+            "e006": "Zniszczone motyki"
         },
         "description": {
             "t000": "Pokonaj 3 Zielone Slime'y.",
@@ -1254,7 +1256,9 @@
             "e001": "Przynie\u015b 2 Z\u0142ote Jajka z </dig:1188085769647173715>.",
             "e002": "Znajd\u017a 10 Zielonych Jajek na </search:1210998667222450276>.",
             "e003": "Przynie\u015b 25 Pn\u0105czy z </dig:1188085769647173715>.",
-            "e004": "Przynie\u015b 15 Rudy Z\u0142ota z </dig:1188085769647173715>."
+            "e004": "Przynie\u015b 15 Rudy Z\u0142ota z </dig:1188085769647173715>.",
+            "e005": "Zbierz 15 p\u00f3l z Pszenic\u0105 na </farm:1471121836237520906>.",
+            "e006": "Wysiej 15 Nasion Pszenicy na </farm:1471121836237520906>."
         }
     },
     "structures": {
