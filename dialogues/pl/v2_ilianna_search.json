@@ -1,0 +1,108 @@
+{
+    "firsttime": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Czarodziejka Ilianna",
+        "text": "O... Chcesz ze mn\u0105 porozmawia\u0107..? Nie ma sprawy... Czy jest co\u015b o co chcesz si\u0119 mnie zapyta\u0107?",
+        "color": "0x30b3ff",
+        "choices": {
+            "Czemu tu jest tak zimno?": "cold",
+            "Czym jest Morex?": "morexhuh",
+            "Powiedz mi co\u015b o sobie": "aboutmehuh"
+        }
+    },
+    "hub": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Czarodziejka Ilianna",
+        "text": "Dobrze... O co chcesz si\u0119 zapyta\u0107..?",
+        "color": "0x30b3ff",
+        "choices": {
+            "Czemu tu jest tak zimno?": "cold",
+            "Czym jest Morex?": "morexhuh",
+            "Powiedz mi co\u015b o sobie": "aboutmehuh",
+            "To wszystko. Do zobaczenia.": "bye"
+        }
+    },
+    "cold": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Czarodziejka Ilianna",
+        "text": "Zimno..? Racja... nie jeste\u015b st\u0105d.. Legendy g\u0142osz\u0105, \u017ce wiele lat temu jaki\u015b b\u00f3g przekln\u0105\u0142 te ziemi\u0119 wiecznym mrozem..\n\nNo c\u00f3\u017c to tylko legenda.. W rzeczywisto\u015bci pod ziemi\u0105 jest wielki Kryszta\u0142 Lodu.. prawdopodobnie.. to by\u0142oby fajne...\nWybacz.. Chyba znowu zaczynam bredzi\u0107..",
+        "color": "0x30b3ff",
+        "choices": {
+            "B\u00f3g?": "god",
+            "Kryszta\u0142 Lodu?": "icemagic",
+            "Chc\u0119 zapyta\u0107 si\u0119 o co\u015b innego": "hub",
+            "To wszystko. Do zobaczenia.": "bye"
+        }
+    },
+    "god": {
+        "icon": "https://media.discordapp.net/attachments/1315801423539208252/1323076671141842995/anothawhich2.png",
+        "name": "Czarodziejka Ilianna",
+        "text": "Chcia\u0142abym Ci wi\u0119cej opowiedzie\u0107... Ale nie ma prawie \u017cadnych informacji o tym bogu.. Nie powstrzyma\u0142o to ludzi, \u017ceby nazwa\u0107 tego boga.. Nadali temu imi\u0119 \"Elysienna\"...\n\nWybacz, ale nie wiem nic wi\u0119cej...",
+        "color": "0x30b3ff",
+        "choices": {
+            "Chc\u0119 zapyta\u0107 si\u0119 o co\u015b innego": "hub",
+            "To wszystko. Do zobaczenia.": "bye"
+        }
+    },
+    "icemagic": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Czarodziejka Ilianna",
+        "text": "No.. Kryszta\u0142 Lodu... Wybacz... To mog\u0142o nie by\u0107 takie oczywiste..\n\nChodzi mi o to, \u017ce jest wielki Kryszta\u0142 Lodu taki sam jakiego ludzie u\u017cywaj\u0105 do magii, ale zakopany pod ziemi\u0105 bez \u017cadnego naczynia... Wi\u0119c wiesz... U\u017cywa magii sam z siebie... Ale to tylko moja teoria...",
+        "color": "0x30b3ff",
+        "choices": {
+            "Chc\u0119 zapyta\u0107 si\u0119 o co\u015b innego": "hub",
+            "To wszystko. Do zobaczenia.": "bye"
+        }
+    },
+    "morexhuh": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Czarodziejka Ilianna",
+        "text": "Morex... Pytasz si\u0119, bo kupuj\u0119 tego esencj\u0119, tak..? Mistyczny fioletowy slime z dwoma rogami... Pewnie nie istnieje... jak po\u0142owa rzeczy, kt\u00f3re odkry\u0142 Kerim Morex... Czy Kerim w og\u00f3le istnia\u0142.. czy tylko dali jedne z najwa\u017cniejszych odkry\u0107 pod jednym pseudonimem...\n\nWybacz m\u00f3wi\u0119 nie na temat... O czym to ja... Racja... Morex... Jak m\u00f3wi\u0142am powinno to by\u0107 fioletowym slimem z rogami... Skoro to slime, wi\u0119c musi mie\u0107 swoj\u0105 esencj\u0119... Legendy g\u0142osz\u0105, \u017ce... Morex posiada wielk\u0105 moc i si\u0142\u0119, wi\u0119c nawet gdyby kto\u015b to znalaz\u0142 to pewnie by zgin\u0105\u0142 pr\u00f3buj\u0105c zdoby\u0107 t\u0105 esencj\u0119... Nie zaszkodzi czego\u015b za ni\u0105 zaoferowa\u0107... Szanse s\u0105 niskie, ale nigdy zerowe...",
+        "color": "0x30b3ff",
+        "choices": {
+            "Chc\u0119 zapyta\u0107 si\u0119 o co\u015b innego": "hub",
+            "To wszystko. Do zobaczenia.": "bye"
+        }
+    },
+    "aboutmehuh": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Czarodziejka Ilianna",
+        "text": "Co..?! Co\u015b o mnie..?! Emm.. Jestem tylko czarodziejk\u0105, kt\u00f3ra kupuje rzeczy od ludzi... Powinnam wstydzi\u0107 si\u0119 za siebie, bo moja mistrzyni jest cz\u0119\u015bci\u0105 Rady Zakonu Magicznego... i z wszystkich nast\u0119pc\u00f3w Wielkiej Ainy jestem najbardziej \u017ca\u0142osna...\nPrzepraszam Ciebie... Nie powinnam m\u00f3wi\u0107 tego wszystkiego... Zapomnijmy o tym, dobrze..?",
+        "color": "0x30b3ff",
+        "choices": {
+            "Wielka Aina?": "masta",
+            "Zakon Magiczny?": "order",
+            "Chc\u0119 zapyta\u0107 si\u0119 o co\u015b innego": "hub",
+            "To wszystko. Do zobaczenia.": "bye"
+        }
+    },
+    "masta": {
+        "icon": "https://media.discordapp.net/attachments/1315801423539208252/1323076671141842995/anothawhich2.png",
+        "name": "Czarodziejka Ilianna",
+        "text": "Przepraszam... ale nie mogę o tym teraz mówić...",
+        "color": "0x30b3ff",
+        "choices": {
+            "Chc\u0119 zapyta\u0107 si\u0119 o co\u015b innego": "hub",
+            "To wszystko. Do zobaczenia.": "bye"
+        }
+    },
+    "order": {
+        "icon": "https://media.discordapp.net/attachments/1315801423539208252/1323076671141842995/anothawhich2.png",
+        "name": "Czarodziejka Ilianna",
+        "text": "Przepraszam... ale nie mogę powiedzieć o tym zbyt wiele...",
+        "color": "0x30b3ff",
+        "choices": {
+            "Chc\u0119 zapyta\u0107 si\u0119 o co\u015b innego": "hub",
+            "To wszystko. Do zobaczenia.": "bye"
+        }
+    },
+    "bye": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Czarodziejka Ilianna",
+        "text": "Do zobaczenia..\nNiech Astra Ciebie prowadzi...",
+        "color": "0x30b3ff",
+        "choices": {
+            "end": "END"
+        }
+    }
+}

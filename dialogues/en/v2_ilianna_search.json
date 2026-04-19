@@ -1,0 +1,108 @@
+{
+    "firsttime": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Witch Ilianna",
+        "text": "Oh... You want to talk with me..? Sure then... Is there anything you want to ask me..?",
+        "color": "0x30b3ff",
+        "choices": {
+            "Why is it so cold in here?": "cold",
+            "What is Morex?": "morexhuh",
+            "Tell me something about yourself": "aboutmehuh"
+        }
+    },
+    "hub": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Witch Ilianna",
+        "text": "Sure... What is it..?",
+        "color": "0x30b3ff",
+        "choices": {
+            "Why is it so cold in here?": "cold",
+            "What is Morex?": "morexhuh",
+            "Tell me something about yourself": "aboutmehuh",
+            "That's all. See you soon.": "bye"
+        }
+    },
+    "cold": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Witch Ilianna",
+        "text": "Cold..? Oh right.. you aren't used to this place.. Legends say that many years ago a god cursed this land with eternal freeze..\n\nBut that's just a legend after all.. In reality there's giant Ice Crystal underground.. probably... it would be cool...\nOh sorry.. Looks like I'm talking nonsense again..",
+        "color": "0x30b3ff",
+        "choices": {
+            "God?": "god",
+            "Ice Crystal?": "icemagic",
+            "I want to ask you something else": "hub",
+            "That's all. See you soon.": "bye"
+        }
+    },
+    "god": {
+        "icon": "https://media.discordapp.net/attachments/1315801423539208252/1323076671141842995/anothawhich2.png",
+        "name": "Witch Ilianna",
+        "text": "I'd be more than happy to tell you more... But there's almost no recorded information about this god.. It didn't stop humans from naming them... They called them \"Elysienna\"...\n\nI'm sorry but I don't know anything else...",
+        "color": "0x30b3ff",
+        "choices": {
+            "I want to ask you something else": "hub",
+            "That's all. See you soon.": "bye"
+        }
+    },
+    "icemagic": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Witch Ilianna",
+        "text": "Yeah.. Ice Crystal... Oh.. sorry... It might've not been too obvious...\n\nWhat I meant that there's a giant Ice Crystal, the same as humans use to perform magic, but burried underground without any vessel... So you know.. It just uses its magic on its own... But that's just my theory...",
+        "color": "0x30b3ff",
+        "choices": {
+            "I want to ask you something else": "hub",
+            "That's all. See you soon.": "bye"
+        }
+    },
+    "morexhuh": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Witch Ilianna",
+        "text": "Morex... You're asking about it because I'm buying its essence right..? A mystical purple slime with two horns... It probably doesn't exist... like half of the things Kerim Morex discovered... Did Kerim even exist.. or maybe they just put most notable discoveries under one alias...\n\nSorry I got sidetracked... What was I.. Right.. Morex... As I was saying it's supposed to be a purple slime with horns... Since it's a slime, it must have its own essence... According to legends... the Morex is really strong so even if someone found it they likely would've died trying to gather its essence... Doesn't hurt to offer to buy that essence from people... Chances are low but never zero after all...",
+        "color": "0x30b3ff",
+        "choices": {
+            "I want to ask you something else": "hub",
+            "That's all. See you soon.": "bye"
+        }
+    },
+    "aboutmehuh": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Witch Ilianna",
+        "text": "Huh..?! About me..?! Uhm.. I'm just a witch buying stuff from people... I should be ashamed since my master is part of the Council of the Magical Order... and out of all of the successor of the Great Aina I'm the most pathetic one...\nI'm sorry... I shouldn't have said all that... Let's forget about it, alright..?",
+        "color": "0x30b3ff",
+        "choices": {
+            "The Great Aina?": "masta",
+            "Magic Order?": "order",
+            "I want to ask you something else": "hub",
+            "That's all. See you soon.": "bye"
+        }
+    },
+    "masta": {
+        "icon": "https://media.discordapp.net/attachments/1315801423539208252/1323076671141842995/anothawhich2.png",
+        "name": "Witch Ilianna",
+        "text": "Sorry... but I don't want to talk about it right now...",
+        "color": "0x30b3ff",
+        "choices": {
+            "I want to ask you something else": "hub",
+            "That's all. See you soon.": "bye"
+        }
+    },
+    "order": {
+        "icon": "https://media.discordapp.net/attachments/1315801423539208252/1323076671141842995/anothawhich2.png",
+        "name": "Witch Ilianna",
+        "text": "Sorry... but I can't talk about it too much...",
+        "color": "0x30b3ff",
+        "choices": {
+            "I want to ask you something else": "hub",
+            "That's all. See you soon.": "bye"
+        }
+    },
+    "bye": {
+        "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
+        "name": "Witch Ilianna",
+        "text": "See you later..\nMay the Astra guide your way...",
+        "color": "0x30b3ff",
+        "choices": {
+            "end": "END"
+        }
+    }
+}

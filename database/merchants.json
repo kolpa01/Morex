@@ -129,7 +129,7 @@
         "id": 8,
         "icon": "https://cdn.discordapp.com/attachments/1315801423539208252/1323076670726340628/anothawhich.png",
         "times": 3,
-        "dialogues": null,
+        "dialogues": "v2_ilianna_search",
         "items": [
             {"item":"ruby","amount": 10,"price":3,"priceitem":"morexessence"},
             {"item":"regenerationpotion","amount": 1,"price":10,"priceitem":"cactus"},
