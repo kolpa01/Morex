@@ -10,7 +10,6 @@ contexts = [nextcord.InteractionContextType.guild, nextcord.InteractionContextTy
 integrations = [nextcord.IntegrationType.guild_install]
 
 event = {}
-mode = "mx"  # dev or mx
 version_number = "2.4.1"
 beta_version = "none"
 version = {
@@ -56,6 +55,8 @@ userdb = ["announcements", "battlesfrozenintime", "custommobs", "dailytasks", "f
 if __name__ == "__main__":
     os.chdir("./")
 
+    load_dotenv()
+
     intents = nextcord.Intents.all()
 
     client = commands.Bot(command_prefix="m!", intents=intents)
@@ -92,14 +93,12 @@ if __name__ == "__main__":
     if not have_any_files_loaded:
         logging.critical("All of the JSON files are missing. Aborting...")
         exit(1)
-    if mode == "dev":
+    if os.environ["MODE"] == "dev":
         asyncio.run(checks.check_item_names())
         asyncio.run(checks.check_item_descriptions())
     logging.label("--------->    MOREX OUTPUT    <---------")
 
-    load_dotenv()
-    
-    if mode == "mx":
+    if os.environ["MODE"] == "mx":
         client.run(os.environ["TOKEN_MOREX"])
     else:
         client.run(os.environ["TOKEN_TEST"])
