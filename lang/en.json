@@ -177,7 +177,7 @@
             "ran": "ran away from the fight.",
             "fight": "Battle",
             "info": "Informations",
-            "hpdeath": "{u} attacks {e}. {u} loses all HP.\n{u} wins.",
+            "hpdeath": "{u} attacks {e}. {e} loses all HP.\n{u} wins.",
             "curseddeath": "Weapon of {u} attacks {u}. {u} losses.",
             "hpandshdeath": "{u} attacks {e}. {e} loses all SH and HP.\n{u} wins.",
             "challenge": "Challenge",
