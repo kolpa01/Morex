@@ -1865,7 +1865,7 @@ class FightButtons(nextcord.ui.View):
             self.cancel.disabled = False
 
             if self.weapon[0].toolatributes.itemtype != "spellbook":
-                self.second_power.disabled = True
+                self.powerb.disabled = True
 
             self.turn = self.user[0]
 
