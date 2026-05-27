@@ -69,13 +69,13 @@ class Games(commands.Cog):
             user_weapon = await fns.get_weapon(user)
             member_weapon = await fns.get_weapon(member)
 
-            if user_weapon is False and member_weapon is False:
+            if not user_weapon and not member_weapon:
                 await interaction.response.send_message(embed=errorembed3)
                 return
-            elif user_weapon is False and member_weapon is True:
+            elif not user_weapon and member_weapon:
                 await interaction.response.send_message(embed=errorembed)
                 return
-            elif user_weapon is True and member_weapon is False:
+            elif user_weapon and not member_weapon:
                 await interaction.response.send_message(embed=errorembed2)
                 return
 
