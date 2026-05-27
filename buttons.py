@@ -2069,7 +2069,7 @@ class FightButtons(nextcord.ui.View):
     @nextcord.ui.button(style=nextcord.ButtonStyle.red, emoji='<:MX_Shoe:1220425823555682404>')
     async def cancel(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
         await self.manage_buttons()
-        embed = await self.create_embed(f"{self.turn.name} uciekł od walki.")
+        embed = await self.create_embed(f"{self.turn.name} {self.language['ran']}")
         await interaction.edit(embed=embed, view=self)
         self.stop()
 
