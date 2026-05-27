@@ -980,7 +980,7 @@
         "2.2.5.2": "**Updated commands:**\n- /inventory\n**Other changes:**\n- Easter event has ended",
         "2.3.0": "**Added commands:**\n- /leaderboard coins\n- /leaderboard xp\n**Updated commands:**\n- /craft\n- /dig\n- /event\n- /give item\n- /recipe\n- /search\n- /slots\n- /smelt\n- /trade for_coins\n- /trade for_item\n**Removed command:**\n- /leaderboards\n**Other changes:**\n- Added Event system\n- Updated daily quests\n- Updated Pit on /dig\n- Updated textures\n- Added items\n- Bugfixes",
         "2.4.0": "**Added commands:**\n- /farm\n\n**Updated commands:**\n- /dig\n- /event\n- /leaderboard\n\n**Other changes:**\n- Added day-night system\n- Updated merchants\n- Added items\n- Added recipes\n- Bugfixes",
-        "2.4.1": "**Updated commands:**\n- beg\n- /dig\n- /item\n- /search\n\n**Other changes:**\n- Added global counters\n- Updated merchants\n- Updated items\n- Added new daily tasks"
+        "2.4.1": "**Updated commands:**\n- /beg\n- /dig\n- /item\n- /search\n\n**Other changes:**\n- Added global counters\n- Updated merchants\n- Updated items\n- Added new daily tasks"
     },
     "dig": {
         "name": {
