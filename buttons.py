@@ -1541,10 +1541,10 @@ class MerchantQuestion(nextcord.ui.View):
 
         if not self.merchant.dialogues:
             self.talk.disabled = True
-        self.shop.label = self.text['shop']
-        self.talk.label = self.text['talk']
-        self.task.label = self.text['task']
-        self.leave.label = self.text['leave']
+        self.shop.label = self.text['ask_shop']
+        self.talk.label = self.text['ask_talk']
+        self.task.label = self.text['ask_task']
+        self.leave.label = self.text['ask_leave']
 
         # I disabled this button since merchant tasks haven't been implemented yet
         self.task.disabled = True
