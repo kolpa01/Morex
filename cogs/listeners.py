@@ -9,6 +9,7 @@ import json
 import datetime
 import random
 import functions as fns
+import os
 
 
 class Events(commands.Cog):
@@ -34,7 +35,7 @@ class Events(commands.Cog):
     ) -> None:
         if isinstance(error.original, custom_errors.ToMakeCodeWorkError):
             return
-        if main.mode == "dev":
+        if os.environ["MODE"] == "dev":
             return
         log_channel = await self.client.fetch_channel(1332861604194160700)
         if interaction.guild:
