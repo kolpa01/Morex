@@ -81,6 +81,16 @@ if __name__ == "__main__":
                 logging.critical(f"Failed to load {file}")
                 logging.error(f"{e}")
 
+    logging.label("--------->   PLUGINS LOADER   <---------")
+    for file in os.listdir("./cogs/plugins/"):
+        if file.endswith(".py"):
+            try:
+                client.load_extension(f"cogs.plugins.{file[:-3]}")
+                logging.success(f"Loaded plugin {file}")
+            except Exception as e:
+                logging.critical(f"Failed to load the plugin: {file}")
+                logging.error(f"{e}")
+
     logging.label("--------->  JSON FILES CHECK  <---------")
     have_any_files_loaded = False
     for file in userdb:

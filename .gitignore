@@ -5,3 +5,5 @@ userdb/
 .vscode/
 .venv/
 ownerdb/
+cogs/plugins/*
+!cogs/plugins/plugin_manager.py
