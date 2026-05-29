@@ -737,7 +737,7 @@ async def create_account(user, checker=None, request_language=None):
             json.dump(settings, f)
 
         if request_language is not None:
-            embed = nextcord.Embed(title="Language/Język", description="Wybierz domyślny język w jakim będzie wyświetlany.\n\nChoose the default language in which bot will be displayed.\n# **Warning/Ostrzeżenie**\n**Jeżeli nic nie zrobisz bot będzie po polsku.\n\nIf you do nothing bot will be in polish.**", color=main.color_normal)
+            embed = nextcord.Embed(title="Language/Język", description="Wybierz domyślny język w jakim będzie wyświetlany.\n\nChoose the default language in which bot will be displayed.\n# **Warning/Ostrzeżenie**\n**Jeżeli nic nie zrobisz bot będzie po angielsku.\n\nIf you do nothing bot will be in english.**", color=main.color_normal)
             embed.set_footer(text=main.version['en'])
 
             view = buttons.LanguageStartButtons(user)
