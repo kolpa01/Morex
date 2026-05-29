@@ -12,34 +12,8 @@ class EventCommands(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @nextcord.slash_command(name="event", integration_types=main.integrations, contexts=main.contexts)
+    @nextcord.slash_command(name="event", description="Display information about current and upcoming events.", description_localizations={"pl": "Wyświetl informacje o obecnych i nadchodzących wydarzeniach."}, integration_types=main.integrations, contexts=main.contexts)
     async def event(self, interaction: Interaction):
-        pass
-
-    @event.subcommand(name="counter", description="Display global counter with milestones for users to complete.", description_localizations={"pl": "Wyświetl licznik globalny z kamieniami milowymi do zdobycia dla użytkowników."})
-    async def event_counter(self, interaction: Interaction):
-        interaction.user = await fns.firsttime(interaction.user)
-        cur_lan = await fns.get_lang(interaction.user)
-        leng = await fns.lang(cur_lan)
-        text = leng['commands']['event_counter']
-
-        with open("ownerdb/global_counter.json", "r") as f:
-            counters = json.load(f)
-
-        if not len(counters):
-            embed = nextcord.Embed(title=text['counter'], description=text['none'], color=main.color_normal)
-            embed.set_footer(text=main.version[cur_lan])
-            await interaction.response.send_message(embed=embed)
-            return
-
-        # do this in a better way please
-        current_counter = list(counters.items())[0]
-        embed = nextcord.Embed(title=text['counter'], description=str(current_counter), color=main.color_normal)
-        embed.set_footer(text=main.version[cur_lan])
-        await interaction.response.send_message(embed=embed)
-
-    @event.subcommand(name="list", description="Display information about current and upcoming events.", description_localizations={"pl": "Wyświetl informacje o obecnych i nadchodzących wydarzeniach."})
-    async def event_list(self, interaction: Interaction):
         interaction.user = await fns.firsttime(interaction.user)
         cur_lan = await fns.get_lang(interaction.user)
         leng = await fns.lang(cur_lan)
@@ -76,6 +50,32 @@ class EventCommands(commands.Cog):
         view = await complicated_relationship.pages_helper(embeds, interaction.user)
 
         await interaction.response.send_message(embed=embed, view=view)
+        # pass
+
+    # @event.subcommand(name="counter", description="Display global counter with milestones for users to complete.", description_localizations={"pl": "Wyświetl licznik globalny z kamieniami milowymi do zdobycia dla użytkowników."})
+    # async def event_counter(self, interaction: Interaction):
+    #     interaction.user = await fns.firsttime(interaction.user)
+    #     cur_lan = await fns.get_lang(interaction.user)
+    #     leng = await fns.lang(cur_lan)
+    #     text = leng['commands']['event_counter']
+    # 
+    #     with open("ownerdb/global_counter.json", "r") as f:
+    #         counters = json.load(f)
+    # 
+    #     if not len(counters):
+    #         embed = nextcord.Embed(title=text['counter'], description=text['none'], color=main.color_normal)
+    #         embed.set_footer(text=main.version[cur_lan])
+    #         await interaction.response.send_message(embed=embed)
+    #         return
+    # 
+    #     # do this in a better way please
+    #     current_counter = list(counters.items())[0]
+    #     embed = nextcord.Embed(title=text['counter'], description=str(current_counter), color=main.color_normal)
+    #     embed.set_footer(text=main.version[cur_lan])
+    #     await interaction.response.send_message(embed=embed)
+
+    # @event.subcommand(name="list", description="Display information about current and upcoming events.", description_localizations={"pl": "Wyświetl informacje o obecnych i nadchodzących wydarzeniach."})
+    # async def event_list(self, interaction: Interaction):
 
 
 def setup(client):
