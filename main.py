@@ -10,11 +10,11 @@ contexts = [nextcord.InteractionContextType.guild, nextcord.InteractionContextTy
 integrations = [nextcord.IntegrationType.guild_install]
 
 event = {}
-version_number = "2.4.1"
+version_number = "2.4.2"
 beta_version = "none"
 version = {
-    "pl": "Wersja 2.4.1 | Rolnictwo",
-    "en": "Version 2.4.1 | Farming"
+    "pl": "Wersja 2.4.2 | Rolnictwo",
+    "en": "Version 2.4.2 | Farming"
 }
 
 color_normal = 0xCE4DD5
