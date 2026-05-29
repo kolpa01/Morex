@@ -1868,7 +1868,7 @@ async def firsttime(user, second_user=None):
         a = await create_account(second_user, True)
         tset = await setting()
         aaa = tset[str(user.id)]["multiplayer"]
-        if aaa == "disabled":
+        if aaa == "disabled" and second_user != user:
             return "pmerr"
         if a is False:
             return False
@@ -1878,7 +1878,7 @@ async def firsttime(user, second_user=None):
             raise custom_errors.ToMakeCodeWorkError
 
         dd = tset[str(second_user.id)]["multiplayer"]
-        if dd == "disabled":
+        if dd == "disabled" and second_user != user:
             return "mperr"
 
         return [user, second_user]
