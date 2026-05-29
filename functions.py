@@ -787,7 +787,7 @@ async def check_settings(json_f, user_id):
     if "dm_notifications" not in json_f[str(user_id)]:
         json_f[str(user_id)]["dm_notifications"] = "enabled"
     if "language" not in json_f[str(user_id)]:
-        json_f[str(user_id)]["language"] = "pl"
+        json_f[str(user_id)]["language"] = "en"
     return json_f
 
 
