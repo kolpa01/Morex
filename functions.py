@@ -204,6 +204,13 @@ async def lang(language: str = "pl"):
     return ll
 
 
+async def u_relationships():
+    with open("userdb/relationships.json", "r") as f:
+        relationships = json.load(f)
+
+    return relationships
+
+
 async def beg_rewards():
     """finally beg rewards, not some stupid digDrops"""
     with open("database/beg.json", "r") as f:
@@ -694,6 +701,14 @@ async def create_account(user, checker=None, request_language=None):
         # skills[str(user.id)]['python'] = 0
         with open("userdb/skills.json", "w") as f:
             json.dump(skills, f)
+
+    relationships = await u_relationships()
+    if str(user.id) not in relationships:
+        relationships[str(user.id)] = {}
+        relationships[str(user.id)]["marriages"] = []
+        relationships[str(user.id)]["clan"] = None
+        with open("userdb/relationships.json", "w") as f:
+            json.dump(relationships, f)
 
     questdata = await quests()
     if str(user.id) not in questdata:
