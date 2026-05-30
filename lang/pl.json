@@ -303,6 +303,18 @@
             "all": "Top 10 os\u00f3b z najwy\u017cszym poziomem",
             "position": "Twoje miejsce:"
         },
+        "marriage": {
+            "no_slots": "Nie masz wolnych slot\u00f3w do ma\u0142\u017ce\u0144stwa\nSpr\u00f3buj rozwie\u015b\u0107 si\u0119 z kim\u015b.",
+            "no_member_slots": "Ta osoba nie ma wolnych slot\u00f3w do ma\u0142\u017ce\u0144stwa.",
+            "too_much_requests": "Osi\u0105gni\u0119to limit wys\u0142anych o\u015bwiadczyn.\nSpr\u00f3buj anulowa\u0107 jedno z nich zanim o\u015bwiadczysz si\u0119 ponownie.",
+            "too_member_requests": "Ta osoba otrzyma\u0142a zbyt wiele o\u015bwiadczyn.",
+            "already_sent": "Ta osoba ju\u017c otrzyma\u0142a twoje o\u015bwiadczyny.",
+            "already_member_sent": "Ta osoba ju\u017c o\u015bwiadczy\u0142a ci si\u0119.\nPewnie chcesz je zaakceptowa\u0107.",
+            "dont_have": "Nie masz ",
+            "try_again": "Spr\u00f3buj si\u0119 o\u015bwiadczy\u0107 ponownie, gdy go b\u0119dziesz mie\u0107.",
+            "confirmation": "Czy chcesz o\u015bwiadczy\u0107 si\u0119 {u}?\nTw\u00f3j 1 {item} zostanie zabrany z twojego ekwipunku.",
+            "sent": "O\u015bwiadczy\u0142e\u015b si\u0119 {u}."
+        },
         "quests": {
             "quests": "Zadania",
             "rewards": "Nagrody",

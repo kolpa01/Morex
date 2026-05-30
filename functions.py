@@ -705,7 +705,10 @@ async def create_account(user, checker=None, request_language=None):
     relationships = await u_relationships()
     if str(user.id) not in relationships:
         relationships[str(user.id)] = {}
-        relationships[str(user.id)]["marriages"] = []
+        relationships[str(user.id)]["marriages"] = {}
+        relationships[str(user.id)]["marriage_sent"] = {}
+        relationships[str(user.id)]["marriage_received"] = {}
+        relationships[str(user.id)]["marriage_slots"] = 1
         relationships[str(user.id)]["clan"] = None
         with open("userdb/relationships.json", "w") as f:
             json.dump(relationships, f)

@@ -303,6 +303,18 @@
             "all": "Top 10 users with most XP",
             "position": "Your position:"
         },
+        "marriage": {
+            "no_slots": "You don't have any free marraige slots.\nTry to divorce somebody.",
+            "no_member_slots": "This person doesn't have any marriage slots left.",
+            "too_much_requests": "You've reach the limit of marriage proposals sent.\nTry to cancel one of them before proposing again.",
+            "too_member_requests": "This person recieved too much marriage proposals.",
+            "already_sent": "You've already sent proposal to this person.",
+            "already_member_sent": "This person has already sent you a proposal.\nYou might want to accept it.",
+            "dont_have": "You don't have the ",
+            "try_again": "Try to propose again when you get it.",
+            "confirmation": "Do you want to propose to {u}?\nYour 1 {item} will be taken from your inventory.",
+            "sent": "You've proposed to {u}."
+        },
         "quests": {
             "quests": "Quests",
             "rewards": "Rewards",
