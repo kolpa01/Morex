@@ -313,7 +313,11 @@
             "dont_have": "You don't have the ",
             "try_again": "Try to propose again when you get it.",
             "confirmation": "Do you want to propose to {u}?\nYour 1 {item} will be taken from your inventory.",
-            "sent": "You've proposed to {u}."
+            "sent": "You've proposed to {u}.",
+            "proposals_sent": "**Proposals you've sent:**",
+            "no_proposals_sent": "You haven't sent any marriage proposals.",
+            "proposals_received": "**Proposals you've received:**",
+            "no_proposals_received": "You haven't received any marriage proposals."
         },
         "quests": {
             "quests": "Quests",

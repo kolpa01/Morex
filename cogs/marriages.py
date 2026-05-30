@@ -6,6 +6,7 @@ from uuid import uuid4
 import functions as fns
 import buttons
 import json
+import complicated_relationship
 
 
 MARRIAGE_REQ_LIMIT = 10
@@ -176,9 +177,47 @@ class Marriage(commands.Cog):
     async def marriage_divorce(self, interaction: Interaction):
         pass
 
-    @marriage.subcommand(name="requests")
+    @marriage.subcommand(name="requests", description="Show all of your marriage proposals.", description_localizations={"pl": "Wyświetl wszystkie swoje oświadczyny."})
     async def marriage_requests(self, interaction: Interaction):
-        pass
+        user = await fns.firsttime(interaction.user)
+        cur_lan = await fns.get_lang(interaction.user)
+        leng = await fns.lang(cur_lan)
+        text = leng['commands']['marriage']
+
+        relationships = await fns.u_relationships()
+
+        requests = []
+        counter = 1
+        for uuid, user_id in relationships[str(user.id)]["marriage_sent"].items():
+            requests.append(f"**{counter} - <@{user_id}> ({await self.client.fetch_user(user_id)})**\n{uuid}")
+            counter += 1
+
+        if requests:
+            description = text["proposals_sent"] + "\n" + "\n".join(requests)
+        else:
+            description = text["no_proposals_sent"]
+
+        embed = nextcord.Embed(description=description, color=main.color_normal)
+        embed.set_author(name=f"{user.name}", icon_url=user.display_avatar.url)
+        embed.set_footer(text=main.version[cur_lan])
+
+        received = []
+        counter = 1
+        for uuid, user_id in relationships[str(user.id)]["marriage_received"].items():
+            received.append(f"**{counter} - <@{user_id}> ({await self.client.fetch_user(user_id)})**\n{uuid}")
+            counter += 1
+
+        if received:
+            description = text["proposals_received"] + "\n" + "\n".join(received)
+        else:
+            description = text["no_proposals_received"]
+
+        embed2 = nextcord.Embed(description=description, color=main.color_normal)
+        embed2.set_author(name=f"{user.name}", icon_url=user.display_avatar.url)
+        embed2.set_footer(text=f"{leng['other']['pages']['page']} 1/2 | {main.version[cur_lan]}")
+
+        view = await complicated_relationship.pages_helper([embed2, embed], user)
+        await interaction.response.send_message(embed=embed2, view=view)
 
 
 def setup(client):

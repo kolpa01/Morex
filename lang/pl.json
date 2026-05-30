@@ -313,7 +313,11 @@
             "dont_have": "Nie masz ",
             "try_again": "Spr\u00f3buj si\u0119 o\u015bwiadczy\u0107 ponownie, gdy go b\u0119dziesz mie\u0107.",
             "confirmation": "Czy chcesz o\u015bwiadczy\u0107 si\u0119 {u}?\nTw\u00f3j 1 {item} zostanie zabrany z twojego ekwipunku.",
-            "sent": "O\u015bwiadczy\u0142e\u015b si\u0119 {u}."
+            "sent": "O\u015bwiadczy\u0142e\u015b si\u0119 {u}.",
+            "proposals_sent": "**Osoby, którym się oświadczyłeś:**",
+            "no_proposals_sent": "Nikomu si\u0119 nie o\u015bwiadczy\u0142e\u015b.",
+            "proposals_received": "**O\u015bwiadczyny, kt\u00f3re otrzyma\u0142e\u015b:**",
+            "no_proposals_received": "Nie otrzyma\u0142e\u015b \u017cadnych o\u015bwiadczyn."
         },
         "quests": {
             "quests": "Zadania",
