@@ -40,6 +40,13 @@ class Marriage(commands.Cog):
                 await interaction.response.send_message(embed=embed, ephemeral=True)
             return False
 
+        if str(member.id) in relationships[str(user.id)]["marriages"]:
+            embed = nextcord.Embed(description=text["already_married"], color=main.color_normal)
+            embed.set_author(name=f"{user.name}", icon_url=user.display_avatar.url)
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return False
+
         if len(relationships[str(user.id)]["marriage_sent"]) >= MARRIAGE_REQ_LIMIT:
             embed = nextcord.Embed(description=text["too_much_requests"], color=main.color_normal)
             embed.set_author(name=f"{user.name}", icon_url=user.display_avatar.url)
