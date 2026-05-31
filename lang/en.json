@@ -319,7 +319,8 @@
             "no_proposals_sent": "You haven't sent any marriage proposals.",
             "proposals_received": "**Proposals you've received:**",
             "no_proposals_received": "You haven't received any marriage proposals.",
-            "married": "Congratulations!\nYou are now married to {u}"
+            "married": "Congratulations!\nYou are now married to {u}",
+            "rejected": "You rejected the marriage proposal of {u}"
         },
         "quests": {
             "quests": "Quests",

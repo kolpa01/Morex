@@ -319,7 +319,8 @@
             "no_proposals_sent": "Nikomu si\u0119 nie o\u015bwiadczy\u0142e\u015b.",
             "proposals_received": "**O\u015bwiadczyny, kt\u00f3re otrzyma\u0142e\u015b:**",
             "no_proposals_received": "Nie otrzyma\u0142e\u015b \u017cadnych o\u015bwiadczyn.",
-            "married": "Gratulacje!\nJeste\u015b w zwi\u0105zku ma\u0142\u017ce\u0144skim z {u}"
+            "married": "Gratulacje!\nJeste\u015b w zwi\u0105zku ma\u0142\u017ce\u0144skim z {u}",
+            "rejected": "Odrzucono o\u015bwiadczyny od {u}"
         },
         "quests": {
             "quests": "Zadania",
