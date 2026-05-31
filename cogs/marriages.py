@@ -271,9 +271,37 @@ class Marriage(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.response.send_message(embed=embed)
 
-    @marriage.subcommand(name="divorce")
-    async def marriage_divorce(self, interaction: Interaction):
-        pass
+    @marriage.subcommand(name="divorce", description="Divorce with a partner you don't love anymore.", description_localizations={"pl": "Rozwiedź się z partnerem, którego już nie kochasz."})
+    async def marriage_divorce(
+        self, 
+        interaction: Interaction,
+        member: str = SlashOption(
+            name="member",
+            name_localizations={"pl": "osoba"},
+            description="Select a member.",
+            description_localizations={"pl": "Wybierz osobę."},
+        )
+    ):
+        user = await fns.firsttime(interaction.user)
+        cur_lan = await fns.get_lang(interaction.user)
+        leng = await fns.lang(cur_lan)
+        text = leng['commands']['marriage']
+
+        relationships = await fns.u_relationships()
+
+        if member not in relationships[str(user.id)]["marriages"]:
+            return
+
+        relationships[str(user.id)]["marriages"].pop(member)
+        relationships[member]["marriages"].pop(str(user.id))
+
+        with open("userdb/relationships.json", "w") as f:
+            json.dump(relationships, f)
+
+        embed = nextcord.Embed(description=await fns.text_replacer(text["divorced"], ["{u}", f"<@{member}>"]), color=main.color_normal)
+        embed.set_author(name=f"{user.name}", icon_url=user.display_avatar.url)
+        embed.set_footer(text=main.version[cur_lan])
+        await interaction.response.send_message(embed=embed)
 
     @marriage.subcommand(name="requests", description="Show all of your marriage proposals.", description_localizations={"pl": "Wyświetl wszystkie swoje oświadczyny."})
     async def marriage_requests(self, interaction: Interaction):
@@ -335,6 +363,16 @@ class Marriage(commands.Cog):
             return
 
         data = await proposal_autocompletes.all_received(interaction.user, self.client, current)
+        await interaction.response.send_autocomplete(data)
+
+    @marriage_divorce.on_autocomplete("member")
+    async def marriage_divorce_autocomplete(self, interaction, current: str):
+        check_usr_acc = await fns.create_account(interaction.user, "youknowwhat")
+        if check_usr_acc is False:
+            await interaction.response.send_autocomplete({})
+            return
+
+        data = await proposal_autocompletes.all_married(interaction.user, self.client, current)
         await interaction.response.send_autocomplete(data)
 
 
