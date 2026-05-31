@@ -310,6 +310,7 @@
             "too_member_requests": "This person recieved too much marriage proposals.",
             "already_sent": "You've already sent proposal to this person.",
             "already_member_sent": "This person has already sent you a proposal.\nYou might want to accept it.",
+            "already_married": "You are already married.\nNo need to get married again.",
             "dont_have": "You don't have the ",
             "try_again": "Try to propose again when you get it.",
             "confirmation": "Do you want to propose to {u}?\nYour 1 {item} will be taken from your inventory.",
@@ -317,7 +318,8 @@
             "proposals_sent": "**Proposals you've sent:**",
             "no_proposals_sent": "You haven't sent any marriage proposals.",
             "proposals_received": "**Proposals you've received:**",
-            "no_proposals_received": "You haven't received any marriage proposals."
+            "no_proposals_received": "You haven't received any marriage proposals.",
+            "married": "Congratulations!\nYou are now married to {u}"
         },
         "quests": {
             "quests": "Quests",

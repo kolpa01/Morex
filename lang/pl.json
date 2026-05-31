@@ -310,6 +310,7 @@
             "too_member_requests": "Ta osoba otrzyma\u0142a zbyt wiele o\u015bwiadczyn.",
             "already_sent": "Ta osoba ju\u017c otrzyma\u0142a twoje o\u015bwiadczyny.",
             "already_member_sent": "Ta osoba ju\u017c ci si\u0119 o\u015bwiadczy\u0142a.\nPewnie chcesz zaakceptowa\u0107 te o\u015bwiadczyny.",
+            "already_married": "Ju\u017c jeste\u015bcie ze sob\u0105 w zwi\u0105zku.\nNie potrzeba robi\u0107 drugiego \u015blubu.",
             "dont_have": "Nie masz ",
             "try_again": "Spr\u00f3buj si\u0119 o\u015bwiadczy\u0107 ponownie, gdy go b\u0119dziesz mie\u0107.",
             "confirmation": "Czy chcesz o\u015bwiadczy\u0107 si\u0119 {u}?\nTw\u00f3j 1 {item} zostanie zabrany z twojego ekwipunku.",
@@ -317,7 +318,8 @@
             "proposals_sent": "**Osoby, którym się oświadczyłeś:**",
             "no_proposals_sent": "Nikomu si\u0119 nie o\u015bwiadczy\u0142e\u015b.",
             "proposals_received": "**O\u015bwiadczyny, kt\u00f3re otrzyma\u0142e\u015b:**",
-            "no_proposals_received": "Nie otrzyma\u0142e\u015b \u017cadnych o\u015bwiadczyn."
+            "no_proposals_received": "Nie otrzyma\u0142e\u015b \u017cadnych o\u015bwiadczyn.",
+            "married": "Gratulacje!\nJeste\u015b w zwi\u0105zku ma\u0142\u017ce\u0144skim z {u}"
         },
         "quests": {
             "quests": "Zadania",

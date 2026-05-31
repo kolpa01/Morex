@@ -7,6 +7,8 @@ import functions as fns
 import buttons
 import json
 import complicated_relationship
+from autocompletes import proposal_autocompletes
+import datetime
 
 
 MARRIAGE_REQ_LIMIT = 10
@@ -165,12 +167,73 @@ class Marriage(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.edit_original_message(embed=embed, view=None)
 
-    @marriage.subcommand(name="accept")
-    async def marriage_accept(self, interaction: Interaction):
-        pass
+    @marriage.subcommand(name="accept", description="Accept someone's marriage proposal.", description_localizations={"pl": "Zaakceptuj czyjeś oświadczyny."})
+    async def marriage_accept(
+        self,
+        interaction: Interaction,
+        proposal: str = SlashOption(
+            name="proposal",
+            name_localizations={"pl": "oświadczyny"},
+            description="Choose the proposal.",
+            description_localizations={"pl": "Wybierz oświadczyny."},
+            required=True,
+        ),
+    ):
+        user = await fns.firsttime(interaction.user)
+        cur_lan = await fns.get_lang(interaction.user)
+        leng = await fns.lang(cur_lan)
+        text = leng['commands']['marriage']
+
+        relationships = await fns.u_relationships()
+
+        if proposal not in relationships[str(user.id)]["marriage_received"]:
+            return
+
+        member = await self.client.fetch_user(relationships[str(user.id)]["marriage_received"][proposal])
+
+        if len(relationships[str(user.id)]["marriages"]) >= relationships[str(user.id)]["marriage_slots"]:
+            embed = nextcord.Embed(description=text["no_slots"], color=main.color_normal)
+            embed.set_author(name=f"{user.name}", icon_url=user.display_avatar.url)
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return False
+
+        if len(relationships[str(member.id)]["marriages"]) >= relationships[str(member.id)]["marriage_slots"]:
+            embed = nextcord.Embed(description=text["no_member_slots"], color=main.color_normal)
+            embed.set_author(name=f"{user.name}", icon_url=user.display_avatar.url)
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return False
+
+        if str(member.id) in relationships[str(user.id)]["marriages"]:
+            embed = nextcord.Embed(description=text["already_married"], color=main.color_normal)
+            embed.set_author(name=f"{user.name}", icon_url=user.display_avatar.url)
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return False
+
+        day = datetime.datetime.now().timestamp()
+        timestamp = round(day, None)
+
+        relationships[str(member.id)]["marriage_sent"].pop(proposal)
+        relationships[str(user.id)]["marriage_received"].pop(proposal)
+
+        relationships[str(user.id)]["marriages"].update({str(member.id): {"since": timestamp}})
+        relationships[str(member.id)]["marriages"].update({str(user.id): {"since": timestamp}})
+
+        with open("userdb/relationships.json", "w") as f:
+            json.dump(relationships, f)
+
+        embed = nextcord.Embed(description=await fns.text_replacer(text["married"], ["{u}", f"<@{member.id}>"]), color=main.color_normal)
+        embed.set_author(name=f"{user.name}", icon_url=user.display_avatar.url)
+        embed.set_footer(text=main.version[cur_lan])
+        await interaction.response.send_message(embed=embed)
 
     @marriage.subcommand(name="decline")
-    async def marriage_decline(self, interaction: Interaction):
+    async def marriage_decline(
+            self, 
+            interaction: Interaction
+    ):
         pass
 
     @marriage.subcommand(name="divorce")
@@ -218,6 +281,16 @@ class Marriage(commands.Cog):
 
         view = await complicated_relationship.pages_helper([embed2, embed], user)
         await interaction.response.send_message(embed=embed2, view=view)
+
+    @marriage_accept.on_autocomplete("proposal")
+    async def marriage_accept_autocomplete(self, interaction, current: str):
+        check_usr_acc = await fns.create_account(interaction.user, "youknowwhat")
+        if check_usr_acc is False:
+            await interaction.response.send_autocomplete({})
+            return
+
+        data = await proposal_autocompletes.all_received(interaction.user, self.client, current)
+        await interaction.response.send_autocomplete(data)
 
 
 def setup(client):
