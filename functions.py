@@ -13,6 +13,7 @@ import re
 from nextcord import Interaction
 from functools import cache
 import morex.logging as logging
+import asyncio
 
 
 async def badges():
@@ -607,6 +608,18 @@ def get_recipe(item_name, mode, langu):
     return recipe
 
 
+async def send_select_lang_msg(user):
+    embed = nextcord.Embed(title="Language/Język", description="Wybierz domyślny język w jakim będzie wyświetlany.\n\nChoose the default language in which bot will be displayed.\n# **Warning/Ostrzeżenie**\n**Jeżeli nic nie zrobisz bot będzie po angielsku.\n\nIf you do nothing bot will be in english.**", color=main.color_normal)
+    embed.set_footer(text=main.version['en'])
+
+    view = buttons.LanguageStartButtons(user)
+
+    try:
+        await user.send(embed=embed, view=view)
+    except nextcord.Forbidden:
+        print("Uhh...")
+
+
 async def create_account(user, checker=None, request_language=None):
     """
     **user** - normal user\n
@@ -755,15 +768,7 @@ async def create_account(user, checker=None, request_language=None):
             json.dump(settings, f)
 
         if request_language is not None:
-            embed = nextcord.Embed(title="Language/Język", description="Wybierz domyślny język w jakim będzie wyświetlany.\n\nChoose the default language in which bot will be displayed.\n# **Warning/Ostrzeżenie**\n**Jeżeli nic nie zrobisz bot będzie po angielsku.\n\nIf you do nothing bot will be in english.**", color=main.color_normal)
-            embed.set_footer(text=main.version['en'])
-
-            view = buttons.LanguageStartButtons(user)
-
-            try:
-                await user.send(embed=embed, view=view)
-            except nextcord.Forbidden:
-                print("Uhh...")
+            asyncio.create_task(send_select_lang_msg(user))
 
     daily_tasks = await get_daily_tasks()
     if str(user.id) not in daily_tasks:
