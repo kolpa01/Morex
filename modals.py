@@ -5,6 +5,65 @@ from nextcord import Interaction
 import polishchars
 
 
+class ClanCreationModal(nextcord.ui.Modal):
+    def __init__(self, user, leng, cur_lan):
+        self.modal_lang = leng['modals']['clans']
+        super().__init__(title=self.modal_lang["title"])
+
+        self.name = nextcord.ui.TextInput(
+            label=self.modal_lang["name"],
+            min_length=3,
+            max_length=32,
+            required=True,
+            placeholder=self.modal_lang["placeholder0"]
+        )
+        self.level_required = nextcord.ui.TextInput(
+            label=self.modal_lang["lvl_req"],
+            min_length=1,
+            max_length=3,
+            required=False,
+            placeholder=self.modal_lang["placeholder1"]
+        )
+        self.add_item(self.name)
+        self.add_item(self.level_required)
+        self.text = leng["commands"]["clans"]
+        self.cur_lan = cur_lan
+        self.user = user
+        self.clan_data = {}
+        self.can_proceed = False
+
+    async def callback(self, interaction: Interaction) -> None:
+        if not self.level_required.value:
+            level = 0
+        else:
+            if not self.level_required.value.isnumeric():
+                embed = nextcord.Embed(description=self.text["bad_char"], color=main.color_normal)
+                embed.set_author(name=self.user.name, icon_url=str(self.user.display_avatar))
+                embed.set_footer(text=main.version[self.cur_lan])
+                await interaction.response.send_message(embed=embed, ephemeral=True)
+                return
+            if int(self.level_required.value) < 0:  # this likely won't run but im keeping it either way
+                embed = nextcord.Embed(description=self.text["bad_value"], color=main.color_normal)
+                embed.set_author(name=self.user.name, icon_url=str(self.user.display_avatar))
+                embed.set_footer(text=main.version[self.cur_lan])
+                await interaction.response.send_message(embed=embed, ephemeral=True)
+                return
+            level = int(self.level_required.value)
+
+        self.clan_data = {
+            "owner": str(self.user.id),
+            "name": self.name.value,
+            "level_required": level,
+            "stash": {},
+            "balance": 1000,
+            "members": [
+                str(self.user.id)
+            ]
+        }
+        self.can_proceed = True
+        self.stop()
+
+
 class CustommobsCreationModal(nextcord.ui.Modal):
     def __init__(self, user, channel, cur_lan, leng):
         self.modal_lang = leng['modals']['custommobs_create']

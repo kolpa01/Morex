@@ -38,6 +38,15 @@
             "got": "**Zdoby\u0142e\u015b:**",
             "day": "Dzie\u0144"
         },
+        "clans": {
+            "already_in": "Ju\u017c nale\u017cysz do klanu. Nie mo\u017cesz utworzy\u0107 kolejnego.",
+            "no_coins0": "Brakuje ci {cost} {coin} aby kupi\u0107 nowy klan.",
+            "no_coins1": "Masz te pieni\u0105dze w banku u\u017cyj </withdraw:1188085949335355443> aby wyci\u0105gn\u0105\u0107 pieni\u0105dze z banku",
+            "bad_char": "U\u017cyto nieprawid\u0142owych znak\u00f3w w Wymaganym poziomie.",
+            "bad_value": "Warto\u015b\u0107 Wymaganego poziomu jest zbyt niska.",
+            "confirmation": "Czy napewno chcesz kupi\u0107 klan **\"{clan}\"** za {cost} {coin}?",
+            "bought": "Stworzono nowy klan **\"{clan}\"**."
+        },
         "craft": {
             "no_workbench": "Nie posiadasz workbencha.\nSpr\u00f3buj go kupi\u0107.",
             "no_items": "Nie uda\u0142o ci si\u0119 stworzy\u0107 {amount} {item}\n\nBrakuje ci:\n{text}",
@@ -517,6 +526,13 @@
             "define": "Kr\u00f3tko opisz b\u0142\u0105d.",
             "what": "Jakiego elementu bota dotyczy b\u0142\u0105d?",
             "report": "Zg\u0142o\u015b b\u0142\u0105d"
+        },
+        "clans": {
+            "title": "Stw\u00f3rz nowy klan",
+            "name": "Nazwa klanu",
+            "placeholder0": "Wpisz nazw\u0119 klanu.",
+            "lvl_req": "Wymagany poziom",
+            "placeholder1": "Poziom wymagany, aby do\u0142\u0105czy\u0107. Zostaw puste dla 0."
         },
         "custommobs_create": {
             "title": "Stw\u00f3rz W\u0142asnego Wroga",

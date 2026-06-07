@@ -38,6 +38,15 @@
             "got": "**You got:**",
             "day": "Day"
         },
+        "clans": {
+            "already_in": "You belong to a clan. You cannot create a new one.",
+            "no_coins0": "You need {cost} {coin} more to buy a clan.",
+            "no_coins1": "You have those coins in the bank. Use </withdraw:1188085949335355443> to move them to your wallet.",
+            "bad_char": "Invalid characters were used in Level requirement.",
+            "bad_value": "Level requirement value is too small.",
+            "confirmation": "Are you sure you want to buy clan **\"{clan}\"** for {cost} {coin}?",
+            "bought": "You created a new clan **\"{clan}\"**."
+        },
         "craft": {
             "no_workbench": "You don't have the Workbench.\nTry to buy it.",
             "no_items": "You couldn't craft {amount} {item}\n\nYou are missing:\n{text}",
@@ -517,6 +526,13 @@
             "define": "Shortly explain the bug.",
             "what": "Which element of the bot the bug affects",
             "report": "Report Bug"
+        },
+        "clans": {
+            "title": "Create a clan",
+            "name": "Clan name",
+            "placeholder0": "Insert your clan name.",
+            "lvl_req": "Level requirement",
+            "placeholder1": "Level required to join. Leave empty for 0."
         },
         "custommobs_create": {
             "title": "Create a Custom Mob",
