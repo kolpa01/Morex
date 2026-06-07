@@ -50,7 +50,7 @@ custom_mobs_limits = {
     "ss": 1000
 }
 
-userdb = ["announcements", "battlesfrozenintime", "custommobs", "dailytasks", "farmlands", "inventories", "merchanttasks", "otherdatabase", "playerdata", "quests", "randomevent", "relationships", "settings", "skills", "stats"]
+userdb = ["announcements", "battlesfrozenintime", "clans", "custommobs", "dailytasks", "farmlands", "inventories", "merchanttasks", "otherdatabase", "playerdata", "quests", "randomevent", "relationships", "settings", "skills", "stats"]
 
 if __name__ == "__main__":
     os.chdir("./")
