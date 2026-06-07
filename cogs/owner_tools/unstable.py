@@ -47,7 +47,8 @@ m!mpg_cd - adds code to redeem\n\
 m!itm_chgg - prints item info for changelog (first, last)\n\
 m!omega_sus - forces bot to reload event cache\n\
 m!enemiez - sends all oponents\n\
-m!whattimeisit - gives you time and weather\
+m!whattimeisit - gives you time and weather\n\
+m!alphawolf - removes author from a clan\
 ")
 
     @commands.command()
@@ -230,6 +231,18 @@ m!whattimeisit - gives you time and weather\
     async def ilikenums(self, ctx, id, amount: int = 2):
         res = await fns.update_global_counter(id, ctx.author, amount)
         await ctx.send(res)
+
+    @commands.command()
+    @commands.is_owner()
+    async def alphawolf(self, ctx):
+        relationships = await fns.u_relationships()
+
+        relationships[str(ctx.author.id)]["clan"] = None
+
+        with open("userdb/relationships.json", "w") as f:
+            json.dump(relationships, f)
+
+        await ctx.send("left")
 
     @commands.command()
     @commands.is_owner()
