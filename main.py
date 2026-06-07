@@ -6,8 +6,8 @@ import morex.logging as logging
 import checks
 import asyncio
 
-contexts = [nextcord.InteractionContextType.guild, nextcord.InteractionContextType.bot_dm]
-integrations = [nextcord.IntegrationType.guild_install]
+contexts = [nextcord.InteractionContextType.guild, nextcord.InteractionContextType.bot_dm, nextcord.InteractionContextType.private_channel]
+integrations = [nextcord.IntegrationType.guild_install, nextcord.IntegrationType.user_install]
 
 event = {}
 version_number = "2.4.2"
