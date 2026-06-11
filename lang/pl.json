@@ -434,7 +434,8 @@
         "slots": {
             "lost": "Przegrywasz",
             "machine": "Automat",
-            "win": "Wygrywasz"
+            "win": "Wygrywasz",
+            "limit": "Nie mo\u017cesz postawi\u0107 tylu monet.\nLimit automatu wynosi 100000."
         },
         "shop": {
             "shop": "Sklep"

@@ -434,7 +434,8 @@
         "slots": {
             "lost": "You lose",
             "machine": "Slots machine",
-            "win": "You win"
+            "win": "You win",
+            "limit": "You can't gamble that many coins.\nThe bet limit is 100000."
         },
         "shop": {
             "shop": "Shop"

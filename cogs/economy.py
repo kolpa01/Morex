@@ -431,14 +431,20 @@ class Economy(commands.Cog):
             embed.set_footer(text=main.version[cur_lan])
             await interaction.response.send_message(embed=embed, ephemeral=True)
             return
+        if bet > 100000:
+            embed = nextcord.Embed(description=text_cmd["limit"], color=main.color_normal)
+            embed.set_author(name=user.name, icon_url=str(user.display_avatar))
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return
 
         await fns.update_bank(user, -1 * bet)
         #  - 150%,  - 300%,  - 200%
         top_row = await fns.dead_row()
         bottom_row = await fns.dead_row()
         jj = [
-            {"emoji": "<:MX_Cash:1198436125279256576>", "min_chance": 1, "max_chance": 80},
-            {"emoji": "<:MX_GolenEssence:1222205491728351344>", "min_chance": 81, "max_chance": 95},
+            {"emoji": "<:MX_Cash:1198436125279256576>", "min_chance": 1, "max_chance": 70},
+            {"emoji": "<:MX_GolenEssence:1222205491728351344>", "min_chance": 71, "max_chance": 95},
             {"emoji": "<:MX_Diamond:1241071516410581002>", "min_chance": 96, "max_chance": 100}
         ]
         middle_row = []
