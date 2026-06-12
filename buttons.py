@@ -518,11 +518,13 @@ class HuntButtons(nextcord.ui.View):
         if MorexEnemyFlags.INVINCIBLE in self.enemy.flags:
             self.mob_hp = 1
             embed = await self.create_embed(interaction, await self.get_info_text(self.enemy.deaths['escape']))
-            rewards_text = await self.get_invincible_rewards()
-            embed.add_field(name=self.language['rewards'], value=rewards_text, inline=False)
+            if self.rewards:
+                rewards_text = await self.get_invincible_rewards()
+                embed.add_field(name=self.language['rewards'], value=rewards_text, inline=False)
             await self.manage_buttons("disable")
             await interaction.edit(embed=embed, view=self)
-            await self.get_structure(interaction, 5)
+            if self.rewards:
+                await self.get_structure(interaction, 5)
             self.stop()
             return
         self.mob_hp = 0
