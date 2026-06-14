@@ -1696,6 +1696,11 @@ async def get_amount(amount, user: nextcord.Member, mode: str):
                 return False
             else:
                 return user_coins
+        if amount == "half":
+            if user_coins // 2 == 0:
+                return False
+            else:
+                return user_coins // 2
         return None
 
 
