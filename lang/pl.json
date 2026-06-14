@@ -45,7 +45,11 @@
             "bad_char": "U\u017cyto nieprawid\u0142owych znak\u00f3w w Wymaganym poziomie.",
             "bad_value": "Warto\u015b\u0107 Wymaganego poziomu jest zbyt niska.",
             "confirmation": "Czy napewno chcesz kupi\u0107 klan **\"{clan}\"** za {cost} {coin}?",
-            "bought": "Stworzono nowy klan **\"{clan}\"**."
+            "bought": "Stworzono nowy klan **\"{clan}\"**.",
+            "already_joined": "Ju\u017c nale\u017cysz do klanu. Nie mo\u017cesz do\u0142\u0105czy\u0107 do kolejnego.",
+            "fake": "Ten klan nie istnieje.",
+            "no_level": "Tw\u00f3j poziom jest zbyt niski, \u017ceby do\u0142\u0105czy\u0107 do tego klanu.",
+            "joined": "Do\u0142\u0105czono do newgo klanu **\"{clan}\"**."
         },
         "craft": {
             "no_workbench": "Nie posiadasz workbencha.\nSpr\u00f3buj go kupi\u0107.",

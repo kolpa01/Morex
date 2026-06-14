@@ -45,7 +45,11 @@
             "bad_char": "Invalid characters were used in Level requirement.",
             "bad_value": "Level requirement value is too small.",
             "confirmation": "Are you sure you want to buy clan **\"{clan}\"** for {cost} {coin}?",
-            "bought": "You created a new clan **\"{clan}\"**."
+            "bought": "You created a new clan **\"{clan}\"**.",
+            "already_joined": "You belong to a clan. You cannot join another one.",
+            "fake": "This clan does not exist.",
+            "no_level": "Your level is too small to join this clan.",
+            "joined": "You joined a new clan **\"{clan}\"**."
         },
         "craft": {
             "no_workbench": "You don't have the Workbench.\nTry to buy it.",

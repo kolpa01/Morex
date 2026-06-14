@@ -16,6 +16,13 @@ import morex.logging as logging
 import asyncio
 
 
+async def get_clans():
+    with open("userdb/clans.json") as f:
+        clans = json.load(f)
+
+    return clans
+
+
 async def badges():
     with open("database/badges.json", "r") as f:
         aassad = json.load(f)

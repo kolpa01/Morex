@@ -1,26 +1,21 @@
 import nextcord
 from nextcord.ext import commands
-from nextcord import Interaction
+from nextcord import Interaction, SlashOption
 import main
 import functions as fns
 import buttons
 import json
 import uuid
 import modals
+from autocompletes import clan_autocompletes
 
 
 class Clans(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    async def get_clans(self):
-        with open("userdb/clans.json") as f:
-            clans = json.load(f)
-
-        return clans
-
     async def add_clan(self, user, clan_data):
-        clans_data = await self.get_clans()
+        clans_data = await fns.get_clans()
 
         clan_id = str(uuid.uuid4())
         clans_data[str(clan_id)] = clan_data
@@ -129,6 +124,69 @@ class Clans(commands.Cog):
         embed.set_author(name=user.name, icon_url=str(user.display_avatar))
         embed.set_footer(text=main.version[cur_lan])
         await msg.edit(embed=embed, view=None)
+
+    @clans.subcommand(name="join", description="Join someone's clan.", description_localizations={"pl": "Dołącz do czyjegoś klanu."})
+    async def clans_join(
+        self, 
+        interaction: Interaction,
+        clan_uuid: str = SlashOption(
+            name="clan",
+            name_localizations={"pl": "klan"},
+            description="Choose the clan.",
+            description_localizations={"pl": "Wybierz klan."},
+            required=True,
+        )
+    ):
+        user = await fns.firsttime(interaction.user)
+        cur_lan = await fns.get_lang(interaction.user)
+        leng = await fns.lang(cur_lan)
+        text = leng['commands']['clans']
+
+        relationships = await fns.u_relationships()
+        current_clan = relationships[str(user.id)]["clan"]
+        
+        if current_clan:
+            embed = nextcord.Embed(description=text["already_joined"], color=main.color_normal)
+            embed.set_author(name=user.name, icon_url=str(user.display_avatar))
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return
+
+        player_data = await fns.playerinfo()
+        all_clans = await fns.get_clans()
+        if clan_uuid not in all_clans:
+            embed = nextcord.Embed(description=text["fake"], color=main.color_normal)
+            embed.set_author(name=user.name, icon_url=str(user.display_avatar))
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return
+        clan_data = all_clans[clan_uuid]
+        if clan_data["level_required"] > player_data[str(user.id)]["level"]:
+            embed = nextcord.Embed(description=text["no_level"], color=main.color_normal)
+            embed.set_author(name=user.name, icon_url=str(user.display_avatar))
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return
+
+        relationships[str(user.id)]["clan"] = clan_uuid
+
+        with open("userdb/relationships.json", "w") as f:
+            json.dump(relationships, f)
+
+        all_clans[clan_uuid]["members"].append(str(user.id))
+
+        with open("userdb/clans.json", "w") as f:
+            json.dump(all_clans, f)
+
+        embed = nextcord.Embed(description=await fns.text_replacer(text["joined"], ["{clan}", clan_data["name"]]), color=main.color_normal)
+        embed.set_author(name=user.name, icon_url=str(user.display_avatar))
+        embed.set_footer(text=main.version[cur_lan])
+        await interaction.response.send_message(embed=embed)
+
+    @clans_join.on_autocomplete("clan_uuid")
+    async def clans_join_autocomplete(self, interaction, current: str):
+        data = await clan_autocompletes.all_clans(interaction.user, current)
+        await interaction.response.send_autocomplete(data)
 
 
 def setup(client):
