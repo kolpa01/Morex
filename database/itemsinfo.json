@@ -2321,6 +2321,35 @@
     "toolatributes": "n"
   },
   {
+    "name": "goldencore",
+    "emoji": "<:MX_GoldenCore:1517560001512870072>",
+    "image": "https://cdn.discordapp.com/attachments/1492924487761661992/1517559879651295313/0147-export.png",
+    "id": "0147",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": 1500,
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes": "n"
+  },
+  {
+    "name": "glaesttwo",
+    "emoji": "<:MX_YellowSlimeSword:1517559942171590706>",
+    "image": "https://cdn.discordapp.com/attachments/1492924487761661992/1517559880133771334/0148-3export.png",
+    "id": "0148",
+    "rarity": "legendary",
+    "price": "n",
+    "sellprice": "n",
+    "tradeable": "y",
+    "useable": "n",
+    "toolatributes":{
+      "type": "weapon",
+      "itemtype": "sword",
+      "cursed": 0,
+      "attack": [65, 70, 60]
+    }
+  },
+  {
     "name": "icespike",
     "emoji": "<:MX_IcySpike:1315802183673057370>",
     "image": "https://cdn.discordapp.com/attachments/1315801423539208252/1315802655477469276/icyspiky.png",
