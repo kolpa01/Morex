@@ -8,6 +8,7 @@ import functions as fns
 import asyncio
 import complicated_relationship
 import morex.logging as logging
+import morex
 
 
 class Dev(commands.Cog):
@@ -48,7 +49,8 @@ m!itm_chgg - prints item info for changelog (first, last)\n\
 m!omega_sus - forces bot to reload event cache\n\
 m!enemiez - sends all oponents\n\
 m!whattimeisit - gives you time and weather\n\
-m!alphawolf - removes author from a clan\
+m!alphawolf - removes author from a clan\n\
+m!aplacelikehome - shows probabilities of finding stuff (place)\
 ")
 
     @commands.command()
@@ -243,6 +245,18 @@ m!alphawolf - removes author from a clan\
             json.dump(relationships, f)
 
         await ctx.send("left")
+
+    @commands.command()
+    @commands.is_owner()
+    async def aplacelikehome(self, ctx, place):
+        place: morex.MorexPlace = fns.get_search_locations(place, "en")
+        if not place:
+            await ctx.send("no.")
+
+        for i in place.loottable:
+            await ctx.send(f"{round((i["max_value"] - i["min_value"] + 1), 2) / 100}% {i["amount"]} {fns.get_item(i["item"], "name", "en")}")
+
+        await ctx.send("JOHN")
 
     @commands.command()
     @commands.is_owner()
