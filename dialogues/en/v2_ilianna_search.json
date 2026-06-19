@@ -71,7 +71,7 @@
         "color": "0x30b3ff",
         "choices": {
             "The Great Aina?": "masta",
-            "Magic Order?": "order",
+            "Magical Order?": "order",
             "I want to ask you something else": "hub",
             "That's all. See you soon.": "bye"
         }
