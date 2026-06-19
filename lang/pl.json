@@ -1041,7 +1041,8 @@
         "name": {
             "training_arena": "Arena Treningowa",
             "slime_valley": "Dolina Slime'\u00f3w",
-            "snowy_peaks": "\u015anie\u017cne Szczyty"
+            "snowy_peaks": "\u015anie\u017cne Szczyty",
+            "debug_enm": "DEBUG_ENM"
         }
     },
     "merchants": {

@@ -1041,7 +1041,8 @@
         "name": {
             "training_arena": "Training Arena",
             "slime_valley": "Slime Valley",
-            "snowy_peaks": "Snowy Peaks"
+            "snowy_peaks": "Snowy Peaks",
+            "debug_enm": "DEBUG_ENM"
         }
     },
     "merchants": {

@@ -25,5 +25,12 @@
             {"enemy": "gingerbread", "min_value": 3334,"max_value": 6666},
             {"enemy": "snowman", "min_value": 6667,"max_value": 10000}
         ]
+    },
+    {
+        "name": "debug_enm",
+        "color": "0xCE4DD5",
+        "enemies": [
+            {"enemy": "goldslime", "min_value": 1, "max_value": 10000}
+        ]
     }
 ]
