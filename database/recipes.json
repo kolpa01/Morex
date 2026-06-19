@@ -176,5 +176,20 @@
             {"name":"earth", "amount": 2},
             {"name":"pinkessence", "amount": 1}
         ]
+    },
+    {
+        "id": "r015",
+        "item": "glaesttwo",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"goldessence", "amount": 30},
+            {"name":"wood", "amount": 10},
+            {"name":"gold", "amount": 5},
+            {"name":"iron", "amount": 5},
+            {"name":"goldencore", "amount": 1},
+            {"name":"ironsword", "amount": 1},
+            {"name":"hammer", "amount": 1}
+        ]
     }
 ]
