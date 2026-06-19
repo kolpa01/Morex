@@ -24,10 +24,10 @@
             {"item": "nothing", "min_value": 1,"max_value": 2700, "amount": 0, "xp": 0},
             {"item": "event", "min_value": 2701, "max_value": 3333, "amount": 0, "xp": 0, "fallback": {"item": "nothing", "amount": 0, "xp": 0}},
             {"item": "coins", "min_value": 3334,"max_value": 6000, "amount": 1000, "xp": [1,2]},
-            {"item": "sand", "min_value": 6001,"max_value": 8500, "amount": 1, "xp": [2,3]},
-            {"item": "cactus", "min_value": 8501,"max_value": 9390, "amount": 1, "xp": [1,4]},
-            {"item": "gold", "min_value": 9391,"max_value": 9400, "amount": 1, "xp": [3,5]},
-            {"item": "str", "min_value": 9401,"max_value": 9500, "amount": 0, "xp": 0},
+            {"item": "sand", "min_value": 6001,"max_value": 8300, "amount": 1, "xp": [2,3]},
+            {"item": "cactus", "min_value": 8301,"max_value": 9190, "amount": 1, "xp": [1,4]},
+            {"item": "gold", "min_value": 9191,"max_value": 9200, "amount": 1, "xp": [3,5]},
+            {"item": "str", "min_value": 9201,"max_value": 9500, "amount": 0, "xp": 0},
             {"item": "mer", "min_value": 9501, "max_value": 10000, "amount": 1, "xp": 0}
           ]
     },
