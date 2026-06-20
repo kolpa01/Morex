@@ -503,7 +503,7 @@ class HuntButtons(nextcord.ui.View):
             structure = fns.get_strucure(self.mode[1], self.cur_lan)
             embed = nextcord.Embed(title=structure.displayname, description=self.language['chest'], color=self.color)
             embed.set_footer(text=main.version[self.cur_lan])
-            view = SearchChests(30, self.mode[2], self.user, structure, self.color)
+            view = SearchChests(180, self.mode[2], self.user, structure, self.color)
             await interaction.edit(embed=embed, view=view)
 
     async def enemy_death(self, interaction):
