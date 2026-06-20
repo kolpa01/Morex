@@ -16,6 +16,7 @@ async def all_received(user, client, current=None) -> dict:
         for uuid, uid in relationships[str(user.id)]["marriage_received"].items():
             string = f"{await client.fetch_user(uid)} | {uuid}"
             if str(current.lower()) in string.lower():
+                i += 1
                 data.update({string: uuid})
             if i == 24:
                 break
@@ -37,6 +38,7 @@ async def all_married(user, client, current=None) -> dict:
         for uid in relationships[str(user.id)]["marriages"]:
             string = f"{await client.fetch_user(uid)}"
             if str(current.lower()) in string.lower():
+                i += 1
                 data.update({string: uid})
             if i == 24:
                 break
