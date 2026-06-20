@@ -131,7 +131,7 @@ class Marriage(commands.Cog):
         if not await self.can_send_proposal(interaction, user, member, text, cur_lan, False):
             return
         
-        ring = fns.get_item("placeholder", "name", cur_lan)
+        ring = fns.get_item("goldenring", "name", cur_lan)
         res = await ring.get_amount(user, 1)
         if res is None:
             embed = nextcord.Embed(description=f"{text['dont_have']}{ring}\n{text["try_again"]}", color=main.color_normal)
