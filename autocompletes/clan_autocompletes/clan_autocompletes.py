@@ -7,6 +7,8 @@ async def all_clans(user, current=None) -> dict:
     i = 0
     if not current:
         for uuid, clan_data in clans.items():
+            if len(clan_data['members']) >= clan_data["member_limit"]:
+                continue
             i += 1
             data.update({f"{clan_data["name"]} | {uuid}": uuid})
             if i == 24:
@@ -14,9 +16,12 @@ async def all_clans(user, current=None) -> dict:
         return dict(sorted(data.items()))
     else:
         for uuid, clan_data in clans.items():
+            if len(clan_data['members']) >= clan_data["member_limit"]:
+                continue
             string = f"{clan_data["name"]} | {uuid}"
             if str(current.lower()) in string.lower():
                 data.update({string: uuid})
+                i += 1
             if i == 24:
                 break
         return dict(sorted(data.items()))

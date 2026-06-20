@@ -49,7 +49,8 @@
             "already_joined": "Ju\u017c nale\u017cysz do klanu. Nie mo\u017cesz do\u0142\u0105czy\u0107 do kolejnego.",
             "fake": "Ten klan nie istnieje.",
             "no_level": "Tw\u00f3j poziom jest zbyt niski, \u017ceby do\u0142\u0105czy\u0107 do tego klanu.",
-            "joined": "Do\u0142\u0105czono do newgo klanu **\"{clan}\"**."
+            "joined": "Do\u0142\u0105czono do newgo klanu **\"{clan}\"**.",
+            "full": "Ten klan jest pe\u0142ny. Nie mo\u017cesz do niego do\u0142\u0105czy\u0107."
         },
         "craft": {
             "no_workbench": "Nie posiadasz workbencha.\nSpr\u00f3buj go kupi\u0107.",

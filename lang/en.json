@@ -49,7 +49,8 @@
             "already_joined": "You belong to a clan. You cannot join another one.",
             "fake": "This clan does not exist.",
             "no_level": "Your level is too small to join this clan.",
-            "joined": "You joined a new clan **\"{clan}\"**."
+            "joined": "You joined a new clan **\"{clan}\"**.",
+            "full": "This clan is full. You can't join it."
         },
         "craft": {
             "no_workbench": "You don't have the Workbench.\nTry to buy it.",

@@ -168,6 +168,13 @@ class Clans(commands.Cog):
             await interaction.response.send_message(embed=embed, ephemeral=True)
             return
 
+        if len(clan_data["members"]) >= clan_data["member_limit"]:
+            embed = nextcord.Embed(description=text["full"], color=main.color_normal)
+            embed.set_author(name=user.name, icon_url=str(user.display_avatar))
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return
+
         relationships[str(user.id)]["clan"] = clan_uuid
 
         with open("userdb/relationships.json", "w") as f:

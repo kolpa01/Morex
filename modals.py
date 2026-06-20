@@ -56,6 +56,7 @@ class ClanCreationModal(nextcord.ui.Modal):
             "level_required": level,
             "stash": {},
             "balance": 1000,
+            "member_limit": 10,
             "members": [
                 str(self.user.id)
             ]
