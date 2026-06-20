@@ -366,7 +366,11 @@
             "search": "Successful searches:",
             "beg": "Successful begs:",
             "imtoolazy": "**Statistics**\n*coming soon*\n\nCustom Mobs",
-            "dev": "Development Informations"
+            "dev": "Development Informations",
+            "since": "since",
+            "not_married": "This user isn't married.",
+            "marriages": "Marriages",
+            "clan": "Clan"
         },
         "recipe": {
             "dev": "Development Informations",
@@ -509,10 +513,12 @@
             "label1": "Statistics",
             "label2": "Battle Profile",
             "label3": "Custom mobs",
-            "desc0": "Informations about balance, level etc.",
-            "desc1": "Informations about successful battles, searches etc.",
-            "desc2": "Informations about weapons, bundle, HP",
-            "desc3": "Informations about Custom mobs profile",
+            "label4": "Social",
+            "desc0": "Information about balance, level etc.",
+            "desc1": "Information about successful battles, searches etc.",
+            "desc2": "Information about weapons, bundle, HP",
+            "desc3": "Information about Custom mobs profile",
+            "desc4": "Information about clan and marriages",
             "placeholder": "Choose the category"
         },
         "quests": {

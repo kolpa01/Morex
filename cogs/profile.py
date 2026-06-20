@@ -64,7 +64,7 @@ class Profile(commands.Cog):
                                color=main.color_normal)
         embed.set_thumbnail(url=display_avatar)
         embed.set_footer(text=main.version[cur_lan])
-        await interaction.response.send_message(embed=embed, view=dropdown.ProfileDropdownInitializer(180, user, interaction.user, cur_lan, leng['dropdown']['profile']))
+        await interaction.response.send_message(embed=embed, view=dropdown.ProfileDropdownInitializer(180, user, interaction.user, cur_lan, leng['dropdown']['profile'], self.client))
 
 
 def setup(client):

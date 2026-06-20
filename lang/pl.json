@@ -366,7 +366,11 @@
             "search": "Udane przeszukania:",
             "beg": "Udane \u017cebrania:",
             "imtoolazy": "**Statystyki**\n*Wkr\u00f3tce*\n\nStworzeni wrogowie",
-            "dev": "Informacje Deweloperskie"
+            "dev": "Informacje Deweloperskie",
+            "since": "od",
+            "not_married": "Ten użytkownik nie jest w związku małżeńskim.",
+            "marriages": "Małżeństwa",
+            "clan": "Klan"
         },
         "recipe": {
             "dev": "Informacje Deweloperskie",
@@ -509,10 +513,12 @@
             "label1": "Statystyki",
             "label2": "Profil Walki",
             "label3": "Stworzeni Wrogowie",
+            "label4": "Profil Spo\u0142eczny",
             "desc0": "Informacje o stanie konta, poziomie itp.",
             "desc1": "Informacje o udanych polowaniach, przeszukaniach itp.",
             "desc2": "Informacje o broniach, sakwie, HP itp.",
             "desc3": "Informacje o profilu W\u0142asnych wrog\u00f3w itp.",
+            "desc4": "Informacje o klanie i ma\u0142\u017ce\u0144stwach.",
             "placeholder": "Wybierz kategori\u0119"
         },
         "quests": {

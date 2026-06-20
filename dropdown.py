@@ -8,12 +8,14 @@ import functions as fns
 
 
 class ProfileDropdown(nextcord.ui.Select):
-    def __init__(self, user, cur_lan, leng):
+    def __init__(self, user, cur_lan, leng, client):
         self.user = user
         self.cur_lan = cur_lan
         self.leng = leng
+        self.client = client
         select_options = [
             nextcord.SelectOption(label=leng['label0'], description=leng['desc0']),
+            nextcord.SelectOption(label=leng['label4'], description=leng['desc4']),
             nextcord.SelectOption(label=leng['label1'], description=leng['desc1']),
             nextcord.SelectOption(label=leng['label2'], description=leng['desc2']),
             nextcord.SelectOption(label=leng['label3'], description=leng['desc3'])
@@ -103,6 +105,29 @@ class ProfileDropdown(nextcord.ui.Select):
             embed.set_footer(text=main.version[self.cur_lan])
             await interaction.response.edit_message(embed=embed)
 
+        elif self.values[0] == self.leng['label4']:
+            leng = await fns.lang(self.cur_lan)
+            text = leng['commands']['profile']
+            badges = await fns.get_user_badges(self.user)
+            relationships = await fns.u_relationships()
+            if relationships[str(self.user.id)]["clan"]:
+                clans = await fns.get_clans()
+                clan_name = f"{clans[relationships[str(self.user.id)]["clan"]]["name"]} {"<:MX_GoldenCrown:1402598223809613824>" if str(self.user.id) == clans[relationships[str(self.user.id)]["clan"]]["owner"] else ""}"
+            else:
+                clan_name = "[Empty]"
+
+            rel_text = []
+
+            for uid, marriage in relationships[str(self.user.id)]["marriages"].items():
+                rel_text.append(f"{await self.client.fetch_user(uid)} {text['since']} <t:{marriage["since"]}>")
+            rel_text = "\n".join(rel_text)
+
+            if len(relationships[str(self.user.id)]["marriages"]) == 0:
+                rel_text = text["not_married"]
+            embed = nextcord.Embed(title=f"{text['profile']} {self.user.name}", description=f"{badges}\n\n**{text['clan']}:** {clan_name}\n\n**{text['marriages']}:**\n{rel_text}", color=main.color_normal)
+            embed.set_thumbnail(url=str(self.user.display_avatar))
+            embed.set_footer(text=main.version[self.cur_lan])
+            await interaction.response.edit_message(embed=embed)
         else:
             leng = await fns.lang(self.cur_lan)
             text = leng['commands']['profile']
@@ -121,10 +146,10 @@ class ProfileDropdown(nextcord.ui.Select):
             
 
 class ProfileDropdownInitializer(nextcord.ui.View):
-    def __init__(self, timeout, user, iuser, cur_lan, leng):
+    def __init__(self, timeout, user, iuser, cur_lan, leng, client):
         self.iuser = iuser
         super().__init__(timeout=timeout)
-        self.add_item(ProfileDropdown(user, cur_lan, leng))
+        self.add_item(ProfileDropdown(user, cur_lan, leng, client))
         
     async def interaction_check(self, interaction: Interaction) -> bool:
         if self.iuser:
