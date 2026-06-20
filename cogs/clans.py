@@ -190,6 +190,48 @@ class Clans(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.response.send_message(embed=embed)
 
+    @clans.subcommand(name="leave", description="Leave your current clan.", description_localizations={"pl": "Odejdź ze swojego obecnego klanu."})
+    async def clans_leave(self, interaction: Interaction):
+        user = await fns.firsttime(interaction.user)
+        cur_lan = await fns.get_lang(interaction.user)
+        leng = await fns.lang(cur_lan)
+        text = leng['commands']['clans']
+
+        relationships = await fns.u_relationships()
+        current_clan = relationships[str(user.id)]["clan"]
+        
+        if not current_clan:
+            embed = nextcord.Embed(description=text["not_in_clan"], color=main.color_normal)
+            embed.set_author(name=user.name, icon_url=str(user.display_avatar))
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return
+
+        all_clans = await fns.get_clans()
+        clan_data = all_clans[relationships[str(user.id)]["clan"]]
+        uuid = relationships[str(user.id)]["clan"]
+        if clan_data["owner"] == str(user.id):
+            embed = nextcord.Embed(description=text["is_owner"], color=main.color_normal)
+            embed.set_author(name=user.name, icon_url=str(user.display_avatar))
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return
+
+        relationships[str(user.id)]["clan"] = None
+
+        with open("userdb/relationships.json", "w") as f:
+            json.dump(relationships, f)
+
+        all_clans[uuid]["members"].remove(str(user.id))
+
+        with open("userdb/clans.json", "w") as f:
+            json.dump(all_clans, f)
+
+        embed = nextcord.Embed(description=await fns.text_replacer(text["left"], ["{clan}", clan_data["name"]]), color=main.color_normal)
+        embed.set_author(name=user.name, icon_url=str(user.display_avatar))
+        embed.set_footer(text=main.version[cur_lan])
+        await interaction.response.send_message(embed=embed)
+
     @clans_join.on_autocomplete("clan_uuid")
     async def clans_join_autocomplete(self, interaction, current: str):
         data = await clan_autocompletes.all_clans(interaction.user, current)

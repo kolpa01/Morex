@@ -50,7 +50,10 @@
             "fake": "Ten klan nie istnieje.",
             "no_level": "Tw\u00f3j poziom jest zbyt niski, \u017ceby do\u0142\u0105czy\u0107 do tego klanu.",
             "joined": "Do\u0142\u0105czono do newgo klanu **\"{clan}\"**.",
-            "full": "Ten klan jest pe\u0142ny. Nie mo\u017cesz do niego do\u0142\u0105czy\u0107."
+            "full": "Ten klan jest pe\u0142ny. Nie mo\u017cesz do niego do\u0142\u0105czy\u0107.",
+            "not_in_clan": "Nie możesz opuścić klanu, jeśli nie należysz do żadnego.",
+            "is_owner": "Nie możesz opuścić klanu, który do ciebie należy.",
+            "left": "Opuszczono klan **\"{clan}\"**."
         },
         "craft": {
             "no_workbench": "Nie posiadasz workbencha.\nSpr\u00f3buj go kupi\u0107.",
