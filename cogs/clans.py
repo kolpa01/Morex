@@ -232,8 +232,58 @@ class Clans(commands.Cog):
         embed.set_footer(text=main.version[cur_lan])
         await interaction.response.send_message(embed=embed)
 
+    @clans.subcommand(name="view", description="View details about a clan.", description_localizations={"pl": "Wyświetl szczegóły o klanie."})
+    async def clans_view(
+        self, 
+        interaction: Interaction,
+        clan_uuid: str = SlashOption(
+            name="clan",
+            name_localizations={"pl": "klan"},
+            description="Choose the clan.",
+            description_localizations={"pl": "Wybierz klan."},
+            required=False,
+        )
+    ):
+        user = await fns.firsttime(interaction.user)
+        cur_lan = await fns.get_lang(interaction.user)
+        leng = await fns.lang(cur_lan)
+        text = leng['commands']['clans']
+
+        if not clan_uuid:
+            relationships = await fns.u_relationships()
+            clan_uuid = relationships[str(user.id)]["clan"]
+        
+        all_clans = await fns.get_clans()
+        if clan_uuid not in all_clans:
+            embed = nextcord.Embed(description=text["fake"], color=main.color_normal)
+            embed.set_author(name=user.name, icon_url=str(user.display_avatar))
+            embed.set_footer(text=main.version[cur_lan])
+            await interaction.response.send_message(embed=embed, ephemeral=True)
+            return
+
+        clan_data = all_clans[clan_uuid]
+        desc = [f"**{text["owner"]}:** {await self.client.fetch_user(clan_data["owner"])}", f"**{text["lv_req"]}:** {clan_data["level_required"]}", f"**{text["members"]}:** {len(clan_data["members"])}/{clan_data["member_limit"]}"]
+        description = "\n".join(desc)
+
+        embed = nextcord.Embed(title=clan_data["name"], description=description, color=main.color_normal)
+        user_list = {}
+        playerdata = await fns.playerinfo()
+        for member in clan_data["members"]:
+            member = await self.client.fetch_user(member)
+            user_list.update({f"{member} {"<:MX_GoldenCrown:1402598223809613824>" if str(member.id) == clan_data["owner"] else ""} | {playerdata[str(member.id)]["level"]} LV": playerdata[str(member.id)]["total_xp"]})
+        user_list = dict(sorted(user_list.items(), key=lambda item: item[1], reverse=True))
+        user_list = "\n".join([f"**{i}.** {lb_text}" for i, lb_text in enumerate(user_list, 1)])
+        embed.add_field(name=text["users"], value=user_list, inline=False)
+        embed.set_footer(text=main.version[cur_lan])
+        await interaction.response.send_message(embed=embed)
+
     @clans_join.on_autocomplete("clan_uuid")
     async def clans_join_autocomplete(self, interaction, current: str):
+        data = await clan_autocompletes.joinable_clans(interaction.user, current)
+        await interaction.response.send_autocomplete(data)
+
+    @clans_view.on_autocomplete("clan_uuid")
+    async def clans_view_autocomplete(self, interaction, current: str):
         data = await clan_autocompletes.all_clans(interaction.user, current)
         await interaction.response.send_autocomplete(data)
 

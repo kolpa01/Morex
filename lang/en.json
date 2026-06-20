@@ -53,7 +53,11 @@
             "full": "This clan is full. You can't join it.",
             "not_in_clan": "You can't leave a clan since you're not in one.",
             "is_owner": "You can't leave a clan you own.",
-            "left": "You left your clan **\"{clan}\"**."
+            "left": "You left your clan **\"{clan}\"**.",
+            "owner": "Owner",
+            "lv_req": "Level required to join",
+            "members": "Members",
+            "users": "Users"
         },
         "craft": {
             "no_workbench": "You don't have the Workbench.\nTry to buy it.",
