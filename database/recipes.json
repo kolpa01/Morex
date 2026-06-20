@@ -191,5 +191,17 @@
             {"name":"ironsword", "amount": 1},
             {"name":"hammer", "amount": 1}
         ]
+    },
+    {
+        "id": "r016",
+        "item": "goldenring",
+        "amount": 1,
+        "available": "y",
+        "recipe": [
+            {"name":"gold", "amount": 30},
+            {"name":"iron", "amount": 15},
+            {"name":"ruby", "amount": 1},
+            {"name":"hammer", "amount": 1}
+        ]
     }
 ]
